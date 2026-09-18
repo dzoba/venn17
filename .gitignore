@@ -1,0 +1,30 @@
+# full half-edge states (~28 MB each); certificates in certificates/ are the checkable form
+*.raw
+
+# python
+__pycache__/
+*.pyc
+
+# compiled search binary
+search/relaxed_walk5
+*.o
+
+# search / checker outputs
+*-last.json
+*-venn.json
+*-best.raw
+*.err
+*.out
+monotone-results.json
+out/
+results/
+
+# latex build products
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+.DS_Store

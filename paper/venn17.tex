@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\title{Simple symmetric Venn diagrams with 17 curves}
+\author{Chris Dzoba}
+\date{September 17, 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We exhibit simple, rotationally symmetric Venn diagrams with 17 curves, the smallest open case since
+the 11- and 13-curve diagrams of Mamakani and Ruskey (2014). Four such diagrams were found by a Metropolis
+walk on rotation-invariant quadrangulations of the sphere in which regions may temporarily be
+duplicated. Each diagram is given by a machine-checkable certificate. We also exhibit the first
+non-monotone simple symmetric Venn diagrams with 11 and 13 curves.
+\end{abstract}
+
+\section{Statement}
+An $n$-Venn diagram is a family of $n$ Jordan curves in the plane such that for every subset $S$ of the curves
+the set of points inside exactly the curves of $S$ is nonempty and connected. It is \emph{simple} if no point lies
+on three curves, and \emph{symmetric} if a rotation by $2\pi/n$ maps the family to itself. Symmetric Venn diagrams
+exist for every prime $n$ (Griggs, Killian, Savage 2004), but simple ones were known only for $n\le 13$.
+
+\begin{theorem}
+Simple symmetric Venn diagrams with 17 curves exist.
+\end{theorem}
+
+\section{Encoding and verification}
+Let $D$ be a simple symmetric $n$-Venn diagram, drawn on the sphere with the unbounded region as a face.
+Its dual map $M$ has one vertex per region, labelled by the region's membership pattern in $\{0,1\}^n$;
+one edge per arc, joining labels that differ in exactly the bit of the arc's curve; and one face per crossing,
+a 4-cycle with labels $u,\,u{\oplus}e_a,\,u{\oplus}e_a{\oplus}e_b,\,u{\oplus}e_b$ (a \emph{cube square}).
+Conversely:
+
+\begin{proposition}
+A map on the sphere whose vertices are labelled by distinct elements of $\{0,1\}^n$, all $2^n$ occurring,
+whose faces are cube squares, whose edges of each coordinate $i$ form a single cycle through the faces containing
+them, and whose vertex rotations are single cycles, is the dual of a simple $n$-Venn diagram; if the label rotation
+$x\mapsto(x_1,\dots,x_{n-1},x_0)$ is an orientation-preserving automorphism of the map, the diagram is symmetric.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+The map is a cellular embedding on the sphere; its geometric dual is a 4-regular plane graph whose vertices are the
+faces (crossings). The edges of coordinate $i$, chained through opposite sides of each crossing, form one closed curve
+$C_i$; regions of the arrangement are the vertices of $M$, and by the label condition each point of $\{0,1\}^n$ is
+realized by exactly one region, which is a disk. Rotation of the labels acts as a rotation of the sphere fixing the
+two vertices $0^n$ and $1^n$; taking $0^n$ as the outer face gives a plane diagram with $n$-fold rotational symmetry.
+\end{proof}
+
+A certificate is a list of the $2^{17}-2 = 131{,}070$ faces of $M$, each as four 17-bit labels. Verification
+(seconds) recomputes: all labels distinct and present ($2^{17}$ vertices), every edge in exactly two faces
+($262{,}140$ edges), Euler characteristic $2$, every face transversal, single rotation cycle at every vertex, one cycle
+per curve with both sides connected, and invariance under label rotation. Two independently written checkers
+(a half-edge implementation in C++ and a face-set implementation in Python) accept all four certificates.
+SHA-256 prefixes of the certificate files: \texttt{c178d7bd}, \texttt{87f981b8}, \texttt{eec8cd55}, \texttt{431857aa}.
+
+\section{Method}
+We search the space of rotation-invariant cube-square quadrangulations of the sphere in which several vertices
+may carry the same label. The energy of a state is $E = (\text{missing labels}) + \lambda\,(\text{duplicate regions})$;
+$E=0$ with $\lambda>0$ is exactly a certificate. Moves are the local Reidemeister-type rewirings of the dual
+(lens insertion and removal on a 3-cube, triangle flip, bigon insertion and removal), each applied simultaneously to
+all $n$ rotation images; every move preserves the sphere, the cube-square faces and the one-cycle-per-curve property,
+so the walk never leaves the space of valid symmetric arrangements. Proposals are accepted by the Metropolis rule at
+temperature $T$, with half of the proposals targeted at a missing label or a duplicated region.
+
+Allowing duplicates is what makes the search work: with duplicates forbidden, greedy growth of the same
+quadrangulations reaches $98.3\%$ of the labels and jams, because the last lens insertions require two missing labels
+to coincide geometrically. With duplicates allowed, a missing label can be created next to a duplicate at zero cost and
+defects diffuse until they annihilate.
+
+The walk starts from the Griggs--Killian--Savage diagram for $n=17$ with every multiple crossing resolved into simple
+crossings, a state with all labels present and $69{,}394$ duplicate regions. With $\lambda$ ramped from $0.3$ to $1$ over
+three hours at $T=0.25$, three of fifteen independent runs reached $E=0$; a fourth diagram was obtained by a further
+40-minute cycle from a state with $68$ duplicates. Runs at $T=0.20$ reached $E=34$ but did not finish. The same method
+finds 11- and 13-curve diagrams from the trivial starting state in seconds and minutes; every diagram it produced at
+$n=11,13,17$ is non-monotone (some $k$-region lacks a neighbouring $(k{-}1)$- or $(k{+}1)$-region), whereas all previously
+published simple symmetric Venn diagrams with $n\ge 11$ are monotone.
+
+\section{Data}
+Certificates, the verification code, the search code and run logs accompany this note.
+
+\section*{Contributions and use of AI systems}
+This work was carried out by two AI systems working under the author's direction over three days, and this note
+discloses their roles in full. Claude (Anthropic) formulated the dual-map encoding, designed and implemented the search
+(the relaxed walk, its moves, energy and annealing schedules), ran the searches and the verification, performed the
+analyses reported here and drafted this note. Codex (OpenAI) constructed the resolved Griggs--Killian--Savage starting
+states, wrote independent validators for the certificates, identified the need for the bigon moves, and built exact
+local solvers used to diagnose the earlier plateau. The author set the goals and strategy, decided what to pursue and
+what to abandon, supplied the computing resources, and is responsible for the content. The AI systems are not listed as
+authors, in accordance with arXiv policy.
+
+\section*{Acknowledgments}
+We thank Justin Grimes for independently verifying the certificates with a checker written without knowledge of our
+construction.
+\end{document}
