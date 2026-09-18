@@ -54,7 +54,9 @@ A certificate is a list of the $2^{17}-2 = 131{,}070$ faces of $M$, each as four
 (seconds) recomputes: all labels distinct and present ($2^{17}$ vertices), every edge in exactly two faces
 ($262{,}140$ edges), Euler characteristic $2$, every face transversal, single rotation cycle at every vertex, one cycle
 per curve with both sides connected, and invariance under label rotation. Two independently written checkers
-(a half-edge implementation in C++ and a face-set implementation in Python) accept all four certificates.
+(a half-edge implementation in C++ and a face-set implementation in Python) accept all four certificates, and the
+certificate has been formally verified in the Lean proof assistant by Justin Grimes, working from the definitions
+alone and without access to our code.
 SHA-256 prefixes of the certificate files: \texttt{c178d7bd}, \texttt{87f981b8}, \texttt{eec8cd55}, \texttt{431857aa}.
 
 \section{Method}
@@ -80,7 +82,7 @@ $n=11,13,17$ is non-monotone (some $k$-region lacks a neighbouring $(k{-}1)$- or
 published simple symmetric Venn diagrams with $n\ge 11$ are monotone.
 
 \section{Data}
-Certificates, the verification code, the search code and run logs accompany this note.
+The certificates (about 11\,MB each), an independent verification script, the search code and the plotter are at \url{https://github.com/dzoba/venn17} and archived on Zenodo (DOI to be inserted).
 
 \section*{Contributions and use of AI systems}
 This work was carried out by two AI systems working under the author's direction over three days, and this note
@@ -89,10 +91,9 @@ discloses their roles in full. Claude (Anthropic) formulated the dual-map encodi
 analyses reported here and drafted this note. Codex (OpenAI) constructed the resolved Griggs--Killian--Savage starting
 states, wrote independent validators for the certificates, identified the need for the bigon moves, and built exact
 local solvers used to diagnose the earlier plateau. The author set the goals and strategy, decided what to pursue and
-what to abandon, supplied the computing resources, and is responsible for the content. The AI systems are not listed as
-authors, in accordance with arXiv policy.
+what to abandon, supplied the computing resources, and is responsible for the content.
 
 \section*{Acknowledgments}
-We thank Justin Grimes for independently verifying the certificates with a checker written without knowledge of our
-construction.
+We thank Justin Grimes for the formal verification of the certificates in Lean, carried out independently and without
+knowledge of our construction, and Khalegh Mamakani for his encouragement and advice.
 \end{document}
