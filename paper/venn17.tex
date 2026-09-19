@@ -55,8 +55,12 @@ A certificate is a list of the $2^{17}-2 = 131{,}070$ faces of $M$, each as four
 ($262{,}140$ edges), Euler characteristic $2$, every face transversal, single rotation cycle at every vertex, one cycle
 per curve with both sides connected, and invariance under label rotation. Two independently written checkers
 (a half-edge implementation in C++ and a face-set implementation in Python) accept all four certificates, and the
-certificate has been formally verified in the Lean proof assistant by Justin Grimes, working from the definitions
-alone and without access to our code.
+first certificate (\texttt{c178d7bd}) has been formally verified in Lean~4 with Mathlib by Justin Grimes, working
+from the definitions alone and without access to our code: his theorem states that the 17 curves constructed from
+the certificate are Jordan curves in the Euclidean plane, carried to one another by a rigid rotation through
+$2\pi/17$, with every one of the $2^{17}$ regions path-connected, no point on three curves, and every crossing a
+transversal crossing of two curves. The finite parts of the proof use Lean's compiled evaluation
+(\texttt{native\_decide}); the development builds from scratch in about nine minutes.
 SHA-256 prefixes of the certificate files: \texttt{c178d7bd}, \texttt{87f981b8}, \texttt{eec8cd55}, \texttt{431857aa}.
 
 \section{Method}
