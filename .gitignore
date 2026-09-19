@@ -28,3 +28,9 @@ results/
 *.fdb_latexmk
 
 .DS_Store
+
+# Lean build artefacts: .lake/ holds Mathlib and ~8 GB of compiled output
+verify/lean/.lake/
+verify/lean/build/
+# but keep the build transcript that ships with the proof bundle
+!verify/lean/verification/full-build.log

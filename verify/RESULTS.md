@@ -30,6 +30,20 @@ rotation_symmetric, non_transversal_faces == 0, repeated_vertex_faces == 0.
 All six have a non-zero count of labels that violate the Bultena-Grunbaum-Ruskey
 monotonicity condition, so none of these diagrams is monotone (0 would mean monotone).
 
+Independent Lean 4 proof, 2026-09-18: `venn17-local-c3-s2.json` was rebuilt from scratch in
+`verify/lean/` (Justin Grimes's formalization, Apache-2.0) on Lean 4.32.1 with Mathlib
+`520045ab14e26149ee970e2e617ca04b09bde5d6`. `lake build` completed all 3468 jobs in 9 min 6 s
+(peak RSS 3.4 GB, after a 2 min 25 s `lake exe cache get`), which is where Lean's kernel checks
+`Venn17.Topology.supplied_simple_rotational_venn`: the certificate is realized in the plane by 17
+embedded circles whose 2^17 side-intersections are all nonempty and path-connected, with no triple
+points, transverse double points, and a rigid rotation through 2π/17 permuting the curves.
+`lake exe venn_check venn17-local-c3-s2.json` printed all fifteen finite checks true and
+`PASS: all finite combinatorial checks.` in 8.9 s;
+`lake env lean scripts/audit_topology.lean` reproduced the shipped `topology-axioms.txt` byte for
+byte (no `sorry`; `propext`, `Classical.choice`, `Quot.sound` and 20 `native_decide` axioms);
+`scripts/audit_vendor.py` confirmed 309 unchanged vendored sources. Commands and full timings are
+in the README's "Formal verification (Lean)" section.
+
 ## verify.py transcript
 
 ```

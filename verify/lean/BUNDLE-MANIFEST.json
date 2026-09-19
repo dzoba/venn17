@@ -1,0 +1,2379 @@
+{
+  "format_version": 1,
+  "lean_toolchain": "leanprover/lean4:v4.32.1",
+  "main_theorem": "Venn17.Topology.supplied_simple_rotational_venn",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "rev": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+      "url": "https://github.com/leanprover-community/mathlib4"
+    },
+    {
+      "name": "plausible",
+      "rev": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "url": "https://github.com/leanprover-community/plausible"
+    },
+    {
+      "name": "LeanSearchClient",
+      "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "url": "https://github.com/leanprover-community/LeanSearchClient"
+    },
+    {
+      "name": "importGraph",
+      "rev": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "url": "https://github.com/leanprover-community/import-graph"
+    },
+    {
+      "name": "proofwidgets",
+      "rev": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "url": "https://github.com/leanprover-community/ProofWidgets4"
+    },
+    {
+      "name": "aesop",
+      "rev": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "url": "https://github.com/leanprover-community/aesop"
+    },
+    {
+      "name": "Qq",
+      "rev": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "url": "https://github.com/leanprover-community/quote4"
+    },
+    {
+      "name": "batteries",
+      "rev": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "url": "https://github.com/leanprover-community/batteries"
+    },
+    {
+      "name": "Cli",
+      "rev": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "url": "https://github.com/leanprover/lean4-cli"
+    }
+  ],
+  "files": {
+    ".gitignore": {
+      "type": "file",
+      "bytes": 20,
+      "sha256": "b34af236d1df9e39ed4f98fca51702530ce76bdee4e1a69512f6caed933c3374"
+    },
+    "BUNDLE-README.md": {
+      "type": "file",
+      "bytes": 4082,
+      "sha256": "0877da6ea8b68734744e14ffc507be7d51a21804b7df6b8bd877694ae04cc433"
+    },
+    "CITATION.cff": {
+      "type": "file",
+      "bytes": 424,
+      "sha256": "983a71f14094cc18d9eb8836bba7ff149848e868aef6a7317c6822cf2079a82c"
+    },
+    "LICENSE": {
+      "type": "file",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "Main.lean": {
+      "type": "file",
+      "bytes": 511,
+      "sha256": "a01963fdce157e382bc7870c6a6b45b37c4017a8870f32948dfb7b22e6f6cf34"
+    },
+    "README.md": {
+      "type": "file",
+      "bytes": 23594,
+      "sha256": "cdde01f05e09d3c553e7694ada30bf4e47bde03bdd4542919faa4a88daabc4b5"
+    },
+    "REALIZATION.md": {
+      "type": "file",
+      "bytes": 39788,
+      "sha256": "9b8b9cdbc0df3f3be087c4d7179ac83bb4a5761fd17f45242c9293a7fd9433e7"
+    },
+    "SHA256SUMS": {
+      "type": "file",
+      "bytes": 90,
+      "sha256": "efdd02ca66c27263c546d2385eb929000fbf4eb6d17cede7a927b182bd31b6b7"
+    },
+    "Vendor/ClassificationOfSurfaces/CanonicalCoordinates.lean": {
+      "type": "file",
+      "bytes": 20849,
+      "sha256": "7498ad92994060f5d52ef64a9c68c6b00d86f4474eb3c5b9963b153bcf7bda98"
+    },
+    "Vendor/ClassificationOfSurfaces/CanonicalGeneratorMaps.lean": {
+      "type": "file",
+      "bytes": 14847,
+      "sha256": "e30ecf9b50086feaa6e9450405e7630564b6667cb069c72a81c630a374bb75da"
+    },
+    "Vendor/ClassificationOfSurfaces/CanonicalPairings.lean": {
+      "type": "file",
+      "bytes": 39811,
+      "sha256": "0701ef2ba96f168602308b26a03a2454b6a86fe0698977cd25e423b2c1e3f289"
+    },
+    "Vendor/ClassificationOfSurfaces/CanonicalWords.lean": {
+      "type": "file",
+      "bytes": 21090,
+      "sha256": "df4974da95a46f0536b6ef8271c6c85834c36bc6b09a83bb450c2e449e4654dd"
+    },
+    "Vendor/ClassificationOfSurfaces/CellComplex.lean": {
+      "type": "file",
+      "bytes": 19843,
+      "sha256": "6800a64d3c14e25f07d18ad05b36c58c7a495bae7e1e0b88ecd7525c6828756c"
+    },
+    "Vendor/ClassificationOfSurfaces/CellComplexQuotient.lean": {
+      "type": "file",
+      "bytes": 26836,
+      "sha256": "f946f36a3732b38e344d12ab92dc2ba795668d33bd9f7d3deac1063ed0515baa"
+    },
+    "Vendor/ClassificationOfSurfaces/DiskSquare.lean": {
+      "type": "file",
+      "bytes": 118745,
+      "sha256": "7d4c49a4f40107a840073195a9f2b389a721ab5ee87749c9609d94aeb44e80d3"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicCancellation.lean": {
+      "type": "file",
+      "bytes": 37223,
+      "sha256": "398bf8e1758d2883fde619a9c0d83560af1289e78daaf402cbe6e21dd217eef2"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicCanonical.lean": {
+      "type": "file",
+      "bytes": 8756,
+      "sha256": "38df8f546a41fa31c83338e7776b68f817a11e614d132de44e196c5dad373469"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicCanonicalRealization.lean": {
+      "type": "file",
+      "bytes": 28303,
+      "sha256": "b49135f4fa653e137ee8a1975a149d972cac5fb7b5f59bbfbf87896a21393b87"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicCrosscap.lean": {
+      "type": "file",
+      "bytes": 14439,
+      "sha256": "f9ea928af1159ddab15cbd40aee5dde4874b54448273ca05608da500c4dc091f"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicDerivedRewrites.lean": {
+      "type": "file",
+      "bytes": 39789,
+      "sha256": "7d9fa36c82c7b5e31e0422f750e03261e2c27f3f869beab64d388fc892464c49"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicDyck.lean": {
+      "type": "file",
+      "bytes": 13439,
+      "sha256": "c99ff082558f72b969e7104b4b742edfa71d14ec5cc8178900632abab297a366"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicFaceMerge.lean": {
+      "type": "file",
+      "bytes": 36671,
+      "sha256": "12e43ecb90dd109e376d18dfbf03d37ff4b8412fa34917add26494d107cd2ac7"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicMoveRealization.lean": {
+      "type": "file",
+      "bytes": 2105,
+      "sha256": "0379f4a52b5b253027d6c6d3c8f25fc2c5f8ecd61da665dffdd8c3b6d59a79a1"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicMoves.lean": {
+      "type": "file",
+      "bytes": 11163,
+      "sha256": "f08eeada65ef056c77ad07493bba3f16be6e752efc81e476c78d28404f4693fb"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicNormalization.lean": {
+      "type": "file",
+      "bytes": 12989,
+      "sha256": "3e250b2916b1be280ab3cf319454f2a179f14d7099a7ad8beedbf220928a00ac"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicNormalizationResult.lean": {
+      "type": "file",
+      "bytes": 4634,
+      "sha256": "f8f00f58d65e7a043dfaa7044eb625191262a4f926311cbdb43c6fa1680437a3"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicP1.lean": {
+      "type": "file",
+      "bytes": 21259,
+      "sha256": "01419082d3453cbac0fc44e0737f8090b0dd56ed298f175e5f70046b5a98e6a3"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicP1Realization.lean": {
+      "type": "file",
+      "bytes": 78931,
+      "sha256": "55ccfa398ff8f742ac2bbdf73793ed2692a18671c309d6124c60861bbc46b1f9"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicP2.lean": {
+      "type": "file",
+      "bytes": 54923,
+      "sha256": "689af7307d8020c6d035347359af3a33e02ee78eca0a527fae678615de441d18"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicP2DegenerateRealization.lean": {
+      "type": "file",
+      "bytes": 80649,
+      "sha256": "ff01c5f9a7b706ffaa4eb5755e96af54eabfe0aec8fd78603c185791687ac6cc"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicP2Realization.lean": {
+      "type": "file",
+      "bytes": 143457,
+      "sha256": "f0b831a50edeac583b698ff2c772e7c2f4ba42925047f884423d4f22f3f51366"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicPresentation.lean": {
+      "type": "file",
+      "bytes": 45064,
+      "sha256": "ee11c1228a3d4faa52dc32d6745e51ccca88c67c7ee8c655b90779538e2d1564"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicRealization.lean": {
+      "type": "file",
+      "bytes": 18409,
+      "sha256": "0e435f210577312ef2deeca1f79b49b41d323997881019dadc3507d2c4973388"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicReduction.lean": {
+      "type": "file",
+      "bytes": 53842,
+      "sha256": "17a36c353c755ac97f77e1ebc49c705cd702770d7fea1c1a70e05b7de3310bef"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicSignedRealization.lean": {
+      "type": "file",
+      "bytes": 25162,
+      "sha256": "42d5409f222c370164cff54bf78fcc1e0673eb6a864cc503cf536bbab69dcb20"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicSphereRealization.lean": {
+      "type": "file",
+      "bytes": 16391,
+      "sha256": "20ea1e87c8f759de459d6679bb0c7bc1dc9448055903e701c5f0b17c956c9da0"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicTerminalNormalization.lean": {
+      "type": "file",
+      "bytes": 117985,
+      "sha256": "db30eafb8fe4f21cfed51f2704bba5c6d56d8bec490abeef2e216795bb6fefc6"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicTriangulation.lean": {
+      "type": "file",
+      "bytes": 20922,
+      "sha256": "1ea00c9c0997110383e1da0c17a0fbb3eb6fd1979405023e92cda74b9ee8054d"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicUnorientedRealization.lean": {
+      "type": "file",
+      "bytes": 40999,
+      "sha256": "0bad4bdc972ecb86706547020092bfb7ccbed41125688b1c3bd9c86d7be23d38"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicWordReduction.lean": {
+      "type": "file",
+      "bytes": 310270,
+      "sha256": "0ecc018e36c1140de34520487d5e01e5e1df83ad138510056a721da0afad334c"
+    },
+    "Vendor/ClassificationOfSurfaces/FiniteCyclicWordReductionCore.lean": {
+      "type": "file",
+      "bytes": 254167,
+      "sha256": "013200811d0111b7ed656d7a7205dee25082b42ef4802fff0fa0e0c5e78a8442"
+    },
+    "Vendor/ClassificationOfSurfaces/GeometricTriangulationRealization.lean": {
+      "type": "file",
+      "bytes": 43895,
+      "sha256": "2e72c1b1e7bef0dcd47b1fe7da2b2200674825af05a908d0dd1d624365d9af7e"
+    },
+    "Vendor/ClassificationOfSurfaces/LeanEval/ChallengeDeps.lean": {
+      "type": "file",
+      "bytes": 3102,
+      "sha256": "cc1ea7b804f0b6915b0809c05a9af9435cc24067bdba31c2e743736375135b6e"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/AdaptiveControlledApproximation.lean": {
+      "type": "file",
+      "bytes": 26471,
+      "sha256": "3bc662a28601e368248cacbc7995af41b4fef36a5e5fcdf372d679d9d218e780"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/AdaptiveFanAffine.lean": {
+      "type": "file",
+      "bytes": 22416,
+      "sha256": "fc8a6dd90ca7599fa73d14955f58af470318868ff0d7d50b25bff0db1b3f6cfd"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/AdaptiveFanComplex.lean": {
+      "type": "file",
+      "bytes": 157197,
+      "sha256": "6de4a25bbd948d3b7ae932bbd2ed77de1d572b61dd7aa01248a04d82afb35cad"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/AdaptiveOpenComplex.lean": {
+      "type": "file",
+      "bytes": 75961,
+      "sha256": "eb74dc0567f77b312364a70cb9d050bdfeb718965b17152080a9396eee2ee3d2"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/AdaptiveOpenCover.lean": {
+      "type": "file",
+      "bytes": 5801,
+      "sha256": "3153aab5a4fcdb744a54d26462d3f76b320644b387b8e34b5a61cf13a4d6a397"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/AdaptiveTileComplex.lean": {
+      "type": "file",
+      "bytes": 19490,
+      "sha256": "cc7497ba1325e1f8e0099b54866f0c09db52388d6945bbddd92be8db81424c24"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/AdaptiveTriangulation.lean": {
+      "type": "file",
+      "bytes": 19818,
+      "sha256": "8c720253d05d3a25538fb24fad012f4a75861df70bb425b4e04c5d7a9e1a241b"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/AmbientHomeomorph.lean": {
+      "type": "file",
+      "bytes": 12649,
+      "sha256": "2fa3e6f6bf6eacd7abfde9428a0149c64e69944cba4d81dd36a2859be816b9e6"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/Anchors.lean": {
+      "type": "file",
+      "bytes": 16087,
+      "sha256": "176ef9b5a42b320df1b4356be89615dbc62f1673f2be0ca80c38db90524522a2"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/BoundaryInvariant.lean": {
+      "type": "file",
+      "bytes": 14642,
+      "sha256": "586553eabac6a7f6369289ef61e85c8363f562fed08e47df7b2853decab87531"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/BrokenLine.lean": {
+      "type": "file",
+      "bytes": 9877,
+      "sha256": "146fe660bd345e0f82c767f0daa77c0f358952f5d11a483509482a0439b9b2cd"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/Brouwer.lean": {
+      "type": "file",
+      "bytes": 9677,
+      "sha256": "edb39f07609cefde882196306cbe572631c0a9eba45d8548e7ceaaefa7dd62b8"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/ChartExtraction.lean": {
+      "type": "file",
+      "bytes": 32617,
+      "sha256": "67ab4d05a3a8119cd9409044283d6b262a8d9c203d8f62adda7efde3688bbaa7"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/ChartInduction.lean": {
+      "type": "file",
+      "bytes": 289874,
+      "sha256": "425f331540f1c639802467ac07d0a21e5d29176d7a1e708d19f433ad352a38c6"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/ChartInductionCore.lean": {
+      "type": "file",
+      "bytes": 307012,
+      "sha256": "ed2c33678f81d485ca72e8c40ab98ee9672eb65e4d873b71233176a770c67e2d"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/ChartPatch.lean": {
+      "type": "file",
+      "bytes": 27433,
+      "sha256": "25a9e176780ac7e566131bc5e4640da95090097993cd9c682a647071299cfa83"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/CommonSubdivision.lean": {
+      "type": "file",
+      "bytes": 43103,
+      "sha256": "2dc0ddf525209a38bde418b8a82d22c8b01179e0962f0176fac44acd3cd403bf"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/ConeExtension.lean": {
+      "type": "file",
+      "bytes": 61930,
+      "sha256": "d3dd385e421484ab22476911938672403b390ee834c14d7b81b4e703d0f5bcf1"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/DualConnectivity.lean": {
+      "type": "file",
+      "bytes": 9719,
+      "sha256": "483611b92d1f1ec39db0fe0b6f89c4e33e155d746d2033b6cb70c8a2ed43e943"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/ElementaryMove.lean": {
+      "type": "file",
+      "bytes": 50602,
+      "sha256": "224b60267b93ac35531eda7b0dadaf797cbc4f58477c22c1730fd5d74a4a0d32"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/EmbeddedComplexValence.lean": {
+      "type": "file",
+      "bytes": 14136,
+      "sha256": "483270c1feab0697d6d0d385e82c2d5ea9f2e70aeef33f05af4dd87dade2aed3"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/FacewiseComparison.lean": {
+      "type": "file",
+      "bytes": 66807,
+      "sha256": "9b56d43763ffcda1c8d41a8f6f2300d898368ded3e2a4740dcf25ec9d34757fd"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/FineSubdivision.lean": {
+      "type": "file",
+      "bytes": 14768,
+      "sha256": "1af8733308ee7b794af99023e6a5e1d3c28f31eba9638dff732aa6f63d3df618"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/FinitePLHomeomorph.lean": {
+      "type": "file",
+      "bytes": 22971,
+      "sha256": "f59345232df197d4aef68484023d99af2cabe8bb87bc23f4eeb07e17240c300c"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/FreeTriangle.lean": {
+      "type": "file",
+      "bytes": 81520,
+      "sha256": "2a0eb938f16ed1c152ab95120b7b6069317b0124c77bea64cb9c168e1910e132"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/FreeTriangleMove.lean": {
+      "type": "file",
+      "bytes": 54689,
+      "sha256": "8b37afc857119ad493869d06f06c8c59c6aff251ccbb0e1c13b3d1a3fe91559a"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/FrontierGlue.lean": {
+      "type": "file",
+      "bytes": 15329,
+      "sha256": "a7cf1e41713ddc27a376c9c3e765aaee5a40c39cb6c6b2b382de89f664e69016"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/GeometricTriangulation.lean": {
+      "type": "file",
+      "bytes": 29808,
+      "sha256": "0fafc52d970495214c5f7f7f4961d13d0cf21bcc325e83d00b3f32c1aa2418d4"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/GraphPolygonalization.lean": {
+      "type": "file",
+      "bytes": 144868,
+      "sha256": "17e2a67a05a1755519cb48569c56e1930a06670c3f988e7f2a78507c31df2a0e"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/GraphRefinement.lean": {
+      "type": "file",
+      "bytes": 33506,
+      "sha256": "6739e8339544e3fccfae03b71ef374c35245d5109a7b07c0452e7e4cb5453968"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/GraphSubdivision.lean": {
+      "type": "file",
+      "bytes": 49533,
+      "sha256": "29be3ab2363fc310c42ce77a5cd3fefbc0cd8a62819037ce9b4011bdbaa4a947"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/HalfPlanePolygon.lean": {
+      "type": "file",
+      "bytes": 5363,
+      "sha256": "87050735616428c5405324a955d0d3d88b1a79f82853130f6bd4302c7fa43aa5"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicCellwiseExtension.lean": {
+      "type": "file",
+      "bytes": 47748,
+      "sha256": "1779256720825946af3550d838b88053d6d036a1226141847186112378fc7509"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicComplex.lean": {
+      "type": "file",
+      "bytes": 36935,
+      "sha256": "9f0abd75a4219befca2f2699bab1d492590f40f2c507e5d0022ed2569ae978d7"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFaceBoundary.lean": {
+      "type": "file",
+      "bytes": 44645,
+      "sha256": "5318bd6647f3e989a86f360239c52c6532d51310d45c281fbaa8b78e7944ef4c"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFaceExtension.lean": {
+      "type": "file",
+      "bytes": 51697,
+      "sha256": "56f8bbc6d3163bf897e3ab91e22750d76b10f2bc4470666f9cb1b4bb9c5350e6"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFaceFilling.lean": {
+      "type": "file",
+      "bytes": 3712,
+      "sha256": "7dcc426d7bb7f45986ab84dc3f3dd10eb4fcf95917909eeaff9ed141f07f7ffe"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFaceModel.lean": {
+      "type": "file",
+      "bytes": 26132,
+      "sha256": "3054dffda2bfe032576957c8cd15dc07751112479e8bef021d9448f332b44e8e"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFineSubdivision.lean": {
+      "type": "file",
+      "bytes": 28389,
+      "sha256": "e9744546f8b8951d8e637408a81c70c8b62b441a072294d883a21cf82b7a6ccf"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicGraphApproximation.lean": {
+      "type": "file",
+      "bytes": 80416,
+      "sha256": "0c2b06c940f37ae244778f4dc80a5408e320708e1b077721da6a824744aa93c5"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicGraphPL.lean": {
+      "type": "file",
+      "bytes": 52188,
+      "sha256": "cab0b48f70243e80a49eecaca08f34f9b1ceb3b121b1601c10588b3cd039a4e4"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicMarkedFan.lean": {
+      "type": "file",
+      "bytes": 142001,
+      "sha256": "c5947282d7aa9308a9c4260199c5d2086a4ffc3e39a6f93de0c08fe3c52ccfb3"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicMidpointSubdivision.lean": {
+      "type": "file",
+      "bytes": 61534,
+      "sha256": "8f0b3062360f81b0c33dfccfc93099b71657d84201b2addaa357f86015ed6b31"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/IntrinsicSubdivision.lean": {
+      "type": "file",
+      "bytes": 12754,
+      "sha256": "d1def77cfbae9ccfd1ec9156eddde82174301976b3b9d4226b9233d539131dae"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LineSubdivision.lean": {
+      "type": "file",
+      "bytes": 183798,
+      "sha256": "4203bf915073953d29b93830b4836119fa15721b6934d5b91504fecb35bc65b4"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteCellwiseExtension.lean": {
+      "type": "file",
+      "bytes": 30345,
+      "sha256": "3459266df04c60bc35555021690f070c61447c80d2c6c7566165f0a260c6f1c1"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteControlledApproximation.lean": {
+      "type": "file",
+      "bytes": 39281,
+      "sha256": "22be3ca46711c3cd750b81e3c5c3be4cacfd4974886c39692cdd162557b0e350"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteFaceBoundary.lean": {
+      "type": "file",
+      "bytes": 36825,
+      "sha256": "a86190f53ea5775663bcc2db60b3b7a0eb57660747185eab19dc632662afa042"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteFaceExtension.lean": {
+      "type": "file",
+      "bytes": 48029,
+      "sha256": "e3e18eaf47558c548f7bf53a2c22c15f8477c302dcf779a3a39801c27823e4ce"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteFaceFilling.lean": {
+      "type": "file",
+      "bytes": 3103,
+      "sha256": "e37e82c1d9da700e8c997cc8e48a9efd892464c328a2f91f2c97616216448ecc"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteFaceModel.lean": {
+      "type": "file",
+      "bytes": 28125,
+      "sha256": "515cd645cc5dbdb571cf4a4c5d205c5795b872316f6211856303adbb9e550c4f"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteGraphApproximation.lean": {
+      "type": "file",
+      "bytes": 150054,
+      "sha256": "202cbd3f2bbb3c6bdf0f03e28b3d1abc4a923567107f3b03e86b76b14735d268"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteGraphPL.lean": {
+      "type": "file",
+      "bytes": 44290,
+      "sha256": "b76d742ef025889639e1d34a3094691a20dc46473526c189c892b32fa24935c2"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFinitePLApproximation.lean": {
+      "type": "file",
+      "bytes": 23583,
+      "sha256": "7ed5b85f85b5cfb34e1d5f0aee6cc4691f17f2fbe72685d2d9be035e6020d825"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteSidePreservation.lean": {
+      "type": "file",
+      "bytes": 29744,
+      "sha256": "5bf1661e51a1bcb96857928ebe27669444b61c458efe4dec5a916256ef28d072"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteTriangulation.lean": {
+      "type": "file",
+      "bytes": 79109,
+      "sha256": "5812bcae5af90486e204e5a2254f8d0bb2a3de7e08329ef32f9378f09f837eab"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/NoRetraction.lean": {
+      "type": "file",
+      "bytes": 13898,
+      "sha256": "ae8dc8e70bb6bacc3127e708d0e533ba9c6a59368ad5dbe9448772862ac2fbf0"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/OpenMidpointComplex.lean": {
+      "type": "file",
+      "bytes": 15287,
+      "sha256": "fd3630d4023d9f458ccc157376dc19b5ddaf82915619298c7107385ba9b25d0c"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PLApproximation.lean": {
+      "type": "file",
+      "bytes": 113888,
+      "sha256": "b23a1b06efdcd75be0a0363d00d934795e96d6626bfee7e05f072cea3165cc2d"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PLMoves.lean": {
+      "type": "file",
+      "bytes": 24617,
+      "sha256": "a689e4d3a6916ede440fe2272631a27a072c18b4c32729de7651f0210029714d"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PlaneComplex.lean": {
+      "type": "file",
+      "bytes": 59814,
+      "sha256": "289d152b60da667c2022c5d811be8718d93a2a95181f7aa31654193a7c1a115a"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PlaneCycle.lean": {
+      "type": "file",
+      "bytes": 20032,
+      "sha256": "edb6d36ce01be6b914444c2b51a58c2d85a8b9692fb86106ac79490e5f8549b6"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PolygonalArc.lean": {
+      "type": "file",
+      "bytes": 91322,
+      "sha256": "7d31e62f3b97787e630dc73a5bdcce3314aa4520f60587471493c120730fc9fd"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PolygonalArcModel.lean": {
+      "type": "file",
+      "bytes": 6788,
+      "sha256": "121667ae9bf8719a4073de58fde4fdfdda54a0dd582ce9b571800d2b60598e4e"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PolygonalCrosscut.lean": {
+      "type": "file",
+      "bytes": 120598,
+      "sha256": "c10b056867affa21641a5ec4d08b84deebfb8d6e334ec3613ca33c68514ac5e7"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PolygonalFamilyPolyhedron.lean": {
+      "type": "file",
+      "bytes": 29794,
+      "sha256": "fbe1f485bfca13a7f6075e561a3640b8ed797acb5e2a6c6a3eac7aa65e63ac52"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean": {
+      "type": "file",
+      "bytes": 197402,
+      "sha256": "a4ef4a004be853244068070b5e04ba10002d0e6dc684d16c14a269090b7175ad"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PolygonalPolyhedron.lean": {
+      "type": "file",
+      "bytes": 18821,
+      "sha256": "09a24d893e9c649374162e247b35c045db9c9a1f0797cc90803887f14522d72f"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PolygonalSchoenflies.lean": {
+      "type": "file",
+      "bytes": 143814,
+      "sha256": "8b3aa241482b4e551817f1ea0111f6cbc52d494a950268eb8a3e78c99ff3963f"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/PuncturedSurface.lean": {
+      "type": "file",
+      "bytes": 13075,
+      "sha256": "119fab13e14e6638be27d7687f823b8de35f8e47a678816faec5b9047af8537a"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/RelativeSynchronizedArrangement.lean": {
+      "type": "file",
+      "bytes": 13561,
+      "sha256": "32d6f58f5fc9b20b7f57dc28a5e257b2a9e098d00d0cf8cddd8c5e17b48ba5a1"
+    },
+    "Vendor/ClassificationOfSurfaces/Moise/ThinKiteMove.lean": {
+      "type": "file",
+      "bytes": 57637,
+      "sha256": "d3158c14887c58cbc791c72aaaf4d9d53bfa57a43270853f36f71da2e75c59e7"
+    },
+    "Vendor/ClassificationOfSurfaces/NormalForm.lean": {
+      "type": "file",
+      "bytes": 2190,
+      "sha256": "5caab579d3ad34d6de90858b9554b48a94addce8f3bde08ca8eda8ebac8ed9f0"
+    },
+    "Vendor/ClassificationOfSurfaces/P2DegenerateDisk.lean": {
+      "type": "file",
+      "bytes": 66525,
+      "sha256": "e708766a8a50023cf9dc49d36dae0ec4ff2bee4126faf16d8aa67f168f8424b8"
+    },
+    "Vendor/ClassificationOfSurfaces/PolygonCellRadial.lean": {
+      "type": "file",
+      "bytes": 7422,
+      "sha256": "db451e85a50b7bb2e1ce0d69b0e09ee7fe8e871f03c3664a1190e187a6bd0293"
+    },
+    "Vendor/ClassificationOfSurfaces/PolygonalQuotient.lean": {
+      "type": "file",
+      "bytes": 15731,
+      "sha256": "6c4e3ab33438355370f3336e06b8ed879d428484542226fe22132ae7b251856e"
+    },
+    "Vendor/ClassificationOfSurfaces/RepresentativeCarrier.lean": {
+      "type": "file",
+      "bytes": 8312,
+      "sha256": "c111cc1294ce027ac3f4d36f19b1c3043bfceb0bdcaa9e789475ef6de4a7215f"
+    },
+    "Vendor/ClassificationOfSurfaces/Representatives.lean": {
+      "type": "file",
+      "bytes": 1723,
+      "sha256": "4610448be8faca5b5e36288421751025c706acf654d54fd84aff4a72a2630076"
+    },
+    "Vendor/ClassificationOfSurfaces/SignedPresentation.lean": {
+      "type": "file",
+      "bytes": 8433,
+      "sha256": "1bb6bda0b4171486f8bb4182aecd31558ac5895a743f8154a98745714d893021"
+    },
+    "Vendor/ClassificationOfSurfaces/SphereCarrierGeometry.lean": {
+      "type": "file",
+      "bytes": 2920,
+      "sha256": "6242ea99633cee9fc8ce5f7d916fe24b6df176507def164d1cf640ca35a2f085"
+    },
+    "Vendor/ClassificationOfSurfaces/SphereHemisphere.lean": {
+      "type": "file",
+      "bytes": 10344,
+      "sha256": "7c64beef767600bc96b08fa7bef7fb7f47cc96557009fe234bb8954bae179c56"
+    },
+    "Vendor/ClassificationOfSurfaces/SphereQuotientHomeomorph.lean": {
+      "type": "file",
+      "bytes": 12422,
+      "sha256": "6c0ec8020a70ff930414d9e341f237599cac9a795132e1b1a45bc872b8fff01a"
+    },
+    "Vendor/ClassificationOfSurfaces/StrongVertexStar.lean": {
+      "type": "file",
+      "bytes": 14098,
+      "sha256": "1db82fc609c4b913d96955b161bdede366c51aa99f9549c98457edc985b73768"
+    },
+    "Vendor/ClassificationOfSurfaces/Surface.lean": {
+      "type": "file",
+      "bytes": 3182,
+      "sha256": "a79e0bf519f6cb767fcaffa98db76e810a2313f74117d235f5304c47cbf2f951"
+    },
+    "Vendor/ClassificationOfSurfaces/Topology/InvarianceOfDomain.lean": {
+      "type": "file",
+      "bytes": 42118,
+      "sha256": "d75eafa147b4a9bd9eca4c847636278c305fcaa3c1d13ddda628799ac67ce846"
+    },
+    "Vendor/ClassificationOfSurfaces/TriangleCell.lean": {
+      "type": "file",
+      "bytes": 26853,
+      "sha256": "6b57cfcafbeb97eb6fe219e4aea99a2fac958035d80ea6820d66e45e8841558e"
+    },
+    "Vendor/ClassificationOfSurfaces/Triangulation.lean": {
+      "type": "file",
+      "bytes": 26523,
+      "sha256": "8f27ae73d6e3d76cb7ef35ea0bf4f0966fbbfc692cfeeb3894010fbe42f0e2a7"
+    },
+    "Vendor/ClassificationOfSurfaces/WeightedCircle.lean": {
+      "type": "file",
+      "bytes": 26581,
+      "sha256": "b813b81fa9762ec4b8b96be24754d5741493db2c0ffc037eac4a44c863b310b1"
+    },
+    "Vendor/JordanCurve.lean": {
+      "type": "file",
+      "bytes": 103,
+      "sha256": "903b99b6142cf1e8222bfb8864aee033baf78bda09aa8362dbddf787d64616b2"
+    },
+    "Vendor/JordanCurve/Arcs.lean": {
+      "type": "file",
+      "bytes": 24168,
+      "sha256": "ed2ff16e5dacf30791eca0ed7b98a27004d8019fe4d79f2ba8d1169f3deacef3"
+    },
+    "Vendor/JordanCurve/Brouwer.lean": {
+      "type": "file",
+      "bytes": 22668,
+      "sha256": "7022c7989be745719cba0efa802d54d6681d77c882146076f15b20f6b220c72e"
+    },
+    "Vendor/JordanCurve/Counting.lean": {
+      "type": "file",
+      "bytes": 2749,
+      "sha256": "49289987da4c8de9d40ff328aebde18a3cf9bab8518ffece9b6eddde32aae29a"
+    },
+    "Vendor/JordanCurve/LICENSE": {
+      "type": "file",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "Vendor/JordanCurve/Main.lean": {
+      "type": "file",
+      "bytes": 147448,
+      "sha256": "4970ab6e04d0618645632fb419f3fad9cccc135a15d8bf725fca159d4c572fca"
+    },
+    "Vendor/README.md": {
+      "type": "file",
+      "bytes": 2130,
+      "sha256": "718a0b62202e8ba197b70ad396cf57f19d19fc3b23d36ed6f5faaab18d422414"
+    },
+    "Vendor/Schoenflies/AccessHairs.lean": {
+      "type": "file",
+      "bytes": 13426,
+      "sha256": "48c5506a8e206c81cc0cae184e406a9e52787ca14cfbcc2a9a04c3190f19024a"
+    },
+    "Vendor/Schoenflies/Accessibility.lean": {
+      "type": "file",
+      "bytes": 10267,
+      "sha256": "8ad8cbbe6823266042713c7b2c67bceff27c902849eedc9e69affd2fb74367ab"
+    },
+    "Vendor/Schoenflies/AmbientGluing.lean": {
+      "type": "file",
+      "bytes": 8307,
+      "sha256": "8dac772c0b8fa22d10cb2fbcc092b584a7b3f43ea2853f359388759b8e5bb241"
+    },
+    "Vendor/Schoenflies/AngularDriftBounds.lean": {
+      "type": "file",
+      "bytes": 7939,
+      "sha256": "057278b92c34da45b4e2d9661372129877d70b70c79097dd9b8f43f12ab06978"
+    },
+    "Vendor/Schoenflies/AngularSubdivisions.lean": {
+      "type": "file",
+      "bytes": 40713,
+      "sha256": "778f4997fecc062e0a7f22f9be0e04c21910c9a40aeeccd9d42a2622bdad6596"
+    },
+    "Vendor/Schoenflies/AnnularCellAttachments.lean": {
+      "type": "file",
+      "bytes": 17202,
+      "sha256": "48116a29ead89c06ff7dbae013fab6f1f062265e3c826ee0a50ff392a2685b75"
+    },
+    "Vendor/Schoenflies/AnnularCrosscutOrder.lean": {
+      "type": "file",
+      "bytes": 17552,
+      "sha256": "210e5096c8b62ce5f61d9e6bc027fd3b4e58d1c862eb1d0f4ed6677b929fcd9c"
+    },
+    "Vendor/Schoenflies/AnnularCrosscutSeparators.lean": {
+      "type": "file",
+      "bytes": 9183,
+      "sha256": "c2a7dc6ee521b75061ea540409d657bf79fea6e20f1b51bebe807d59b217249c"
+    },
+    "Vendor/Schoenflies/AnnularSeparatorPairs.lean": {
+      "type": "file",
+      "bytes": 9938,
+      "sha256": "beb07cadd10c102740c666bebdc5410807d298878e2c304be24032748e0a623e"
+    },
+    "Vendor/Schoenflies/AnnularSeparatorSides.lean": {
+      "type": "file",
+      "bytes": 7536,
+      "sha256": "6ca64434437fd9a6e4b916a96cb67859031beea907d657a6919f42427c604ed5"
+    },
+    "Vendor/Schoenflies/ArcNeighborhoods.lean": {
+      "type": "file",
+      "bytes": 28897,
+      "sha256": "1eaf51595961d7d9dec60a2f2b8cf27af5715a664f1e7e63d9d2b28cc42dfb47"
+    },
+    "Vendor/Schoenflies/AuxiliaryJordan.lean": {
+      "type": "file",
+      "bytes": 14200,
+      "sha256": "3f767107e7dd2533d8470f7d483e95e8cb87a744bcb684937b36fb3cd8a60bc4"
+    },
+    "Vendor/Schoenflies/AuxiliaryTransverseIntersections.lean": {
+      "type": "file",
+      "bytes": 12059,
+      "sha256": "aa8b2c39ee63f9d9266ef5645b58d504c28cfb72465b0782bb84355ed43bc131"
+    },
+    "Vendor/Schoenflies/AvoidingControlledCrosscuts.lean": {
+      "type": "file",
+      "bytes": 4999,
+      "sha256": "34e699acb23e9452e1d30f5d19fc00e9adc56dcf2a30b36ffd31e77f29fbde85"
+    },
+    "Vendor/Schoenflies/AvoidingLevelCollars.lean": {
+      "type": "file",
+      "bytes": 9256,
+      "sha256": "38659fa0b0a9f505c1722627e1ba35264a765c39c74408b44ec6687c368f4fff"
+    },
+    "Vendor/Schoenflies/BallPunctureExterior.lean": {
+      "type": "file",
+      "bytes": 11478,
+      "sha256": "1aaa9a4ef30093e9c919702a673a3ab2d5c39d01674b5a4644a35fedf622aa87"
+    },
+    "Vendor/Schoenflies/BoundaryPartitions.lean": {
+      "type": "file",
+      "bytes": 7052,
+      "sha256": "62b6ebe584749803879149ae9ff4eab4f47db8b2cbb8f6a3a68eae0428a2a882"
+    },
+    "Vendor/Schoenflies/BoundaryPathTransport.lean": {
+      "type": "file",
+      "bytes": 7012,
+      "sha256": "0f28521246a3f25350e0259dfe85386849727fe1202980bfa379654a2cf27c05"
+    },
+    "Vendor/Schoenflies/ClosedCoverHomeomorph.lean": {
+      "type": "file",
+      "bytes": 9720,
+      "sha256": "56520c53171c97757a09f02fc37da0fab647405e33592837e63a0e3ce41873cd"
+    },
+    "Vendor/Schoenflies/CollarBandSegments.lean": {
+      "type": "file",
+      "bytes": 45060,
+      "sha256": "2e0bee27855be9b872e67b632c9b5b878d4d1bc161130751789e221f4cb92394"
+    },
+    "Vendor/Schoenflies/CommonSegmentArrangement.lean": {
+      "type": "file",
+      "bytes": 14410,
+      "sha256": "62fc81a480ff0d35f9d9123ac5145cb7c3f35610a6559d66839630f74d858ba7"
+    },
+    "Vendor/Schoenflies/CompatibleDiskStages.lean": {
+      "type": "file",
+      "bytes": 15658,
+      "sha256": "73b8d876c6f318ea908668cbca5aa0b0e6fefdb61ab66d4b6be1114867913101"
+    },
+    "Vendor/Schoenflies/CompatibleInteriorHomeomorphism.lean": {
+      "type": "file",
+      "bytes": 14499,
+      "sha256": "f1f1216908914b8b2b82aa506107e4e1760d0cad1006b3f93fd01af4d47a9a25"
+    },
+    "Vendor/Schoenflies/CompatibleLocalizedCollars.lean": {
+      "type": "file",
+      "bytes": 12820,
+      "sha256": "d61e919266f69d86c031e5562b3d99f6c47c944f7264112dbc9cf7ece90bb802"
+    },
+    "Vendor/Schoenflies/CompatibleShrinkingMoiseDiskStages.lean": {
+      "type": "file",
+      "bytes": 30077,
+      "sha256": "a042a174427a0f3a2d763c58649e73447458378800eec986ecfe4220e1c79b22"
+    },
+    "Vendor/Schoenflies/CompleteRegionalExtension.lean": {
+      "type": "file",
+      "bytes": 1536,
+      "sha256": "536d5d2ed96f45bc880c11c09a3575afb49915d51376c4f3503bc5fc75060783"
+    },
+    "Vendor/Schoenflies/ControlledCrosscuts.lean": {
+      "type": "file",
+      "bytes": 9160,
+      "sha256": "10a40f497e4f4cfc40ed5534314562e6a0b42856db5de671f31ce1113dada66d"
+    },
+    "Vendor/Schoenflies/ControlledJordanArcPaths.lean": {
+      "type": "file",
+      "bytes": 9599,
+      "sha256": "463fecdfbabb31fbe35c278b2758a9e01a0d193e929735f9ab9e03cf11de01df"
+    },
+    "Vendor/Schoenflies/ControlledTailJoin.lean": {
+      "type": "file",
+      "bytes": 23157,
+      "sha256": "d63aa498f37c1689a4df09714167f9c06d1c2105cacf61fdf46943a19d42d090"
+    },
+    "Vendor/Schoenflies/Crosscuts.lean": {
+      "type": "file",
+      "bytes": 9204,
+      "sha256": "a6eb8b88391fe87645c0806f9ee75a15254d64f61ef24732de4f818c6d7a4f5d"
+    },
+    "Vendor/Schoenflies/CyclicCrossingParity.lean": {
+      "type": "file",
+      "bytes": 15163,
+      "sha256": "5a1346b7729aaaefd11ff21a2c80d6911516e6246255ce19b067f90d416dd648"
+    },
+    "Vendor/Schoenflies/CyclicLevelAddresses.lean": {
+      "type": "file",
+      "bytes": 19523,
+      "sha256": "95df5444e1394de58b38c397c007e282b8cc4b2fefa172a8e585a11caaadac10"
+    },
+    "Vendor/Schoenflies/CyclicLevelEdges.lean": {
+      "type": "file",
+      "bytes": 21842,
+      "sha256": "1feafa4ecb9dad3580fa2a9b752cad8c7cc4cf8bace294988b8480bd7701bfc9"
+    },
+    "Vendor/Schoenflies/CyclicTargetCellCompatibility.lean": {
+      "type": "file",
+      "bytes": 9476,
+      "sha256": "562390e7f51c5b6cb618c56b6d7c71909f1dd82e032aa0126e9b91799b12cddb"
+    },
+    "Vendor/Schoenflies/CyclicTargetCellCover.lean": {
+      "type": "file",
+      "bytes": 30406,
+      "sha256": "d0bd8c5f418cfc9305924e811e33e5862489539c9cc72c74e9057d7bdded557d"
+    },
+    "Vendor/Schoenflies/CyclicTargetCellGeometry.lean": {
+      "type": "file",
+      "bytes": 15629,
+      "sha256": "ea35b1b77107ae1787e19307e519f4731e45b847987b7838f376d5003460eea6"
+    },
+    "Vendor/Schoenflies/CyclicTargetCells.lean": {
+      "type": "file",
+      "bytes": 14765,
+      "sha256": "fd6e1d707676d3f59c56acc8d9a1603b8b124dce8391a90ad70e8f546e6ef0ee"
+    },
+    "Vendor/Schoenflies/DampedShellAdjustment.lean": {
+      "type": "file",
+      "bytes": 29709,
+      "sha256": "8983dd43a9ffc8ef933bd52ec6e517a35a4416b3a3e2a2095cb548442df4f091"
+    },
+    "Vendor/Schoenflies/DampedTargetCellBounds.lean": {
+      "type": "file",
+      "bytes": 16614,
+      "sha256": "bb7310fc3dc1626ad70ccf30da7ad9bdb2a3d773214a994f6612fddab3bbec3e"
+    },
+    "Vendor/Schoenflies/ExactSynchronizedCollarCells.lean": {
+      "type": "file",
+      "bytes": 17075,
+      "sha256": "03577cb4d0b027f50a322c8f61df331a554851c36ec45044320a1c8bb8861462"
+    },
+    "Vendor/Schoenflies/ExactSynchronizedCrosscutRanges.lean": {
+      "type": "file",
+      "bytes": 10872,
+      "sha256": "7bbdff1338358d318d39fcf33a0052908c26a8e5756ccd60fbb415d0761fa94c"
+    },
+    "Vendor/Schoenflies/FiniteAnnularCrosscutOrder.lean": {
+      "type": "file",
+      "bytes": 9174,
+      "sha256": "4efe22617c1717c6bd52aec2bdaabf1994ba34ea7b92e965d2eabae8de61af92"
+    },
+    "Vendor/Schoenflies/FiniteAvoidingCrosscuts.lean": {
+      "type": "file",
+      "bytes": 9432,
+      "sha256": "d04383edf7632cfe4b2f3f0da42a906e13c90d977d5c3336f9cf6f831dc7a9db"
+    },
+    "Vendor/Schoenflies/FiniteBoundaryGraph.lean": {
+      "type": "file",
+      "bytes": 41182,
+      "sha256": "b16b9d42c87db8b9e7cb29ebcbdab894453a25b1e4202b11d08c9c5ab3106afd"
+    },
+    "Vendor/Schoenflies/FiniteClosedCoverHomeomorph.lean": {
+      "type": "file",
+      "bytes": 9157,
+      "sha256": "25ad44a5039034e3884903ad4221266e10a74a328fff32667bdaa2054f2f1366"
+    },
+    "Vendor/Schoenflies/FiniteCrossingParity.lean": {
+      "type": "file",
+      "bytes": 11820,
+      "sha256": "34ae34b1db471018a38d5420187930269cf4031c1818400242b12949bd0e5477"
+    },
+    "Vendor/Schoenflies/FiniteJordanAnnularCrosscutOrder.lean": {
+      "type": "file",
+      "bytes": 5159,
+      "sha256": "425dfb657b9e6f2c4c61fdd01c6d189e2157ecd30f4ce5811d1c1197c147cbbe"
+    },
+    "Vendor/Schoenflies/FiniteJordanArcOrder.lean": {
+      "type": "file",
+      "bytes": 6718,
+      "sha256": "e132bb8db5b60b9adc4d7a1bf6b1c0fc7b2c569e86fa97154d9e612eb44ae778"
+    },
+    "Vendor/Schoenflies/FiniteJordanCyclicOrder.lean": {
+      "type": "file",
+      "bytes": 30000,
+      "sha256": "1a232f2be7e676b17c6c8b329451c4725ad4c851899696c09fbf70f2825dd77c"
+    },
+    "Vendor/Schoenflies/FiniteLevelCrosscuts.lean": {
+      "type": "file",
+      "bytes": 9200,
+      "sha256": "e17ea5fffa6cea87f9511cfa4d32d3a06aa0beced7c775c9c2d4edbc28df627c"
+    },
+    "Vendor/Schoenflies/FiniteLevelHairSynchronization.lean": {
+      "type": "file",
+      "bytes": 17321,
+      "sha256": "1ce0c28406b4321275a9cd856b602b266a7e3e00f06d52451398e8e581ddddbd"
+    },
+    "Vendor/Schoenflies/FiniteSeparatorSetup.lean": {
+      "type": "file",
+      "bytes": 5046,
+      "sha256": "2c86a833991039cf49ef72458141999c28835b50e9492a08cfe167de345e3129"
+    },
+    "Vendor/Schoenflies/GenericPolygonalFrame.lean": {
+      "type": "file",
+      "bytes": 15692,
+      "sha256": "e7738517e0a53e305bf30f7f4fec3613bf8dfb26231fae82080b471b422a25f5"
+    },
+    "Vendor/Schoenflies/HairOrdering.lean": {
+      "type": "file",
+      "bytes": 10733,
+      "sha256": "b0b1807df372c3b87d66353cd68ee186573b66cb596ab17546dc1d0088bfed5e"
+    },
+    "Vendor/Schoenflies/HairReturns.lean": {
+      "type": "file",
+      "bytes": 15490,
+      "sha256": "acc129ca90cf525885cd45a48a2830b6f5e2292132c152a322aa9bc41faa4f0e"
+    },
+    "Vendor/Schoenflies/HierarchicalCollarStages.lean": {
+      "type": "file",
+      "bytes": 23426,
+      "sha256": "53b7cb15791289e71676d8d257af305ddc6bc715dc21bfd4378ef698114162f1"
+    },
+    "Vendor/Schoenflies/HierarchicalLevelHairs.lean": {
+      "type": "file",
+      "bytes": 17218,
+      "sha256": "5aa3eec5be45fa3bd120c75394fdffb09890f718ad8d7433a0a01cbe2c01bf6b"
+    },
+    "Vendor/Schoenflies/IndexedStandardCrosscuts.lean": {
+      "type": "file",
+      "bytes": 4330,
+      "sha256": "d0f32ece6a7cdbad9511043388f089c7ee044ad719bbe96ee2ec80390e0a3e1f"
+    },
+    "Vendor/Schoenflies/InsideBoundaryExtension.lean": {
+      "type": "file",
+      "bytes": 19833,
+      "sha256": "cd666a9e1f3703bf893f41d5c63b634e9599854047a69700adceb508a1618263"
+    },
+    "Vendor/Schoenflies/InvertedJordanRegions.lean": {
+      "type": "file",
+      "bytes": 20816,
+      "sha256": "c5af5865e8eb49d1af87e1ec092788768a3cfbdd2acd40fc494c5b8ff165e89c"
+    },
+    "Vendor/Schoenflies/JordanAnnularCrosscutOrder.lean": {
+      "type": "file",
+      "bytes": 17237,
+      "sha256": "a40b054b2f3c6c263766e418e252c822bb06e7971ab6ee94c36dfb919212e1d1"
+    },
+    "Vendor/Schoenflies/JordanAnnularCrosscutSeparators.lean": {
+      "type": "file",
+      "bytes": 7435,
+      "sha256": "f180b718e64a01ca8e0475d22e447b5cab47eb8da2f8d82c81cd60573847e01c"
+    },
+    "Vendor/Schoenflies/JordanAnnularSeparatorPairs.lean": {
+      "type": "file",
+      "bytes": 9169,
+      "sha256": "86f2ea94dd303d638b48c8becb21b3d8775cc83391860376f96da383b3c33f94"
+    },
+    "Vendor/Schoenflies/JordanAnnularTheta.lean": {
+      "type": "file",
+      "bytes": 15763,
+      "sha256": "313da780c727c1a4d87d9784a71690a9cb3c4ca1372cc3d9869a031cdbc68a11"
+    },
+    "Vendor/Schoenflies/JordanArcPaths.lean": {
+      "type": "file",
+      "bytes": 14000,
+      "sha256": "58dd520ffbd17b41961b32e7e23f0be38078cbd9e986c5f5ab2a65ecee8ea9e9"
+    },
+    "Vendor/Schoenflies/JordanCarrierInvariance.lean": {
+      "type": "file",
+      "bytes": 4748,
+      "sha256": "61bfb51fb52b969bb2ae0fd10456b03e7aa4aa24b9744b6a233a1126d8dc849e"
+    },
+    "Vendor/Schoenflies/JordanConvexHull.lean": {
+      "type": "file",
+      "bytes": 5269,
+      "sha256": "fe9d6c4d595ef7db7144c19f18297e7e0b5afe7a4e868e4f3360a603f9d45998"
+    },
+    "Vendor/Schoenflies/JordanRegionBounds.lean": {
+      "type": "file",
+      "bytes": 3632,
+      "sha256": "db4b6522ebb81a191213d75deb49b0ddc927b40bd4fa9d3afe380d05a25f164b"
+    },
+    "Vendor/Schoenflies/JordanRegionRecognition.lean": {
+      "type": "file",
+      "bytes": 6897,
+      "sha256": "538d700b821daeb8daf3b03baeef23ad7c5b8a88856c4c6be9c11a446d8a74e4"
+    },
+    "Vendor/Schoenflies/JordanRegions.lean": {
+      "type": "file",
+      "bytes": 7860,
+      "sha256": "0aa39fc56a4cd0eaff8a094078e4d8b02e98e0842016ab454a032466ba223138"
+    },
+    "Vendor/Schoenflies/JordanThetaRegions.lean": {
+      "type": "file",
+      "bytes": 16163,
+      "sha256": "aaffa1a538df99daa1cf5e6206849167c6f2e51098d31b65116c299f83f61f2c"
+    },
+    "Vendor/Schoenflies/LevelArcCover.lean": {
+      "type": "file",
+      "bytes": 2303,
+      "sha256": "0573b9d816e1a30620a1c8abc37024edeea4f6390e0b161a2e5a81b450995e80"
+    },
+    "Vendor/Schoenflies/LevelBoundarySplits.lean": {
+      "type": "file",
+      "bytes": 5664,
+      "sha256": "4f8d68e00bb15d7724487eec620eb86f5f5ffd8a9f42c769cd8edf0d00129927"
+    },
+    "Vendor/Schoenflies/LevelEndpointIncidence.lean": {
+      "type": "file",
+      "bytes": 15401,
+      "sha256": "235d6ed61f9a5e92f0c2d999d01e6927384b7e0215eec5067c6021af9c400940"
+    },
+    "Vendor/Schoenflies/LevelGenerationMarks.lean": {
+      "type": "file",
+      "bytes": 18915,
+      "sha256": "253a0064bf4cf85626c1e1fe1ebaf5443fcd8c21223d0eb87c6ca99aed7f2fea"
+    },
+    "Vendor/Schoenflies/LevelHairSynchronization.lean": {
+      "type": "file",
+      "bytes": 10723,
+      "sha256": "3550c936a318db5c8b630cd21e18cb0d3e6a0bffbdb1ef1c8e1d51e41154fd9c"
+    },
+    "Vendor/Schoenflies/LocalStraightCrossing.lean": {
+      "type": "file",
+      "bytes": 21350,
+      "sha256": "7d8e8400dab658055fa184a6ce73f527b009f0492b0f3a9559bd5947d17f6b67"
+    },
+    "Vendor/Schoenflies/LocalizedAdjacentCellCompatibility.lean": {
+      "type": "file",
+      "bytes": 23889,
+      "sha256": "9a5449228e40a73d0ae206a251e66a984613100b64a384094cddd30565dbddb3"
+    },
+    "Vendor/Schoenflies/LocalizedAnnularCrosscuts.lean": {
+      "type": "file",
+      "bytes": 3875,
+      "sha256": "a1929bf92f157ab01f4f97ad8407e612ba3c0308b149b375c4304d2327e79961"
+    },
+    "Vendor/Schoenflies/LocalizedAnnularOrder.lean": {
+      "type": "file",
+      "bytes": 13596,
+      "sha256": "7e6c85ceaffb53b477b4c557f371dcd58dc9771958081ffd24d28473c68bf880"
+    },
+    "Vendor/Schoenflies/LocalizedAnnularTheta.lean": {
+      "type": "file",
+      "bytes": 5428,
+      "sha256": "08eb7126c0578f3cc15daafa2b17e4d452dc71b86a3d758075e2c09deebf302a"
+    },
+    "Vendor/Schoenflies/LocalizedCellCover.lean": {
+      "type": "file",
+      "bytes": 29846,
+      "sha256": "63a1c91a66f54fa78024a3bbb4b1d217e1e7a1e0170ebff30ceb28e5f22e641e"
+    },
+    "Vendor/Schoenflies/LocalizedCellGluing.lean": {
+      "type": "file",
+      "bytes": 17705,
+      "sha256": "8ca7e8c9734627255bfe33f15b50156f628bd1880bee7c61c44b2a9fe217e9f2"
+    },
+    "Vendor/Schoenflies/LocalizedCellHomeomorphisms.lean": {
+      "type": "file",
+      "bytes": 11524,
+      "sha256": "f9411af67c8fb437ccca6198a40d33315cf635bfa0292dc181cad5e8a646e321"
+    },
+    "Vendor/Schoenflies/LocalizedCutFreeCells.lean": {
+      "type": "file",
+      "bytes": 30666,
+      "sha256": "e34630c5eba91989a63f210a8e5099ff7725e1916e9600fd03cdd057383a7281"
+    },
+    "Vendor/Schoenflies/LocalizedJordanAnnularCrosscuts.lean": {
+      "type": "file",
+      "bytes": 5226,
+      "sha256": "55fe265016b33845823d5a5ffd571439df8355a1c401a25ec9579616f2dc535a"
+    },
+    "Vendor/Schoenflies/LocalizedJordanAnnularOrder.lean": {
+      "type": "file",
+      "bytes": 8864,
+      "sha256": "54f84554690063c0f8bd2d8cdfba26c7183d12d4655b17ac5c9b5d73be8486a9"
+    },
+    "Vendor/Schoenflies/LocalizedMarkedHairCrossings.lean": {
+      "type": "file",
+      "bytes": 8384,
+      "sha256": "35cc6189b48f519a32ca2119c7a7a70b6e46edb0c51a41f5ddbb1d56d44e6a27"
+    },
+    "Vendor/Schoenflies/LocalizedPolygonalDiskExhaustion.lean": {
+      "type": "file",
+      "bytes": 15399,
+      "sha256": "bf511a7eabf35de6cbd50f6ec030ea73c1c76300ece459d9be9607f6518b2fcf"
+    },
+    "Vendor/Schoenflies/LocalizedShellCrosscuts.lean": {
+      "type": "file",
+      "bytes": 15434,
+      "sha256": "c8f0d1c73e91c1a20085ca4abbc0c33074e20587f1efe0941f72227cb79f3123"
+    },
+    "Vendor/Schoenflies/LocalizedShellCutPaths.lean": {
+      "type": "file",
+      "bytes": 6019,
+      "sha256": "eaee0bbd82f42d1ff8e47ba82ec94d4d979d708498e2e41b2b6ce0b4cc2adf1e"
+    },
+    "Vendor/Schoenflies/LocalizedTargetCellCover.lean": {
+      "type": "file",
+      "bytes": 36434,
+      "sha256": "1a0a63548509b132e79690efb581e1cff9881e40e5fc462b602242d17ad89c6b"
+    },
+    "Vendor/Schoenflies/LocalizedTargetCells.lean": {
+      "type": "file",
+      "bytes": 29624,
+      "sha256": "bab5442bc5b663eb6bd057c782d691c41b909f8d63592cb4d31e67062b035a13"
+    },
+    "Vendor/Schoenflies/LocallyStraightSets.lean": {
+      "type": "file",
+      "bytes": 5743,
+      "sha256": "e2680946246e984ec6da209f4be2b1786cabefbd9eb63fb22e20d50607a17c3c"
+    },
+    "Vendor/Schoenflies/Main.lean": {
+      "type": "file",
+      "bytes": 2051,
+      "sha256": "14a47b92bd19a4078fbc0169b92fc6ad75c74d615b60fccc7aa694538c377c05"
+    },
+    "Vendor/Schoenflies/MarkedHairCrossings.lean": {
+      "type": "file",
+      "bytes": 15377,
+      "sha256": "9b4c35a0d85a7c50c6ef3528083734727bd6c35558c5f46e0c9b6630882b73b8"
+    },
+    "Vendor/Schoenflies/MarkedMoiseBandBoundaries.lean": {
+      "type": "file",
+      "bytes": 29303,
+      "sha256": "17e65418b9cccbad6021be6c8efa9278ab29f21fbf3274fce95a3df6e6312396"
+    },
+    "Vendor/Schoenflies/MarkedMoiseBandGluing.lean": {
+      "type": "file",
+      "bytes": 8270,
+      "sha256": "7df404d457dda79875045fc15efa8e32c9f084e4e8887da2a86b26c742dc9d20"
+    },
+    "Vendor/Schoenflies/MarkedMoiseCellCompatibility.lean": {
+      "type": "file",
+      "bytes": 8370,
+      "sha256": "1c8c4347fefd64e839faf8e8c942d40ad9373a534fba38c0f6de25d20982a4d3"
+    },
+    "Vendor/Schoenflies/MarkedMoiseCellHomeomorphisms.lean": {
+      "type": "file",
+      "bytes": 18160,
+      "sha256": "a7f8e653e6e1621d272c0044e603fa5b740855dbc8eb0a65fd4202bdc8f08703"
+    },
+    "Vendor/Schoenflies/MarkedMoiseCellOuterBoundaries.lean": {
+      "type": "file",
+      "bytes": 14314,
+      "sha256": "35defadd2d141572a153e631c9b5c50cf86ced9f1ca21b99366095a087065b62"
+    },
+    "Vendor/Schoenflies/MarkedPolygonalDiskExhaustion.lean": {
+      "type": "file",
+      "bytes": 9785,
+      "sha256": "8df4c4d58d4f4ba75e637c422d7f7132b2135be35b58ab06a46796060f4e26b6"
+    },
+    "Vendor/Schoenflies/MasterParameters.lean": {
+      "type": "file",
+      "bytes": 6437,
+      "sha256": "9ca84c6454baf4d9b320b509e61f95fb4fd3d606e67ed65bb603443fbc1ae2f1"
+    },
+    "Vendor/Schoenflies/MoiseBandCellAttachments.lean": {
+      "type": "file",
+      "bytes": 2815,
+      "sha256": "be55f66578f05520ddde2a70d2f9f88bf31bb4bc3a99b26c1c27a9ac825b7c83"
+    },
+    "Vendor/Schoenflies/MoiseBandCellBounds.lean": {
+      "type": "file",
+      "bytes": 8897,
+      "sha256": "6465710ffa76f7e0a1966d8e24c18097a303d464e8e17555b9d8f3d73ded2797"
+    },
+    "Vendor/Schoenflies/MoiseBandCellCover.lean": {
+      "type": "file",
+      "bytes": 33632,
+      "sha256": "95d0109c00c87def8e38dc88407026a989417a87df1c1af4b100ff3d19706b47"
+    },
+    "Vendor/Schoenflies/MoiseBandCellCyclicAttachments.lean": {
+      "type": "file",
+      "bytes": 11060,
+      "sha256": "b3152ab9296075cc873ff2bb4c1297a82874b15099c163bd4cf0b30b94f22918"
+    },
+    "Vendor/Schoenflies/MoiseBandCellInteriors.lean": {
+      "type": "file",
+      "bytes": 11421,
+      "sha256": "66945b1e7cfbe3bf521fe224c2261662358608824a47ce094af0798ffd37229d"
+    },
+    "Vendor/Schoenflies/MoiseBandCellNonadjacency.lean": {
+      "type": "file",
+      "bytes": 12895,
+      "sha256": "398c7e9823fd203ec592322ba346b7a7dc9fd15e9cf8f2ece63117ada39b6de3"
+    },
+    "Vendor/Schoenflies/MoiseBandCellParentSeams.lean": {
+      "type": "file",
+      "bytes": 8675,
+      "sha256": "ad3a923c8507d5e44979a648e6146acaa808188956da5f74e78b894718ed7e25"
+    },
+    "Vendor/Schoenflies/MoiseBandCellSeams.lean": {
+      "type": "file",
+      "bytes": 29807,
+      "sha256": "01391a7ebc3a719bd450ccab65eae2c030644726d09f5520387763e2d5f37498"
+    },
+    "Vendor/Schoenflies/MoiseBandCellTopology.lean": {
+      "type": "file",
+      "bytes": 37122,
+      "sha256": "bbe5e05237619648872b1c95afb48c9e71dd30d114689c6345e25721cb592b46"
+    },
+    "Vendor/Schoenflies/MoiseBandCells.lean": {
+      "type": "file",
+      "bytes": 114902,
+      "sha256": "7a1c4b80b5efb337425c29502e1186238213cd6f35d837db906bf7769141c9dc"
+    },
+    "Vendor/Schoenflies/MoiseBandChildCarrier.lean": {
+      "type": "file",
+      "bytes": 13892,
+      "sha256": "9db73a0115a92f144a41dde7310e1900642df781ec65ab6fa5eb5b1dba43de7b"
+    },
+    "Vendor/Schoenflies/MoiseBandCrosscutLocalization.lean": {
+      "type": "file",
+      "bytes": 11354,
+      "sha256": "b57ba3a039eaa838b2b56b7cd0e32ea3436ac0af304c30458aeb6f6c5380aa83"
+    },
+    "Vendor/Schoenflies/MoiseBandFilledDisk.lean": {
+      "type": "file",
+      "bytes": 15135,
+      "sha256": "a533a2ad7ad71c474188aa02213a6c8fec2cf16af3d0577f9aada8fa127f436a"
+    },
+    "Vendor/Schoenflies/MoiseBoundaryDrift.lean": {
+      "type": "file",
+      "bytes": 6697,
+      "sha256": "028c26ccad8ff459655c486f90a4fa3d69f63ffd6f34481e1d708b4618c49ffd"
+    },
+    "Vendor/Schoenflies/MoiseCellBoundaryRoutes.lean": {
+      "type": "file",
+      "bytes": 18076,
+      "sha256": "c9eb4c7e082ab66bba6c95aaf17b1bf7010a95bef6cfe8ce01f5ac51eac2dd77"
+    },
+    "Vendor/Schoenflies/MoiseChapter9.lean": {
+      "type": "file",
+      "bytes": 11021,
+      "sha256": "7d969df7ec14ae3c94f7e708a6170ba76f696260a3067efb004356bbc6c5c356"
+    },
+    "Vendor/Schoenflies/NestedCollarStages.lean": {
+      "type": "file",
+      "bytes": 8242,
+      "sha256": "8f7c77d029e6060b0ab7a708031b41285f26d0fb0a71087c3ece0566bdd3c7bc"
+    },
+    "Vendor/Schoenflies/OddWalkEdgeGraph.lean": {
+      "type": "file",
+      "bytes": 5909,
+      "sha256": "47decbc990951d7bcae3f87d2ab9f3c261b757d94e7cdf5558db2c95d0833218"
+    },
+    "Vendor/Schoenflies/OpenControlledCrosscuts.lean": {
+      "type": "file",
+      "bytes": 2828,
+      "sha256": "304de07972f92469bb4eff9665e6a45c8eaac6e455912f78b7312ac63f226472"
+    },
+    "Vendor/Schoenflies/OrderedPathCrossing.lean": {
+      "type": "file",
+      "bytes": 8720,
+      "sha256": "ce60f081e624080fefbc1fd7ff42f01cb0dafe6356e17ee1c4b9e7272941146a"
+    },
+    "Vendor/Schoenflies/OutsideBoundaryExtension.lean": {
+      "type": "file",
+      "bytes": 7753,
+      "sha256": "a7c7e8fc05e64020d140dc6a7b586a3d63541c3b9b2ff1d5143660c94f17bcd7"
+    },
+    "Vendor/Schoenflies/PlaneTopology.lean": {
+      "type": "file",
+      "bytes": 6094,
+      "sha256": "3367ab63ba6d969deac672a96c98c3d8601b55ee46d6904b650c2f66cb26cac0"
+    },
+    "Vendor/Schoenflies/PolygonalAnnularCellDecomposition.lean": {
+      "type": "file",
+      "bytes": 4650,
+      "sha256": "3fa7eac83067e129af2f16c5af38c233988648d54906efaf9757457f8c92405d"
+    },
+    "Vendor/Schoenflies/PolygonalAnnularCellFilling.lean": {
+      "type": "file",
+      "bytes": 2599,
+      "sha256": "1b0a63922d1747ed9786ad2b874957325fc62693bb4a87af1548c9d180959393"
+    },
+    "Vendor/Schoenflies/PolygonalAnnularCells.lean": {
+      "type": "file",
+      "bytes": 11053,
+      "sha256": "8da60b02482559ee95b41fb012248a61b2f36499d4525d1a62a9ab7a52d2b40e"
+    },
+    "Vendor/Schoenflies/PolygonalAnnularTheta.lean": {
+      "type": "file",
+      "bytes": 20682,
+      "sha256": "5d6b34dba9aa5f32e19418277415472ca942b997c74aeddd25553e21bc686a32"
+    },
+    "Vendor/Schoenflies/PolygonalBoundaryArcComparison.lean": {
+      "type": "file",
+      "bytes": 23768,
+      "sha256": "088c9da9507341266c8cc64f60c89975fe246a06c8bdc50d3e8ff605dfeda040"
+    },
+    "Vendor/Schoenflies/PolygonalCellPairFilling.lean": {
+      "type": "file",
+      "bytes": 5229,
+      "sha256": "5ec7a2fcf223494de8e013098c99090f6933e2a33b30897954b847a7f4fd1bad"
+    },
+    "Vendor/Schoenflies/PolygonalDiskBoundaryExtension.lean": {
+      "type": "file",
+      "bytes": 5561,
+      "sha256": "1975b990d5b352b72a046a856ecff578e773fb4c4c83e6464125ad10e897b61c"
+    },
+    "Vendor/Schoenflies/PolygonalDiskExhaustion.lean": {
+      "type": "file",
+      "bytes": 15589,
+      "sha256": "fbd851c521aebec579fd7461e406222f699f25214fd038e881566e6d6c79e11e"
+    },
+    "Vendor/Schoenflies/PolygonalJordanCircle.lean": {
+      "type": "file",
+      "bytes": 5836,
+      "sha256": "6d2a772b00c5ee0c6020c6f3e3a7be6a3924762c68fcaba5373b5cd825754b37"
+    },
+    "Vendor/Schoenflies/PolygonalJordanNesting.lean": {
+      "type": "file",
+      "bytes": 4780,
+      "sha256": "72d78a4db626aae0e069592b35b6c99590a6489840cd6de78d100d9cf9121ed8"
+    },
+    "Vendor/Schoenflies/PolygonalPaths.lean": {
+      "type": "file",
+      "bytes": 6691,
+      "sha256": "387032f8938df96d7ed43e24def39a9e3d84b9c9910d0369cad4ce1afa6c8f1a"
+    },
+    "Vendor/Schoenflies/PolygonalShellTriangulation.lean": {
+      "type": "file",
+      "bytes": 6555,
+      "sha256": "47201f4675fe4982bbbff9b4c1420ddc32d64311f9b7fda9ae236acd21ea6711"
+    },
+    "Vendor/Schoenflies/PolygonalShells.lean": {
+      "type": "file",
+      "bytes": 6697,
+      "sha256": "458f5d9adfd522b905f4ecc139c2b1ef4116b7b22329760fb02f816447b0824b"
+    },
+    "Vendor/Schoenflies/PolygonalSubarcs.lean": {
+      "type": "file",
+      "bytes": 2506,
+      "sha256": "cb2a4ca543b8d7b2832d38182b113374b62273ce2751a89bd892af08b7c56aae"
+    },
+    "Vendor/Schoenflies/PolygonalSubpathExtraction.lean": {
+      "type": "file",
+      "bytes": 19092,
+      "sha256": "f0c29813f0d65a3ed6d1395685768cff2663b03390eb2d349f0a0a56596a31c9"
+    },
+    "Vendor/Schoenflies/PolygonalTransport.lean": {
+      "type": "file",
+      "bytes": 9628,
+      "sha256": "ab26932ba1fa8402cee3b115491cc6f8d390527506b5d8e04e03120d99efdbeb"
+    },
+    "Vendor/Schoenflies/PolygonalTwoArcCycle.lean": {
+      "type": "file",
+      "bytes": 22400,
+      "sha256": "5f081cbe24a9b8e5df4525a31d609014a82ac6f47a0a6df1f119084239482c31"
+    },
+    "Vendor/Schoenflies/PolyhedralDiskNeighborhoods.lean": {
+      "type": "file",
+      "bytes": 23090,
+      "sha256": "80b046e8f6ebb238193f576081e69825830d70b112682bccaf5270c32e44747d"
+    },
+    "Vendor/Schoenflies/PrescribedHairCrosscuts.lean": {
+      "type": "file",
+      "bytes": 8277,
+      "sha256": "8d3e170d4d407cf9a86787b0d8ad7a1463668b3e1cbbfcde0142156e4b6df67e"
+    },
+    "Vendor/Schoenflies/RadialSectorTransport.lean": {
+      "type": "file",
+      "bytes": 13091,
+      "sha256": "f7d0276db8e4b9e3934a07e10784144f30b29e32c3535125374d4e62d0b3cc97"
+    },
+    "Vendor/Schoenflies/RecursiveCollarStages.lean": {
+      "type": "file",
+      "bytes": 10328,
+      "sha256": "9ce19e550e6673fcc78cb6ff2225b4a7d91a1be71ed683e0b9f6b3e9a95cf6eb"
+    },
+    "Vendor/Schoenflies/RefinedCyclicCuts.lean": {
+      "type": "file",
+      "bytes": 31706,
+      "sha256": "890d837ab981d512700f3ddbc7feee6af1c51b1e5921e76a9b7074b550583615"
+    },
+    "Vendor/Schoenflies/RefinedEdgeSides.lean": {
+      "type": "file",
+      "bytes": 17426,
+      "sha256": "39d06ae7d9019d782374e1f3d46c7b25c67d29b1816ca2e378bb2e1da5bc5472"
+    },
+    "Vendor/Schoenflies/RefinedSeparatorFrame.lean": {
+      "type": "file",
+      "bytes": 3798,
+      "sha256": "7521d7c0ab7e9a1e7534f5eaaad5e2844edca23becedd30cb6023c5c7eb3824f"
+    },
+    "Vendor/Schoenflies/RegionalExtensions.lean": {
+      "type": "file",
+      "bytes": 14634,
+      "sha256": "9b1e57ce1915d2488506aa66e3c9c5f4755b958ee636310d10dd8b6ca838ab98"
+    },
+    "Vendor/Schoenflies/ResolvedPolygonalArcs.lean": {
+      "type": "file",
+      "bytes": 5008,
+      "sha256": "bc1c76222a43647b1835b0788d944fcd104653e4a9543f639a6ada43cf83ded5"
+    },
+    "Vendor/Schoenflies/ReturnArcFrames.lean": {
+      "type": "file",
+      "bytes": 19863,
+      "sha256": "65ba3c63b034950f42a7ac5302c7bd55c189c763113886845c59701d8ad829e0"
+    },
+    "Vendor/Schoenflies/ReturnArcParity.lean": {
+      "type": "file",
+      "bytes": 34286,
+      "sha256": "75647c6c1be97ea3ba2e31166d62f454c98f95438a3351266fdcf3b194cdedac"
+    },
+    "Vendor/Schoenflies/ReturnPathCrossings.lean": {
+      "type": "file",
+      "bytes": 4479,
+      "sha256": "e21a8384da550dcb60412d49c92314b4d0369cedb53c7e358fd512aa80210e28"
+    },
+    "Vendor/Schoenflies/ReturnPathParity.lean": {
+      "type": "file",
+      "bytes": 7550,
+      "sha256": "b58137598e59981211ff447169b1a5be531a57c783ab440ae294322d948ecc40"
+    },
+    "Vendor/Schoenflies/SegmentChainWalk.lean": {
+      "type": "file",
+      "bytes": 35750,
+      "sha256": "e8ea3750cd30b56085f7be488a164bdeef30f5975e31da35b829b4ce5f972ede"
+    },
+    "Vendor/Schoenflies/SeparatorFrame.lean": {
+      "type": "file",
+      "bytes": 9574,
+      "sha256": "bd9f2a9844aa4a1f549d9466742abfdffd9328e1066a7f7a6a4592efe6c74e65"
+    },
+    "Vendor/Schoenflies/SharedArcDiskSeparation.lean": {
+      "type": "file",
+      "bytes": 6349,
+      "sha256": "1b5c4161633f6ecb63b87ef8476570e8499aa2d5d44db015a5840cbdcc4909db"
+    },
+    "Vendor/Schoenflies/ShortCircleIsotopy.lean": {
+      "type": "file",
+      "bytes": 16336,
+      "sha256": "4dd801f6a743e8dd395d21a38a1ce830c47d51867d84b059056e6d3f5ea40aea"
+    },
+    "Vendor/Schoenflies/ShrinkingBoundaryConvergence.lean": {
+      "type": "file",
+      "bytes": 7774,
+      "sha256": "6cdf141d45acbf948082b489a8a7713c454260e51d2fef182e50ce4ded7994aa"
+    },
+    "Vendor/Schoenflies/ShrinkingCollars.lean": {
+      "type": "file",
+      "bytes": 6476,
+      "sha256": "730b1b6cb11375f785a009b28a98db6ca3bfa6b260a9826e40d50b4570caaf26"
+    },
+    "Vendor/Schoenflies/ShrinkingInteriorHomeomorphism.lean": {
+      "type": "file",
+      "bytes": 12979,
+      "sha256": "3b4bba172e8fe38ca155b7a7bacfe915925c7af1687c80b88dc9b0bf0e0ad2c5"
+    },
+    "Vendor/Schoenflies/ShrinkingMoiseBandCells.lean": {
+      "type": "file",
+      "bytes": 24650,
+      "sha256": "d8e8a5af91e2b3e29e2e10510a3b36d6dc1d97cbe8b5f556191671ebf6a1cd83"
+    },
+    "Vendor/Schoenflies/ShrinkingMoiseBandHomeomorphisms.lean": {
+      "type": "file",
+      "bytes": 5364,
+      "sha256": "bfb237bf1e308d87de86495d27510ab27ceeecb3a3a3af8b4dd5b7a73b761cf9"
+    },
+    "Vendor/Schoenflies/ShrinkingSourceExhaustion.lean": {
+      "type": "file",
+      "bytes": 6210,
+      "sha256": "ebce37acccca9ef38a9a5b77488e70878167cacfe06c1354237bc3e66485c77e"
+    },
+    "Vendor/Schoenflies/SideConstancy.lean": {
+      "type": "file",
+      "bytes": 2700,
+      "sha256": "c0c02e48eb77a6c60caa73bfd4addbd64283c50668eb6d13ad0419db924e238e"
+    },
+    "Vendor/Schoenflies/StandardPolygonalCollars.lean": {
+      "type": "file",
+      "bytes": 28222,
+      "sha256": "2c9ceff8f6aadc5aac612919580a6cfa0b663524c7adda37b8e70855eaa77570"
+    },
+    "Vendor/Schoenflies/StandardRadialCollars.lean": {
+      "type": "file",
+      "bytes": 30621,
+      "sha256": "a053aa32d0efd4f3d84a27c605fc0a78a6312bf6448cf922f70791f8d66bae1b"
+    },
+    "Vendor/Schoenflies/SynchronizedCollarCells.lean": {
+      "type": "file",
+      "bytes": 3651,
+      "sha256": "3928bb1e2a9070d7583b4d36d3a109509df678b58dd7237d50a8163c3ad9aa88"
+    },
+    "Vendor/Schoenflies/SynchronizedLevelReturns.lean": {
+      "type": "file",
+      "bytes": 35436,
+      "sha256": "d025c1807ce72f9a0f76d6f33604c806b819bc026ca82e98bf1e628fb6316993"
+    },
+    "Vendor/Schoenflies/SynchronizedPolygonalCircle.lean": {
+      "type": "file",
+      "bytes": 19891,
+      "sha256": "f0ef4adb555feb368c94eaf7edcf1535b13b306805c7c1a25677502d312d8a23"
+    },
+    "Vendor/Schoenflies/TopologicalAnnularCellFilling.lean": {
+      "type": "file",
+      "bytes": 12845,
+      "sha256": "d1f40b44f5508a97acc30a40a061a1a024fd36414a7508ce2f6235461bc724f3"
+    },
+    "Vendor/Schoenflies/TopologicalDiskAttachment.lean": {
+      "type": "file",
+      "bytes": 12686,
+      "sha256": "98ab5945208929eb0746b3dd12530a97e44add02294ed0325838baeca01a9b9a"
+    },
+    "Vendor/Schoenflies/TopologicalDiskBoundaryExtension.lean": {
+      "type": "file",
+      "bytes": 9032,
+      "sha256": "0b7ee72ecba3942ce88e6810e3d0b609e82c708c011ecd6061f9c26e6a70ad4d"
+    },
+    "Vendor/Schoenflies/TransverseIntersections.lean": {
+      "type": "file",
+      "bytes": 7087,
+      "sha256": "216e53eb2e542d6ba57e25b1c91d9a27c255070973241245c875074406ca7c4e"
+    },
+    "Vendor/Schoenflies/TrimmedCollarCells.lean": {
+      "type": "file",
+      "bytes": 8791,
+      "sha256": "4a0a38bca20acee26f73fac1ad73977e9d6eddb3fec7cd1eb32799207f3937a0"
+    },
+    "Vendor/Schoenflies/TrimmedHairCrosscuts.lean": {
+      "type": "file",
+      "bytes": 12011,
+      "sha256": "a54ce1284a5452db64e54a9adb0502e4559fdaa34242918fd4c7f232bdd15bba"
+    },
+    "Vendor/Schoenflies/TrimmedLevelEdges.lean": {
+      "type": "file",
+      "bytes": 10190,
+      "sha256": "3c9dadfef82bff0fe2f7bba189538db00da960c0ab82b58d7ed033448fda064c"
+    },
+    "Vendor/Schoenflies/TwoArcCarrierHomeomorph.lean": {
+      "type": "file",
+      "bytes": 5234,
+      "sha256": "6549337ddb23501d23ec76e524606ace46a2e96bcb3bb71fb51f2b1c0dac195a"
+    },
+    "Vendor/Schoenflies/TwoArcJordan.lean": {
+      "type": "file",
+      "bytes": 14531,
+      "sha256": "dbb7c5430d23cf17ad1dfcf6606af3c5f28f5c62bbe5a35893b1c01c73044fcd"
+    },
+    "Vendor/Schoenflies/TwoBoundaryArcRigidity.lean": {
+      "type": "file",
+      "bytes": 17927,
+      "sha256": "591fe5fc161fa98e670744c7a44bf6182378eca690b53089a0250a943be64d4c"
+    },
+    "Vendor/classification-sources.json": {
+      "type": "file",
+      "bytes": 50324,
+      "sha256": "1d4ef387a12c36ece5b953ccf93494385fab1ae8ba7804ca7b6c575b8507fcc6"
+    },
+    "Venn17.lean": {
+      "type": "file",
+      "bytes": 20,
+      "sha256": "10b18fdeb6ac79be987adbff0f6e2f3d335d1bd85902f17911239950bf077c3d"
+    },
+    "Venn17/Facts.lean": {
+      "type": "file",
+      "bytes": 2636,
+      "sha256": "36917ace7428d800fb8bd8e1f88dfb54624f187fcaefef772a8e4b3211dc5436"
+    },
+    "Venn17/GraphCertificate.lean": {
+      "type": "file",
+      "bytes": 856,
+      "sha256": "71bc0b3596f546766e8a11ea238134db2a0bfc631bcc9d01bab886f06732f37a"
+    },
+    "Venn17/Proof.lean": {
+      "type": "file",
+      "bytes": 3228,
+      "sha256": "adbb7949cd3534caca65154913347b1d779ca0f02b1c40d2501575ad015ebb6a"
+    },
+    "Venn17/Tests.lean": {
+      "type": "file",
+      "bytes": 4357,
+      "sha256": "417e94f5c13f37f16095cc399a9c857b032c162c7da52f66a62d23c8217d6063"
+    },
+    "VennCore.lean": {
+      "type": "file",
+      "bytes": 202,
+      "sha256": "bfe08a05a17b377d8acee304e6f3334bea82e105ad63777a860d60fbdb893270"
+    },
+    "VennCore/Checker.lean": {
+      "type": "file",
+      "bytes": 9894,
+      "sha256": "d6f7c9197e26244a9d154da76671b1f6b6816d7f70c4ffc7ab2e2948ced5da91"
+    },
+    "VennCore/Connectivity.lean": {
+      "type": "file",
+      "bytes": 3798,
+      "sha256": "c2b081b1bd3281745680c36a398c8f0ccdc583ff634d2f39467f57fc41bedf6b"
+    },
+    "VennCore/CurvePolygon.lean": {
+      "type": "file",
+      "bytes": 4395,
+      "sha256": "79279d5eb241fb10592a4d9cdea3ff40b3d618dbcc42d4905783c0a9d10c1bc7"
+    },
+    "VennCore/Embed.lean": {
+      "type": "file",
+      "bytes": 295,
+      "sha256": "0536e4a9d1c15d368c9059e2e4c45444b4a065ac98892d97111d9b3fa9e24976"
+    },
+    "VennCore/Incidence.lean": {
+      "type": "file",
+      "bytes": 1721,
+      "sha256": "e8dcc89394e613fa512de640c5da18b7ac71fb39a57110dd33f4b295948f73da"
+    },
+    "VennCore/Links.lean": {
+      "type": "file",
+      "bytes": 2465,
+      "sha256": "08fe27e599ce09825a19f2e9ea4d91a0845df56d537e468831775d57b3f263c6"
+    },
+    "VennCore/Rotation.lean": {
+      "type": "file",
+      "bytes": 1498,
+      "sha256": "935c97d21ee1dd50143608540750430d7ce7cd77ffa06d3d095da5eb0048861c"
+    },
+    "VennCore/Symmetry.lean": {
+      "type": "file",
+      "bytes": 747,
+      "sha256": "313c31bf7d0e4ef93a5fee75cc6ae6d5fc44b9388e0e356b6a763ecacb7c03b3"
+    },
+    "VennTopology.lean": {
+      "type": "file",
+      "bytes": 592,
+      "sha256": "69151e6efe79fed216c963c81e0da65b1633446f9e959c3ad7feead993a0ce6b"
+    },
+    "VennTopology/ArmSymmetry.lean": {
+      "type": "file",
+      "bytes": 4267,
+      "sha256": "6c468ba6faf29ba0daaca6e5beb877a1ac4f8862c918f4bbab91b53fb5e45e90"
+    },
+    "VennTopology/ArrangementCertificate.lean": {
+      "type": "file",
+      "bytes": 2488,
+      "sha256": "7b29a35be25ceab2bed457231c7b3c24586f4a597d582a80956b2fe01d4c103e"
+    },
+    "VennTopology/Automorphism.lean": {
+      "type": "file",
+      "bytes": 5258,
+      "sha256": "c8192fa670a40b1522ccea21578a6ec3e76a0264e239309bdd89e7f72afcd8d9"
+    },
+    "VennTopology/BitField.lean": {
+      "type": "file",
+      "bytes": 4058,
+      "sha256": "7a47cac99cced14496e1b59a34250be53f3eee75bfce38099582123b79d1c9d4"
+    },
+    "VennTopology/BitSigns.lean": {
+      "type": "file",
+      "bytes": 4013,
+      "sha256": "ebf55f1812c06266c4980fe1bc042c027240f6d06d7b5ceb5ac64d2c2e02a4bb"
+    },
+    "VennTopology/CanonicalEuler.lean": {
+      "type": "file",
+      "bytes": 8879,
+      "sha256": "99ff379036413afa3e3cbbde375b80d36f2415359ee8f6958bfd914f317fe44c"
+    },
+    "VennTopology/CenterChart.lean": {
+      "type": "file",
+      "bytes": 8409,
+      "sha256": "7fc28a281b738dd67819675c30157410c1194bded5485cc5006f4c072bc14d83"
+    },
+    "VennTopology/Certificate.lean": {
+      "type": "file",
+      "bytes": 1324,
+      "sha256": "b74e28b58b302cb9a4e781f069077fcbbd9293f7c6d5d14edfd3d1f92f616acf"
+    },
+    "VennTopology/ClassifiedSurface.lean": {
+      "type": "file",
+      "bytes": 2863,
+      "sha256": "9e47972328aab8da79440a700ab6972d275c6a99f417756f7fd50c02c7341e7d"
+    },
+    "VennTopology/ClosedNormalization.lean": {
+      "type": "file",
+      "bytes": 7170,
+      "sha256": "958bab53f441ec162cdf4291f102301dbca80342a835c59825f7a22e8e50e077"
+    },
+    "VennTopology/CompactParametrization.lean": {
+      "type": "file",
+      "bytes": 1990,
+      "sha256": "f7cfbc5c3d815e8c2835d2bf45e54b104a6c3e8090ffeb10cd9c944bbbb55235"
+    },
+    "VennTopology/ConeDisk.lean": {
+      "type": "file",
+      "bytes": 4851,
+      "sha256": "5238a288738ab32fda2d4f3f68d1c0119e9529e4f2d6565f0576238d3e4ecbb3"
+    },
+    "VennTopology/ConeRotation.lean": {
+      "type": "file",
+      "bytes": 2373,
+      "sha256": "ee0e5f1a5ec0aae9416df05c774c051eae19148b8ff8edf2ec55be9b0e76ee86"
+    },
+    "VennTopology/CoordinateRelabel.lean": {
+      "type": "file",
+      "bytes": 2918,
+      "sha256": "cba97d2310a014cae5c568e33d5cadd1f19130bf88e81251087e0753903bc2d8"
+    },
+    "VennTopology/CoordinateSimplex.lean": {
+      "type": "file",
+      "bytes": 3258,
+      "sha256": "532b4f35f5582461c12bb4f69ed74d2c3ab6e4b0124e28e54c2f83593ee9c19f"
+    },
+    "VennTopology/CrossingAxes.lean": {
+      "type": "file",
+      "bytes": 5828,
+      "sha256": "ef8e8ed7140944abe7921d49b821f4078b80b4378a428e407c89596665346619"
+    },
+    "VennTopology/CrossingCharts.lean": {
+      "type": "file",
+      "bytes": 5823,
+      "sha256": "265a4f0c1cbf4eb66dad3ca25d66a78a0eee8bfe9db28c6ce634a6d0a7978900"
+    },
+    "VennTopology/CrossingSquare.lean": {
+      "type": "file",
+      "bytes": 4275,
+      "sha256": "1dddc6c8317dd87fc2f55bf5846cf7e14a7e712570a19a4b348fdbe3ffc76752"
+    },
+    "VennTopology/CurveCertificate.lean": {
+      "type": "file",
+      "bytes": 3910,
+      "sha256": "576791bfe13fb005f91350048ed90c1ce2197bdcecfbdfc5cfe086631c0e3ea0"
+    },
+    "VennTopology/CurveData.lean": {
+      "type": "file",
+      "bytes": 796,
+      "sha256": "c20747a5e340f45d86a8612fe5cd8d547264d20fd1b92e1fbcce7ef282b0f4ee"
+    },
+    "VennTopology/CurveGeometry.lean": {
+      "type": "file",
+      "bytes": 5501,
+      "sha256": "4f9810d04a62bb89b7bf33c41d3dbe84defef837951cd012be624bed305a3f6a"
+    },
+    "VennTopology/CurveIntersections.lean": {
+      "type": "file",
+      "bytes": 12171,
+      "sha256": "b8b2eaf92cf1135606afcdb8112b75e1684fd89b39a025041e5a7d3a19014083"
+    },
+    "VennTopology/CurveLevelSet.lean": {
+      "type": "file",
+      "bytes": 4427,
+      "sha256": "802af28a01403eb9e3e8387d58cb483e8c283506baf2d83f3b1ee3cda5f5c849"
+    },
+    "VennTopology/CurveSides.lean": {
+      "type": "file",
+      "bytes": 7034,
+      "sha256": "7b87efb5f186538268480a7e931efad4fdfd0f9c74b324ec2a2a88eecbf2f3bc"
+    },
+    "VennTopology/CurveSymmetry.lean": {
+      "type": "file",
+      "bytes": 2830,
+      "sha256": "eba8f9f2968a4111b34359cac19cd53eef2f686beabb1dfc3aa6ed34efc91028"
+    },
+    "VennTopology/CyclicPolygon.lean": {
+      "type": "file",
+      "bytes": 8497,
+      "sha256": "73a30ee0a4ab3d1478107a4cf3dd447c3f9acaed9ce8b7125f7ae8e9498b5431"
+    },
+    "VennTopology/DartIncidence.lean": {
+      "type": "file",
+      "bytes": 5628,
+      "sha256": "f65b932b6e6a5db5581fc363c8e2674a34829367f01d854182b31ca218b94695"
+    },
+    "VennTopology/Dataset.lean": {
+      "type": "file",
+      "bytes": 1332,
+      "sha256": "5c6d1cb2ab616bcde569bc47653e2886a1c0db40400d359ed0bcee32a15dbae7"
+    },
+    "VennTopology/DiagramCurves.lean": {
+      "type": "file",
+      "bytes": 3201,
+      "sha256": "ffdf7bb4115aa0f715581cc1f49353d0f754fe60f81cd020909bf63efc587aff"
+    },
+    "VennTopology/DiagramSymmetry.lean": {
+      "type": "file",
+      "bytes": 3250,
+      "sha256": "130213534d85a3d2d5168bc9cfe0d32a5797b3281a64576fa53a4201526ff0d9"
+    },
+    "VennTopology/EncodedLinks.lean": {
+      "type": "file",
+      "bytes": 6373,
+      "sha256": "93bd6b0b41bcfbfcf0b77ffb90670f7308ca9655f596b31dae5e17497ca23b68"
+    },
+    "VennTopology/EquivariantSectorDisk.lean": {
+      "type": "file",
+      "bytes": 4742,
+      "sha256": "dad0cb6ce44eae94e2c9d1027d8c0cb56d8a7b2995a344936bb801544e5033bc"
+    },
+    "VennTopology/EquivariantStereographic.lean": {
+      "type": "file",
+      "bytes": 4282,
+      "sha256": "f1d9f0237f2f2f7fe9ff4af189ba694019693bdc851bd417867fe5300d102432"
+    },
+    "VennTopology/EulerCharacteristic.lean": {
+      "type": "file",
+      "bytes": 2730,
+      "sha256": "6e9ad3cd5fe67f376f95322d5e5ff411f71daeea9c80315a6f8bfb1bcc9f2b88"
+    },
+    "VennTopology/EulerSphereCriterion.lean": {
+      "type": "file",
+      "bytes": 1582,
+      "sha256": "3229fff83356810ef099f4565ce49cc3c0bb85e5ecf0677a196f8ddfe75340bd"
+    },
+    "VennTopology/FiniteRealization.lean": {
+      "type": "file",
+      "bytes": 6920,
+      "sha256": "b98b043104d2e5b53b646598f15b2f8018b211bc8395beb9f07a4c4161e970f5"
+    },
+    "VennTopology/FiniteTriangulation.lean": {
+      "type": "file",
+      "bytes": 6211,
+      "sha256": "a9636da9c4eae762a0c4af2d2780ed7a9f1759ab7f9b1ecea21570fba3202b0e"
+    },
+    "VennTopology/FixedPoints.lean": {
+      "type": "file",
+      "bytes": 4127,
+      "sha256": "2e0662762c59cf499059d8a10bc14236cd2097201a7a892666e69b558f883656"
+    },
+    "VennTopology/GeometricCounting.lean": {
+      "type": "file",
+      "bytes": 4496,
+      "sha256": "fce6320b32fc914ffcc18dbaaa2403d330b9c467a003b4537aec86bb5e260a3d"
+    },
+    "VennTopology/GeometricLinks.lean": {
+      "type": "file",
+      "bytes": 4232,
+      "sha256": "579a7d2be301c7918e58f214625399523d638c5c5fec5119814ea58ac97f0542"
+    },
+    "VennTopology/Incidence.lean": {
+      "type": "file",
+      "bytes": 4035,
+      "sha256": "045c1538b558b5c755d2192235136ed72a49f3754c10686d4c7a1f3a3324283c"
+    },
+    "VennTopology/Intersections.lean": {
+      "type": "file",
+      "bytes": 4492,
+      "sha256": "067eb4e3343820df5c8a0072cfd6fedc3c80d3c5f2e15b7cbcf913d5612c47cd"
+    },
+    "VennTopology/JordanDisk.lean": {
+      "type": "file",
+      "bytes": 7151,
+      "sha256": "a16831ffe3e64d2a172af846f347312dbccf58b96b23334baacfb0151f48b1e5"
+    },
+    "VennTopology/LabeledPolygon.lean": {
+      "type": "file",
+      "bytes": 3930,
+      "sha256": "61d041b03564db2112342e4eedfd5db46008abaa93f95ee2852304fdbe1aab08"
+    },
+    "VennTopology/LinkCertificate.lean": {
+      "type": "file",
+      "bytes": 3981,
+      "sha256": "c9afa17bd36928340bf69d17e08f2a9e5912303b3625d1d82b8adf544a3d4292"
+    },
+    "VennTopology/LinkCircles.lean": {
+      "type": "file",
+      "bytes": 2919,
+      "sha256": "028cc0f700d835172a5a0ba625ceb15a6b94bcca1ca2569f212caf27e5eecdee"
+    },
+    "VennTopology/LinkData.lean": {
+      "type": "file",
+      "bytes": 329,
+      "sha256": "d2823168fcb0d68a03a6f1fff305857624ce399d37ae2e6353cc92fc2f581d99"
+    },
+    "VennTopology/LocalGeometry.lean": {
+      "type": "file",
+      "bytes": 3045,
+      "sha256": "d67b86a022a6a5deedf2223c0dd429ec97bc10aba8409891b09248b0da7c6628"
+    },
+    "VennTopology/MeridianArcs.lean": {
+      "type": "file",
+      "bytes": 6878,
+      "sha256": "2f25f80bfe45594989a9fd626d30dbb52529221fb2e95f840670ebc621ff254f"
+    },
+    "VennTopology/MeridianBoundaryParameters.lean": {
+      "type": "file",
+      "bytes": 4976,
+      "sha256": "5ef55b764b012ace5e423b46980bf2f5be207ff2f603dd9110961046c3044461"
+    },
+    "VennTopology/MeridianCertificate.lean": {
+      "type": "file",
+      "bytes": 2081,
+      "sha256": "8d5b9a1135e860a250691cd2b68bf9873f691fe622a0ce8ae63f5d6c96e50697"
+    },
+    "VennTopology/MeridianData.lean": {
+      "type": "file",
+      "bytes": 2664,
+      "sha256": "ec4445860fce45fd207d9aee63d1719a2ed07540e4d333d2d2311b5ffabc7aa5"
+    },
+    "VennTopology/MeridianGeometry.lean": {
+      "type": "file",
+      "bytes": 6363,
+      "sha256": "0e0f53e87c99e60d807f9155253b332c851f89294a0dc18e6739705557cd97b6"
+    },
+    "VennTopology/MeridianIntersections.lean": {
+      "type": "file",
+      "bytes": 10792,
+      "sha256": "38f92bb0bcfe996ea8a800b246e7f5c144626b15a66ce42278a076af147bdd7a"
+    },
+    "VennTopology/MeridianParameterEquality.lean": {
+      "type": "file",
+      "bytes": 6916,
+      "sha256": "50683e7222deca6c0a16f4504a7ef30c1d44a6b52eaed2af5f27cfbb7a024919"
+    },
+    "VennTopology/MidpointPolygon.lean": {
+      "type": "file",
+      "bytes": 4386,
+      "sha256": "99bb41df83b06a734b4fbd33eb811a4ce641d4ab32d55aca15c5aebd132a4e0f"
+    },
+    "VennTopology/NormalizationEuler.lean": {
+      "type": "file",
+      "bytes": 3134,
+      "sha256": "ed5c068bc70760b78de6a49d503621fecbda8cbd7cd802dc9f2bce93db97d15e"
+    },
+    "VennTopology/OpenStarDisk.lean": {
+      "type": "file",
+      "bytes": 2904,
+      "sha256": "e26be37560b83e110baa539aeba705f666ce8967c43434e90f10967c14f2582f"
+    },
+    "VennTopology/P1Euler.lean": {
+      "type": "file",
+      "bytes": 8577,
+      "sha256": "40845f36ade92d3e76a54e966d0f7f71b03211d5d43cf2dfe71b8c0117b13a2e"
+    },
+    "VennTopology/P2Euler.lean": {
+      "type": "file",
+      "bytes": 9430,
+      "sha256": "e2c6e45cd18f10c61f2aec10629d53df4ae3da63f53c929af946854a4e870635"
+    },
+    "VennTopology/Periodic.lean": {
+      "type": "file",
+      "bytes": 3839,
+      "sha256": "3eceddc6c376a4b8837413497d1219ccd5563447e9143075f5d683cb1211324e"
+    },
+    "VennTopology/Planar.lean": {
+      "type": "file",
+      "bytes": 1418,
+      "sha256": "d3ecde06fc0bfef81393e6779f2b68c99dc957903a68191c5609c90b3af9df8d"
+    },
+    "VennTopology/PlanarSides.lean": {
+      "type": "file",
+      "bytes": 7610,
+      "sha256": "e0af42fa406e50e1fcafd41b84d359486d8f118c6da5edd4cb1d894ebc05cac6"
+    },
+    "VennTopology/PlaneArrangement.lean": {
+      "type": "file",
+      "bytes": 6284,
+      "sha256": "8e470134999546c8c8a405988417c634cb04e5a111408d1be5088465b3d0627c"
+    },
+    "VennTopology/PlaneRealization.lean": {
+      "type": "file",
+      "bytes": 3288,
+      "sha256": "3554830590c9b1e4f4a93a5f8b74a125caabaa262074b7b9b396e0d7f6358458"
+    },
+    "VennTopology/PoleDiskRotation.lean": {
+      "type": "file",
+      "bytes": 8057,
+      "sha256": "4b0670218911f9d676e2ac7497ff5a8154f96e86e408028dd8f1191bba31f696"
+    },
+    "VennTopology/PoleRotation.lean": {
+      "type": "file",
+      "bytes": 6398,
+      "sha256": "b83dbdf9e47af9069936262cb3b3d397a0ebefd332b765cf330838e30c6d7541"
+    },
+    "VennTopology/PoleRotationData.lean": {
+      "type": "file",
+      "bytes": 1181,
+      "sha256": "0f7c5a3d74839197299680893d013252c0dc9b2e6101b198d5f5b6a692b871f9"
+    },
+    "VennTopology/PolygonEulerLowerBound.lean": {
+      "type": "file",
+      "bytes": 5623,
+      "sha256": "6f3c7cfcb4e400440a71203007c6e953e9625b674293c21f6f38264e5218fa74"
+    },
+    "VennTopology/PolygonRotation.lean": {
+      "type": "file",
+      "bytes": 3963,
+      "sha256": "81f75dea23f8a0feceea01f5094ba2946540f228710bd793288db188528876f0"
+    },
+    "VennTopology/PolygonVertices.lean": {
+      "type": "file",
+      "bytes": 4288,
+      "sha256": "cc7b646bd0349bd483bf12c8ee481a727f25dd06eb4464b6c6198c83ffa5ec22"
+    },
+    "VennTopology/PolygonWordWalk.lean": {
+      "type": "file",
+      "bytes": 7670,
+      "sha256": "47249cc6fcbaac12c979270c998d5bf27eea0f9b9945a19de0a8c5f51b835ebe"
+    },
+    "VennTopology/PolygonalModel.lean": {
+      "type": "file",
+      "bytes": 5023,
+      "sha256": "a99f0c46e74952c03edec83eab9830639394e42a47746a84f1e3a6b4e0876b16"
+    },
+    "VennTopology/PunctureConnected.lean": {
+      "type": "file",
+      "bytes": 2348,
+      "sha256": "d13d6ae7540980f8559a1a42893d7624441c95de5f4e2fc7b76623856e757291"
+    },
+    "VennTopology/PuncturedArrangement.lean": {
+      "type": "file",
+      "bytes": 8242,
+      "sha256": "48faa524c63d665ac2c3ee4ddceef37be6745c722ab77673388250ec6f985994"
+    },
+    "VennTopology/PuncturedCertificate.lean": {
+      "type": "file",
+      "bytes": 2732,
+      "sha256": "a0703b9ce930ef7aca43c0ad93fb0a9d0e11cd293079586b5e92536a8f695cff"
+    },
+    "VennTopology/PuncturedCrossings.lean": {
+      "type": "file",
+      "bytes": 2699,
+      "sha256": "ccadeb8d6cebff6d9c8e55dab1cb7bef092895e2d694073ffa9767fb7a3c9a95"
+    },
+    "VennTopology/PuncturedRegions.lean": {
+      "type": "file",
+      "bytes": 7723,
+      "sha256": "1c6667fffab104bfa37829afaad6970a3085bced9fc649107793a5a2bdf5db0f"
+    },
+    "VennTopology/PuncturedSides.lean": {
+      "type": "file",
+      "bytes": 5056,
+      "sha256": "83d03e16dd917acb6176ac3bcc6d38f2f3bdb525bf8f3f16ad41ee81f3a3dbd7"
+    },
+    "VennTopology/Realization.lean": {
+      "type": "file",
+      "bytes": 4065,
+      "sha256": "01aaee45bd02394a1375b00538b3253482d34f7daa34c1fb795b2ee134c4cc2c"
+    },
+    "VennTopology/RegionBits.lean": {
+      "type": "file",
+      "bytes": 2058,
+      "sha256": "8422df9e1a3a960f8538e469c9621293f0a1a775d2bf0f0d23a7f69f3e0eab32"
+    },
+    "VennTopology/RegionSymmetry.lean": {
+      "type": "file",
+      "bytes": 3939,
+      "sha256": "1c85ef8659e38bbc10bd7f6b37b64edadb20b0907ce700aee9f6c54816740b06"
+    },
+    "VennTopology/Regions.lean": {
+      "type": "file",
+      "bytes": 10606,
+      "sha256": "986fbc9098eed8adfc91487a88f3286377ae205885016839691bd20b1e735dac"
+    },
+    "VennTopology/RigidPlaneConjugacy.lean": {
+      "type": "file",
+      "bytes": 2732,
+      "sha256": "b44711445795e0cc4967aefa5993650a2af8f275b9b47397e7aa619c58a7ab9c"
+    },
+    "VennTopology/RigidSectorCover.lean": {
+      "type": "file",
+      "bytes": 3737,
+      "sha256": "c4f9fe4053f2978851bdb7dc16af8916f730bcb4a1e058661aadf7645856c59b"
+    },
+    "VennTopology/RigidSectorDisk.lean": {
+      "type": "file",
+      "bytes": 6407,
+      "sha256": "6c0535219f2bfef7a5393c85b725b3bbde1bc397aa846aaf6485d93f286f5063"
+    },
+    "VennTopology/RigidSectorIntersections.lean": {
+      "type": "file",
+      "bytes": 5475,
+      "sha256": "41d8253ce2fc645971df1d94aa8e83810e538ac783c56ed799a21e4d12ada37d"
+    },
+    "VennTopology/RigidSphere.lean": {
+      "type": "file",
+      "bytes": 5331,
+      "sha256": "c6dffed2726b1717836f8bc67e2e10d0c1d850cfc297f9170436453478988128"
+    },
+    "VennTopology/RigidSphereConjugacy.lean": {
+      "type": "file",
+      "bytes": 4150,
+      "sha256": "2e32cde0f17b96aa874abe3530e786d1df7b683d027dea755e9cb5d724eaed1d"
+    },
+    "VennTopology/RotationOrbits.lean": {
+      "type": "file",
+      "bytes": 5136,
+      "sha256": "3f29ee3ae665e794f3aa5d22ec7f9d7a2b1fcfd6f49cc9cb73c0cde6f9770526"
+    },
+    "VennTopology/RotationalVenn.lean": {
+      "type": "file",
+      "bytes": 9319,
+      "sha256": "ad74d1e23c7f7407866a297b82ebdfc6add9159fe0138c6e5231dc029bca8c01"
+    },
+    "VennTopology/SectorCertificate.lean": {
+      "type": "file",
+      "bytes": 4260,
+      "sha256": "5f4308c8abd40c2fae08635a98bab5acc56bd035f286796f6415e953f272ef03"
+    },
+    "VennTopology/SectorConjugacy.lean": {
+      "type": "file",
+      "bytes": 3192,
+      "sha256": "710821abff705ddca9cf266d16aad3f016abc459befeed768fc7ffe6328624c1"
+    },
+    "VennTopology/SectorConnected.lean": {
+      "type": "file",
+      "bytes": 4611,
+      "sha256": "0f3188a1505872ae8fbda506942347dffcf77043477dc0dc0e27818154e9ab7d"
+    },
+    "VennTopology/SectorData.lean": {
+      "type": "file",
+      "bytes": 135676,
+      "sha256": "510b832e87840655c0a9a6c1eba6e9226c2321d1d8f01beb3824a1f13dddfb4b"
+    },
+    "VennTopology/SectorDisk.lean": {
+      "type": "file",
+      "bytes": 3844,
+      "sha256": "1e5365d4b2a0402a531055c5a7eaca89f1de5fe1b0e1e83cdab1ba811400ced8"
+    },
+    "VennTopology/SectorFrontier.lean": {
+      "type": "file",
+      "bytes": 4649,
+      "sha256": "06b40823f6bfb3507b5f439c7ec48e586b336c5eb93077ecc5bb5c87fa35bcf3"
+    },
+    "VennTopology/SectorGeometry.lean": {
+      "type": "file",
+      "bytes": 7183,
+      "sha256": "35c188a9e0e9eea549f80ee4dfb7cd130fbc38429811058d4f708d7608f9221e"
+    },
+    "VennTopology/SectorGluing.lean": {
+      "type": "file",
+      "bytes": 4652,
+      "sha256": "cf2b091543ae684b8baa68778a4b99f0b153048bf0c47b3514e532a52ae33dd8"
+    },
+    "VennTopology/SectorIntersections.lean": {
+      "type": "file",
+      "bytes": 7285,
+      "sha256": "e8ffb3af5f7bbf1c91922cff4b8ce03918de3b717a99fea950b6633a74eceac6"
+    },
+    "VennTopology/SideComponents.lean": {
+      "type": "file",
+      "bytes": 6726,
+      "sha256": "12c1355e3b5c9bf4575f292d0401b5f45d6136a0b729685e4cb01b14a4a72ee6"
+    },
+    "VennTopology/SimplexCounting.lean": {
+      "type": "file",
+      "bytes": 5645,
+      "sha256": "15791232c46e835890f20c3442de51a43659c68d40e5f399327327c0c0762ca6"
+    },
+    "VennTopology/SphereLunes.lean": {
+      "type": "file",
+      "bytes": 9768,
+      "sha256": "225cc7d52965ea0db0dee2d04ded19ba84736d2347682ec8e2fd9e90bbe65dd9"
+    },
+    "VennTopology/SphereMeridians.lean": {
+      "type": "file",
+      "bytes": 9019,
+      "sha256": "be9323efcecbf11f5123bc3315625e37d6e1946810a09b3e2d8e9068788ec0a8"
+    },
+    "VennTopology/SphereReduction.lean": {
+      "type": "file",
+      "bytes": 3164,
+      "sha256": "f306955c98308242d98fb77ed18ea190741257f85536bc77a9c712971c79c772"
+    },
+    "VennTopology/Stars.lean": {
+      "type": "file",
+      "bytes": 7360,
+      "sha256": "c2c618e4a423937028c316cfd885580cb2fa09abe9e984d6a8d6b517a4cd911d"
+    },
+    "VennTopology/Surface.lean": {
+      "type": "file",
+      "bytes": 5115,
+      "sha256": "cffc68b6960175a981aeb12d316b7338290e2fccf7f1ee1d9cc4cfa96f05bde4"
+    },
+    "VennTopology/SurfaceCertificate.lean": {
+      "type": "file",
+      "bytes": 1466,
+      "sha256": "c7718380458ee389da4974c4600eac3df6228fabc0163ef8d87caa0008874b3b"
+    },
+    "VennTopology/TriangleMidline.lean": {
+      "type": "file",
+      "bytes": 4993,
+      "sha256": "29076597979436290d9736788956ee474b1fd784478891b8d283fdc5c151d950"
+    },
+    "VennTopology/TriangulationCounts.lean": {
+      "type": "file",
+      "bytes": 7094,
+      "sha256": "df36c5dba3c6ac757373e3e098d5a40ceefbdba158b0a97c914a51df2d8a44d0"
+    },
+    "VennTopology/TriangulationIncidence.lean": {
+      "type": "file",
+      "bytes": 15824,
+      "sha256": "1ebbc0f597845e3f8a415d46f7d9071a3aeee2039a912dc5b9266e6ef4a0baad"
+    },
+    "VennTopology/UnorientedEuler.lean": {
+      "type": "file",
+      "bytes": 7170,
+      "sha256": "08c945cc82f50e097457b59ce124a68948c66420cf9fa6d46f1ce9aa8ea1e6f6"
+    },
+    "audit.json": {
+      "type": "file",
+      "bytes": 1527,
+      "sha256": "6d6761a21fce0aae1004fe4be8d856e9abc82b2bd95ecd59bdc382c32fe42e53"
+    },
+    "lake-manifest.json": {
+      "type": "file",
+      "bytes": 3560,
+      "sha256": "764496d4901574a608c77df5f6ddcc6ab544f864e5f5c0774635d0e894e6cb7f"
+    },
+    "lakefile.lean": {
+      "type": "file",
+      "bytes": 655,
+      "sha256": "9e763297546d4ec5f786f61789b94a1e2cc1c394dc28adadfa201bc16f80a0bb"
+    },
+    "lean-audit.txt": {
+      "type": "file",
+      "bytes": 468,
+      "sha256": "0a16a1a857cead30b0150cd4afcb2b827b5b83014d28b1c97123d94a5d3b7852"
+    },
+    "lean-toolchain": {
+      "type": "file",
+      "bytes": 25,
+      "sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af"
+    },
+    "message.txt": {
+      "type": "file",
+      "bytes": 5382,
+      "sha256": "0ae8c4baeebe08b076afdfc90859662261d6372731a5d9cf2f21f62c0ddae6d7"
+    },
+    "output/meridian-certificate.json": {
+      "type": "file",
+      "bytes": 4308,
+      "sha256": "c5a09dc5e01116f5bde9ce670f307bf7b44f70e1136884a2871d20d4c0489d31"
+    },
+    "output/sector-certificate.json": {
+      "type": "file",
+      "bytes": 2186,
+      "sha256": "ecdfe2b0e7fc64d196022e4ebc63ec52fde819ce4c99a2f15c93586785b298f5"
+    },
+    "scripts/audit_topology.lean": {
+      "type": "file",
+      "bytes": 10268,
+      "sha256": "dd0cec74cbd7ac7330647e8f171b2a53b194300283f4d1df10bf8c427c99493c"
+    },
+    "scripts/audit_vendor.py": {
+      "type": "file",
+      "bytes": 840,
+      "sha256": "b37d46683e2c67234212bc2c5497105360459a492cf31318b6b9589676c25df2"
+    },
+    "scripts/check.py": {
+      "type": "file",
+      "bytes": 6555,
+      "sha256": "d310e928b80183efb12225551d37be1223f0c8577f5f5288fe43478340610192"
+    },
+    "scripts/find_meridians.py": {
+      "type": "file",
+      "bytes": 2176,
+      "sha256": "d5588e19998d034290084984852d823094f1524b594f45bb88137a154ae2fdd4"
+    },
+    "scripts/find_sectors.py": {
+      "type": "file",
+      "bytes": 2816,
+      "sha256": "2d31b8b7dc9a85f6488e2019538627493f1f03b2e149d6052cad6cf48ca0a73b"
+    },
+    "scripts/test_checkers.py": {
+      "type": "file",
+      "bytes": 2596,
+      "sha256": "7b8284f52555cdfeff895dcb31578c3b86fab7803e0d0257f031c17f99951627"
+    },
+    "topology-axioms.txt": {
+      "type": "file",
+      "bytes": 70886,
+      "sha256": "4a09a7ee68752828e9c8971ce3b88efba3f0fab67c3ecf0dd4873959e289ba8b"
+    },
+    "venn17-local-c3-s2.json": {
+      "type": "file",
+      "bytes": 10747825,
+      "sha256": "c178d7bdde6e02b1b0c2780339434095d3633b8bb77a7293e9d575d04ad7ae77"
+    },
+    "verification/full-build.log": {
+      "type": "file",
+      "bytes": 74284,
+      "sha256": "6577fcd40d7edece1ca0864c63bb4ce4c5dc7bcd9316913e30d27c6bd13d2cbd"
+    },
+    "verify_bundle.py": {
+      "type": "file",
+      "bytes": 910,
+      "sha256": "2cbf31baa5ae0508a8baa8366be611ec67642e8979bfeb46953b07e660b930fb"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "sector": 0,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 1,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 2,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 3,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 4,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 5,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 6,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 7,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 8,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 9,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 10,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 11,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 12,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 13,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 14,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 15,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  },
+  {
+    "sector": 16,
+    "vertices": 7728,
+    "edges": 15437,
+    "faces": 7710,
+    "euler": 1,
+    "boundary_edges": 34
+  }
+]

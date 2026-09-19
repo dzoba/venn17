@@ -1,0 +1,16 @@
+{ regions := 131072,
+  arcs := 262140,
+  crossings := 131070,
+  squareCrossings := true,
+  twoFacesPerArc := true,
+  connectedMap := true,
+  orientedSurface := true,
+  singleVertexLinks := true,
+  eulerTwo := true,
+  singleCurveCycles := true,
+  connectedCurveSides := true,
+  everyPattern := true,
+  simpleCrossings := true,
+  rotationalSymmetry := true,
+  poleRotationOneStep := true }
+PASS: all finite combinatorial checks. Geometric realization is not formalized.

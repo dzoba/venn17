@@ -1,0 +1,1239 @@
+ℹ [5/193] Replayed VennCore.Connectivity
+info: VennCore/Connectivity.lean:93:0: 'Venn17.GraphProof.treeCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [29/193] Replayed Venn17.Proof
+info: Venn17/Proof.lean:78:0: 'Venn17.supplied_file_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_file_accepted._native.native_decide.ax_1_1]
+info: Venn17/Proof.lean:79:0: 'Venn17.every_pattern_occurs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ occurrence_check_passes._native.native_decide.ax_1_1]
+info: Venn17/Proof.lean:80:0: 'Venn17.every_crossing_is_a_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ square_witnesses_pass._native.native_decide.ax_1_1]
+ℹ [31/193] Replayed Venn17.Facts
+info: Venn17/Facts.lean:58:0: 'Venn17.region_graph_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1]
+info: Venn17/Facts.lean:59:0: 'Venn17.each_curve_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1]
+info: Venn17/Facts.lean:60:0: 'Venn17.each_side_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1]
+info: Venn17/Facts.lean:61:0: 'Venn17.rotation_preserves_oriented_crossings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ rotation_witnesses_pass._native.native_decide.ax_1_1]
+ℹ [1628/1744] Replayed VennTopology.Incidence
+info: VennTopology/Incidence.lean:85:0: 'Venn17.Topology.incidenceCheck_pathConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1629/1744] Replayed VennTopology.Dataset
+info: VennTopology/Dataset.lean:35:0: 'Venn17.Topology.diagram_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/Dataset.lean:36:0: 'Venn17.Topology.diagram_hausdorff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/Dataset.lean:37:0: 'Venn17.Topology.diagram_pathConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [1630/1744] Replayed VennTopology.Automorphism
+info: VennTopology/Automorphism.lean:144:0: 'Venn17.Topology.Quad.Automorphism.homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1631/1744] Replayed VennTopology.Periodic
+info: VennTopology/Periodic.lean:90:0: 'Venn17.Topology.rotationAutomorphism' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1]
+ℹ [1632/1744] Replayed VennTopology.DiagramSymmetry
+info: VennTopology/DiagramSymmetry.lean:73:0: 'Venn17.Topology.diagram_rotation_period' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+info: VennTopology/DiagramSymmetry.lean:74:0: 'Venn17.Topology.diagram_rotation_no_short_period' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+info: VennTopology/DiagramSymmetry.lean:75:0: 'Venn17.Topology.diagram_rotation_fixes_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+info: VennTopology/DiagramSymmetry.lean:76:0: 'Venn17.Topology.diagram_rotation_fixes_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [1673/1744] Replayed VennTopology.Intersections
+info: VennTopology/Intersections.lean:105:0: 'Venn17.Topology.Quad.triangle_inter' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/Intersections.lean:106:0: 'Venn17.Topology.Quad.complex_space' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1674/1744] Replayed VennTopology.FixedPoints
+info: VennTopology/FixedPoints.lean:91:0: 'Venn17.Topology.diagram_rotation_fixed_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_fixed_triangles_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [1675/1744] Replayed VennTopology.Certificate
+info: VennTopology/Certificate.lean:24:0: 'Venn17.Topology.realized_candidate_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_fixed_triangles_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [2109/2262] Replayed VennTopology.CyclicPolygon
+info: VennTopology/CyclicPolygon.lean:200:0: 'Venn17.Topology.Coordinates.circlePolygonHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2110/2262] Replayed VennTopology.LabeledPolygon
+info: VennTopology/LabeledPolygon.lean:93:0: 'Venn17.Topology.Coordinates.labeledPolygonHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2112/2262] Replayed VennTopology.LinkCertificate
+info: VennTopology/LinkCertificate.lean:83:0: 'Venn17.Topology.every_link_has_cyclic_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/LinkCertificate.lean:84:0: 'Venn17.Topology.every_triangle_dart_occurs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+ℹ [2113/2262] Replayed VennTopology.LinkCircles
+info: VennTopology/LinkCircles.lean:66:0: 'Venn17.Topology.supplied_dart_link_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+ℹ [2114/2262] Replayed VennTopology.Stars
+info: VennTopology/Stars.lean:172:0: 'Venn17.Topology.Coordinates.puncturedStarHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2115/2262] Replayed VennTopology.LocalGeometry
+info: VennTopology/LocalGeometry.lean:73:0: 'Venn17.Topology.diagram_punctured_star_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1]
+ℹ [2117/2262] Replayed VennTopology.CoordinateRelabel
+info: VennTopology/CoordinateRelabel.lean:86:0: 'Venn17.Topology.Coordinates.reindex_link' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2118/2262] Replayed VennTopology.GeometricLinks
+info: VennTopology/GeometricLinks.lean:78:0: 'Venn17.Topology.diagram_geometric_link_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/GeometricLinks.lean:79:0: 'Venn17.Topology.diagram_punctured_star_annulus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+ℹ [2120/2262] Replayed VennTopology.ConeDisk
+info: VennTopology/ConeDisk.lean:117:0: 'Venn17.Topology.Coordinates.linkConeDiskHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2121/2262] Replayed VennTopology.OpenStarDisk
+info: VennTopology/OpenStarDisk.lean:65:0: 'Venn17.Topology.Coordinates.openStarDiskHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2129/2262] Replayed VennTopology.Surface
+info: VennTopology/Surface.lean:99:0: 'Venn17.Topology.diagram_compact_connected_surface' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/Surface.lean:100:0: 'Venn17.Topology.diagram_locally_open_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/Surface.lean:101:0: 'Venn17.Topology.diagram_second_countable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2130/2262] Replayed VennTopology.DartIncidence
+info: VennTopology/DartIncidence.lean:99:0: 'Venn17.Topology.dart_endpoints_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/DartIncidence.lean:100:0: 'Venn17.Topology.triangle_pair_dart' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2131/2262] Replayed VennTopology.SimplexCounting
+info: VennTopology/SimplexCounting.lean:119:0: 'Venn17.Topology.directedEdge_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/SimplexCounting.lean:120:0: 'Venn17.Topology.topCellEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2132/2262] Replayed VennTopology.MidpointPolygon
+info: VennTopology/MidpointPolygon.lean:96:0: 'Venn17.Topology.Coordinates.pairPolygonHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2134/2262] Replayed VennTopology.CurveCertificate
+warning: VennTopology/CurveCertificate.lean:81:76: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ℹ [2135/2262] Replayed VennTopology.CurveGeometry
+info: VennTopology/CurveGeometry.lean:106:0: 'Venn17.Topology.encodedCurveHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2136/2262] Replayed VennTopology.DiagramCurves
+info: VennTopology/DiagramCurves.lean:66:0: 'Venn17.Topology.diagram_curves_are_embedded_circles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_curve_polygons_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2138/2262] Replayed VennTopology.Regions
+info: VennTopology/Regions.lean:208:0: 'Venn17.Topology.diagram_complement_component_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/Regions.lean:209:0: 'Venn17.Topology.diagram_complement_unique_region' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2139/2262] Replayed VennTopology.TriangulationCounts
+info: VennTopology/TriangulationCounts.lean:135:0: 'Venn17.Topology.encoded_edge_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/TriangulationCounts.lean:136:0: 'Venn17.Topology.encoded_triangle_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/TriangulationCounts.lean:137:0: 'Venn17.Topology.encoded_vertex_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2140/2262] Replayed VennTopology.GeometricCounting
+info: VennTopology/GeometricCounting.lean:90:0: 'Venn17.Topology.encodedGeometricFaceEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/GeometricCounting.lean:91:0: 'Venn17.Topology.geometric_edge_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2141/2262] Replayed VennTopology.EulerCharacteristic
+info: VennTopology/EulerCharacteristic.lean:51:0: 'Venn17.Topology.diagram_triangulation_counts_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+ℹ [2142/2262] Replayed VennTopology.SurfaceCertificate
+info: VennTopology/SurfaceCertificate.lean:26:0: 'Venn17.Topology.realized_surface_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_fixed_triangles_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [2757/2971] Replayed VennTopology.Planar
+info: VennTopology/Planar.lean:32:0: 'Venn17.Topology.planar_jordan_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/Planar.lean:33:0: 'Venn17.Topology.planar_jordan_separation_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2758/2971] Replayed VennTopology.CrossingSquare
+info: VennTopology/CrossingSquare.lean:105:0: 'Venn17.Topology.CrossingSquare.homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2759/2971] Replayed VennTopology.CurveIntersections
+info: VennTopology/CurveIntersections.lean:231:0: 'Venn17.Topology.diagram_crossing_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/CurveIntersections.lean:232:0: 'Venn17.Topology.diagram_no_triple_intersections' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2760/2971] Replayed VennTopology.ArmSymmetry
+info: VennTopology/ArmSymmetry.lean:97:0: 'Venn17.Topology.reindex_edgeCurve' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2761/2971] Replayed VennTopology.CenterChart
+info: VennTopology/CenterChart.lean:166:0: 'Venn17.Topology.Quad.centerSquareChart' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2762/2971] Replayed VennTopology.CrossingAxes
+info: VennTopology/CrossingAxes.lean:137:0: 'Venn17.Topology.Quad.centerSquareChart_even_axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2763/2971] Replayed VennTopology.CrossingCharts
+info: VennTopology/CrossingCharts.lean:114:0: 'Venn17.Topology.diagram_transverse_crossing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2768/2971] Replayed VennTopology.BitSigns
+info: VennTopology/BitSigns.lean:104:0: 'Venn17.Topology.diagram_faceSign_cases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1]
+ℹ [2769/2971] Replayed VennTopology.BitField
+info: VennTopology/BitField.lean:82:0: 'Venn17.Topology.diagramBitField_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2770/2971] Replayed VennTopology.CurveLevelSet
+info: VennTopology/CurveLevelSet.lean:79:0: 'Venn17.Topology.diagram_curve_iff_field_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2771/2971] Replayed VennTopology.RegionBits
+info: VennTopology/RegionBits.lean:48:0: 'Venn17.Topology.diagram_region_positive_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2772/2971] Replayed VennTopology.CurveSides
+info: VennTopology/CurveSides.lean:123:0: 'Venn17.Topology.diagramSide_pathConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2773/2971] Replayed VennTopology.SideComponents
+info: VennTopology/SideComponents.lean:150:0: 'Venn17.Topology.diagram_sides_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/SideComponents.lean:151:0: 'Venn17.Topology.diagramRegion_eq_sides' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2774/2971] Replayed VennTopology.ArrangementCertificate
+info: VennTopology/ArrangementCertificate.lean:39:0: 'Venn17.Topology.realized_arrangement_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_polygons_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+⚠ [2775/2971] Replayed VennTopology.RegionSymmetry
+warning: VennTopology/RegionSymmetry.lean:23:6: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: VennTopology/RegionSymmetry.lean:84:0: 'Venn17.Topology.diagram_rotation_region_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [2776/2971] Replayed VennTopology.CurveSymmetry
+info: VennTopology/CurveSymmetry.lean:60:0: 'Venn17.Topology.diagram_rotation_curve_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ bit_rotation_verified._native.native_decide.ax_1_1,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [2777/2971] Replayed VennTopology.PuncturedRegions
+info: VennTopology/PuncturedRegions.lean:155:0: 'Venn17.Topology.diagramRegion_punctured_pathConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+ℹ [2778/2971] Replayed VennTopology.PuncturedArrangement
+info: VennTopology/PuncturedArrangement.lean:172:0: 'Venn17.Topology.punctured_complement_component_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/PuncturedArrangement.lean:173:0: 'Venn17.Topology.punctured_rotation_curve_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ bit_rotation_verified._native.native_decide.ax_1_1,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [2779/2971] Replayed VennTopology.PuncturedCrossings
+info: VennTopology/PuncturedCrossings.lean:58:0: 'Venn17.Topology.punctured_transverse_crossing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2780/2971] Replayed VennTopology.PunctureConnected
+info: VennTopology/PunctureConnected.lean:53:0: 'Venn17.Topology.preconnected_diff_singleton_of_neighborhood' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2781/2971] Replayed VennTopology.PuncturedSides
+warning: VennTopology/PuncturedSides.lean:20:2: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: VennTopology/PuncturedSides.lean:100:0: 'Venn17.Topology.puncturedSide_pathConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/PuncturedSides.lean:101:0: 'Venn17.Topology.punctured_curve_complement_component_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/PuncturedSides.lean:102:0: 'Venn17.Topology.puncturedRegion_eq_sides' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [2782/2971] Replayed VennTopology.PuncturedCertificate
+info: VennTopology/PuncturedCertificate.lean:42:0: 'Venn17.Topology.punctured_arrangement_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1,
+ bit_rotation_verified._native.native_decide.ax_1_1,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_polygons_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_fixed_triangles_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [2783/2971] Replayed VennTopology.PlanarSides
+info: VennTopology/PlanarSides.lean:143:0: 'Venn17.Topology.planeSide_true_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/PlanarSides.lean:144:0: 'Venn17.Topology.planeSide_false_unbounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_polygons_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/PlanarSides.lean:145:0: 'Venn17.Topology.planar_sides_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_polygons_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+ℹ [2786/2971] Replayed VennTopology.FiniteTriangulation
+info: VennTopology/FiniteTriangulation.lean:121:0: 'Venn17.Topology.diagramFiniteTriangulation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/FiniteTriangulation.lean:122:0: 'Venn17.Topology.diagram_finite_euler_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+ℹ [2787/2971] Replayed VennTopology.TriangulationIncidence
+info: VennTopology/TriangulationIncidence.lean:303:0: 'Venn17.Topology.encoded_edge_valence_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/TriangulationIncidence.lean:304:0: 'Venn17.Topology.encoded_edge_valence_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/TriangulationIncidence.lean:305:0: 'Venn17.Topology.strongVertexStarConnected_of_links' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/TriangulationIncidence.lean:306:0: 'Venn17.Topology.diagram_finite_surface_incidence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/TriangulationIncidence.lean:307:0: 'Venn17.Topology.diagram_classification_input_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+ℹ [3036/3222] Replayed ClassificationOfSurfaces.Moise.PolygonalJordan
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:109:37: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:173:37: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:726:54: Try this:
+  [apply] abel_nf
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:731:73: Try this:
+  [apply] abel_nf
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:734:47: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:1138:56: Try this:
+  [apply] abel_nf
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:1154:75: Try this:
+  [apply] abel_nf
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:1398:58: Try this:
+  [apply] abel_nf
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean:1648:2: Try this:
+  [apply] abel_nf
+ℹ [3071/3222] Replayed ClassificationOfSurfaces.Moise.PolygonalCrosscut
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalCrosscut.lean:720:43: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalCrosscut.lean:722:52: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalCrosscut.lean:722:52: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalCrosscut.lean:732:23: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalCrosscut.lean:1904:2: Try this:
+  [apply] abel_nf
+ℹ [3072/3222] Replayed ClassificationOfSurfaces.Moise.PolygonalSchoenflies
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalSchoenflies.lean:196:35: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/Moise/PolygonalSchoenflies.lean:208:35: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [3084/3222] Replayed ClassificationOfSurfaces.Moise.LocallyFiniteGraphPL
+info: Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteGraphPL.lean:73:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [3114/3222] Replayed ClassificationOfSurfaces.TriangleCell
+info: Vendor/ClassificationOfSurfaces/TriangleCell.lean:293:27: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/TriangleCell.lean:309:27: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [3116/3222] Replayed VennTopology.PolygonalModel
+info: VennTopology/PolygonalModel.lean:99:0: 'Venn17.Topology.diagramPolygonalHomeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/PolygonalModel.lean:100:0: 'Venn17.Topology.diagram_presentation_edge_multiplicity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+ℹ [3166/3222] Replayed ClassificationOfSurfaces.FiniteCyclicP1Realization
+info: Vendor/ClassificationOfSurfaces/FiniteCyclicP1Realization.lean:872:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/FiniteCyclicP1Realization.lean:923:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Vendor/ClassificationOfSurfaces/FiniteCyclicP1Realization.lean:953:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [3185/3222] Replayed VennTopology.ClosedNormalization
+info: VennTopology/ClosedNormalization.lean:149:0: 'Venn17.Topology.PresentationClosedness.normalizationEquivalent_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: VennTopology/ClosedNormalization.lean:150:0: 'Venn17.Topology.PresentationClosedness.closed_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3186/3222] Replayed VennTopology.ClassifiedSurface
+info: VennTopology/ClassifiedSurface.lean:49:0: 'Venn17.Topology.diagram_closed_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/ClassifiedSurface.lean:50:0: 'Venn17.Topology.diagramCanonicalHomeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/ClassifiedSurface.lean:51:0: 'Venn17.Topology.diagram_classification_and_euler_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+ℹ [3187/3222] Replayed VennTopology.PolygonVertices
+info: VennTopology/PolygonVertices.lean:87:0: 'Venn17.Topology.PolygonVertices.eulerCharacteristic_signedIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3188/3222] Replayed VennTopology.PolygonEulerLowerBound
+info: VennTopology/PolygonEulerLowerBound.lean:100:0: 'Venn17.Topology.PolygonVertices.geometric_vertex_count_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/PolygonEulerLowerBound.lean:101:0: 'Venn17.Topology.PolygonVertices.diagram_polygon_euler_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+ℹ [3189/3222] Replayed VennTopology.CanonicalEuler
+info: VennTopology/CanonicalEuler.lean:196:0: 'Venn17.Topology.PolygonVertices.orientable_euler_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: VennTopology/CanonicalEuler.lean:197:0: 'Venn17.Topology.PolygonVertices.nonOrientable_euler_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: VennTopology/CanonicalEuler.lean:198:0: 'Venn17.Topology.PolygonVertices.sphere_euler_characteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3190/3222] Replayed VennTopology.EulerSphereCriterion
+info: VennTopology/EulerSphereCriterion.lean:39:0: 'Venn17.Topology.PolygonVertices.normalForm_eq_sphere_of_euler_ge_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3191/3222] Replayed VennTopology.UnorientedEuler
+info: VennTopology/UnorientedEuler.lean:155:0: 'Venn17.Topology.PolygonVertices.eulerCharacteristic_unorientedIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3193/3222] Replayed VennTopology.P1Euler
+info: VennTopology/P1Euler.lean:189:0: 'Venn17.Topology.PolygonVertices.eulerCharacteristic_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3194/3222] Replayed VennTopology.P2Euler
+info: VennTopology/P2Euler.lean:181:0: 'Venn17.Topology.PolygonVertices.eulerCharacteristic_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3195/3222] Replayed VennTopology.NormalizationEuler
+info: VennTopology/NormalizationEuler.lean:69:0: 'Venn17.Topology.PolygonVertices.eulerCharacteristic_normalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3196/3222] Replayed VennTopology.SphereReduction
+info: VennTopology/SphereReduction.lean:63:0: 'Venn17.Topology.diagramSphereHomeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+ℹ [3197/3222] Replayed VennTopology.PlaneRealization
+info: VennTopology/PlaneRealization.lean:58:0: 'Venn17.Topology.diagramPlaneHomeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+info: VennTopology/PlaneRealization.lean:59:0: 'Venn17.Topology.planar_venn_diagram_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ graph_certificates_pass._native.native_decide.ax_1_1,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_polygons_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+ℹ [3198/3222] Replayed VennTopology.PlaneArrangement
+info: VennTopology/PlaneArrangement.lean:130:0: 'Venn17.Topology.planar_transverse_crossing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_crossing_labels_verified._native.native_decide.ax_1_1,
+ supplied_curve_labels_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+info: VennTopology/PlaneArrangement.lean:131:0: 'Venn17.Topology.planar_symmetry_period' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [3199/3222] Replayed VennTopology.RotationOrbits
+info: VennTopology/RotationOrbits.lean:115:0: 'Venn17.Topology.rotationOrbitProjection_isCoveringMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [3202/3222] Replayed VennTopology.PolygonRotation
+info: VennTopology/PolygonRotation.lean:80:0: 'Venn17.Topology.Coordinates.labeledPolygonHomeomorph_rotation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3204/3222] Replayed VennTopology.PoleRotation
+info: VennTopology/PoleRotation.lean:122:0: 'Venn17.Topology.pole_link_circle_rotation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_pole_link_action_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [3205/3222] Replayed VennTopology.ConeRotation
+info: VennTopology/ConeRotation.lean:52:0: 'Venn17.Topology.Coordinates.linkConeDiskHomeomorph_rotation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3206/3222] Replayed VennTopology.PoleDiskRotation
+info: VennTopology/PoleDiskRotation.lean:161:0: 'Venn17.Topology.diagram_pole_disk_conjugacy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_pole_link_action_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+info: VennTopology/PoleDiskRotation.lean:162:0: 'Venn17.Topology.pole_disk_range_mem_nhds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1]
+info: VennTopology/PoleDiskRotation.lean:163:0: 'Venn17.Topology.pole_disk_rotation_conjugacy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_pole_link_action_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [3209/3222] Replayed VennTopology.MeridianGeometry
+info: VennTopology/MeridianGeometry.lean:129:0: 'Venn17.Topology.diagram_meridian_boundaries_are_circles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/MeridianGeometry.lean:130:0: 'Venn17.Topology.diagram_meridian_boundary_rotation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [3210/3222] Replayed VennTopology.MeridianArcs
+info: VennTopology/MeridianArcs.lean:136:0: 'Venn17.Topology.diagramMeridianHomeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [3211/3222] Replayed VennTopology.MeridianIntersections
+info: VennTopology/MeridianIntersections.lean:230:0: 'Venn17.Topology.diagram_meridians_inter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/MeridianIntersections.lean:231:0: 'Venn17.Topology.diagram_meridian_system' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+ℹ [3214/3222] Replayed VennTopology.SectorGeometry
+info: VennTopology/SectorGeometry.lean:149:0: 'Venn17.Topology.diagram_sectors_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ sector_colors_verified._native.native_decide.ax_1_1]
+info: VennTopology/SectorGeometry.lean:150:0: 'Venn17.Topology.diagram_sector_rotation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+info: VennTopology/SectorGeometry.lean:151:0: 'Venn17.Topology.sector_boundary_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ sector_boundary_verified._native.native_decide.ax_1_1,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [3215/3222] Replayed VennTopology.SectorIntersections
+info: VennTopology/SectorIntersections.lean:144:0: 'Venn17.Topology.sector_inter_subset_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_overlaps_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+ℹ [3216/3222] Replayed VennTopology.SectorConnected
+info: VennTopology/SectorConnected.lean:89:0: 'Venn17.Topology.diagramSector_pathConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_connected_verified._native.native_decide.ax_1_1,
+ sector_dual_verified._native.native_decide.ax_1_1]
+ℹ [3217/3222] Replayed VennTopology.SectorFrontier
+info: VennTopology/SectorFrontier.lean:97:0: 'Venn17.Topology.sector_frontier_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_overlaps_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/SectorFrontier.lean:98:0: 'Venn17.Topology.sector_interior_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_connected_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_dual_verified._native.native_decide.ax_1_1,
+ sector_overlaps_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+info: VennTopology/SectorFrontier.lean:99:0: 'Venn17.Topology.sectorOutsidePoint_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_connected_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_dual_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1]
+⚠ [3225/3468] Replayed Schoenflies.HairOrdering
+warning: Vendor/Schoenflies/HairOrdering.lean:231:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3248/3468] Replayed Schoenflies.FiniteBoundaryGraph
+warning: Vendor/Schoenflies/FiniteBoundaryGraph.lean:118:23: This simp argument is unused:
+  Sym2.eq_iff
+
+Hint: Omit it from the simp argument list.
+  simp [S̵y̵m̵2̵.̵e̵q̵_̵i̵f̵f̵,̵ ̵hzw, hvw.ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Vendor/Schoenflies/FiniteBoundaryGraph.lean:320:4: Try `simp at hcard` instead of `simpa using hcard`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Vendor/Schoenflies/FiniteBoundaryGraph.lean:347:6: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  simp only [W, f, Finset.mem_filter, Finset.mem_erase, Finset.mem_univ,
+        t̵r̵u̵e̵_̵a̵n̵d̵,̵ ̵SimpleGraph.mem_neighborFinset]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Vendor/Schoenflies/FiniteBoundaryGraph.lean:705:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3251/3468] Replayed Schoenflies.PolygonalPaths
+warning: Vendor/Schoenflies/PolygonalPaths.lean:72:20: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3252/3468] Replayed Schoenflies.TwoArcJordan
+warning: Vendor/Schoenflies/TwoArcJordan.lean:64:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3254/3468] Replayed Schoenflies.ControlledCrosscuts
+warning: Vendor/Schoenflies/ControlledCrosscuts.lean:120:7: Variable name `N` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3255/3468] Replayed Schoenflies.SeparatorFrame
+warning: Vendor/Schoenflies/SeparatorFrame.lean:145:7: Variable name `N` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3276/3468] Replayed Schoenflies.HierarchicalLevelHairs
+warning: Vendor/Schoenflies/HierarchicalLevelHairs.lean:97:12: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3278/3468] Replayed Schoenflies.RefinedEdgeSides
+warning: Vendor/Schoenflies/RefinedEdgeSides.lean:231:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3281/3468] Replayed Schoenflies.ReturnArcFrames
+warning: Vendor/Schoenflies/ReturnArcFrames.lean:76:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Vendor/Schoenflies/ReturnArcFrames.lean:79:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Vendor/Schoenflies/ReturnArcFrames.lean:291:7: Variable name `N` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3283/3468] Replayed Schoenflies.ReturnArcParity
+warning: Vendor/Schoenflies/ReturnArcParity.lean:611:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3294/3468] Replayed Schoenflies.FiniteAvoidingCrosscuts
+warning: Vendor/Schoenflies/FiniteAvoidingCrosscuts.lean:72:7: Variable name `hHairs` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/FiniteAvoidingCrosscuts.lean:73:31: Variable name `hVopen` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/FiniteAvoidingCrosscuts.lean:74:7: Variable name `hArcV` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/FiniteAvoidingCrosscuts.lean:75:23: Variable name `hKclosed` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/FiniteAvoidingCrosscuts.lean:76:7: Variable name `hKarc` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3295/3468] Replayed Schoenflies.FiniteLevelCrosscuts
+warning: Vendor/Schoenflies/FiniteLevelCrosscuts.lean:92:4: Try this: intro i x hx
+⚠ [3312/3468] Replayed Schoenflies.MoiseBandCells
+warning: Vendor/Schoenflies/MoiseBandCells.lean:2356:6: 'change x ∈ F.edgeSegment ⟨a, i⟩' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Vendor/Schoenflies/MoiseBandCells.lean:2363:6: 'change x ∈ L.next.family.forgetObstacle.trimmedEdgeSegment e' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Vendor/Schoenflies/MoiseBandCells.lean:2374:6: 'change x ∈ F.edgeSegment ⟨a, i⟩' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3314/3468] Replayed Schoenflies.MoiseBandCellTopology
+warning: Vendor/Schoenflies/MoiseBandCellTopology.lean:422:28: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Vendor/Schoenflies/MoiseBandCellTopology.lean:427:12: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Vendor/Schoenflies/MoiseBandCellTopology.lean:746:8: 'change nextLevelAddress L.next.level b = nextLevelAddress L.next.level c' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Vendor/Schoenflies/MoiseBandCellTopology.lean:768:8: 'change nextLevelAddress L.next.level c = nextLevelAddress L.next.level b' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3326/3468] Replayed Schoenflies.SharedArcDiskSeparation
+warning: Vendor/Schoenflies/SharedArcDiskSeparation.lean:48:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3330/3468] Replayed Schoenflies.PolygonalSubarcs
+warning: Vendor/Schoenflies/PolygonalSubarcs.lean:32:4: Try this: intro i x hx
+⚠ [3351/3468] Replayed Schoenflies.StandardPolygonalCollars
+warning: Vendor/Schoenflies/StandardPolygonalCollars.lean:120:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Vendor/Schoenflies/StandardPolygonalCollars.lean:120:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Vendor/Schoenflies/StandardPolygonalCollars.lean:277:17: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3354/3468] Replayed Schoenflies.TopologicalDiskBoundaryExtension
+warning: Vendor/Schoenflies/TopologicalDiskBoundaryExtension.lean:133:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Vendor/Schoenflies/TopologicalDiskBoundaryExtension.lean:137:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3359/3468] Replayed Schoenflies.FiniteJordanArcOrder
+warning: Vendor/Schoenflies/FiniteJordanArcOrder.lean:98:18: Variable name `hab` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/FiniteJordanArcOrder.lean:153:17: Variable name `hab` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3375/3468] Replayed Schoenflies.StandardRadialCollars
+warning: Vendor/Schoenflies/StandardRadialCollars.lean:276:35: `Set.image_diff` has been deprecated: Use `Set.image_sdiff` instead
+warning: Vendor/Schoenflies/StandardRadialCollars.lean:337:8: 'change
+  Circle.radialMap (sphereToCircle.symm.trans (h.symm.trans sphereToCircle))
+      (Circle.radialMap (sphereToCircle.symm.trans (h.trans sphereToCircle)) z) =
+    z' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Vendor/Schoenflies/StandardRadialCollars.lean:344:8: 'change
+  Circle.radialMap (sphereToCircle.symm.trans (h.trans sphereToCircle))
+      (Circle.radialMap (sphereToCircle.symm.trans (h.symm.trans sphereToCircle)) z) =
+    z' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Vendor/Schoenflies/StandardRadialCollars.lean:387:4: 'change PolygonalCircle.planeComplexEquiv (r • (z : Plane)) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Vendor/Schoenflies/StandardRadialCollars.lean:409:2: 'change
+  Circle.radialMap hc (PolygonalCircle.planeComplexEquiv (r • (z : Plane))) =
+    PolygonalCircle.planeComplexEquiv (r • (h z : Plane))' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Vendor/Schoenflies/StandardRadialCollars.lean:413:2: 'change (r : ℂ) * (hc (sphereToCircle z) : ℂ) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3398/3468] Replayed Schoenflies.AngularDriftBounds
+warning: Vendor/Schoenflies/AngularDriftBounds.lean:40:6: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3400/3468] Replayed Schoenflies.DampedShellAdjustment
+warning: Vendor/Schoenflies/DampedShellAdjustment.lean:184:61: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+warning: Vendor/Schoenflies/DampedShellAdjustment.lean:588:63: This simp argument is unused:
+  Prod.map_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Homeomorph.trans_apply, Homeomorph.coe_prodCongr, P̵r̵o̵d̵.̵m̵a̵p̵_̵a̵p̵p̵l̵y̵,̵
+  ̵ ̵ ̵ ̵ ̵Homeomorph.refl_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3410/3468] Replayed Schoenflies.MoiseBoundaryDrift
+warning: Vendor/Schoenflies/MoiseBoundaryDrift.lean:115:6: 'change (L.markedMoiseRawOuterBoundaryHomeomorph m houtward₀ x : Plane) ∈ _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Vendor/Schoenflies/MoiseBoundaryDrift.lean:118:6: 'change (L₁.markedMoiseRawInnerBoundaryHomeomorph (m + 1) houtward₁ x : Plane) ∈ _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3411/3468] Replayed Schoenflies.FiniteJordanCyclicOrder
+warning: Vendor/Schoenflies/FiniteJordanCyclicOrder.lean:94:10: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+warning: Vendor/Schoenflies/FiniteJordanCyclicOrder.lean:94:33: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+⚠ [3425/3468] Replayed Schoenflies.LocalizedCellGluing
+warning: Vendor/Schoenflies/LocalizedCellGluing.lean:79:17: Variable name `x` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/LocalizedCellGluing.lean:81:17: Variable name `y` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3437/3468] Replayed Schoenflies.DampedTargetCellBounds
+warning: Vendor/Schoenflies/DampedTargetCellBounds.lean:299:9: Variable name `hxCell` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3438/3468] Replayed Schoenflies.ShrinkingBoundaryConvergence
+warning: Vendor/Schoenflies/ShrinkingBoundaryConvergence.lean:115:9: Variable name `hxShell` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/ShrinkingBoundaryConvergence.lean:118:9: Variable name `hxCell` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/ShrinkingBoundaryConvergence.lean:158:9: Variable name `hxShell` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Vendor/Schoenflies/ShrinkingBoundaryConvergence.lean:161:9: Variable name `hxCell` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3442/3468] Replayed Schoenflies.BallPunctureExterior
+warning: Vendor/Schoenflies/BallPunctureExterior.lean:46:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Vendor/Schoenflies/BallPunctureExterior.lean:271:28: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ℹ [3447/3468] Replayed VennTopology.JordanDisk
+info: VennTopology/JordanDisk.lean:141:0: 'Venn17.Topology.compactJordanRegionHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/JordanDisk.lean:142:0: 'Venn17.Topology.compactJordanRegionHomeomorph_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/JordanDisk.lean:143:0: 'Venn17.Topology.puncturedJordanDisk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: VennTopology/JordanDisk.lean:144:0: 'Venn17.Topology.puncturedJordanDisk_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3448/3468] Replayed VennTopology.SectorDisk
+info: VennTopology/SectorDisk.lean:68:0: 'Venn17.Topology.sectorDiskHomeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ sector_boundary_verified._native.native_decide.ax_1_1,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_connected_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_dual_verified._native.native_decide.ax_1_1,
+ sector_overlaps_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+info: VennTopology/SectorDisk.lean:69:0: 'Venn17.Topology.sectorDiskHomeomorph_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ sector_boundary_verified._native.native_decide.ax_1_1,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_connected_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_dual_verified._native.native_decide.ax_1_1,
+ sector_overlaps_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+info: VennTopology/SectorDisk.lean:70:0: 'Venn17.Topology.diagram_sectors_are_closed_disks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ sector_boundary_verified._native.native_decide.ax_1_1,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_connected_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_dual_verified._native.native_decide.ax_1_1,
+ sector_overlaps_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1]
+ℹ [3449/3468] Replayed VennTopology.EquivariantSectorDisk
+info: VennTopology/EquivariantSectorDisk.lean:95:0: 'Venn17.Topology.equivariantSectorDisk_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ sector_boundary_verified._native.native_decide.ax_1_1,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_connected_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_dual_verified._native.native_decide.ax_1_1,
+ sector_overlaps_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+info: VennTopology/EquivariantSectorDisk.lean:96:0: 'Venn17.Topology.equivariantSectorDisk_rotation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ meridian_labels_verified._native.native_decide.ax_1_1,
+ meridian_triangles_verified._native.native_decide.ax_1_1,
+ region_rotation_verified._native.native_decide.ax_1_1,
+ sector_boundary_verified._native.native_decide.ax_1_1,
+ sector_colors_verified._native.native_decide.ax_1_1,
+ sector_connected_verified._native.native_decide.ax_1_1,
+ sector_corners_verified._native.native_decide.ax_1_1,
+ sector_dual_verified._native.native_decide.ax_1_1,
+ sector_overlaps_verified._native.native_decide.ax_1_1,
+ supplied_distinct_corners_verified._native.native_decide.ax_1_1,
+ supplied_graph_size._native.native_decide.ax_1_1,
+ supplied_incidence_verified._native.native_decide.ax_1_1,
+ supplied_link_stars_verified._native.native_decide.ax_1_1,
+ supplied_oriented_face_count._native.native_decide.ax_1_1,
+ supplied_rotation_verified._native.native_decide.ax_1_1]
+✔ [3462/3468] Built VennTopology.SectorGluing (6.1s)
+✔ [3463/3468] Built VennTopology.RigidSphereConjugacy (8.4s)
+✔ [3464/3468] Built VennTopology.EquivariantStereographic (12s)
+✔ [3465/3468] Built VennTopology.RigidPlaneConjugacy (7.7s)
+✔ [3466/3468] Built VennTopology.RotationalVenn (5.8s)
+✔ [3467/3468] Built VennTopology (5.5s)
+Build completed successfully (3468 jobs).
