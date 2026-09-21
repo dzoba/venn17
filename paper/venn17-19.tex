@@ -24,6 +24,15 @@ certificate; one certificate of each size has been verified by a formal proof in
 non-monotone, which is why the crossing-sequence searches that found the 11- and 13-curve diagrams could not have
 found them.
 \end{abstract}
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/venn19-s196002.jpg}
+\caption{One of the six 19-curve diagrams (certificate \texttt{fcb7ad34}), drawn from its certificate at near-uniform
+crossing density by the plotter described in the data repository: 19 curves, $524{,}286$ crossings, every one of the
+$524{,}288$ regions present exactly once. The centre hole is the region inside all 19 curves; the outer face is the
+region outside all of them. Colours identify curves.}
+\label{fig:venn19}
+\end{figure}
 
 \section{Statement}
 An $n$-Venn diagram is a family of $n$ Jordan curves in the plane such that for every subset $S$ of the curves the
@@ -49,15 +58,6 @@ of Section~\ref{sec:encoding}, each accepted by two independently written checke
 formally verified in Lean~4 (Section~\ref{sec:lean}).
 
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.92\textwidth]{figures/venn19-s196002.jpg}
-\caption{One of the six 19-curve diagrams (certificate \texttt{fcb7ad34}), drawn from its certificate at near-uniform
-crossing density by the plotter described in the data repository: 19 curves, $524{,}286$ crossings, every one of the
-$524{,}288$ regions present exactly once. The centre hole is the region inside all 19 curves; the outer face is the
-region outside all of them. Colours identify curves.}
-\label{fig:venn19}
-\end{figure}
 \section{Encoding and verification}\label{sec:encoding}
 Let $D$ be a simple symmetric $n$-Venn diagram, drawn on the sphere with the unbounded region as a face. Its dual
 map $M$ has one vertex per region, labelled by the region's membership pattern in $\{0,1\}^n$; one edge per arc,
@@ -178,12 +178,12 @@ single lens insertion creating both missing labels at once after they had drifte
 diagram); and a single lens removal of two adjacent duplicated regions in a state with no missing label (one diagram).
 
 
-\begin{figure}[t]
+\begin{figure}[p]
 \centering
-\includegraphics[width=\textwidth]{figures/venn17-sector.jpg}
-\caption{One of the seventeen congruent sectors of the 17-curve diagram \texttt{c178d7bd}, unrolled into a strip: a
-fundamental domain of the rotation, containing $131{,}070/17 = 7{,}710$ of the crossings. The whole diagram is this
-strip repeated seventeen times around the centre.}
+\includegraphics[width=0.95\textwidth]{figures/venn17-sectors.jpg}
+\caption{The 17-curve diagram \texttt{c178d7bd} unrolled: its seventeen congruent sectors, each a fundamental domain
+of the rotation containing $131{,}070/17 = 7{,}710$ crossings, drawn as rows, with the colour of each curve
+advancing by one position from row to row. The whole diagram is one row bent around the centre seventeen times.}
 \label{fig:sector}
 \end{figure}
 \section{Properties}
