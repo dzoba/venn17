@@ -7,14 +7,16 @@
 \newtheorem{proposition}{Proposition}
 \title{Simple symmetric Venn diagrams with 17 and 19 curves}
 \author{Chris Dzoba}
-\date{September 21, 2026 (draft 2)}
+\date{September 21, 2026 (draft 3)}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We exhibit simple, rotationally symmetric Venn diagrams with 17 curves and with 19 curves. Symmetric Venn diagrams
-exist for every prime number of curves (Griggs, Killian and Savage, 2004), and simple ones were known only up to 13
-curves (Mamakani and Ruskey, 2014). Four 17-curve and six 19-curve diagrams were found by a Metropolis walk on
+We exhibit simple, rotationally symmetric Venn diagrams with 17 curves and with 19 curves: $n$ Jordan curves carried
+to one another by rotation through $2\pi/n$, with every one of the $2^n$ regions present and connected and, since the
+diagrams are simple, every crossing on exactly two curves. Symmetric Venn diagrams exist for every prime number of
+curves (Griggs, Killian and Savage, 2004), but those diagrams have many curves through a point; simple ones were
+known only up to 13 curves (Mamakani and Ruskey, 2014). Four 17-curve and six 19-curve diagrams were found by a Metropolis walk on
 rotation-invariant quadrangulations of the sphere in which regions may temporarily be duplicated, started from the
 Griggs--Killian--Savage diagram with its multiple crossings resolved. Every diagram is given by a machine-checkable
 certificate; one certificate of each size has been verified by a formal proof in Lean~4. All of the diagrams are
@@ -132,7 +134,10 @@ $\lambda$ ramped from $0.3$ to $1$ over three hours at $T=0.25$, three of fiftee
 fourth diagram was obtained by a further 40-minute cycle from a state with $68$ duplicates. Ten later instrumented
 runs of the same recipe finished seven times within three hours, first reaching $E=2n$ after $1.6$--$2.8\times10^9$
 proposals and finishing within $1.8\times10^9$ more. The same method finds 11- and 13-curve diagrams from the trivial
-starting state in seconds and minutes.
+starting state in seconds and minutes: on a laptop busy with other work, 200 of 200 seeds produced a simple symmetric
+11-Venn diagram, in a median of 0.8 seconds and at most 16 seconds, all 200 pairwise non-isomorphic (up to cyclic
+relabelling, mirror image and swapping the poles) and all non-monotone; 11 of 13 seeds produced a 13-curve diagram within
+a ten-minute limit, in a median of 52 seconds, again all distinct and all non-monotone.
 
 \paragraph{19 curves: budget.} The resolved starting diagram for $n=19$ has all labels and $305{,}862$ duplicate
 regions. Scaled by the number of regions, no 19-curve run in the first three days received the budget that the
