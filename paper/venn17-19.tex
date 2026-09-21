@@ -7,7 +7,7 @@
 \newtheorem{proposition}{Proposition}
 \title{Simple symmetric Venn diagrams with 17 and 19 curves}
 \author{Chris Dzoba}
-\date{September 21, 2026 (draft)}
+\date{September 21, 2026 (draft 2)}
 \begin{document}
 \maketitle
 
@@ -25,10 +25,16 @@ found them.
 \section{Statement}
 An $n$-Venn diagram is a family of $n$ Jordan curves in the plane such that for every subset $S$ of the curves the
 set of points inside exactly the curves of $S$ is nonempty and connected. It is \emph{simple} if no point lies on
-three curves, and \emph{symmetric} if a rotation by $2\pi/n$ maps the family to itself. Gr\"unbaum asked in 1975
-whether symmetric Venn diagrams exist for every prime $n$; Griggs, Killian and Savage answered yes in 2004, with
-diagrams that are not simple. Simple symmetric diagrams were found for $n=11$ (Mamakani and Ruskey, 2012) and $n=13$
-(Mamakani and Ruskey, 2014), and no larger case was known.
+three curves, and \emph{symmetric} if a rotation by $2\pi/n$ maps the family to itself. Henderson observed in 1963
+that a symmetric $n$-Venn diagram can exist only for prime $n$ \cite{Hen63}. Gr\"unbaum asked in 1975 whether they
+exist for every prime and gave simple symmetric diagrams with five curves \cite{Gru75}; simple symmetric diagrams with
+seven curves were found by Gr\"unbaum and by Edwards in the 1990s \cite{Gru92,Edw98}. Hamburger constructed the first
+symmetric 11-Venn diagram in 2002 \cite{Ham02}; it is not simple, and the same holds for the diagrams of Griggs,
+Killian and Savage, who then proved that symmetric $n$-Venn diagrams exist for every prime $n$ \cite{GKS04} (see also
+\cite{KRSW04}). Simple symmetric diagrams with 11 and 13 curves were found by Mamakani and Ruskey in 2012 and 2014
+\cite{MR12,MR14} by a search over monotone diagrams, and the question for larger primes, put forward as the central open
+problem by Ruskey, Savage and Wagon \cite{RSW06}, remained open: the recent literature lists simple symmetric $n$-Venn
+diagrams as known only for $n\le 13$ \cite{BGMV26}. The survey of Ruskey and Weston \cite{RW97} has the full history.
 
 \begin{theorem}
 Simple symmetric Venn diagrams with 17 curves exist, and so do simple symmetric Venn diagrams with 19 curves.
@@ -89,7 +95,7 @@ between two of them is $25{,}460$ faces (of $524{,}286$) and the largest $827{,}
 \end{table}
 
 \section{Formal verification}\label{sec:lean}
-The first 17-curve certificate (\texttt{c178d7bd}) was formally verified in Lean~4 with Mathlib by Justin Grimes,
+The first 17-curve certificate (\texttt{c178d7bd}) was formally verified in Lean~4 with Mathlib by Justin Grimes \cite{Gri26},
 working from the definitions alone and without access to our code. His theorem states that the 17 curves
 constructed from the certificate are Jordan curves in the Euclidean plane, carried to one another by a rigid
 rotation through $2\pi/17$, with every one of the $2^{17}$ regions path-connected, no point on three curves, and every
@@ -119,7 +125,7 @@ quadrangulations reaches $98.3\%$ of the labels and jams, because the last lens 
 to coincide geometrically. With duplicates allowed, a missing label can be created next to a duplicate at zero cost and
 defects diffuse until they annihilate.
 
-\paragraph{17 curves.} The walk starts from the Griggs--Killian--Savage diagram for $n=17$ with every multiple
+\paragraph{17 curves.} The walk starts from the Griggs--Killian--Savage diagram \cite{GKS04} for $n=17$ with every multiple
 crossing resolved into simple crossings, a state with all labels present and $69{,}394$ duplicate regions. With
 $\lambda$ ramped from $0.3$ to $1$ over three hours at $T=0.25$, three of fifteen independent runs reached $E=0$; a
 fourth diagram was obtained by a further 40-minute cycle from a state with $68$ duplicates. Ten later instrumented
@@ -155,10 +161,10 @@ single lens insertion creating both missing labels at once after they had drifte
 diagram); and a single lens removal of two adjacent duplicated regions in a state with no missing label (one diagram).
 
 \section{Properties}
-All ten diagrams are non-monotone: in the first 19-curve certificate, $3{,}590$ of the $27{,}594$ region orbits
+All ten diagrams are non-monotone in the sense of Bultena, Gr\"unbaum and Ruskey \cite{BGR99}: in the first 19-curve certificate, $3{,}590$ of the $27{,}594$ region orbits
 ($13\%$) lack a neighbouring region of rank one lower or one higher, and the 17-curve certificates behave the same
 way. Every previously published simple symmetric Venn diagram with $n\ge 11$ is monotone, and the crossing-sequence
-representation used to find them enumerates monotone diagrams by construction, so the diagrams reported here were
+representation used to find them \cite{MR14,MMR12} enumerates monotone diagrams by construction, so the diagrams reported here were
 outside the search space of those methods. Minimum region degree is 3 (a degree-2 region is impossible in a simple
 Venn diagram with $n\ge3$); in the first 19-curve certificate the degree histogram is $187{,}340$ regions of degree 3,
 $199{,}120$ of degree 4, $98{,}686$ of degree 5, and a tail to degree 16, with the two poles of degree 19 and every
@@ -183,4 +189,23 @@ resources, and is responsible for the content.
 We thank Justin Grimes for the formal verification of the 17-curve certificate in Lean, carried out independently
 and without knowledge of our construction, and on which the 19-curve verification is built; and Khalegh Mamakani for
 his encouragement and for pointing out that the earlier searches excluded non-monotone diagrams by construction.
+
+\begin{thebibliography}{99}
+\bibitem{Hen63} D.~W. Henderson, Venn diagrams for more than four classes, \emph{Amer. Math. Monthly} 70 (1963) 424--426.
+\bibitem{Gru75} B. Gr\"unbaum, Venn diagrams and independent families of sets, \emph{Math. Mag.} 48 (1975) 12--23.
+\bibitem{Gru92} B. Gr\"unbaum, Venn diagrams II, \emph{Geombinatorics} 2 (1992) 25--32.
+\bibitem{Edw98} A.~W.~F. Edwards, Seven-set Venn diagrams with rotational and polar symmetry, \emph{Combin. Probab. Comput.} 7 (1998) 149--152.
+\bibitem{BGR99} B. Bultena, B. Gr\"unbaum and F. Ruskey, Convex drawings of intersecting families of simple closed curves, in \emph{Proc. 11th Canadian Conference on Computational Geometry} (1999) 18--21.
+\bibitem{Ham02} P. Hamburger, Doodles and doilies, non-simple symmetric Venn diagrams, \emph{Discrete Math.} 257 (2002) 423--439.
+\bibitem{HS03} P. Hamburger and A. Sali, Symmetric 11-Venn diagrams with vertex sets $231, 242, \dots, 352$, \emph{Studia Sci. Math. Hungar.} 40 (2003).
+\bibitem{GKS04} J. Griggs, C.~E. Killian and C.~D. Savage, Venn diagrams and symmetric chain decompositions in the Boolean lattice, \emph{Electron. J. Combin.} 11 (2004), Research Paper 2.
+\bibitem{KRSW04} C.~E. Killian, F. Ruskey, C.~D. Savage and M. Weston, Half-simple symmetric Venn diagrams, \emph{Electron. J. Combin.} 11 (2004), Research Paper 86.
+\bibitem{RW97} F. Ruskey and M. Weston, A survey of Venn diagrams, \emph{Electron. J. Combin.} 4 (1997), Dynamic Survey 5, updated 2005.
+\bibitem{RSW06} F. Ruskey, C.~D. Savage and S. Wagon, The search for simple symmetric Venn diagrams, \emph{Notices Amer. Math. Soc.} 53 (2006) 1304--1311.
+\bibitem{MR12} K. Mamakani and F. Ruskey, A new rose: the first simple symmetric 11-Venn diagram, arXiv:1207.6452 (2012).
+\bibitem{MMR12} K. Mamakani, W. Myrvold and F. Ruskey, Generating simple convex Venn diagrams, \emph{J. Discrete Algorithms} 16 (2012) 270--286.
+\bibitem{MR14} K. Mamakani and F. Ruskey, New roses: simple symmetric Venn diagrams with 11 and 13 curves, \emph{Discrete Comput. Geom.} 52 (2014) 71--87.
+\bibitem{BGMV26} S. Brenner, P. Gregor, T. M\"utze and F. Verciani, On minimum Venn diagrams, in \emph{Proc. 42nd International Symposium on Computational Geometry (SoCG 2026)}, LIPIcs 367 (2026).
+\bibitem{Gri26} J. Grimes, Lean formalization of a simple rotationally symmetric 17-Venn diagram, version 1.0.0 (2026), \url{https://github.com/dzoba/venn17/tree/main/verify/lean}.
+\end{thebibliography}
 \end{document}
