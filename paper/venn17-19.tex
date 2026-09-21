@@ -189,9 +189,11 @@ advancing by one position from row to row. The whole diagram is one row bent aro
 \section{Properties}
 All ten diagrams are non-monotone in the sense of Bultena, Gr\"unbaum and Ruskey \cite{BGR99}: in the first 19-curve certificate, $3{,}590$ of the $27{,}594$ region orbits
 ($13\%$) lack a neighbouring region of rank one lower or one higher, and the 17-curve certificates behave the same
-way. Every previously published simple symmetric Venn diagram with $n\ge 11$ is monotone, and the crossing-sequence
-representation used to find them \cite{MR14,MMR12} enumerates monotone diagrams by construction, so the diagrams reported here were
-outside the search space of those methods. Minimum region degree is 3 (a degree-2 region is impossible in a simple
+way. Since monotone diagrams are exactly those that can be drawn with convex curves \cite{BGR99}, none of the diagrams
+reported here has a convex drawing. Every previously published simple symmetric Venn diagram with $n\ge 11$ is
+monotone, and the crossing-sequence representation used to find them \cite{MR14,MMR12} enumerates monotone diagrams by
+construction, so the diagrams reported here were outside the search space of those methods; Mamakani and Ruskey
+themselves noted that the size of their search sequences grows about tenfold from 13 to 17 curves \cite{MR14}. Minimum region degree is 3 (a degree-2 region is impossible in a simple
 Venn diagram with $n\ge3$); in the first 19-curve certificate the degree histogram is $187{,}340$ regions of degree 3,
 $199{,}120$ of degree 4, $98{,}686$ of degree 5, and a tail to degree 16, with the two poles of degree 19 and every
 rank-1 and rank-18 region of degree 11.
@@ -200,16 +202,19 @@ rank-1 and rank-18 region of degree 11.
 Certificates, pre-completion states, logs, the search code with its checksums, the independent checkers and both
 Lean developments are at \url{https://github.com/dzoba/venn17} and archived on Zenodo (DOI to be inserted).
 
-\section*{Contributions and use of AI systems}
+\section*{Tool and computational resource disclosure}
 This work was carried out by two AI systems working under the author's direction over five days, and this note
-discloses their roles in full. Claude (Anthropic) formulated the dual-map encoding, designed and implemented the
+discloses their roles in full, in the spirit of the Leiden Declaration on Artificial Intelligence and Mathematics. Claude (Anthropic) formulated the dual-map encoding, designed and implemented the
 search (the relaxed walk, its moves, energy and annealing schedules), diagnosed the failure at 19 from the run records,
 designed and implemented the added proposal class and the capture of pre-completion states, ran the searches and the
 verification, performed the analyses reported here and drafted this note. Codex (OpenAI) constructed the resolved
 Griggs--Killian--Savage starting states, wrote independent validators for every certificate, identified the need for
 the bigon moves, built exact local solvers used to diagnose the earlier plateau, and ported the Lean development to
 19 curves. The author set the goals and strategy, decided what to pursue and what to abandon, supplied the computing
-resources, and is responsible for the content.
+resources, and is responsible for the content. Computing: one 16-core laptop throughout, and for the 19-curve runs
+cloud instances of up to 24 vCPUs each, never more than about a hundred vCPUs at once and none for longer than two
+days; total cloud cost under five hundred dollars. Software: the search engine, checkers and plotter in the data
+repository (C++ and Python with NumPy); Lean~4 with Mathlib for the formal proofs; \texttt{tectonic} for this document.
 
 \section*{Acknowledgments}
 We thank Justin Grimes for the formal verification of the 17-curve certificate in Lean, carried out independently and
