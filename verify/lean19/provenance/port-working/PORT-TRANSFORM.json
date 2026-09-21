@@ -1,0 +1,66 @@
+{
+  "status": "SOURCE_PORT_READY_FOR_LEAN_BUILD",
+  "lean19_build_started": false,
+  "upstream_source": "/Users/dzoba/Developer/venn17/verify/lean",
+  "input": {
+    "file": "venn19-closure-s196002.json",
+    "sha256": "ed26b3baa6e5c02bc3a4239b1dfbf84d66f731cad2dd2805a8c1770e2c1fdb5d",
+    "bytes": 47185825,
+    "faces": 524286
+  },
+  "identity_transform": {
+    "module_root": "Venn17 -> Venn19",
+    "namespace": "Venn17 -> Venn19",
+    "final_existential_theorem": "exists_simple_rotational_venn_19"
+  },
+  "generated": {
+    "meridian": {
+      "status": "PASS",
+      "elapsed_seconds_observed": 9.2,
+      "path_vertices": 20,
+      "rotated_rows": 19,
+      "faces_per_row": 19,
+      "endpoints": [0, 524287]
+    },
+    "sectors": {
+      "status": "PASS",
+      "elapsed_seconds_upper_bound": 12,
+      "count": 19,
+      "vertices_each": 27614,
+      "edges_each": 55207,
+      "faces_each": 27594,
+      "euler_each": 1,
+      "boundary_edges_each": 38
+    },
+    "pole_orientation": {
+      "status": "PASS",
+      "elapsed_seconds_observed": 9.4,
+      "curve_link_steps": [1, 18],
+      "triangulated_link_steps": [2, 36]
+    }
+  },
+  "source_checks": {
+    "input_sha_matches": true,
+    "license_byte_identical": true,
+    "citation_byte_identical": true,
+    "vendor_byte_identical": true,
+    "old_dimension_tokens_in_active_nonvendor_lean": 0,
+    "explicit_axiom_or_sorry_declarations": 0,
+    "native_decide_invocations": 27,
+    "native_decide_comment_mentions": 1
+  },
+  "retained_stale_upstream_artifacts": [
+    "README.md",
+    "REALIZATION.md",
+    "BUNDLE-README.md",
+    "message.txt",
+    "BUNDLE-MANIFEST.json",
+    "SHA256SUMS",
+    "audit.json",
+    "lean-audit.txt",
+    "topology-axioms.txt",
+    "verification/"
+  ],
+  "stale_artifact_policy": "Retained only as 17-source provenance; regenerate after a successful 19 build.",
+  "active_file_manifest": "PORT-SHA256SUMS"
+}

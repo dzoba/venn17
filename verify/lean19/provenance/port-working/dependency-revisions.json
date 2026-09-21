@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "packages": [
+    {
+      "name": "mathlib",
+      "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+      "expected": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+      "matches": true
+    },
+    {
+      "name": "plausible",
+      "commit": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "expected": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "matches": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "expected": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "matches": true
+    },
+    {
+      "name": "importGraph",
+      "commit": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "expected": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "matches": true
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "expected": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "matches": true
+    },
+    {
+      "name": "aesop",
+      "commit": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "expected": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "matches": true
+    },
+    {
+      "name": "Qq",
+      "commit": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "expected": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "matches": true
+    },
+    {
+      "name": "batteries",
+      "commit": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "expected": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "matches": true
+    },
+    {
+      "name": "Cli",
+      "commit": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "expected": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "matches": true
+    }
+  ],
+  "manifest_sha256": "764496d4901574a608c77df5f6ddcc6ab544f864e5f5c0774635d0e894e6cb7f"
+}

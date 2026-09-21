@@ -1,0 +1,18 @@
+ℹ [4/31] Replayed VennCore.Connectivity
+info: VennCore/Connectivity.lean:93:0: 'Venn19.GraphProof.treeCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+{ regions := 524288,
+  arcs := 1048572,
+  crossings := 524286,
+  squareCrossings := true,
+  twoFacesPerArc := true,
+  connectedMap := true,
+  orientedSurface := true,
+  singleVertexLinks := true,
+  eulerTwo := true,
+  singleCurveCycles := true,
+  connectedCurveSides := true,
+  everyPattern := true,
+  simpleCrossings := true,
+  rotationalSymmetry := true,
+  poleRotationOneStep := true }
+PASS: all finite combinatorial checks. Geometric realization is not formalized.

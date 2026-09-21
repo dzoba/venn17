@@ -1,0 +1,73 @@
+{
+  "source": "/Users/dzoba/Developer/venn17/verify/lean",
+  "target_input": {
+    "path": "/Users/dzoba/Developer/venn-diagram/research/polar-calibration/FOUND-19/for-lean/venn19-closure-s196002.json",
+    "sha256": "ed26b3baa6e5c02bc3a4239b1dfbf84d66f731cad2dd2805a8c1770e2c1fdb5d",
+    "bytes": 47185825,
+    "metadata": {"n": 19, "labels": 524288, "faces": 524286, "energy": 0, "missing": 0, "duplicates": 0, "full": true}
+  },
+  "constant_map": {
+    "curve_count": {"old": 17, "new": 19},
+    "rotation_shift": {"old": 16, "new": 18},
+    "region_count": {"old": 131072, "new": 524288, "formula": "2^n"},
+    "north_pole": {"old": 131071, "new": 524287, "formula": "2^n-1"},
+    "crossing_count": {"old": 131070, "new": 524286, "formula": "2^n-2"},
+    "arrangement_arc_count": {"old": 262140, "new": 1048572, "formula": "2*(2^n-2)"},
+    "meridian_vertex_count": {"old": 18, "new": 20, "formula": "n+1"},
+    "meridian_edge_count": {"old": 17, "new": 19, "formula": "n"},
+    "meridian_boundary_edge_count": {"old": 34, "new": 38, "formula": "2*n"},
+    "meridian_boundary_last_index": {"old": 33, "new": 37, "formula": "2*n-1"},
+    "pole_link_size": {"old": 34, "new": 38, "formula": "2*n"},
+    "pole_link_reverse_step": {"old": 32, "new": 36, "formula": "2*n-2"},
+    "crossings_per_curve": {"old": 15420, "new": 55188, "formula": "2*(2^n-2)/n", "new_value_observed_by_streaming_scan": true},
+    "curve_polygon_vertex_count": {"old": 30840, "new": 110376, "formula": "4*(2^n-2)/n"},
+    "sector_face_count": {"old": 7710, "new": 27594, "formula": "(2^n-2)/n"},
+    "sector_vertex_count": {"old": 7728, "new": 27614, "formula": "(2^n-2)/n+n+1"},
+    "sector_edge_count": {"old": 15437, "new": 55207, "formula": "2*(2^n-2)/n+n"},
+    "triangulation_vertex_count": {"old": 262142, "new": 1048574, "formula": "2^(n+1)-2"},
+    "triangulation_edge_count": {"old": 786420, "new": 3145716, "formula": "6*(2^n-2)"},
+    "triangulation_triangle_count": {"old": 524280, "new": 2097144, "formula": "4*(2^n-2)"}
+  },
+  "source_line_inventory": {
+    "file": "dimension-sites.tsv",
+    "matching_source_lines": 879,
+    "matching_files": 79,
+    "total_token_occurrences": 1024,
+    "production_files": 77,
+    "test_files": 2,
+    "vendor_matches": 0,
+    "regex": "(?<![A-Za-z0-9])(16|17|18|32|33|34|131070|131071|131072|262140|262142|524280|786420|7710|7728|15420|15437|30840)(?![A-Za-z0-9])|2\\s*\\^\\s*(16|17)"
+  },
+  "native_decide": {
+    "invocations": 27,
+    "comment_mentions_excluded": 1,
+    "final_theorem_native_axiom_count": 20,
+    "sites": [
+      {"file":"Venn17/Proof.lean","theorems":["occurrence_check_passes","square_witnesses_pass","supplied_file_accepted"],"final_dependency":false},
+      {"file":"Venn17/GraphCertificate.lean","theorems":["graph_certificates_pass"],"final_dependency":true},
+      {"file":"Venn17/Facts.lean","theorems":["rotation_witnesses_pass"],"final_dependency":false},
+      {"file":"VennTopology/Dataset.lean","theorems":["supplied_incidence_verified","supplied_distinct_corners_verified"],"final_dependency":true},
+      {"file":"VennTopology/Periodic.lean","theorems":["region_rotation_verified"],"final_dependency":true},
+      {"file":"VennTopology/DiagramSymmetry.lean","theorems":["supplied_rotation_verified","supplied_graph_size"],"final_dependency":true},
+      {"file":"VennTopology/FixedPoints.lean","theorems":["supplied_fixed_triangles_verified"],"final_dependency":false},
+      {"file":"VennTopology/LinkData.lean","theorems":["supplied_link_stars_verified"],"final_dependency":true},
+      {"file":"VennTopology/CurveData.lean","theorems":["supplied_curve_polygons_verified","supplied_curve_labels_verified","supplied_crossing_labels_verified"],"final_dependency":true},
+      {"file":"VennTopology/CurveSymmetry.lean","theorems":["bit_rotation_verified"],"final_dependency":true},
+      {"file":"VennTopology/EulerCharacteristic.lean","theorems":["supplied_oriented_face_count"],"final_dependency":true},
+      {"file":"VennTopology/MeridianCertificate.lean","theorems":["meridian_labels_verified","meridian_triangles_verified"],"final_dependency":true},
+      {"file":"VennTopology/SectorCertificate.lean","theorems":["sector_colors_verified","sector_corners_verified","sector_overlaps_verified","sector_boundary_verified","sector_dual_verified","sector_connected_verified","sector_face_counts_verified"],"final_dependency":"all_except_sector_face_counts_verified"},
+      {"file":"VennTopology/PoleRotationData.lean","theorems":["supplied_pole_link_action_verified"],"final_dependency":false}
+    ],
+    "final_native_axioms": [
+      "graph_certificates_pass","bit_rotation_verified","meridian_labels_verified","meridian_triangles_verified","region_rotation_verified","sector_boundary_verified","sector_colors_verified","sector_connected_verified","sector_corners_verified","sector_dual_verified","sector_overlaps_verified","supplied_crossing_labels_verified","supplied_curve_labels_verified","supplied_curve_polygons_verified","supplied_distinct_corners_verified","supplied_graph_size","supplied_incidence_verified","supplied_link_stars_verified","supplied_oriented_face_count","supplied_rotation_verified"
+    ],
+    "standard_logical_axioms": ["propext","Classical.choice","Quot.sound"]
+  },
+  "generated_certificates": [
+    {"script":"scripts/find_meridians.py","outputs":["VennTopology/MeridianData.lean","output/meridian-certificate.json"],"port_gate":"passed: 20-vertex pole-to-pole seed and 19 rows of 19 face witnesses"},
+    {"script":"scripts/find_sectors.py","outputs":["VennTopology/SectorData.lean","output/sector-certificate.json"],"port_gate":"passed: 19 adjacent-boundary components, each V/E/F=27614/55207/27594, Euler 1, boundary 38"},
+    {"script":"scripts/check_pole_steps.py","outputs":[],"port_gate":"passed: oriented curve-link steps [1,18], triangulated steps [2,36]"}
+  ],
+  "unchanged_vendor": {"lean_files_with_bare_numeric_17":0,"modules":309,"action":"copy byte-for-byte and retain upstream licenses, README, source hashes"},
+  "explicit_axiom_or_sorry_declarations": 0
+}

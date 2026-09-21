@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: >-
+  If you use this Lean formalization, please cite it using the metadata below.
+  This citation credits the formalization only, not the original diagram or
+  input certificate.
+type: software
+title: "Lean formalization of a simple rotationally symmetric 17-Venn diagram"
+authors:
+  - family-names: Grimes
+    given-names: Justin
+version: "1.0.0"
+date-released: "2026-09-18"
+license: Apache-2.0

@@ -1,0 +1,76 @@
+Here is a self-contained prompt. It gives the file format and the mathematical definition and nothing else, so whatever checker comes back is independent of everything we did.
+
+```
+I have a JSON file that is claimed to encode a simple, rotationally symmetric Venn diagram
+with 17 curves. Please write an independent checker, from first principles, that decides
+whether the claim is true, and run it on the file. Do not trust any flags or counts inside
+the file; recompute everything.
+
+DEFINITIONS
+A Venn diagram with n curves is a family of n simple closed curves (Jordan curves) in the
+plane such that for every subset S of the n curves, the set of points lying inside exactly
+the curves in S and outside the others is nonempty and connected. So there are exactly 2^n
+regions, one per membership pattern. It is "simple" if no point lies on more than two curves
+(every crossing is a transversal crossing of exactly two curves). It is "rotationally
+symmetric" (n-fold) if a rotation of the plane by 2*pi/n about some center maps the family
+to itself, sending curve i to curve i+1 mod n.
+
+FILE FORMAT
+The file is JSON with keys "n" (= 17) and "faces". "faces" is a list; each element is a list
+of exactly 4 strings, each string 17 characters of '0'/'1'. A string is the membership
+pattern of a region: character i (0-based) is '1' if the region lies inside curve i. Each
+4-element list describes ONE crossing point of the diagram: the four regions that meet at
+that crossing, listed in no particular order. At a crossing of curves a and b, the four
+regions around the point have patterns u, u with bit a flipped, u with bit b flipped, and u
+with both flipped, for some pattern u. Two regions that share an arc of curve i have patterns
+differing in exactly bit i.
+
+WHAT TO VERIFY (the claim is true iff all of these hold)
+1. Well-formed crossings: every face is a set of four distinct patterns of the form
+   {u, u^a, u^b, u^a^b} with a != b (^ = flip that bit).
+2. Build the region-adjacency structure: regions are the distinct patterns; two regions are
+   adjacent along an arc if they differ in one bit AND some face contains both. Each such arc
+   must be contained in exactly two faces (an arc runs between two crossings). Check that no
+   arc belongs to one or more than two faces.
+3. The faces, arcs and regions form a map on the sphere: choose a consistent orientation of
+   every face (traverse each face's 4-cycle so that every arc is traversed in opposite
+   directions by its two faces; this must be possible and consistent), derive the cyclic
+   order of arcs around each region, and verify V - E + F = 2 with V = number of regions,
+   E = number of arcs, F = number of faces, and that the map is connected and every
+   region's arcs form a single cyclic sequence (one boundary walk per region). This
+   establishes an embedding on the sphere in which faces are the crossings and regions are
+   disks. (Equivalently: construct the planar arrangement and confirm it is a valid cellular
+   embedding of the sphere.)
+4. Each curve is one simple closed curve: for each i, the arcs labelled i (adjacent patterns
+   differing in bit i) chain together through the crossings into cycles (at a crossing of
+   curves i and j, the two arcs of i at that crossing are opposite each other); there must be
+   exactly ONE cycle per i. Also confirm the two sides of curve i are each connected: the
+   regions with bit i = 1, under adjacency through arcs of other curves, form one connected
+   set, and likewise for bit i = 0.
+5. Venn property: the set of region patterns is exactly all 2^17 = 131072 patterns, each
+   appearing exactly once as a region (no pattern missing, none realized by two different
+   regions). Consequently F should equal 2^17 - 2 and E = 2F.
+6. Simplicity: every face has exactly 4 regions (already forced by the format) and is a
+   transversal crossing of two distinct curves (item 1), so no point lies on three curves.
+7. Symmetry: define the rotation r(pattern) = cyclic shift of the 17 characters by one
+   position (character i moves to position i-1 mod 17, i.e. curve i becomes curve i-1). The
+   set of faces must be invariant under r applied to all four patterns of every face, AND the
+   orientation chosen in item 3 must be preserved by r (r maps the cyclic order around each
+   region to the cyclic order around the image region). This shows the combinatorial map has
+   a 17-fold rotational automorphism realizable as a rotation of the sphere (fixing the two
+   regions all-zeros and all-ones as the poles); with the all-outside region as the outer
+   face, that is a rotationally symmetric plane diagram.
+
+DELIVERABLES
+- The checker source (any language), written without assuming anything about how the file
+  was produced.
+- Its output on the file: counts (regions, arcs, faces, Euler characteristic), the result of
+  every item above, and a final verdict.
+- Optionally, a drawing: compute a planar straight-line embedding of the crossing graph
+  (e.g. a Tutte embedding with the outer face fixed) to confirm planarity geometrically, and
+  render the 17 curves.
+Please be adversarial: try to break the file, and report anything unclear or any check you
+could not carry out.
+```
+
+Give them the file `research/polar-calibration/FOUND-17/venn17-local-c3-s2.json` and its checksum from the SHA256SUMS file so both sides know they checked the same bytes.

@@ -1,0 +1,1216 @@
+{
+  "pgid": 82827,
+  "started_utc": "2026-09-21T03:42:23.894549+00:00",
+  "checked_utc": "2026-09-21T04:02:00.424717+00:00",
+  "sampling_interval_seconds": 2.0,
+  "samples": 558,
+  "measurement_note": "Sampled RSS peaks are lower bounds between ps polls.",
+  "current_processes": 0,
+  "current_rss_bytes": 0,
+  "peak_processes_observed": 4,
+  "peak_aggregate_rss_bytes_lower_bound": 4959027200,
+  "processes": [
+    {
+      "pid": 82827,
+      "ppid": 82825,
+      "first_observed_utc": "2026-09-21T03:42:23.908558+00:00",
+      "last_observed_utc": "2026-09-21T04:01:54.156191+00:00",
+      "peak_rss_bytes_lower_bound": 1261568,
+      "command": "/usr/bin/time -l -p -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/logs/lean19/time.txt /Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lake --no-cache --no-ansi build",
+      "last_state": "Z",
+      "last_etime": "20:07"
+    },
+    {
+      "pid": 82829,
+      "ppid": 82827,
+      "first_observed_utc": "2026-09-21T03:42:23.908558+00:00",
+      "last_observed_utc": "2026-09-21T04:01:52.065535+00:00",
+      "peak_rss_bytes_lower_bound": 932970496,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lake --no-cache --no-ansi build",
+      "last_state": "S",
+      "last_etime": "20:05"
+    },
+    {
+      "pid": 82977,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:42:23.908558+00:00",
+      "last_observed_utc": "2026-09-21T03:43:25.922356+00:00",
+      "peak_rss_bytes_lower_bound": 2474524672,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/Venn19/Proof.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/Venn19/Proof.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/Venn19/Proof.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/Venn19/Proof.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/Venn19/Proof.setup.json --json",
+      "last_state": "R",
+      "last_etime": "01:13"
+    },
+    {
+      "pid": 83632,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:43:28.026563+00:00",
+      "last_observed_utc": "2026-09-21T03:45:11.454809+00:00",
+      "peak_rss_bytes_lower_bound": 2141356032,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/Venn19/GraphCertificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/Venn19/GraphCertificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/Venn19/GraphCertificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/Venn19/GraphCertificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/Venn19/GraphCertificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "01:44"
+    },
+    {
+      "pid": 84291,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:45:13.582864+00:00",
+      "last_observed_utc": "2026-09-21T03:45:39.174503+00:00",
+      "peak_rss_bytes_lower_bound": 2186723328,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/Venn19/Facts.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/Venn19/Facts.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/Venn19/Facts.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/Venn19/Facts.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/Venn19/Facts.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:26"
+    },
+    {
+      "pid": 84383,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:45:45.574525+00:00",
+      "last_observed_utc": "2026-09-21T03:45:45.574525+00:00",
+      "peak_rss_bytes_lower_bound": 1683488768,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Realization.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Realization.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Realization.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Realization.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Realization.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 84403,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:45:47.661565+00:00",
+      "last_observed_utc": "2026-09-21T03:45:49.791465+00:00",
+      "peak_rss_bytes_lower_bound": 1940979712,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Automorphism.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Automorphism.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Automorphism.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Automorphism.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Automorphism.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 84417,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:45:51.888051+00:00",
+      "last_observed_utc": "2026-09-21T03:45:53.993422+00:00",
+      "peak_rss_bytes_lower_bound": 2259369984,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Incidence.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Incidence.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Incidence.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Incidence.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Incidence.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 84442,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:45:56.184225+00:00",
+      "last_observed_utc": "2026-09-21T03:45:56.184225+00:00",
+      "peak_rss_bytes_lower_bound": 1707261952,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Periodic.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Periodic.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Periodic.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Periodic.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Periodic.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 84468,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:45:58.318050+00:00",
+      "last_observed_utc": "2026-09-21T03:46:36.437981+00:00",
+      "peak_rss_bytes_lower_bound": 3336273920,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Dataset.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Dataset.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Dataset.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Dataset.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Dataset.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:38"
+    },
+    {
+      "pid": 84608,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:46:38.540705+00:00",
+      "last_observed_utc": "2026-09-21T03:47:16.567303+00:00",
+      "peak_rss_bytes_lower_bound": 3345039360,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/DiagramSymmetry.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/DiagramSymmetry.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/DiagramSymmetry.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/DiagramSymmetry.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/DiagramSymmetry.setup.json --json",
+      "last_state": "?E",
+      "last_etime": "00:40"
+    },
+    {
+      "pid": 84723,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:47:18.686928+00:00",
+      "last_observed_utc": "2026-09-21T03:47:18.686928+00:00",
+      "peak_rss_bytes_lower_bound": 1831124992,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Intersections.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Intersections.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Intersections.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Intersections.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Intersections.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 84727,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:47:20.789951+00:00",
+      "last_observed_utc": "2026-09-21T03:47:46.599288+00:00",
+      "peak_rss_bytes_lower_bound": 3192602624,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/FixedPoints.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/FixedPoints.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/FixedPoints.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/FixedPoints.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/FixedPoints.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:27"
+    },
+    {
+      "pid": 84886,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:47:48.685871+00:00",
+      "last_observed_utc": "2026-09-21T03:47:50.829906+00:00",
+      "peak_rss_bytes_lower_bound": 2271068160,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Certificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Certificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Certificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Certificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Certificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 84896,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:47:52.975601+00:00",
+      "last_observed_utc": "2026-09-21T03:47:52.975601+00:00",
+      "peak_rss_bytes_lower_bound": 1730297856,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CoordinateSimplex.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CoordinateSimplex.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CoordinateSimplex.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CoordinateSimplex.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CoordinateSimplex.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 84898,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:47:55.065535+00:00",
+      "last_observed_utc": "2026-09-21T03:48:26.974049+00:00",
+      "peak_rss_bytes_lower_bound": 3564273664,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/LinkData.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LinkData.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LinkData.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LinkData.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LinkData.setup.json --json",
+      "last_state": "?E",
+      "last_etime": "00:33"
+    },
+    {
+      "pid": 85229,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:48:29.070767+00:00",
+      "last_observed_utc": "2026-09-21T03:48:29.070767+00:00",
+      "peak_rss_bytes_lower_bound": 1741160448,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Stars.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Stars.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Stars.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Stars.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Stars.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85358,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:48:31.182729+00:00",
+      "last_observed_utc": "2026-09-21T03:48:31.182729+00:00",
+      "peak_rss_bytes_lower_bound": 640040960,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CompactParametrization.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CompactParametrization.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CompactParametrization.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CompactParametrization.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CompactParametrization.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:01"
+    },
+    {
+      "pid": 85366,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:48:33.282606+00:00",
+      "last_observed_utc": "2026-09-21T03:48:35.391021+00:00",
+      "peak_rss_bytes_lower_bound": 2231713792,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/LinkCertificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LinkCertificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LinkCertificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LinkCertificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LinkCertificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85402,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:48:37.476536+00:00",
+      "last_observed_utc": "2026-09-21T03:48:37.476536+00:00",
+      "peak_rss_bytes_lower_bound": 1746157568,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CoordinateRelabel.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CoordinateRelabel.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CoordinateRelabel.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CoordinateRelabel.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CoordinateRelabel.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85414,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:48:39.566616+00:00",
+      "last_observed_utc": "2026-09-21T03:48:41.667442+00:00",
+      "peak_rss_bytes_lower_bound": 2291515392,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/LocalGeometry.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LocalGeometry.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LocalGeometry.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LocalGeometry.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LocalGeometry.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85428,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:48:43.762012+00:00",
+      "last_observed_utc": "2026-09-21T03:48:43.762012+00:00",
+      "peak_rss_bytes_lower_bound": 1450803200,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SimplexCounting.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SimplexCounting.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SimplexCounting.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SimplexCounting.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SimplexCounting.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85431,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:48:45.848881+00:00",
+      "last_observed_utc": "2026-09-21T03:50:03.301697+00:00",
+      "peak_rss_bytes_lower_bound": 2513338368,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CurveData.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveData.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveData.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveData.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveData.setup.json --json",
+      "last_state": "R",
+      "last_etime": "01:19"
+    },
+    {
+      "pid": 85638,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:05.382851+00:00",
+      "last_observed_utc": "2026-09-21T03:50:05.382851+00:00",
+      "peak_rss_bytes_lower_bound": 1771569152,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/ConeDisk.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ConeDisk.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ConeDisk.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ConeDisk.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ConeDisk.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:01"
+    },
+    {
+      "pid": 85643,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:07.502592+00:00",
+      "last_observed_utc": "2026-09-21T03:50:09.592131+00:00",
+      "peak_rss_bytes_lower_bound": 2111275008,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CyclicPolygon.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CyclicPolygon.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CyclicPolygon.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CyclicPolygon.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CyclicPolygon.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85648,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:11.702609+00:00",
+      "last_observed_utc": "2026-09-21T03:50:13.799827+00:00",
+      "peak_rss_bytes_lower_bound": 335626240,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/OpenStarDisk.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/OpenStarDisk.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/OpenStarDisk.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/OpenStarDisk.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/OpenStarDisk.setup.json --json",
+      "last_state": "?E",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85651,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:15.885564+00:00",
+      "last_observed_utc": "2026-09-21T03:50:15.885564+00:00",
+      "peak_rss_bytes_lower_bound": 2057814016,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/LabeledPolygon.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LabeledPolygon.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LabeledPolygon.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LabeledPolygon.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LabeledPolygon.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85660,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:17.976778+00:00",
+      "last_observed_utc": "2026-09-21T03:50:17.976778+00:00",
+      "peak_rss_bytes_lower_bound": 1771814912,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/MidpointPolygon.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MidpointPolygon.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MidpointPolygon.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MidpointPolygon.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MidpointPolygon.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85662,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:20.060590+00:00",
+      "last_observed_utc": "2026-09-21T03:50:22.162842+00:00",
+      "peak_rss_bytes_lower_bound": 2394128384,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/LinkCircles.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LinkCircles.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/LinkCircles.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LinkCircles.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/LinkCircles.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85668,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:24.246925+00:00",
+      "last_observed_utc": "2026-09-21T03:50:26.327950+00:00",
+      "peak_rss_bytes_lower_bound": 1189412864,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/TriangleMidline.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/TriangleMidline.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/TriangleMidline.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/TriangleMidline.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/TriangleMidline.setup.json --json",
+      "last_state": "?E",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85674,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:28.421205+00:00",
+      "last_observed_utc": "2026-09-21T03:50:28.421205+00:00",
+      "peak_rss_bytes_lower_bound": 2188853248,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CurveCertificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveCertificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveCertificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveCertificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveCertificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85676,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:30.506370+00:00",
+      "last_observed_utc": "2026-09-21T03:50:32.601944+00:00",
+      "peak_rss_bytes_lower_bound": 2533113856,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/EncodedLinks.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EncodedLinks.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EncodedLinks.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EncodedLinks.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EncodedLinks.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85682,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:34.689833+00:00",
+      "last_observed_utc": "2026-09-21T03:50:36.789948+00:00",
+      "peak_rss_bytes_lower_bound": 2373009408,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/GeometricLinks.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/GeometricLinks.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/GeometricLinks.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/GeometricLinks.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/GeometricLinks.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85715,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:38.897352+00:00",
+      "last_observed_utc": "2026-09-21T03:50:40.982307+00:00",
+      "peak_rss_bytes_lower_bound": 2535374848,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CurveGeometry.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveGeometry.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveGeometry.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveGeometry.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveGeometry.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85721,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:43.073308+00:00",
+      "last_observed_utc": "2026-09-21T03:50:45.177362+00:00",
+      "peak_rss_bytes_lower_bound": 2573828096,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/DartIncidence.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/DartIncidence.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/DartIncidence.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/DartIncidence.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/DartIncidence.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 85730,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:47.259558+00:00",
+      "last_observed_utc": "2026-09-21T03:50:49.376077+00:00",
+      "peak_rss_bytes_lower_bound": 2544254976,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Surface.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Surface.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Surface.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Surface.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Surface.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85735,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:51.482019+00:00",
+      "last_observed_utc": "2026-09-21T03:50:51.482019+00:00",
+      "peak_rss_bytes_lower_bound": 1079656448,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/DiagramCurves.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/DiagramCurves.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/DiagramCurves.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/DiagramCurves.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/DiagramCurves.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85742,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:55.741111+00:00",
+      "last_observed_utc": "2026-09-21T03:50:55.741111+00:00",
+      "peak_rss_bytes_lower_bound": 2203926528,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Regions.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Regions.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Regions.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Regions.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Regions.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85779,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:50:57.852554+00:00",
+      "last_observed_utc": "2026-09-21T03:50:59.949013+00:00",
+      "peak_rss_bytes_lower_bound": 2421899264,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/TriangulationCounts.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/TriangulationCounts.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/TriangulationCounts.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/TriangulationCounts.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/TriangulationCounts.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85783,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:02.051431+00:00",
+      "last_observed_utc": "2026-09-21T03:51:04.177733+00:00",
+      "peak_rss_bytes_lower_bound": 2424553472,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/GeometricCounting.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/GeometricCounting.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/GeometricCounting.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/GeometricCounting.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/GeometricCounting.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85789,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:06.269821+00:00",
+      "last_observed_utc": "2026-09-21T03:51:23.245023+00:00",
+      "peak_rss_bytes_lower_bound": 3402956800,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/EulerCharacteristic.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EulerCharacteristic.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EulerCharacteristic.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EulerCharacteristic.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EulerCharacteristic.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:18"
+    },
+    {
+      "pid": 85875,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:25.339224+00:00",
+      "last_observed_utc": "2026-09-21T03:51:27.439908+00:00",
+      "peak_rss_bytes_lower_bound": 2548531200,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SurfaceCertificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SurfaceCertificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SurfaceCertificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SurfaceCertificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SurfaceCertificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85884,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:29.530937+00:00",
+      "last_observed_utc": "2026-09-21T03:51:35.876374+00:00",
+      "peak_rss_bytes_lower_bound": 2219999232,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CrossingSquare.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CrossingSquare.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CrossingSquare.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CrossingSquare.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CrossingSquare.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:07"
+    },
+    {
+      "pid": 85925,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:38.003533+00:00",
+      "last_observed_utc": "2026-09-21T03:51:40.086579+00:00",
+      "peak_rss_bytes_lower_bound": 2601730048,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CurveIntersections.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveIntersections.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveIntersections.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveIntersections.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveIntersections.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 85930,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:42.167682+00:00",
+      "last_observed_utc": "2026-09-21T03:51:42.167682+00:00",
+      "peak_rss_bytes_lower_bound": 2149924864,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/ArmSymmetry.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ArmSymmetry.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ArmSymmetry.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ArmSymmetry.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ArmSymmetry.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85933,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:44.262115+00:00",
+      "last_observed_utc": "2026-09-21T03:51:48.455870+00:00",
+      "peak_rss_bytes_lower_bound": 2620981248,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CenterChart.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CenterChart.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CenterChart.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CenterChart.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CenterChart.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 85940,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:50.531545+00:00",
+      "last_observed_utc": "2026-09-21T03:51:50.531545+00:00",
+      "peak_rss_bytes_lower_bound": 2161541120,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RegionSymmetry.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RegionSymmetry.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RegionSymmetry.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RegionSymmetry.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RegionSymmetry.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85945,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:52.626511+00:00",
+      "last_observed_utc": "2026-09-21T03:51:54.704491+00:00",
+      "peak_rss_bytes_lower_bound": 2452701184,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PuncturedRegions.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedRegions.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedRegions.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedRegions.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedRegions.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85951,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:56.794740+00:00",
+      "last_observed_utc": "2026-09-21T03:51:56.794740+00:00",
+      "peak_rss_bytes_lower_bound": 245170176,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PunctureConnected.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PunctureConnected.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PunctureConnected.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PunctureConnected.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PunctureConnected.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:00"
+    },
+    {
+      "pid": 85962,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:51:58.911400+00:00",
+      "last_observed_utc": "2026-09-21T03:52:03.088427+00:00",
+      "peak_rss_bytes_lower_bound": 2605989888,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CrossingAxes.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CrossingAxes.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CrossingAxes.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CrossingAxes.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CrossingAxes.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:05"
+    },
+    {
+      "pid": 85971,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:05.184753+00:00",
+      "last_observed_utc": "2026-09-21T03:52:05.184753+00:00",
+      "peak_rss_bytes_lower_bound": 338673664,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/FiniteRealization.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/FiniteRealization.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/FiniteRealization.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/FiniteRealization.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/FiniteRealization.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:01"
+    },
+    {
+      "pid": 85981,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:07.278366+00:00",
+      "last_observed_utc": "2026-09-21T03:52:09.453401+00:00",
+      "peak_rss_bytes_lower_bound": 2412953600,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CrossingCharts.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CrossingCharts.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CrossingCharts.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CrossingCharts.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CrossingCharts.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 85985,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:11.550267+00:00",
+      "last_observed_utc": "2026-09-21T03:52:13.657637+00:00",
+      "peak_rss_bytes_lower_bound": 2543616000,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/FiniteTriangulation.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/FiniteTriangulation.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/FiniteTriangulation.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/FiniteTriangulation.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/FiniteTriangulation.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 85989,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:15.757223+00:00",
+      "last_observed_utc": "2026-09-21T03:52:28.343062+00:00",
+      "peak_rss_bytes_lower_bound": 2578137088,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CurveSymmetry.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveSymmetry.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveSymmetry.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveSymmetry.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveSymmetry.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:14"
+    },
+    {
+      "pid": 86009,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:32.567143+00:00",
+      "last_observed_utc": "2026-09-21T03:52:32.567143+00:00",
+      "peak_rss_bytes_lower_bound": 2259976192,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/BitSigns.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/BitSigns.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/BitSigns.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/BitSigns.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/BitSigns.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86014,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:34.648617+00:00",
+      "last_observed_utc": "2026-09-21T03:52:38.849326+00:00",
+      "peak_rss_bytes_lower_bound": 2597093376,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/TriangulationIncidence.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/TriangulationIncidence.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/TriangulationIncidence.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/TriangulationIncidence.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/TriangulationIncidence.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 86023,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:40.945962+00:00",
+      "last_observed_utc": "2026-09-21T03:52:43.039548+00:00",
+      "peak_rss_bytes_lower_bound": 2439430144,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PuncturedArrangement.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedArrangement.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedArrangement.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedArrangement.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedArrangement.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86031,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:45.155905+00:00",
+      "last_observed_utc": "2026-09-21T03:52:47.268181+00:00",
+      "peak_rss_bytes_lower_bound": 2411020288,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/BitField.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/BitField.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/BitField.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/BitField.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/BitField.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86034,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:49.366232+00:00",
+      "last_observed_utc": "2026-09-21T03:52:51.463636+00:00",
+      "peak_rss_bytes_lower_bound": 2614886400,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/Planar.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Planar.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/Planar.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Planar.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/Planar.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86039,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:53.542086+00:00",
+      "last_observed_utc": "2026-09-21T03:52:53.542086+00:00",
+      "peak_rss_bytes_lower_bound": 2159886336,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PuncturedCrossings.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedCrossings.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedCrossings.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedCrossings.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedCrossings.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86045,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:52:55.667844+00:00",
+      "last_observed_utc": "2026-09-21T03:52:59.855482+00:00",
+      "peak_rss_bytes_lower_bound": 2596372480,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CurveLevelSet.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveLevelSet.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveLevelSet.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveLevelSet.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveLevelSet.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 86049,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:01.943342+00:00",
+      "last_observed_utc": "2026-09-21T03:53:01.943342+00:00",
+      "peak_rss_bytes_lower_bound": 2169454592,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RegionBits.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RegionBits.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RegionBits.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RegionBits.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RegionBits.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86053,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:04.032575+00:00",
+      "last_observed_utc": "2026-09-21T03:53:06.129781+00:00",
+      "peak_rss_bytes_lower_bound": 2532278272,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CurveSides.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveSides.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CurveSides.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveSides.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CurveSides.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86060,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:08.245475+00:00",
+      "last_observed_utc": "2026-09-21T03:53:10.319991+00:00",
+      "peak_rss_bytes_lower_bound": 2594848768,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SideComponents.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SideComponents.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SideComponents.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SideComponents.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SideComponents.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 86072,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:12.404640+00:00",
+      "last_observed_utc": "2026-09-21T03:53:12.404640+00:00",
+      "peak_rss_bytes_lower_bound": 2033991680,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PuncturedSides.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedSides.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedSides.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedSides.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedSides.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:01"
+    },
+    {
+      "pid": 86076,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:14.488560+00:00",
+      "last_observed_utc": "2026-09-21T03:53:16.559123+00:00",
+      "peak_rss_bytes_lower_bound": 2557444096,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/ArrangementCertificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ArrangementCertificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ArrangementCertificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ArrangementCertificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ArrangementCertificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86082,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:18.643352+00:00",
+      "last_observed_utc": "2026-09-21T03:53:18.643352+00:00",
+      "peak_rss_bytes_lower_bound": 2533097472,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PlanarSides.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PlanarSides.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PlanarSides.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PlanarSides.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PlanarSides.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86085,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:20.722493+00:00",
+      "last_observed_utc": "2026-09-21T03:53:22.807879+00:00",
+      "peak_rss_bytes_lower_bound": 2557952000,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PuncturedCertificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedCertificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PuncturedCertificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedCertificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PuncturedCertificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86091,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:24.887971+00:00",
+      "last_observed_utc": "2026-09-21T03:53:26.973210+00:00",
+      "peak_rss_bytes_lower_bound": 3188899840,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PolygonalModel.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonalModel.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonalModel.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonalModel.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonalModel.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 86097,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:29.060735+00:00",
+      "last_observed_utc": "2026-09-21T03:53:29.060735+00:00",
+      "peak_rss_bytes_lower_bound": 2453340160,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PolygonVertices.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonVertices.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonVertices.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonVertices.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonVertices.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86106,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:31.142626+00:00",
+      "last_observed_utc": "2026-09-21T03:53:33.239657+00:00",
+      "peak_rss_bytes_lower_bound": 2828713984,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PolygonWordWalk.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonWordWalk.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonWordWalk.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonWordWalk.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonWordWalk.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86110,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:35.318834+00:00",
+      "last_observed_utc": "2026-09-21T03:53:37.398937+00:00",
+      "peak_rss_bytes_lower_bound": 708018176,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/UnorientedEuler.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/UnorientedEuler.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/UnorientedEuler.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/UnorientedEuler.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/UnorientedEuler.setup.json --json",
+      "last_state": "?E",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86116,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:39.485276+00:00",
+      "last_observed_utc": "2026-09-21T03:53:39.485276+00:00",
+      "peak_rss_bytes_lower_bound": 2669821952,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/CanonicalEuler.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CanonicalEuler.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/CanonicalEuler.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CanonicalEuler.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/CanonicalEuler.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86126,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:41.568170+00:00",
+      "last_observed_utc": "2026-09-21T03:53:43.645071+00:00",
+      "peak_rss_bytes_lower_bound": 3012231168,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PolygonEulerLowerBound.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonEulerLowerBound.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonEulerLowerBound.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonEulerLowerBound.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonEulerLowerBound.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86136,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:53:45.727915+00:00",
+      "last_observed_utc": "2026-09-21T03:54:12.920024+00:00",
+      "peak_rss_bytes_lower_bound": 3598614528,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PoleRotationData.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PoleRotationData.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PoleRotationData.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PoleRotationData.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PoleRotationData.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:28"
+    },
+    {
+      "pid": 86257,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:15.007860+00:00",
+      "last_observed_utc": "2026-09-21T03:54:15.007860+00:00",
+      "peak_rss_bytes_lower_bound": 240943104,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/MeridianData.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianData.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianData.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianData.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianData.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:01"
+    },
+    {
+      "pid": 86262,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:17.107962+00:00",
+      "last_observed_utc": "2026-09-21T03:54:19.204614+00:00",
+      "peak_rss_bytes_lower_bound": 2004254720,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/P2Euler.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/P2Euler.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/P2Euler.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/P2Euler.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/P2Euler.setup.json --json",
+      "last_state": "?E",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 86265,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:21.294514+00:00",
+      "last_observed_utc": "2026-09-21T03:54:21.294514+00:00",
+      "peak_rss_bytes_lower_bound": 2669559808,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/P1Euler.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/P1Euler.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/P1Euler.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/P1Euler.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/P1Euler.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86268,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:23.374874+00:00",
+      "last_observed_utc": "2026-09-21T03:54:37.979102+00:00",
+      "peak_rss_bytes_lower_bound": 3393699840,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/MeridianCertificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianCertificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianCertificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianCertificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianCertificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:16"
+    },
+    {
+      "pid": 86286,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:40.058734+00:00",
+      "last_observed_utc": "2026-09-21T03:54:42.139954+00:00",
+      "peak_rss_bytes_lower_bound": 2356150272,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/ConeRotation.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ConeRotation.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ConeRotation.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ConeRotation.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ConeRotation.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86293,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:44.234878+00:00",
+      "last_observed_utc": "2026-09-21T03:54:44.234878+00:00",
+      "peak_rss_bytes_lower_bound": 2223128576,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PolygonRotation.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonRotation.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PolygonRotation.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonRotation.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PolygonRotation.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86306,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:46.324096+00:00",
+      "last_observed_utc": "2026-09-21T03:54:48.424446+00:00",
+      "peak_rss_bytes_lower_bound": 2553675776,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorData.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorData.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorData.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorData.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorData.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 86310,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:50.504152+00:00",
+      "last_observed_utc": "2026-09-21T03:54:50.504152+00:00",
+      "peak_rss_bytes_lower_bound": 2285551616,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PoleRotation.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PoleRotation.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PoleRotation.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PoleRotation.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PoleRotation.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 86368,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:54:52.604052+00:00",
+      "last_observed_utc": "2026-09-21T03:58:51.964690+00:00",
+      "peak_rss_bytes_lower_bound": 4137058304,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorCertificate.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorCertificate.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorCertificate.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorCertificate.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorCertificate.setup.json --json",
+      "last_state": "R",
+      "last_etime": "04:00"
+    },
+    {
+      "pid": 87164,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:58:54.064381+00:00",
+      "last_observed_utc": "2026-09-21T03:58:58.321456+00:00",
+      "peak_rss_bytes_lower_bound": 2731589632,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PoleDiskRotation.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PoleDiskRotation.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PoleDiskRotation.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PoleDiskRotation.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PoleDiskRotation.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:06"
+    },
+    {
+      "pid": 87178,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:00.422657+00:00",
+      "last_observed_utc": "2026-09-21T03:59:02.528137+00:00",
+      "peak_rss_bytes_lower_bound": 2710405120,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/MeridianGeometry.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianGeometry.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianGeometry.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianGeometry.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianGeometry.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87183,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:04.637583+00:00",
+      "last_observed_utc": "2026-09-21T03:59:06.781858+00:00",
+      "peak_rss_bytes_lower_bound": 2707374080,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/MeridianArcs.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianArcs.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianArcs.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianArcs.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianArcs.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 87190,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:08.907196+00:00",
+      "last_observed_utc": "2026-09-21T03:59:11.014052+00:00",
+      "peak_rss_bytes_lower_bound": 2856960000,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/NormalizationEuler.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/NormalizationEuler.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/NormalizationEuler.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/NormalizationEuler.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/NormalizationEuler.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87193,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:13.142201+00:00",
+      "last_observed_utc": "2026-09-21T03:59:15.238193+00:00",
+      "peak_rss_bytes_lower_bound": 2889564160,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/ClosedNormalization.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ClosedNormalization.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ClosedNormalization.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ClosedNormalization.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ClosedNormalization.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87200,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:17.340070+00:00",
+      "last_observed_utc": "2026-09-21T03:59:19.444018+00:00",
+      "peak_rss_bytes_lower_bound": 2733178880,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/MeridianIntersections.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianIntersections.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianIntersections.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianIntersections.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianIntersections.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87203,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:21.578359+00:00",
+      "last_observed_utc": "2026-09-21T03:59:23.677973+00:00",
+      "peak_rss_bytes_lower_bound": 2847080448,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/EulerSphereCriterion.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EulerSphereCriterion.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EulerSphereCriterion.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EulerSphereCriterion.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EulerSphereCriterion.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 87206,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:25.798762+00:00",
+      "last_observed_utc": "2026-09-21T03:59:27.909542+00:00",
+      "peak_rss_bytes_lower_bound": 3093004288,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/ClassifiedSurface.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ClassifiedSurface.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/ClassifiedSurface.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ClassifiedSurface.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/ClassifiedSurface.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87214,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:30.027614+00:00",
+      "last_observed_utc": "2026-09-21T03:59:32.121157+00:00",
+      "peak_rss_bytes_lower_bound": 2625634304,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorGeometry.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorGeometry.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorGeometry.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorGeometry.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorGeometry.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87222,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:34.219835+00:00",
+      "last_observed_utc": "2026-09-21T03:59:36.327098+00:00",
+      "peak_rss_bytes_lower_bound": 2924429312,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SphereReduction.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SphereReduction.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SphereReduction.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SphereReduction.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SphereReduction.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 87236,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:38.448588+00:00",
+      "last_observed_utc": "2026-09-21T03:59:40.548220+00:00",
+      "peak_rss_bytes_lower_bound": 2307784704,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorConnected.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorConnected.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorConnected.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorConnected.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorConnected.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 87240,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:42.652013+00:00",
+      "last_observed_utc": "2026-09-21T03:59:46.943417+00:00",
+      "peak_rss_bytes_lower_bound": 2730770432,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorIntersections.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorIntersections.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorIntersections.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorIntersections.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorIntersections.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:05"
+    },
+    {
+      "pid": 87251,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:49.041725+00:00",
+      "last_observed_utc": "2026-09-21T03:59:51.140955+00:00",
+      "peak_rss_bytes_lower_bound": 3207184384,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PlaneRealization.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PlaneRealization.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PlaneRealization.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PlaneRealization.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PlaneRealization.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87257,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T03:59:53.238784+00:00",
+      "last_observed_utc": "2026-09-21T03:59:59.740884+00:00",
+      "peak_rss_bytes_lower_bound": 2715549696,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorFrontier.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorFrontier.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorFrontier.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorFrontier.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorFrontier.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:08"
+    },
+    {
+      "pid": 87323,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:01.909886+00:00",
+      "last_observed_utc": "2026-09-21T04:00:06.141444+00:00",
+      "peak_rss_bytes_lower_bound": 2953297920,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/PlaneArrangement.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PlaneArrangement.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/PlaneArrangement.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PlaneArrangement.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/PlaneArrangement.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:06"
+    },
+    {
+      "pid": 87344,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:10.454590+00:00",
+      "last_observed_utc": "2026-09-21T04:00:12.573077+00:00",
+      "peak_rss_bytes_lower_bound": 3210362880,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RotationOrbits.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RotationOrbits.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RotationOrbits.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RotationOrbits.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RotationOrbits.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87353,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:16.794058+00:00",
+      "last_observed_utc": "2026-09-21T04:00:18.904597+00:00",
+      "peak_rss_bytes_lower_bound": 2589196288,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RigidSphere.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSphere.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSphere.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSphere.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSphere.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87361,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:21.002203+00:00",
+      "last_observed_utc": "2026-09-21T04:00:25.203216+00:00",
+      "peak_rss_bytes_lower_bound": 2557411328,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SphereMeridians.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SphereMeridians.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SphereMeridians.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SphereMeridians.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SphereMeridians.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:05"
+    },
+    {
+      "pid": 87370,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:27.325398+00:00",
+      "last_observed_utc": "2026-09-21T04:00:27.325398+00:00",
+      "peak_rss_bytes_lower_bound": 26918912,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/clang -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/bin/venn_check @/Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/bin/venn_check.rsp",
+      "last_state": "S",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 87371,
+      "ppid": 87370,
+      "first_observed_utc": "2026-09-21T04:00:27.325398+00:00",
+      "last_observed_utc": "2026-09-21T04:00:27.325398+00:00",
+      "peak_rss_bytes_lower_bound": 613400576,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/ld64.lld -demangle -dynamic -arch arm64 -platform_version macos 99.0.0 99.0.0 -syslibroot /Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1 -mllvm -enable-linkonceodr-outlining -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/bin/venn_check -L/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean -L/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/lib -L/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/lib/libc /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/Main.c.o.export /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennCore/Checker.c.o.export -lleancpp -lInit -lStd -lLean -lleanrt -lc++ -lLake -lgmp -luv -lssl -lcrypto -dead_strip -lSystem /Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/lib/clang/22/lib/darwin/libclang_rt.osx.a",
+      "last_state": "R",
+      "last_etime": "00:02"
+    },
+    {
+      "pid": 87377,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:29.421216+00:00",
+      "last_observed_utc": "2026-09-21T04:00:31.542954+00:00",
+      "peak_rss_bytes_lower_bound": 2770714624,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/JordanDisk.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/JordanDisk.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/JordanDisk.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/JordanDisk.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/JordanDisk.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87388,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:33.651444+00:00",
+      "last_observed_utc": "2026-09-21T04:00:35.778930+00:00",
+      "peak_rss_bytes_lower_bound": 3226796032,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SphereLunes.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SphereLunes.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SphereLunes.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SphereLunes.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SphereLunes.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87396,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:37.882947+00:00",
+      "last_observed_utc": "2026-09-21T04:00:42.066347+00:00",
+      "peak_rss_bytes_lower_bound": 3295477760,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorDisk.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorDisk.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorDisk.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorDisk.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorDisk.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:05"
+    },
+    {
+      "pid": 87401,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:44.172412+00:00",
+      "last_observed_utc": "2026-09-21T04:00:46.274322+00:00",
+      "peak_rss_bytes_lower_bound": 3237183488,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RigidSectorDisk.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSectorDisk.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSectorDisk.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSectorDisk.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSectorDisk.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87415,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:48.409271+00:00",
+      "last_observed_utc": "2026-09-21T04:00:52.633313+00:00",
+      "peak_rss_bytes_lower_bound": 3388473344,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/EquivariantSectorDisk.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EquivariantSectorDisk.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EquivariantSectorDisk.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EquivariantSectorDisk.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EquivariantSectorDisk.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:05"
+    },
+    {
+      "pid": 87422,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:54.750149+00:00",
+      "last_observed_utc": "2026-09-21T04:00:56.874311+00:00",
+      "peak_rss_bytes_lower_bound": 3261464576,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RigidSectorCover.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSectorCover.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSectorCover.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSectorCover.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSectorCover.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87430,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:00:58.963203+00:00",
+      "last_observed_utc": "2026-09-21T04:01:03.279599+00:00",
+      "peak_rss_bytes_lower_bound": 3246030848,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorConjugacy.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorConjugacy.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorConjugacy.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorConjugacy.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorConjugacy.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:05"
+    },
+    {
+      "pid": 87462,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:05.502783+00:00",
+      "last_observed_utc": "2026-09-21T04:01:12.086861+00:00",
+      "peak_rss_bytes_lower_bound": 3296722944,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/MeridianBoundaryParameters.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianBoundaryParameters.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianBoundaryParameters.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianBoundaryParameters.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianBoundaryParameters.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:07"
+    },
+    {
+      "pid": 87472,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:14.269804+00:00",
+      "last_observed_utc": "2026-09-21T04:01:20.607254+00:00",
+      "peak_rss_bytes_lower_bound": 3330424832,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RigidSectorIntersections.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSectorIntersections.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSectorIntersections.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSectorIntersections.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSectorIntersections.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:07"
+    },
+    {
+      "pid": 87483,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:22.732454+00:00",
+      "last_observed_utc": "2026-09-21T04:01:24.828087+00:00",
+      "peak_rss_bytes_lower_bound": 3122413568,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/MeridianParameterEquality.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianParameterEquality.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/MeridianParameterEquality.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianParameterEquality.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/MeridianParameterEquality.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 87491,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:26.941100+00:00",
+      "last_observed_utc": "2026-09-21T04:01:29.038371+00:00",
+      "peak_rss_bytes_lower_bound": 2835120128,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/SectorGluing.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorGluing.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/SectorGluing.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorGluing.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/SectorGluing.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 87497,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:31.145233+00:00",
+      "last_observed_utc": "2026-09-21T04:01:33.232071+00:00",
+      "peak_rss_bytes_lower_bound": 2828894208,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RigidSphereConjugacy.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSphereConjugacy.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidSphereConjugacy.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSphereConjugacy.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidSphereConjugacy.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 87503,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:35.329965+00:00",
+      "last_observed_utc": "2026-09-21T04:01:39.506582+00:00",
+      "peak_rss_bytes_lower_bound": 3328000000,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/EquivariantStereographic.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EquivariantStereographic.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/EquivariantStereographic.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EquivariantStereographic.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/EquivariantStereographic.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    },
+    {
+      "pid": 87509,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:41.588353+00:00",
+      "last_observed_utc": "2026-09-21T04:01:43.685868+00:00",
+      "peak_rss_bytes_lower_bound": 3282092032,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RigidPlaneConjugacy.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidPlaneConjugacy.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RigidPlaneConjugacy.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidPlaneConjugacy.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RigidPlaneConjugacy.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 87525,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:45.791939+00:00",
+      "last_observed_utc": "2026-09-21T04:01:47.887792+00:00",
+      "peak_rss_bytes_lower_bound": 3275833344,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology/RotationalVenn.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RotationalVenn.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology/RotationalVenn.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RotationalVenn.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology/RotationalVenn.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:03"
+    },
+    {
+      "pid": 87534,
+      "ppid": 82829,
+      "first_observed_utc": "2026-09-21T04:01:49.975580+00:00",
+      "last_observed_utc": "2026-09-21T04:01:52.065535+00:00",
+      "peak_rss_bytes_lower_bound": 3233579008,
+      "command": "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/VennTopology.lean -o /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology.olean -i /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/lib/lean/VennTopology.ilean -c /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology.c --setup /Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19/.lake/build/ir/VennTopology.setup.json --json",
+      "last_state": "R",
+      "last_etime": "00:04"
+    }
+  ],
+  "status": "GROUP_ENDED",
+  "finished_utc": "2026-09-21T04:02:00.510871+00:00"
+}

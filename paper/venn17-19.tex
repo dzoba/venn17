@@ -1,0 +1,186 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\title{Simple symmetric Venn diagrams with 17 and 19 curves}
+\author{Chris Dzoba}
+\date{September 21, 2026 (draft)}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We exhibit simple, rotationally symmetric Venn diagrams with 17 curves and with 19 curves. Symmetric Venn diagrams
+exist for every prime number of curves (Griggs, Killian and Savage, 2004), and simple ones were known only up to 13
+curves (Mamakani and Ruskey, 2014). Four 17-curve and six 19-curve diagrams were found by a Metropolis walk on
+rotation-invariant quadrangulations of the sphere in which regions may temporarily be duplicated, started from the
+Griggs--Killian--Savage diagram with its multiple crossings resolved. Every diagram is given by a machine-checkable
+certificate; one certificate of each size has been verified by a formal proof in Lean~4. All of the diagrams are
+non-monotone, which is why the crossing-sequence searches that found the 11- and 13-curve diagrams could not have
+found them.
+\end{abstract}
+
+\section{Statement}
+An $n$-Venn diagram is a family of $n$ Jordan curves in the plane such that for every subset $S$ of the curves the
+set of points inside exactly the curves of $S$ is nonempty and connected. It is \emph{simple} if no point lies on
+three curves, and \emph{symmetric} if a rotation by $2\pi/n$ maps the family to itself. Gr\"unbaum asked in 1975
+whether symmetric Venn diagrams exist for every prime $n$; Griggs, Killian and Savage answered yes in 2004, with
+diagrams that are not simple. Simple symmetric diagrams were found for $n=11$ (Mamakani and Ruskey, 2012) and $n=13$
+(Mamakani and Ruskey, 2014), and no larger case was known.
+
+\begin{theorem}
+Simple symmetric Venn diagrams with 17 curves exist, and so do simple symmetric Venn diagrams with 19 curves.
+\end{theorem}
+
+The proof is by exhibition. Four 17-curve diagrams and six 19-curve diagrams are given as certificates in the form
+of Section~\ref{sec:encoding}, each accepted by two independently written checkers, and one of each size has been
+formally verified in Lean~4 (Section~\ref{sec:lean}).
+
+\section{Encoding and verification}\label{sec:encoding}
+Let $D$ be a simple symmetric $n$-Venn diagram, drawn on the sphere with the unbounded region as a face. Its dual
+map $M$ has one vertex per region, labelled by the region's membership pattern in $\{0,1\}^n$; one edge per arc,
+joining labels that differ in exactly the bit of the arc's curve; and one face per crossing, a 4-cycle with labels
+$u,\,u{\oplus}e_a,\,u{\oplus}e_a{\oplus}e_b,\,u{\oplus}e_b$ (a \emph{cube square}). Conversely:
+
+\begin{proposition}
+A map on the sphere whose vertices are labelled by distinct elements of $\{0,1\}^n$, all $2^n$ occurring, whose
+faces are cube squares, whose edges of each coordinate $i$ form a single cycle through the faces containing them,
+and whose vertex rotations are single cycles, is the dual of a simple $n$-Venn diagram; if the label rotation
+$x\mapsto(x_1,\dots,x_{n-1},x_0)$ is an orientation-preserving automorphism of the map, the diagram is symmetric.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+The map is a cellular embedding on the sphere; its geometric dual is a 4-regular plane graph whose vertices are the
+faces (crossings). The edges of coordinate $i$, chained through opposite sides of each crossing, form one closed curve
+$C_i$; regions of the arrangement are the vertices of $M$, and by the label condition each point of $\{0,1\}^n$ is
+realized by exactly one region, which is a disk. Rotation of the labels acts as a rotation of the sphere fixing the
+two vertices $0^n$ and $1^n$; taking $0^n$ as the outer face gives a plane diagram with $n$-fold rotational symmetry.
+\end{proof}
+
+A certificate is the list of the $2^n-2$ faces of $M$, each as four $n$-bit labels: $131{,}070$ faces for $n=17$
+and $524{,}286$ for $n=19$. Verification recomputes, in seconds: all $2^n$ labels present exactly once, every edge in
+exactly two faces ($2^{n+1}-4$ edges), Euler characteristic 2, every face transversal, a single rotation cycle at every
+vertex, one cycle per curve with both sides connected, and invariance under label rotation. Two independently written
+checkers, a half-edge implementation in C++ and a face-set implementation in Python, accept all ten certificates, as
+does a third, written later and sharing no code with either, which audits the raw search state directly.
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{llll}
+\toprule
+$n$ & certificate & SHA-256 prefix & pairwise distinct \\
+\midrule
+17 & \texttt{venn17-local-c3-s2} & \texttt{c178d7bd} & yes \\
+17 & \texttt{venn17-gcp-s12} & \texttt{87f981b8} & yes \\
+17 & \texttt{venn17-gcp-s14} & \texttt{eec8cd55} & yes \\
+17 & \texttt{venn17-gcp-s16} & \texttt{431857aa} & yes \\
+19 & \texttt{venn19-closure-s196002} & \texttt{fcb7ad34} & yes \\
+19 & \texttt{venn19-closure-s196004} & \texttt{285de8ea} & yes \\
+19 & \texttt{venn19-closure-s195001} & \texttt{a09ceae0} & yes \\
+19 & \texttt{venn19-closure-s196001} & \texttt{56e7e1a1} & yes \\
+19 & \texttt{venn19-closure-s196007} & \texttt{312e8c88} & yes \\
+19 & \texttt{venn19-closure-s195002} & \texttt{726d1fb0} & yes \\
+\bottomrule
+\end{tabular}
+\caption{The ten certificates. The six 19-curve face sets are pairwise distinct: the smallest symmetric difference
+between two of them is $25{,}460$ faces (of $524{,}286$) and the largest $827{,}716$.}
+\end{table}
+
+\section{Formal verification}\label{sec:lean}
+The first 17-curve certificate (\texttt{c178d7bd}) was formally verified in Lean~4 with Mathlib by Justin Grimes,
+working from the definitions alone and without access to our code. His theorem states that the 17 curves
+constructed from the certificate are Jordan curves in the Euclidean plane, carried to one another by a rigid
+rotation through $2\pi/17$, with every one of the $2^{17}$ regions path-connected, no point on three curves, and every
+crossing a transversal crossing of two curves. The finite parts of the proof use Lean's compiled evaluation
+(\texttt{native\_decide}); the development builds from scratch in under an hour.
+
+The first 19-curve certificate (\texttt{fcb7ad34}; JSON form \texttt{ed26b3ba}) was verified by a port of the same
+development to $n=19$, carried out by Codex (OpenAI) from Grimes's sources: the dimension-dependent constants were
+changed, the finite meridian and sector certificates that the proof consumes were regenerated for 19, and the
+vendored topology library was left untouched. The port builds in twenty minutes and proves
+\texttt{exists\_simple\_rotational\_venn\_19}: there exist $C:\mathrm{Fin}\,19\to\mathcal P(\mathbb R^2)$ and sides $S$
+with \texttt{SimpleRotationalVenn}~$C$~$S$, the same predicate as at 17. Its axiom list is that of the 17-curve proof
+under the namespace rename: \texttt{propext}, \texttt{Classical.choice}, \texttt{Quot.sound} and the twenty
+\texttt{native\_decide} certificates. We re-ran \texttt{\#print axioms} on the built project to confirm this.
+
+\section{Method}\label{sec:method}
+We search the space of rotation-invariant cube-square quadrangulations of the sphere in which several vertices may
+carry the same label. The energy of a state is $E = (\text{missing labels}) + \lambda\,(\text{duplicate regions})$;
+$E=0$ with $\lambda>0$ is exactly a certificate. Moves are the local Reidemeister-type rewirings of the dual (lens
+insertion and removal on a 3-cube, triangle flip, bigon insertion and removal), each applied simultaneously to all $n$
+rotation images; every move preserves the sphere, the cube-square faces and the one-cycle-per-curve property, so the
+walk never leaves the space of valid symmetric arrangements. Proposals are accepted by the Metropolis rule at
+temperature $T$, with half of the proposals targeted at a missing label or a duplicated region.
+
+Allowing duplicates is what makes the search work: with duplicates forbidden, greedy growth of the same
+quadrangulations reaches $98.3\%$ of the labels and jams, because the last lens insertions require two missing labels
+to coincide geometrically. With duplicates allowed, a missing label can be created next to a duplicate at zero cost and
+defects diffuse until they annihilate.
+
+\paragraph{17 curves.} The walk starts from the Griggs--Killian--Savage diagram for $n=17$ with every multiple
+crossing resolved into simple crossings, a state with all labels present and $69{,}394$ duplicate regions. With
+$\lambda$ ramped from $0.3$ to $1$ over three hours at $T=0.25$, three of fifteen independent runs reached $E=0$; a
+fourth diagram was obtained by a further 40-minute cycle from a state with $68$ duplicates. Ten later instrumented
+runs of the same recipe finished seven times within three hours, first reaching $E=2n$ after $1.6$--$2.8\times10^9$
+proposals and finishing within $1.8\times10^9$ more. The same method finds 11- and 13-curve diagrams from the trivial
+starting state in seconds and minutes.
+
+\paragraph{19 curves: budget.} The resolved starting diagram for $n=19$ has all labels and $305{,}862$ duplicate
+regions. Scaled by the number of regions, no 19-curve run in the first three days received the budget that the
+17-curve runs needed: the longest had $6\times10^9$ proposals and was still descending when stopped, and every restart
+from a low-energy state was shorter than the 17-curve endgame itself.
+
+\paragraph{19 curves: the knot.} Every lineage that reached low energy stalled with the same duplicated label,
+$\{0,3,4\}$, whose two instances had degrees 6--9 and shared a neighbour. A region of the dual can move by a triangle
+flip only at degree 3, so the walk's targeted proposals, when they landed on such a duplicate, did nothing. The
+duplicate is inherited: in the resolved starting diagram the label $\{0,3,4\}$ already appears twice, once as a region
+of degree 18. (The resolved 17-curve diagram has the same feature for $\{0,1,4\}$, degrees 4 and 17, and the
+17-curve walk happens to grind it down; the ten 17-curve pre-completion states all have their duplicates at degree 3
+or 4.) One added proposal class removes the obstruction: when a targeted proposal lands on a duplicate of degree
+above 3, it attacks that degree, by a triangle flip at a degree-3 neighbour or a lens insertion on an incident edge,
+both ordinary moves under the ordinary acceptance rule. From a frozen $E=38$ state, 25 minutes at $\lambda=0.35$ with
+this proposal reduced $\{0,3,4\}$ to multiplicity one; without it, 45 minutes at $\lambda=0.30$ left it untouched.
+A three-hour ramp $\lambda: 0.5\to1$ then cooled the state to $E=38$ with two missing labels of rank 11 and no
+duplicates.
+
+\paragraph{19 curves: closure.} From that state, continuations differing only in the random seed were run with
+$\lambda$ held at 1 and with $\lambda$ ramped from $0.6$, $0.8$ or $0.9$ to 1. Held at 1, five of eight
+continuations reached $E=0$, after 4 seconds, 13 seconds, 190 seconds, 4.3 hours and 6.5 hours; of the sixteen
+ramped continuations one finished, at the end of its six-hour ramp. The pre-completion states are saved exactly, by
+journal undo of the winning move inside the engine, and show three closing mechanisms: a single triangle flip of the
+last duplicated region, of degree 3, into the last missing label at Hamming distance exactly 3 (four diagrams); a
+single lens insertion creating both missing labels at once after they had drifted to Hamming distance 1 (one
+diagram); and a single lens removal of two adjacent duplicated regions in a state with no missing label (one diagram).
+
+\section{Properties}
+All ten diagrams are non-monotone: in the first 19-curve certificate, $3{,}590$ of the $27{,}594$ region orbits
+($13\%$) lack a neighbouring region of rank one lower or one higher, and the 17-curve certificates behave the same
+way. Every previously published simple symmetric Venn diagram with $n\ge 11$ is monotone, and the crossing-sequence
+representation used to find them enumerates monotone diagrams by construction, so the diagrams reported here were
+outside the search space of those methods. Minimum region degree is 3 (a degree-2 region is impossible in a simple
+Venn diagram with $n\ge3$); in the first 19-curve certificate the degree histogram is $187{,}340$ regions of degree 3,
+$199{,}120$ of degree 4, $98{,}686$ of degree 5, and a tail to degree 16, with the two poles of degree 19 and every
+rank-1 and rank-18 region of degree 11.
+
+\section{Data}
+Certificates, pre-completion states, logs, the search code with its checksums, the independent checkers and both
+Lean developments are at \url{https://github.com/dzoba/venn17} and archived on Zenodo (DOI to be inserted).
+
+\section*{Contributions and use of AI systems}
+This work was carried out by two AI systems working under the author's direction over five days, and this note
+discloses their roles in full. Claude (Anthropic) formulated the dual-map encoding, designed and implemented the
+search (the relaxed walk, its moves, energy and annealing schedules), diagnosed the failure at 19 from the run records,
+designed and implemented the added proposal class and the capture of pre-completion states, ran the searches and the
+verification, performed the analyses reported here and drafted this note. Codex (OpenAI) constructed the resolved
+Griggs--Killian--Savage starting states, wrote independent validators for every certificate, identified the need for
+the bigon moves, built exact local solvers used to diagnose the earlier plateau, and ported the Lean development to
+19 curves. The author set the goals and strategy, decided what to pursue and what to abandon, supplied the computing
+resources, and is responsible for the content.
+
+\section*{Acknowledgments}
+We thank Justin Grimes for the formal verification of the 17-curve certificate in Lean, carried out independently
+and without knowledge of our construction, and on which the 19-curve verification is built; and Khalegh Mamakani for
+his encouragement and for pointing out that the earlier searches excluded non-monotone diagrams by construction.
+\end{document}

@@ -1,0 +1,124 @@
+{
+  "sha256": "ed26b3baa6e5c02bc3a4239b1dfbf84d66f731cad2dd2805a8c1770e2c1fdb5d",
+  "n": 19,
+  "regions": 524288,
+  "arcs": 1048572,
+  "crossings": 524286,
+  "euler": 2,
+  "checks": {
+    "square_crossings": true,
+    "two_faces_per_arc": true,
+    "connected_oriented_surface": true,
+    "single_vertex_links": true,
+    "euler_two": true,
+    "single_cycle_per_curve": true,
+    "connected_sides": true,
+    "all_patterns": true,
+    "simple_crossings": true,
+    "orientation_preserving_rotation": true
+  },
+  "curve_lengths": [
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188,
+    55188
+  ],
+  "side_sizes": [
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ],
+    [
+      262144,
+      262144
+    ]
+  ],
+  "pole_steps": [
+    1,
+    -1
+  ],
+  "verdict": "PASS: finite combinatorial conditions; geometric realization is a separate theorem"
+}

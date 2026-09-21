@@ -34,3 +34,11 @@ verify/lean/.lake/
 verify/lean/build/
 # but keep the build transcript that ships with the proof bundle
 !verify/lean/verification/full-build.log
+
+# secrets
+.env
+*.env
+
+# Lean 19 port: build products are not tracked either
+verify/lean19/.lake/
+verify/lean19/build/

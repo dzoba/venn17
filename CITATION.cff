@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use these certificates, the checker or the search code, please cite this work."
-title: "Simple symmetric Venn diagrams with 17 curves"
+title: "Simple symmetric Venn diagrams with 17 and 19 curves"
 authors:
   - family-names: Dzoba
     given-names: Chris
-date-released: 2026-09-18
-version: "1.0"
+date-released: 2026-09-21
+version: "1.1"
 repository-code: "https://github.com/dzoba/venn17"
 url: "https://github.com/dzoba/venn17"
 license:
@@ -17,9 +17,9 @@ keywords:
   - combinatorics
   - certificate
 abstract: >-
-  Simple, rotationally symmetric Venn diagrams with 17 curves, the smallest open
-  case since the 11- and 13-curve diagrams of Mamakani and Ruskey (2014), given as
-  machine-checkable certificates, together with a standalone checker, the search
+  Simple, rotationally symmetric Venn diagrams with 17 curves and with 19 curves, the
+  smallest open cases since the 11- and 13-curve diagrams of Mamakani and Ruskey (2014),
+  given as machine-checkable certificates, one of each size verified in Lean 4, together with a standalone checker, the search
   program that found them, a plotter and the write-up. Also includes the first
   non-monotone simple symmetric Venn diagrams with 11 and 13 curves.
 # Fill in the Zenodo DOI once the deposit is published, then uncomment:

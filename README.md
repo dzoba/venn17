@@ -1,4 +1,4 @@
-# Simple symmetric Venn diagrams with 17 curves
+# Simple symmetric Venn diagrams with 17 and 19 curves
 
 ![A simple symmetric Venn diagram with 17 curves](images/venn17-pressure-dark-2000.png)
 
@@ -11,22 +11,63 @@ connected region and every crossing point lies on exactly two curves. Grünbaum 
 whether they exist for every prime n. They were known for n = 3, 5, 7, 11 and 13 (the last two
 found by Mamakani and Ruskey in 2012 and 2014, who wrote that their methods fail at 17); the 2026
 survey of Brenner, Gregor, Mütze and Verciani lists the problem as open beyond 13. This repository
-publishes four simple symmetric 17-Venn diagrams, found on 17 September 2026, as machine-checkable
-certificates, together with an independent checker, a formal verification in Lean, the search code,
-and a short paper. It also contains the first non-monotone simple symmetric Venn diagrams with 11
-and 13 curves.
+publishes four simple symmetric 17-Venn diagrams, found on 17 September 2026, and six simple
+symmetric 19-Venn diagrams, found on 20 and 21 September 2026, as machine-checkable certificates,
+together with an independent checker, formal verifications in Lean of one certificate of each size,
+the search code, and a short paper. It also contains the first non-monotone simple symmetric Venn
+diagrams with 11 and 13 curves.
 
 The same diagram in the earlier rose rendering is `images/venn17-rose-dark-2000.png`.
 
-This repository holds six certificates for simple symmetric Venn diagrams together with
-everything needed to check them: four independent 17-curve certificates (`certificates/venn17-*.json`,
-found 2026-09-17), an 11-curve and a 13-curve certificate (`certificates/best11-s0.json`,
+This repository holds twelve certificates for simple symmetric Venn diagrams together with
+everything needed to check them: six 19-curve certificates (`certificates/venn19-closure-*.json`,
+found 2026-09-20/21, see [19 curves](#19-curves) below), four independent 17-curve certificates
+(`certificates/venn17-*.json`, found 2026-09-17), an 11-curve and a 13-curve certificate (`certificates/best11-s0.json`,
 `certificates/v3-13-s0.json`), a standalone structural checker (`verify/`), the search program and
 the exact run configurations that produced the four 17-curve solutions (`search/`), a pen-plotter
 SVG exporter with rendered 11- and 13-curve drawings (`plotter/`), and a write-up (`paper/`).
-`verify/RESULTS.md` records the checker's transcript on all six files: all six PASS every criterion
-the checker tests, and all six are non-monotone by the Bultena-Grunbaum-Ruskey test in
-`verify/monotone_test.py`.
+`verify/RESULTS.md` records the checker's transcript on the six 11-, 13- and 17-curve files and
+`verify/RESULTS-19.md` on the six 19-curve files: all twelve PASS every criterion the checker tests, and
+all twelve are non-monotone by the Bultena-Grunbaum-Ruskey test in `verify/monotone_test.py`.
+
+## 19 curves
+
+Three days after the 17-curve diagrams, the same search found simple symmetric Venn diagrams with 19
+curves: three on 20 September 2026 and three more overnight on 21 September. Each certificate lists
+the 2^19 - 2 = 524,286 crossings as quadruples of 19-bit labels (47 MB each); the checker below runs
+on them unchanged (about a minute per file).
+
+| file | sha256 |
+| --- | --- |
+| `venn19-closure-s196002.json` | `ed26b3baa6e5c02bc3a4239b1dfbf84d66f731cad2dd2805a8c1770e2c1fdb5d` |
+| `venn19-closure-s196004.json` | `ca84c06e669461dfc4d5e070d37518dfd687e7cf7348893e60802867133e6653` |
+| `venn19-closure-s195001.json` | `11142a0d03800cde4680e6635c0ec986a8f08b698be1bacfe849a6ce951d26bb` |
+| `venn19-closure-s196001.json` | `b550adb91f0898059bff18616236cce0cc7a1062f7ef7582eba1649df23b45d2` |
+| `venn19-closure-s196007.json` | `0f057a0779cdeaa26f4a8af8ac5d96e997c243197817493b9ef4244964dbe225` |
+| `venn19-closure-s195002.json` | `c801a956f9a6406f708e75c3b423b4ddd77dcb63ebca4f927f0223c25069202f` |
+
+Check them with `cd certificates && shasum -a 256 -c SHA256SUMS`.
+
+The six face sets are pairwise distinct (the smallest symmetric difference between two of them is
+25,460 faces, the largest 827,716). All six are non-monotone. Each was verified, before being added
+here, by the search engine's own structural reload, by the independent checker `verify/verify.py`,
+and by a third auditor written by Codex that shares no code with either.
+
+`venn19-closure-s196002.json` has also been checked by machine proof: `verify/lean19/` is a port of
+Justin Grimes's Lean 4 formalization from `verify/lean/` to n = 19, carried out by Codex (OpenAI)
+from his sources. The dimension-dependent constants were changed and the finite meridian and sector
+certificates the proof consumes were regenerated for 19; the vendored topology library is
+byte-identical to the 17-curve bundle, and Grimes's `LICENSE` and `CITATION.cff` are preserved
+unchanged (see `verify/lean19/PORT-CREDITS.md`). It proves
+`Venn19.Topology.exists_simple_rotational_venn_19`: there exist 19 curves and sides satisfying the same
+`SimpleRotationalVenn` predicate as at 17, for the diagram built from this certificate. Its axioms,
+listed in `verify/lean19/FINAL-THEOREM-AXIOMS.txt`, are `propext`, `Classical.choice`, `Quot.sound`
+and twenty `native_decide` certificates, exactly the 17-curve proof's list under the namespace
+rename. The build takes about twenty minutes with the vendored library reused.
+
+What changed in the search at 19, and the exact state one move before each completion, are described
+in the paper (`paper/venn17-19.pdf`) and recorded in the research tree that accompanies this
+repository.
 
 ## Verify it yourself
 
@@ -244,16 +285,17 @@ apart from `n`.
 
 | path | what it is |
 | --- | --- |
-| `certificates/` | the six certificates and `SHA256SUMS` |
-| `verify/verify.py` | the checker; `verify/RESULTS.md` is its output on all six certificates |
+| `certificates/` | the twelve certificates and `SHA256SUMS` |
+| `verify/verify.py` | the checker; `verify/RESULTS.md` and `verify/RESULTS-19.md` are its output on all twelve certificates |
 | `verify/monotone_test.py` | Bultena-Grunbaum-Ruskey monotonicity test |
 | `verify/lean/` | Justin Grimes's independent Lean 4 proof (Apache-2.0), see [Formal verification (Lean)](#formal-verification-lean) |
+| `verify/lean19/` | the port of that proof to 19 curves (Apache-2.0), see [19 curves](#19-curves) |
 | `search/relaxed_walk5.cpp` | the relaxed Metropolis walk that found the 17-curve solutions |
 | `search/BUILD.md` | how to build it and the run configurations behind the four solutions |
 | `search/README.md` | the running log of the search, copied unchanged |
 | `plotter/plotter_svg.py` | pen-plotter SVG exporter, plus rendered 11- and 13-curve drawings |
 | `images/` | the two drawings shown in this README, plus the earlier rose rendering |
-| `paper/venn17.tex`, `paper/venn17.pdf` | the write-up |
+| `paper/venn17-19.tex`, `paper/venn17-19.pdf` | the write-up covering 17 and 19 curves (`paper/venn17.tex` is the original 17-curve note) |
 
 `plotter_svg.py` expects the scaffold modules on its import path; run it as
 `PYTHONPATH=verify python3 plotter/plotter_svg.py certificates/best11-s0.json`. It needs NumPy,
@@ -268,10 +310,10 @@ first non-monotone simple symmetric Venn diagram with 13 curves.*
 
 The diagrams were found by a Metropolis walk on rotation-invariant quadrangulations of the sphere
 in which regions may temporarily be duplicated, annealed in the weight of the duplicates, starting
-from the Griggs–Killian–Savage symmetric diagram for n = 17 with its multiple crossings resolved.
+from the Griggs–Killian–Savage symmetric diagram for n = 17 or 19 with its multiple crossings resolved.
 The search was designed and carried out by two AI systems, Claude (Anthropic) and Codex (OpenAI),
-working under the direction of Chris Dzoba over three days; their roles are stated in full in the
-paper (`paper/venn17.pdf`, section "Contributions and use of AI systems"). The certificates stand
+working under the direction of Chris Dzoba over five days; their roles are stated in full in the
+paper (`paper/venn17-19.pdf`, section "Contributions and use of AI systems"). The certificates stand
 on their own: nothing about their validity depends on how they were produced.
 
 ## Citing and licensing

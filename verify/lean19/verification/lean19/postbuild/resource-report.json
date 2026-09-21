@@ -1,0 +1,254 @@
+[
+  {
+    "index": 1,
+    "command": [
+      "shasum",
+      "-a",
+      "256",
+      "-c",
+      "PORT-SHA256SUMS"
+    ],
+    "started_utc": "2026-09-21T04:08:39.916108+00:00",
+    "log": "01-shasum.log",
+    "time": "01-shasum.time.txt",
+    "peak_aggregate_rss_bytes_lower_bound": 2293760,
+    "peak_processes_observed": 2,
+    "status": "PASS",
+    "resources_before_start": {
+      "elapsed_seconds": 0.37965466699097306,
+      "evidence_bytes": 1530,
+      "owned_lean_bytes": 1788161144,
+      "filesystem_available_bytes": 12404248576
+    },
+    "command_started": true,
+    "finished_utc": "2026-09-21T04:08:43.080901+00:00",
+    "elapsed_seconds": 3.1648308750009164,
+    "exit_code": 0,
+    "final_resource_detail": {
+      "elapsed_seconds": 3.3748987920116633,
+      "evidence_bytes": 24743,
+      "owned_lean_bytes": 1788184357,
+      "filesystem_available_bytes": 12390162432
+    }
+  },
+  {
+    "index": 2,
+    "command": [
+      "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lake",
+      "--no-cache",
+      "--no-ansi",
+      "build",
+      "Venn19.Tests"
+    ],
+    "started_utc": "2026-09-21T04:08:43.081911+00:00",
+    "log": "02-lake.log",
+    "time": "02-lake.time.txt",
+    "peak_aggregate_rss_bytes_lower_bound": 868909056,
+    "peak_processes_observed": 3,
+    "status": "PASS",
+    "resources_before_start": {
+      "elapsed_seconds": 3.5454377089627087,
+      "evidence_bytes": 25646,
+      "owned_lean_bytes": 1788185260,
+      "filesystem_available_bytes": 12390154240
+    },
+    "command_started": true,
+    "finished_utc": "2026-09-21T04:08:48.036871+00:00",
+    "elapsed_seconds": 4.954972250037827,
+    "exit_code": 0,
+    "final_resource_detail": {
+      "elapsed_seconds": 8.350012084003538,
+      "evidence_bytes": 26653,
+      "owned_lean_bytes": 1788354541,
+      "filesystem_available_bytes": 12385292288
+    }
+  },
+  {
+    "index": 3,
+    "command": [
+      "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lake",
+      "--no-cache",
+      "--no-ansi",
+      "exe",
+      "venn_check",
+      "venn19-closure-s196002.json"
+    ],
+    "started_utc": "2026-09-21T04:08:48.047714+00:00",
+    "log": "03-lake.log",
+    "time": "03-lake.time.txt",
+    "peak_aggregate_rss_bytes_lower_bound": 1559085056,
+    "peak_processes_observed": 3,
+    "status": "PASS",
+    "resources_before_start": {
+      "elapsed_seconds": 8.511224458925426,
+      "evidence_bytes": 27623,
+      "owned_lean_bytes": 1788355511,
+      "filesystem_available_bytes": 12385263616
+    },
+    "command_started": true,
+    "finished_utc": "2026-09-21T04:09:31.248051+00:00",
+    "elapsed_seconds": 43.20013150002342,
+    "exit_code": 0,
+    "final_resource_detail": {
+      "elapsed_seconds": 51.56667316693347,
+      "evidence_bytes": 29023,
+      "owned_lean_bytes": 1788356911,
+      "filesystem_available_bytes": 12293251072
+    }
+  },
+  {
+    "index": 4,
+    "command": [
+      "python3",
+      "scripts/check.py",
+      "--output",
+      "/Users/dzoba/Developer/venn-diagram/research/lean19-port/logs/lean19/postbuild/python-audit.json"
+    ],
+    "started_utc": "2026-09-21T04:09:31.249605+00:00",
+    "log": "04-python3.log",
+    "time": "04-python3.time.txt",
+    "peak_aggregate_rss_bytes_lower_bound": 1549975552,
+    "peak_processes_observed": 2,
+    "status": "PASS",
+    "resources_before_start": {
+      "elapsed_seconds": 51.71289791690651,
+      "evidence_bytes": 30026,
+      "owned_lean_bytes": 1788357914,
+      "filesystem_available_bytes": 12290981888
+    },
+    "command_started": true,
+    "finished_utc": "2026-09-21T04:10:19.025447+00:00",
+    "elapsed_seconds": 47.77561870892532,
+    "exit_code": 0,
+    "final_resource_detail": {
+      "elapsed_seconds": 99.3402990839677,
+      "evidence_bytes": 34109,
+      "owned_lean_bytes": 1788361997,
+      "filesystem_available_bytes": 12112384000
+    }
+  },
+  {
+    "index": 5,
+    "command": [
+      "python3",
+      "scripts/test_checkers.py"
+    ],
+    "started_utc": "2026-09-21T04:10:19.026373+00:00",
+    "log": "05-python3.log",
+    "time": "05-python3.time.txt",
+    "peak_aggregate_rss_bytes_lower_bound": 1841315840,
+    "peak_processes_observed": 3,
+    "status": "PASS",
+    "resources_before_start": {
+      "elapsed_seconds": 99.48937470896635,
+      "evidence_bytes": 35099,
+      "owned_lean_bytes": 1788362987,
+      "filesystem_available_bytes": 12112347136
+    },
+    "command_started": true,
+    "finished_utc": "2026-09-21T04:13:26.473315+00:00",
+    "elapsed_seconds": 187.44594591704663,
+    "exit_code": 0,
+    "final_resource_detail": {
+      "elapsed_seconds": 286.7769777919166,
+      "evidence_bytes": 36499,
+      "owned_lean_bytes": 1788379495,
+      "filesystem_available_bytes": 11922554880
+    }
+  },
+  {
+    "index": 6,
+    "command": [
+      "python3",
+      "scripts/audit_vendor.py"
+    ],
+    "started_utc": "2026-09-21T04:13:26.474831+00:00",
+    "log": "06-python3.log",
+    "time": "06-python3.time.txt",
+    "peak_aggregate_rss_bytes_lower_bound": 1507328,
+    "peak_processes_observed": 2,
+    "status": "PASS",
+    "resources_before_start": {
+      "elapsed_seconds": 286.93682487495244,
+      "evidence_bytes": 37375,
+      "owned_lean_bytes": 1788380371,
+      "filesystem_available_bytes": 11922538496
+    },
+    "command_started": true,
+    "finished_utc": "2026-09-21T04:13:28.981249+00:00",
+    "elapsed_seconds": 2.5064392919884995,
+    "exit_code": 0,
+    "final_resource_detail": {
+      "elapsed_seconds": 289.306250249967,
+      "evidence_bytes": 38204,
+      "owned_lean_bytes": 1788381200,
+      "filesystem_available_bytes": 11921387520
+    }
+  },
+  {
+    "index": 7,
+    "command": [
+      "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lake",
+      "--no-cache",
+      "--no-ansi",
+      "env",
+      "lean",
+      "scripts/audit_topology.lean"
+    ],
+    "started_utc": "2026-09-21T04:13:28.982277+00:00",
+    "log": "07-lake.log",
+    "time": "07-lake.time.txt",
+    "peak_aggregate_rss_bytes_lower_bound": 3463938048,
+    "peak_processes_observed": 3,
+    "status": "PASS",
+    "resources_before_start": {
+      "elapsed_seconds": 289.44424245890696,
+      "evidence_bytes": 39076,
+      "owned_lean_bytes": 1788382072,
+      "filesystem_available_bytes": 11921387520
+    },
+    "command_started": true,
+    "finished_utc": "2026-09-21T04:13:36.013853+00:00",
+    "elapsed_seconds": 7.031571083003655,
+    "exit_code": 0,
+    "final_resource_detail": {
+      "elapsed_seconds": 296.3494685839396,
+      "evidence_bytes": 110715,
+      "owned_lean_bytes": 1788453711,
+      "filesystem_available_bytes": 11920244736
+    }
+  },
+  {
+    "index": 8,
+    "command": [
+      "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lake",
+      "--no-cache",
+      "--no-ansi",
+      "env",
+      "lean",
+      "/Users/dzoba/Developer/venn-diagram/research/lean19-port/logs/lean19/postbuild/theorem-statements.lean"
+    ],
+    "started_utc": "2026-09-21T04:13:36.014775+00:00",
+    "log": "08-lake.log",
+    "time": "08-lake.time.txt",
+    "peak_aggregate_rss_bytes_lower_bound": 3785457664,
+    "peak_processes_observed": 3,
+    "status": "PASS",
+    "resources_before_start": {
+      "elapsed_seconds": 296.47669945901725,
+      "evidence_bytes": 111714,
+      "owned_lean_bytes": 1788454710,
+      "filesystem_available_bytes": 11920855040
+    },
+    "command_started": true,
+    "finished_utc": "2026-09-21T04:13:43.178796+00:00",
+    "elapsed_seconds": 7.164015709073283,
+    "exit_code": 0,
+    "final_resource_detail": {
+      "elapsed_seconds": 303.4428388340166,
+      "evidence_bytes": 117377,
+      "owned_lean_bytes": 1788460373,
+      "filesystem_available_bytes": 11957895168
+    }
+  }
+]

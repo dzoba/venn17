@@ -1,0 +1,881 @@
+scope	kind	file	line	source
+production	selective-small-number	scripts/find_meridians.py	19	rotate = lambda x: (x >> 1) | ((x & 1) << 16)
+production	selective-small-number	scripts/find_meridians.py	25	    for _ in range(16):
+production	dimension-or-derived	scripts/find_meridians.py	31	    if r == 131071:
+production	dimension-or-derived	scripts/find_meridians.py	38	r, path = 131071, []
+production	selective-small-number	scripts/find_meridians.py	43	assert len(path) == 18
+production	dimension-or-derived	scripts/find_meridians.py	45	for _ in range(17):
+production	dimension-or-derived	scripts/find_meridians.py	66	print('Found 17 rotated meridians, each with 17 edges.')
+production	selective-small-number	scripts/find_sectors.py	11	p=json.loads((ROOT / 'output/meridian-certificate.json').read_text())['path'];rot=lambda x:(x>>1)|((x&1)<<16)
+production	dimension-or-derived	scripts/find_sectors.py	13	for k in range(17):
+production	dimension-or-derived	scripts/find_sectors.py	34	 sector = next(i for i in range(17) if boundary_arcs == {i,(i+1)%17})
+production	dimension-or-derived	scripts/find_sectors.py	41	for k in range(17):
+production	dimension-or-derived	scripts/find_sectors.py	42	    cycle = paths[k] + list(reversed(paths[(k+1)%17][1:-1]))
+production	selective-small-number	scripts/find_sectors.py	64	print('Proposed 17 sectors, 7710 quadrilaterals and 34 boundary edges each.')
+production	dimension-or-derived	scripts/audit_topology.lean	175	#print axioms Venn17.Topology.exists_simple_rotational_venn_17
+test-review	dimension-or-derived	scripts/test_checkers.py	29	                    self.assertEqual(check(path)['regions'], 131072)
+test-review	dimension-or-derived	scripts/test_checkers.py	54	        data = {'n': 17, 'faces': [copy.deepcopy(self.original['faces'][0])]}
+test-review	dimension-or-derived	scripts/test_checkers.py	59	        self.run_case({'n': 17, 'faces': [['0'*17, '1'*17, '01'+'0'*15, '10'+'0'*15]]}, False)
+test-review	selective-small-number	scripts/test_checkers.py	62	        for s in ['x'*17, '0'*16, '0'*18]:
+test-review	dimension-or-derived	scripts/test_checkers.py	63	            self.run_case({'n': 17, 'faces': [[s]*4]}, False)
+test-review	selective-small-number	scripts/test_checkers.py	64	        self.run_case({'n': 16, 'faces': []}, False)
+test-review	dimension-or-derived	scripts/test_checkers.py	67	        self.run_case({'n': 17, 'faces': []}, False)
+production	dimension-or-derived	scripts/check.py	17	    assert type(n) is int and n == 17, 'expected n = 17'
+test-review	dimension-or-derived	Venn17/Tests.lean	12	#guard (parsePattern 17 (.str "10000000000000000")).toOption == some 1
+test-review	selective-small-number	Venn17/Tests.lean	13	#guard (parsePattern 17 (.str "00000000000000001")).toOption == some (2^16)
+test-review	selective-small-number	Venn17/Tests.lean	14	#guard rotate 1 == 2^16
+test-review	dimension-or-derived	Venn17/Tests.lean	44	-- An actual 17-element face orbit passes; incomplete or reversed orbits fail.
+test-review	dimension-or-derived	Venn17/Tests.lean	46	  (Array.range 17).map fun n => #[0, 1, 3, 2].map (steps regionStep n)
+production	dimension-or-derived	Venn17/Proof.lean	14	  let mut witnesses := Array.replicate (2^17) faces.size
+production	dimension-or-derived	Venn17/Proof.lean	22	def occurrenceCheck : Bool := (Array.range (2^17)).all fun v =>
+production	dimension-or-derived	Venn17/Proof.lean	30	theorem every_pattern_occurs (v : Nat) (hv : v < 2^17) :
+production	dimension-or-derived	Venn17/Proof.lean	74	    ∃ r, audit suppliedJSON = .ok r ∧ r.regions = 131072 := by
+production	dimension-or-derived	Venn17/GraphCertificate.lean	16	  (Array.range 17).all (fun i =>
+production	dimension-or-derived	Venn17/GraphCertificate.lean	20	  (Array.range 17).all (fun i => (#[false, true]).all fun side =>
+production	dimension-or-derived	Venn17/Facts.lean	16	theorem each_curve_connected (i : Nat) (hi : i < 17) :
+production	dimension-or-derived	Venn17/Facts.lean	25	theorem each_curve_degree_two (i f : Nat) (hi : i < 17)
+production	dimension-or-derived	Venn17/Facts.lean	34	theorem each_side_connected (i : Nat) (hi : i < 17) (side : Bool) :
+production	dimension-or-derived	VennCore/Rotation.lean	9	def regionStep (v : Nat) : Nat := if v < 2^17 then rotate v else v
+production	dimension-or-derived	VennCore/Rotation.lean	12	  (Array.range (2^17)).all fun v => rotate v < 2^17 && steps regionStep 17 v == v
+production	dimension-or-derived	VennCore/Rotation.lean	22	    g < fs.size && s < 4 && steps (fun f => table.getD f 0) 17 f == f &&
+production	dimension-or-derived	VennCore/Rotation.lean	26	def trianglePole (u v : Nat) : Nat := if u == 0 || v == 0 then 0 else 131071
+production	dimension-or-derived	VennCore/Checker.lean	43	  failUnless (n == 17) "expected 17 curves"
+production	dimension-or-derived	VennCore/Checker.lean	95	  let mut graph : Graph := Array.replicate (2^17) #[]
+production	dimension-or-derived	VennCore/Checker.lean	98	  let mut curves : Array Graph := Array.replicate 17 (Array.replicate faces.size #[])
+production	dimension-or-derived	VennCore/Checker.lean	107	      for i in [:17] do
+production	dimension-or-derived	VennCore/Checker.lean	126	  let mut links : Array (Std.HashMap Nat Nat) := Array.replicate (2^17) {}
+production	selective-small-number	VennCore/Checker.lean	151	def rotate (v : Nat) : Nat := v / 2 + (v % 2) * 2^16
+production	dimension-or-derived	VennCore/Checker.lean	155	  let mut answer := (2^17)^4
+production	dimension-or-derived	VennCore/Checker.lean	158	    for j in [:4] do code := code * 2^17 + f[(k+j)%4]!
+production	dimension-or-derived	VennCore/Checker.lean	169	An arbitrary order-17 automorphism alone need not have rotation number ±1/17. -/
+production	dimension-or-derived	VennCore/Checker.lean	172	    m.links[pole]!.size == 17 && (Array.range 17).all fun i =>
+production	dimension-or-derived	VennCore/Checker.lean	173	      m.links[pole]![pole ^^^ 2^i]? == some (pole ^^^ 2^((i+step)%17))
+production	selective-small-number	VennCore/Checker.lean	174	  (atPole 0 1 && atPole (2^17-1) 16) || (atPole 0 16 && atPole (2^17-1) 1)
+production	dimension-or-derived	VennCore/Checker.lean	177	  let mut seen := Array.replicate (2^17) false
+production	dimension-or-derived	VennCore/Checker.lean	190	  (Array.range 17).all fun i =>
+production	dimension-or-derived	VennCore/Checker.lean	213	  r.regions = 131072 ∧ r.arcs = 262140 ∧ r.crossings = 131070 ∧
+production	dimension-or-derived	VennTopology/BitSigns.lean	83	theorem diagram_faceSign_cases (i : Fin 17) (f : Fin suppliedModel.oriented.size) :
+production	dimension-or-derived	VennTopology/BitSigns.lean	87	  obtain ⟨a,b,hab,ha,hb⟩ := crossing_labels_alternate suppliedModel.oriented 131072 17
+production	dimension-or-derived	VennTopology/BitSigns.lean	92	theorem diagram_edge_bitSign (f : Fin suppliedModel.oriented.size) (k : Fin 4) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/BitSigns.lean	98	    apply (edgeMask_face _ 131072 f k).symm.trans
+production	dimension-or-derived	VennTopology/RigidSphere.lean	105	/-- The required positive generator, with angle exactly `2π/17`. -/
+production	dimension-or-derived	VennTopology/RigidSphere.lean	106	def rigidGenerator : Circle := Circle.exp (2 * Real.pi / 17)
+production	dimension-or-derived	VennTopology/RigidSphere.lean	108	theorem rigidGenerator_pow_seventeen : rigidGenerator ^ 17 = 1 := by
+production	dimension-or-derived	VennTopology/RigidSphere.lean	112	  rw [show (17 : ℝ) * (2 * Real.pi / 17) = 2 * Real.pi by ring]
+production	dimension-or-derived	VennTopology/RigidSphere.lean	123	    (rigidSphereRotation rigidGenerator)^[17] x = x := by
+production	dimension-or-derived	VennTopology/ArmSymmetry.lean	90	theorem diagramCurve_original (i : Fin 17) (x : Diagram) :
+production	dimension-or-derived	VennTopology/ArmSymmetry.lean	92	  change Coordinates.reindex (Coordinates.labelEquiv 131072 suppliedModel.oriented.size) x.val ∈
+production	dimension-or-derived	VennTopology/ArmSymmetry.lean	93	    encodedCurve suppliedModel.oriented 131072 i.val ↔ _
+production	dimension-or-derived	VennTopology/SectorConnected.lean	35	theorem sector_triangle_subset (k : Fin 17) (f : Fin suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/SectorConnected.lean	40	theorem sector_centers_joined (k : Fin 17) (f g : Fin suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/SectorConnected.lean	53	theorem sector_walk_joined (k : Fin 17) {u v : Nat}
+production	dimension-or-derived	VennTopology/SectorConnected.lean	54	    (hw : GraphProof.Walk suppliedModel.dual (fun f => suppliedSectorColors.getD f 17 == k.val) u v)
+production	dimension-or-derived	VennTopology/SectorConnected.lean	64	      have hav : (suppliedSectorColors.getD v 17 == k.val) = true := by
+production	dimension-or-derived	VennTopology/SectorConnected.lean	71	theorem sectorSpace_pathConnected (k : Fin 17) : IsPathConnected (sectorSpace k) := by
+production	dimension-or-derived	VennTopology/SectorConnected.lean	86	theorem diagramSector_pathConnected (k : Fin 17) : IsPathConnected (diagramSector k) :=
+production	dimension-or-derived	VennTopology/CurveLevelSet.lean	8	theorem diagram_curve_field_zero (i : Fin 17) (x : Diagram) (hx : x ∈ diagramCurve i) :
+production	dimension-or-derived	VennTopology/CurveLevelSet.lean	20	  exact diagramQuad.bitField_arm_zero 131072 i.val f
+production	dimension-or-derived	VennTopology/CurveLevelSet.lean	25	theorem diagram_field_zero_curve (i : Fin 17) (x : Diagram) (hx : diagramBitField i x = 0) :
+production	dimension-or-derived	VennTopology/CurveLevelSet.lean	30	  have hf := diagramQuad.bitField_triangle 131072 i.val f hc hb k ht
+production	dimension-or-derived	VennTopology/CurveLevelSet.lean	36	  change diagramQuad.bitField 131072 i.val x.val = 0 at hx
+production	dimension-or-derived	VennTopology/CurveLevelSet.lean	67	theorem diagram_curve_iff_field_zero (i : Fin 17) (x : Diagram) :
+production	dimension-or-derived	VennTopology/CurveLevelSet.lean	73	theorem diagram_bit_field_verified (i : Fin 17) :
+production	dimension-or-derived	VennTopology/CurveLevelSet.lean	75	    (∀ v : Fin 131072, diagramBitField i (patternPoint v) = bitSign i.val v.val) ∧
+production	dimension-or-derived	VennTopology/SectorDisk.lean	18	def sectorBoundaryParam (k : Fin 17) : UnitCircle → Diagram :=
+production	dimension-or-derived	VennTopology/SectorDisk.lean	21	theorem sectorBoundaryParam_continuous (k : Fin 17) : Continuous (sectorBoundaryParam k) :=
+production	dimension-or-derived	VennTopology/SectorDisk.lean	24	theorem sectorBoundaryParam_injective (k : Fin 17) : Function.Injective (sectorBoundaryParam k) :=
+production	dimension-or-derived	VennTopology/SectorDisk.lean	28	theorem sectorBoundaryParam_range (k : Fin 17) :
+production	dimension-or-derived	VennTopology/SectorDisk.lean	33	theorem sectorBoundaryParam_subset (k : Fin 17) : range (sectorBoundaryParam k) ⊆ diagramSector k := by
+production	dimension-or-derived	VennTopology/SectorDisk.lean	37	theorem sectorBoundaryParam_frontier (k : Fin 17) : frontier (diagramSector k) ⊆ range (sectorBoundaryParam k) := by
+production	dimension-or-derived	VennTopology/SectorDisk.lean	41	theorem sector_interior_witness (k : Fin 17) :
+production	dimension-or-derived	VennTopology/SectorDisk.lean	51	def sectorDiskHomeomorph (k : Fin 17) : diagramSector k ≃ₜ PlaneClosedDisk :=
+production	dimension-or-derived	VennTopology/SectorDisk.lean	59	theorem sectorDiskHomeomorph_boundary (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/SectorDisk.lean	65	    ∀ k : Fin 17, Nonempty (diagramSector k ≃ₜ PlaneClosedDisk) :=
+production	dimension-or-derived	VennTopology/FixedPoints.lean	58	    diagramRotation x = x ↔ x = patternPoint 0 ∨ x = patternPoint 131071 := by
+production	dimension-or-derived	VennTopology/FixedPoints.lean	77	    have hp : trianglePole u v = 0 ∨ trianglePole u v = 131071 := by
+production	dimension-or-derived	VennTopology/PolygonEulerLowerBound.lean	83	  refine ⟨⟨Coordinates.FiniteCoordinates.cell (131072 + suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/PolygonEulerLowerBound.lean	84	    (encodedCells suppliedModel.oriented 131072 t), ?_⟩, ?_⟩
+production	dimension-or-derived	VennTopology/PolygonEulerLowerBound.lean	88	theorem diagram_polygon_vertex_count_lower_bound : 262142 ≤ Nat.card (Vertex diagramPresentation) := by
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	13	def sectorCore (k : Fin 17) : Set Diagram := (⋃ l, ⋃ (_ : l ≠ k), diagramSector l)ᶜ
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	15	theorem sectorCore_open (k : Fin 17) : IsOpen (sectorCore k) :=
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	18	theorem sectorCore_subset (k : Fin 17) : sectorCore k ⊆ diagramSector k := by
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	26	theorem sector_diff_boundary_subset_core (k : Fin 17) :
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	32	theorem sector_frontier_subset (k : Fin 17) :
+production	selective-small-number	VennTopology/SectorFrontier.lean	41	theorem meridianBoundaryLabel_lt (k l : Fin 17) (i : Fin 34) : meridianBoundaryLabel k l i < 131072 := by
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	45	theorem meridian_boundary_center_zero (k l : Fin 17) {x : Diagram}
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	46	    (hx : x ∈ diagramMeridianBoundary k l) (a : Nat) (ha : 131072 ≤ a) :
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	58	theorem crossingPoint_not_meridian_boundary (f : Fin suppliedModel.oriented.size) (k l : Fin 17) :
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	61	  have h := meridian_boundary_center_zero k l hx (131072+f.val) (by omega)
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	65	theorem crossingPoint_mem_sector_iff (f : Fin suppliedModel.oriented.size) (k : Fin 17) :
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	70	      (a := 131072+f.val) (by rw [crossingPoint_encoded, vertex_self]; norm_num)
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	78	theorem sector_face_exists (k : Fin 17) : ∃ f, sectorColor f = k := by
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	83	theorem sector_interior_nonempty (k : Fin 17) : (interior (diagramSector k)).Nonempty := by
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	89	def sectorOutsidePoint (k : Fin 17) : Diagram :=
+production	dimension-or-derived	VennTopology/SectorFrontier.lean	92	theorem sectorOutsidePoint_not_mem (k : Fin 17) : sectorOutsidePoint k ∉ diagramSector k := by
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	13	def puncturedCurve (i : Fin 17) : Set PuncturedDiagram := Subtype.val ⁻¹' diagramCurve i
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	14	def puncturedRegion (v : Fin 131072) : Set PuncturedDiagram := Subtype.val ⁻¹' diagramRegion v
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	16	theorem pole_avoids_curves (i : Fin 17) : patternPoint 0 ∉ diagramCurve i := by
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	20	def puncturedCurveHomeomorph (i : Fin 17) : diagramCurve i ≃ₜ puncturedCurve i where
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	28	def puncturedCurveCircle (i : Fin 17) : Circle ≃ₜ puncturedCurve i :=
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	31	theorem punctured_curves_are_embedded_circles (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	43	theorem puncturedRegion_pathConnected (v : Fin 131072) : IsPathConnected (puncturedRegion v) := by
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	63	def puncturedComplement : Set PuncturedDiagram := (⋃ i : Fin 17, puncturedCurve i)ᶜ
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	64	def puncturedComplementRegion (v : Fin 131072) : Set puncturedComplement :=
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	72	    x ∈ puncturedComplement ↔ ∃! v : Fin 131072, x ∈ puncturedRegion v := by
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	76	theorem puncturedComplementRegion_isClopen (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	80	theorem puncturedComplementRegion_pathConnected (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	88	def puncturedComponentsEquiv : ConnectedComponents puncturedComplement ≃ Fin 131072 :=
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	98	theorem punctured_complement_component_count : Nat.card (ConnectedComponents puncturedComplement) = 131072 := by
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	119	theorem punctured_rotation_period (x : PuncturedDiagram) : puncturedRotation^[17] x = x := by
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	123	theorem punctured_rotation_curve_image (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	130	theorem punctured_rotation_region_image (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	138	    puncturedRotation x = x ↔ x.val = patternPoint 131071 := by
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	143	theorem punctured_rotation_no_short_period (k : Nat) (hk : 0 < k) (hk17 : k < 17) :
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	146	    (by decide : (1 : Fin 131072) ≠ 0) (patternPoint_injective he)⟩
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	159	    (∃ i j : Fin 17, i ≠ j ∧ x ∈ puncturedCurve i ∧ x ∈ puncturedCurve j) ↔
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	161	  change (∃ i j : Fin 17, i ≠ j ∧ x.val ∈ diagramCurve i ∧ x.val ∈ diagramCurve j) ↔ _
+production	dimension-or-derived	VennTopology/PuncturedArrangement.lean	167	theorem punctured_no_triple_intersections (i j k : Fin 17)
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	39	theorem meridianLabel_injective (k : Fin 17) : Function.Injective (meridianLabel k) := by
+production	selective-small-number	VennTopology/MeridianIntersections.lean	42	  have he : (⟨i.val, by omega⟩ : Fin 34) = ⟨j.val, by omega⟩ := hi (by
+production	selective-small-number	VennTopology/MeridianIntersections.lean	48	theorem meridianLabel_shared (k l : Fin 17) (hkl : k ≠ l) (i j : Fin 18)
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	50	    (i = 0 ∧ j = 0) ∨ (i = 17 ∧ j = 17) := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	51	  have hz (k : Fin 17) := (meridian_labels_verified.1 k).1
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	52	  have hn (k : Fin 17) := (meridian_labels_verified.1 k).2
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	57	  by_cases hi17 : i = 17
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	64	  by_cases hj17 : j = 17
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	65	  · have he : i = 17 := meridianLabel_injective k (by simpa [hj17, hn] using h)
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	67	  have hi : 0 < i.val ∧ i.val < 17 := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	68	    have : i.val ≠ 0 ∧ i.val ≠ 17 := ⟨fun he => hi0 (Fin.ext he), fun he => hi17 (Fin.ext he)⟩
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	70	  have hj : 0 < j.val ∧ j.val < 17 := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	71	    have : j.val ≠ 0 ∧ j.val ≠ 17 := ⟨fun he => hj0 (Fin.ext he), fun he => hj17 (Fin.ext he)⟩
+production	selective-small-number	VennTopology/MeridianIntersections.lean	73	  have he : (⟨i.val, by omega⟩ : Fin 34) = ⟨34-j.val, by omega⟩ :=
+production	selective-small-number	VennTopology/MeridianIntersections.lean	75	      simpa [meridianBoundaryLabel, show i.val < 18 from i.isLt,
+production	selective-small-number	VennTopology/MeridianIntersections.lean	76	        show ¬34-j.val < 18 by omega, show 34-(34-j.val) = j.val by omega] using h)
+production	selective-small-number	VennTopology/MeridianIntersections.lean	78	  change i.val = 34 - j.val at hv
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	81	private theorem meridian_edge_shared (k l : Fin 17) (hkl : k ≠ l) (i j : Fin 17)
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	85	    a = if i.val = 0 then 0 else 131071 := by
+production	selective-small-number	VennTopology/MeridianIntersections.lean	87	  · have he : (⟨i.val, by omega⟩ : Fin 18) = 0 := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	91	      · have hv := congrArg Fin.val h.1; change i.val = 17 at hv; omega
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	93	      · have hv := congrArg Fin.val h.1; change i.val = 17 at hv; omega
+production	selective-small-number	VennTopology/MeridianIntersections.lean	96	  · have he : (⟨i.val+1, by omega⟩ : Fin 18) = 17 := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	106	theorem encoded_meridians_inter_subset (k l : Fin 17) (hkl : k ≠ l) :
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	107	    encodedMeridian k ∩ encodedMeridian l ⊆ {vertex 0, vertex 131071} := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	117	  have hx := simplex_inter_subset_vertex _ _ (if i.val = 0 then 0 else 131071)
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	125	theorem diagram_meridians_inter (k l : Fin 17) (hkl : k ≠ l) :
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	126	    diagramMeridian k ∩ diagramMeridian l = {patternPoint 0, patternPoint 131071} := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	141	    have hz (m : Fin 17) : patternPoint 0 ∈ diagramMeridian m := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	144	    have hn (m : Fin 17) : patternPoint 131071 ∈ diagramMeridian m := by
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	146	      exact ⟨⟨17, by norm_num⟩, diagramMeridianMap_one m⟩
+production	selective-small-number	VennTopology/MeridianIntersections.lean	154	theorem meridian_boundary_back (k l : Fin 17) (i : Fin 18) :
+production	selective-small-number	VennTopology/MeridianIntersections.lean	155	    meridianBoundaryLabel k l ⟨(34-i.val)%34, Nat.mod_lt _ (by decide)⟩ =
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	159	private theorem meridian_boundary_first_edge (k l : Fin 17) (i : Fin 17) :
+production	selective-small-number	VennTopology/MeridianIntersections.lean	164	  have hn : cyclicNext (⟨i.val, by omega⟩ : Fin 34) = ⟨i.val+1, by omega⟩ := by
+production	selective-small-number	VennTopology/MeridianIntersections.lean	166	    change (i.val+1)%34 = i.val+1
+production	selective-small-number	VennTopology/MeridianIntersections.lean	168	  rw [hn, meridian_boundary_front k l (⟨i.val, by omega⟩ : Fin 18),
+production	selective-small-number	VennTopology/MeridianIntersections.lean	169	    meridian_boundary_front k l (⟨i.val+1, by omega⟩ : Fin 18)]
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	171	private theorem meridian_boundary_second_edge (k l : Fin 17) (i : Fin 17) :
+production	selective-small-number	VennTopology/MeridianIntersections.lean	172	    segment ℝ (vertex (meridianBoundaryLabel k l ⟨33-i.val, by omega⟩))
+production	selective-small-number	VennTopology/MeridianIntersections.lean	173	      (vertex (meridianBoundaryLabel k l (cyclicNext ⟨33-i.val, by omega⟩))) =
+production	selective-small-number	VennTopology/MeridianIntersections.lean	176	  have h1 : (⟨33-i.val, by omega⟩ : Fin 34) =
+production	selective-small-number	VennTopology/MeridianIntersections.lean	177	      ⟨(34-(i.val+1))%34, Nat.mod_lt _ (by decide)⟩ := by
+production	selective-small-number	VennTopology/MeridianIntersections.lean	179	  have h2 : cyclicNext (⟨33-i.val, by omega⟩ : Fin 34) =
+production	selective-small-number	VennTopology/MeridianIntersections.lean	180	      ⟨(34-i.val)%34, Nat.mod_lt _ (by decide)⟩ := by
+production	selective-small-number	VennTopology/MeridianIntersections.lean	181	    apply Fin.ext; change (33-i.val+1)%34 = (34-i.val)%34
+production	selective-small-number	VennTopology/MeridianIntersections.lean	183	  rw [h2, h1, meridian_boundary_back k l (⟨i.val+1, by omega⟩ : Fin 18),
+production	selective-small-number	VennTopology/MeridianIntersections.lean	184	    meridian_boundary_back k l (⟨i.val, by omega⟩ : Fin 18), segment_symm]
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	186	theorem meridian_boundary_eq_union (k l : Fin 17) :
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	192	    by_cases h : j.val < 17
+production	selective-small-number	VennTopology/MeridianIntersections.lean	197	      let i : Fin 17 := ⟨33-j.val, by omega⟩
+production	selective-small-number	VennTopology/MeridianIntersections.lean	198	      have he : (⟨33-i.val, by omega⟩ : Fin 34) = j := by
+production	selective-small-number	VennTopology/MeridianIntersections.lean	205	      exact mem_iUnion.mpr ⟨⟨33-i.val, by omega⟩, (meridian_boundary_second_edge k l i).symm ▸ hi⟩
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	207	theorem diagram_meridian_boundary_eq_union (k l : Fin 17) :
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	217	      diagramMeridianMap k ⟨17, by norm_num⟩ = patternPoint 131071) ∧
+production	dimension-or-derived	VennTopology/MeridianIntersections.lean	219	      {patternPoint 0, patternPoint 131071}) ∧
+production	dimension-or-derived	VennTopology/LinkCircles.lean	54	/-- For every one of the 262142 certified vertices, its complete dart link
+production	dimension-or-derived	VennTopology/LinkCircles.lean	57	    Circle ≃ₜ dartLink suppliedModel.oriented 131072 v.val :=
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	13	theorem zero_region_subset_false_side (i : Fin 17) : diagramRegion 0 ⊆ diagramSide i false := by
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	17	theorem pole_not_true_side (i : Fin 17) : patternPoint 0 ∉ diagramSide i true := by
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	22	theorem diagramSide_punctured_pathConnected (i : Fin 17) (b : Bool) :
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	39	def puncturedSide (i : Fin 17) (b : Bool) : Set PuncturedDiagram := Subtype.val ⁻¹' diagramSide i b
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	41	theorem puncturedSide_isOpen (i : Fin 17) (b : Bool) : IsOpen (puncturedSide i b) :=
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	44	theorem puncturedSide_pathConnected (i : Fin 17) (b : Bool) : IsPathConnected (puncturedSide i b) := by
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	51	theorem puncturedSide_cover (i : Fin 17) : (⋃ b, puncturedSide i b) = (puncturedCurve i)ᶜ := by
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	55	theorem puncturedSide_disjoint (i : Fin 17) : Disjoint (puncturedSide i false) (puncturedSide i true) :=
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	58	theorem puncturedRegion_eq_sides (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	59	    puncturedRegion v = ⋂ i : Fin 17, puncturedSide i (v.val.testBit i.val) := by
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	60	  change Subtype.val ⁻¹' diagramRegion v = ⋂ i : Fin 17, Subtype.val ⁻¹' diagramSide i (v.val.testBit i.val)
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	63	def puncturedCurveComplement (i : Fin 17) : Set PuncturedDiagram := (puncturedCurve i)ᶜ
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	65	def puncturedCurveComplementSide (i : Fin 17) (b : Bool) : Set (puncturedCurveComplement i) :=
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	68	def curveComplementForget (i : Fin 17) (x : puncturedCurveComplement i) : diagramCurveComplement i :=
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	71	theorem puncturedCurveComplementSide_isClopen (i : Fin 17) (b : Bool) :
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	80	theorem puncturedCurveComplementSide_pathConnected (i : Fin 17) (b : Bool) :
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	84	def puncturedSideComponentsEquiv (i : Fin 17) : ConnectedComponents (puncturedCurveComplement i) ≃ Bool :=
+production	dimension-or-derived	VennTopology/PuncturedSides.lean	95	theorem punctured_curve_complement_component_count (i : Fin 17) :
+production	dimension-or-derived	VennTopology/CurveData.lean	7	  (Array.range 17).map fun i => CurveProof.propose suppliedModel.oriented 131072 i
+production	dimension-or-derived	VennTopology/CurveData.lean	10	    (Array.range 17).all (fun i =>
+production	dimension-or-derived	VennTopology/CurveData.lean	11	      CurveProof.check suppliedModel.oriented 131072 i
+production	dimension-or-derived	VennTopology/CurveData.lean	13	      (suppliedCurvePolygons.getD i default).vertices.size == 30840) = true := by
+production	dimension-or-derived	VennTopology/CurveData.lean	17	    CurveProof.labelsCheck suppliedModel.oriented 131072 17 = true := by native_decide
+production	dimension-or-derived	VennTopology/CurveData.lean	20	    CurveProof.crossingLabelsCheck suppliedModel.oriented 131072 = true := by native_decide
+production	dimension-or-derived	VennTopology/PlanarSides.lean	10	def planeCurve (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) : Set Plane := e '' puncturedCurve i
+production	dimension-or-derived	VennTopology/PlanarSides.lean	11	def planeSide (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) (b : Bool) : Set Plane := e '' puncturedSide i b
+production	dimension-or-derived	VennTopology/PlanarSides.lean	12	def planeRegion (e : PuncturedDiagram ≃ₜ Plane) (v : Fin 131072) : Set Plane := e '' puncturedRegion v
+production	dimension-or-derived	VennTopology/PlanarSides.lean	14	theorem diagramBitField_zero_pattern (i : Fin 17) : diagramBitField i (patternPoint 0) = -1 := by
+production	dimension-or-derived	VennTopology/PlanarSides.lean	20	theorem punctured_nonnegative_compact (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	32	theorem planeSide_true_bounded (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	40	theorem puncturedCurve_compact (i : Fin 17) : IsCompact (puncturedCurve i) := by
+production	dimension-or-derived	VennTopology/PlanarSides.lean	45	theorem planeCurve_compact (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	48	theorem planeSide_isOpen (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) (b : Bool) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	51	theorem planeSide_pathConnected (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) (b : Bool) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	54	theorem planeSide_disjoint (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	58	theorem planeSide_cover (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	63	theorem planeSide_false_unbounded (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	76	theorem planeRegion_eq_sides (e : PuncturedDiagram ≃ₜ Plane) (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	77	    planeRegion e v = ⋂ i : Fin 17, planeSide e i (v.val.testBit i.val) := by
+production	dimension-or-derived	VennTopology/PlanarSides.lean	81	theorem planeRegion_pathConnected (e : PuncturedDiagram ≃ₜ Plane) (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	84	theorem plane_curves_are_embedded_circles (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	91	theorem plane_curve_complement_component_count (e : PuncturedDiagram ≃ₜ Plane) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	98	    x ∉ ⋃ i : Fin 17, planeCurve e i ↔ ∃! v : Fin 131072, x ∈ planeRegion e v := by
+production	dimension-or-derived	VennTopology/PlanarSides.lean	103	theorem all_bit_patterns (b : Fin 17 → Bool) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	104	    ∃ v : Fin 131072, ∀ i : Fin 17, v.val.testBit i.val = b i := by
+production	dimension-or-derived	VennTopology/PlanarSides.lean	105	  have h : Function.Bijective (fun v : Fin 131072 => fun i : Fin 17 => v.val.testBit i.val) := by
+production	dimension-or-derived	VennTopology/PlanarSides.lean	114	theorem plane_every_membership_pattern (e : PuncturedDiagram ≃ₜ Plane) (b : Fin 17 → Bool) :
+production	dimension-or-derived	VennTopology/PlanarSides.lean	115	    IsPathConnected (⋂ i : Fin 17, planeSide e i (b i)) := by
+production	dimension-or-derived	VennTopology/PlanarSides.lean	126	    (∀ i : Fin 17,
+production	dimension-or-derived	VennTopology/PlanarSides.lean	133	    (∀ v : Fin 131072, IsPathConnected (planeRegion e v) ∧
+production	dimension-or-derived	VennTopology/PlanarSides.lean	134	      planeRegion e v = ⋂ i : Fin 17, planeSide e i (v.val.testBit i.val)) ∧
+production	dimension-or-derived	VennTopology/PlanarSides.lean	135	    (∀ x : Plane, x ∉ ⋃ i : Fin 17, planeCurve e i ↔ ∃! v : Fin 131072, x ∈ planeRegion e v) ∧
+production	dimension-or-derived	VennTopology/PlanarSides.lean	136	    (∀ b : Fin 17 → Bool, IsPathConnected (⋂ i : Fin 17, planeSide e i (b i))) :=
+production	dimension-or-derived	VennTopology/MeridianBoundaryParameters.lean	11	theorem diagramMeridianBoundaryMap_front (k l : Fin 17) (t : MeridianParameter) :
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	22	      AddCircle.toCircle (edgePhase ((⟨i.val, by omega⟩ : Fin 34), r)) := rfl
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	24	  have hn : cyclicNext (⟨i.val, by omega⟩ : Fin 34) = ⟨i.val+1, by omega⟩ := by
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	26	    change (i.val+1)%34 = i.val+1
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	28	  rw [hn, meridian_boundary_front k l (⟨i.val, by omega⟩ : Fin 18),
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	29	    meridian_boundary_front k l (⟨i.val+1, by omega⟩ : Fin 18)]
+production	dimension-or-derived	VennTopology/MeridianBoundaryParameters.lean	31	theorem meridian_reverse_phase (i : Fin 17) (r : Icc (0 : ℝ) 1) :
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	32	    AddCircle.toCircle (edgePhase ((⟨33-i.val, by omega⟩ : Fin 34),
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	35	  have hp : edgePhase ((⟨33-i.val, by omega⟩ : Fin 34),
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	37	      -(((i.val : ℝ)+r.val : ℝ) : AddCircle (34 : ℝ)) := by
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	39	    have hv : ((33-i.val : ℕ) : ℝ)+(1-r.val) = 34-((i.val : ℝ)+r.val) := by
+production	dimension-or-derived	VennTopology/MeridianBoundaryParameters.lean	48	theorem diagramMeridianBoundaryMap_back (k l : Fin 17) (t : MeridianParameter) :
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	59	  have h1 : (⟨33-i.val, by omega⟩ : Fin 34) =
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	60	      ⟨(34-(i.val+1))%34, Nat.mod_lt _ (by decide)⟩ := by
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	62	  have h2 : cyclicNext (⟨33-i.val, by omega⟩ : Fin 34) =
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	63	      ⟨(34-i.val)%34, Nat.mod_lt _ (by decide)⟩ := by
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	64	    apply Fin.ext; change (33-i.val+1)%34 = (34-i.val)%34
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	66	  rw [h2, h1, meridian_boundary_back k l (⟨i.val+1, by omega⟩ : Fin 18),
+production	selective-small-number	VennTopology/MeridianBoundaryParameters.lean	67	    meridian_boundary_back k l (⟨i.val, by omega⟩ : Fin 18)]
+production	dimension-or-derived	VennTopology/MeridianBoundaryParameters.lean	72	    meridianCircleParameter t = Circle.exp (Real.pi / 17 * t.val) := by
+production	dimension-or-derived	VennTopology/MeridianBoundaryParameters.lean	91	  · let t : MeridianParameter := ⟨17 * θ / Real.pi, by
+production	dimension-or-derived	VennTopology/MeridianBoundaryParameters.lean	100	  · let t : MeridianParameter := ⟨17 * (2*Real.pi-θ) / Real.pi, by
+production	dimension-or-derived	VennTopology/MeridianBoundaryParameters.lean	106	    have hv : -(Real.pi / 17 * t.val) = θ-2*Real.pi := by
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	14	    suppliedSectorColors.getD f.val 17 < 17 ∧
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	15	    suppliedSectorColors.getD ((rotationWitnesses suppliedModel.oriented).getD f.val 0) 17 = (suppliedSectorColors.getD f.val 17 + 1) % 17 := by
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	22	def sectorColor (f : Fin suppliedModel.oriented.size) : Fin 17 :=
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	23	  ⟨suppliedSectorColors.getD f.val 17, (sector_color_data f).1⟩
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	29	  change suppliedSectorColors.getD ((rotationWitnesses suppliedModel.oriented)[f.val]!) 17 = _
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	32	def sectorSpace (k : Fin 17) : Set (Quad.Ambient Nat (Fin suppliedModel.oriented.size)) :=
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	35	def diagramSector (k : Fin 17) : Set Diagram := {x | x.val ∈ sectorSpace k}
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	37	def encodedSector (k : Fin 17) : Set (Point Nat) :=
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	39	    simplex (encodedCells suppliedModel.oriented 131072 t)
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	41	theorem sectorSpace_subset_space (k : Fin 17) : sectorSpace k ⊆ diagramQuad.space := by
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	46	theorem sectorSpace_compact (k : Fin 17) : IsCompact (sectorSpace k) :=
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	50	theorem diagramSector_closed (k : Fin 17) : IsClosed (diagramSector k) :=
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	53	theorem diagramSector_compact (k : Fin 17) : IsCompact (diagramSector k) :=
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	62	theorem sector_encoded_image (k : Fin 17) :
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	63	    reindex (labelEquiv 131072 suppliedModel.oriented.size) '' sectorSpace k = encodedSector k := by
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	79	theorem mem_diagramSector_iff_encoded (k : Fin 17) (x : Diagram) :
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	82	  change x.val ∈ sectorSpace k ↔ reindex (labelEquiv 131072 suppliedModel.oriented.size) x.val ∈ _
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	92	theorem sectorSpace_rotation (k : Fin 17) :
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	109	theorem diagram_sector_rotation (k : Fin 17) :
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	123	theorem sector_boundary_subset (k : Fin 17) : diagramMeridianBoundary k (cyclicNext k) ⊆ diagramSector k := by
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	131	    131072 t.val 1 ∈ encodedCells suppliedModel.oriented 131072 t by simp [encodedCells])
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	133	    131072 t.val 2 ∈ encodedCells suppliedModel.oriented 131072 t by simp [encodedCells])
+production	dimension-or-derived	VennTopology/SectorGeometry.lean	142	theorem diagramSector_nonempty (k : Fin 17) : (diagramSector k).Nonempty := by
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	8	/-- Character `i` moves to `i-1` modulo 17, as specified in the input. -/
+production	selective-small-number	VennTopology/CurveSymmetry.lean	9	def curveRotation : Equiv.Perm (Fin 17) := Equiv.addRight 16
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	11	@[simp] theorem curveRotation_val (i : Fin 17) :
+production	selective-small-number	VennTopology/CurveSymmetry.lean	12	    (curveRotation i).val = (i.val+16)%17 := rfl
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	14	theorem curve_rotation_period : ∀ i : Fin 17, curveRotation^[17] i = i := by decide
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	16	theorem bit_rotation_verified : ∀ (v : Fin 131072) (i : Fin 17),
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	20	theorem rotated_edge_label {u v : Nat} (hu : u < 131072) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	33	theorem diagram_rotated_edge_label (f : Fin suppliedModel.oriented.size) (k : Fin 4) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	42	theorem diagram_rotation_mem_curve (x : Diagram) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	50	theorem diagram_rotation_curve_image (i : Fin 17) :
+production	dimension-or-derived	VennTopology/CurveSymmetry.lean	56	noncomputable def diagramCurveRotation (i : Fin 17) :
+production	dimension-or-derived	VennTopology/RigidPlaneConjugacy.lean	4	rotation through exactly `2π/17`, centered at the origin. -/
+production	dimension-or-derived	VennTopology/SphereReduction.lean	56	    Nat.card (PolygonVertices.Vertex diagramPresentation) = 262142 := by
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	12	@[simp] theorem realizedPlaneCurve_mem (x : PuncturedDiagram) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	19	theorem planar_no_triple_intersections (i j k : Fin 17)
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	26	    (∃ i j : Fin 17, i ≠ j ∧ x ∈ realizedPlaneCurve i ∧ x ∈ realizedPlaneCurve j) ↔
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	61	    ∃ i j : Fin 17, i ≠ j ∧ CrossingSquare.HasCrossingChart
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	83	theorem planar_symmetry_period (x : Plane) : realizedPlaneSymmetry^[17] x = x := by
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	87	theorem planar_symmetry_no_short_period (k : ℕ) (hk : 0 < k) (hk17 : k < 17) :
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	94	theorem planar_symmetry_curve_image (i : Fin 17) :
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	103	theorem planar_symmetry_region_image (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	113	    realizedPlaneSymmetry x = x ↔ (diagramPlaneHomeomorph.symm x).val = patternPoint 131071 := by
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	119	  let p : PuncturedDiagram := ⟨patternPoint 131071, fun h =>
+production	dimension-or-derived	VennTopology/PlaneArrangement.lean	120	    (by decide : (131071 : Fin 131072) ≠ 0) (patternPoint_injective h)⟩
+production	dimension-or-derived	VennTopology/MeridianData.lean	7	def meridianSeed : Array Nat := #[0, 1, 2049, 6145, 6209, 6241, 6257, 6265, 6269, 6397, 7421, 72957, 73469, 73725, 106493, 114685, 131069, 131071]
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	24	theorem diagram_sector_iterate (n : Nat) (k : Fin 17) :
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	32	theorem sector_index_iterate (k : Fin 17) : cyclicNext^[k.val] (0 : Fin 17) = k := by
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	35	def sectorFromZero (k : Fin 17) : diagramSector 0 ≃ₜ diagramSector k :=
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	39	theorem sectorFromZero_apply (k : Fin 17) (x : diagramSector 0) :
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	43	theorem sectorBoundaryParam_rotation (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	47	theorem sectorBoundaryParam_iterate (n : Nat) (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	55	def equivariantSectorDisk (k : Fin 17) : diagramSector k ≃ₜ PlaneClosedDisk :=
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	58	theorem equivariantSectorDisk_boundary (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	72	theorem sectorFromZero_next (k : Fin 17) (x : diagramSector 0) :
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	75	  change diagramRotation^[(k.val+1)%17] x.val = diagramRotation (diagramRotation^[k.val] x.val)
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	76	  rw [(show Function.IsPeriodicPt diagramRotation 17 x.val from diagram_rotation_period x.val).iterate_mod_apply]
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	79	def sectorRotatePoint (k : Fin 17) (x : diagramSector k) : diagramSector (cyclicNext k) :=
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	83	to the next sector. Period 17 proves the last-to-first case as well. -/
+production	dimension-or-derived	VennTopology/EquivariantSectorDisk.lean	84	theorem equivariantSectorDisk_rotation (k : Fin 17) (x : diagramSector k) :
+production	dimension-or-derived	VennTopology/Periodic.lean	13	def equivOfPeriod {X : Type*} (f : X → X) (h : ∀ x, f^[17] x = x) : Equiv.Perm X where
+production	selective-small-number	VennTopology/Periodic.lean	15	  invFun := f^[16]
+production	dimension-or-derived	VennTopology/Periodic.lean	21	theorem region_period (v : Nat) : regionStep^[17] v = v := by
+production	dimension-or-derived	VennTopology/Periodic.lean	22	  by_cases hv : v < 2^17
+production	dimension-or-derived	VennTopology/Periodic.lean	33	    exact h 17
+production	dimension-or-derived	VennTopology/Periodic.lean	40	    steps (fun f => (rotationWitnesses fs)[f]!) 17 f = f ∧
+production	dimension-or-derived	VennTopology/Periodic.lean	65	    (faceStep fs h)^[17] f = f := by
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	18	    Coordinates.link (encodedCells suppliedModel.oriented 131072) (poleIndex p).val :=
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	20	    (Homeomorph.setCongr (encoded_link_eq_dartLink suppliedModel.oriented 131072 _
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	23	def poleRotationAngle (p : Fin 2) : ℝ := if p = 0 then 2 * Real.pi / 17 else -(2 * Real.pi / 17)
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	33	  have hb : (poleIndex p).val < 131072 + suppliedModel.oriented.size := by
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	42	    range (Coordinates.linkConeParameter (encodedCells suppliedModel.oriented 131072)
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	47	disk, including its center, with the generator angle ±2π/17. -/
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	55	    (poleDiskHomeomorph p z).val ∈ Coordinates.realization (encodedCells suppliedModel.oriented 131072) := by
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	79	  change Coordinates.reindex (Coordinates.labelEquiv 131072 suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	82	      (Coordinates.reindex (Coordinates.labelEquiv 131072 suppliedModel.oriented.size) x.val)
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	102	def polePattern (p : Fin 2) : Fin 131072 := if p = 0 then 0 else 131071
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	136	  have hf : ∀ t i, i ∈ encodedCells suppliedModel.oriented 131072 t →
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	137	      ((encodedCells suppliedModel.oriented 131072 t).erase i).Nonempty := by
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	142	  have hh := Coordinates.openStar_eq_cone (encodedCells suppliedModel.oriented 131072)
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	145	      range (Coordinates.linkConeParameter (encodedCells suppliedModel.oriented 131072)
+production	dimension-or-derived	VennTopology/PoleDiskRotation.lean	148	        (encodedCells suppliedModel.oriented 131072) (poleIndex p).val :=
+production	selective-small-number	VennTopology/MeridianCertificate.lean	10	def meridianLabel (k : Fin 17) (j : Fin 18) : Nat :=
+production	selective-small-number	VennTopology/MeridianCertificate.lean	14	def meridianBoundaryLabel (k l : Fin 17) (j : Fin 34) : Nat :=
+production	selective-small-number	VennTopology/MeridianCertificate.lean	15	  if h : j.val < 18 then meridianLabel k ⟨j.val, h⟩
+production	selective-small-number	VennTopology/MeridianCertificate.lean	16	  else meridianLabel l ⟨34 - j.val, by omega⟩
+production	selective-small-number	VennTopology/MeridianCertificate.lean	18	def meridianBoundaryTriangle (fs : Array Face) (k l : Fin 17) (j : Fin 34) : Nat :=
+production	dimension-or-derived	VennTopology/MeridianCertificate.lean	19	  let f := if j.val < 17 then (meridianFaceRows.getD k.val #[]).getD j.val 0
+production	selective-small-number	VennTopology/MeridianCertificate.lean	20	    else (meridianFaceRows.getD l.val #[]).getD (33 - j.val) 0
+production	dimension-or-derived	VennTopology/MeridianCertificate.lean	29	    (∀ k, meridianLabel k 0 = 0 ∧ meridianLabel k 17 = 131071) ∧
+production	dimension-or-derived	VennTopology/MeridianCertificate.lean	30	    (∀ k j, meridianLabel k j < 131072 ∧
+production	dimension-or-derived	VennTopology/MeridianCertificate.lean	40	    ((LinkProof.triangleVertex suppliedModel.oriented 131072 t 1 = a ∧
+production	dimension-or-derived	VennTopology/MeridianCertificate.lean	41	      LinkProof.triangleVertex suppliedModel.oriented 131072 t 2 = b) ∨
+production	dimension-or-derived	VennTopology/MeridianCertificate.lean	42	     (LinkProof.triangleVertex suppliedModel.oriented 131072 t 1 = b ∧
+production	dimension-or-derived	VennTopology/MeridianCertificate.lean	43	      LinkProof.triangleVertex suppliedModel.oriented 131072 t 2 = a)) := by
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	34	    v < 131072 ∧ (suppliedSectorMasks.getD v 0).testBit (sectorColor f).val = true := by
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	39	def sectorAllowed (k : Fin 17) (a : Nat) : Prop :=
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	40	  (a < 131072 ∧ (suppliedSectorMasks.getD a 0).testBit k.val = true) ∨
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	41	  ∃ f : Fin suppliedModel.oriented.size, a = 131072 + f.val ∧ sectorColor f = k
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	43	theorem encodedSector_positive_allowed (k : Fin 17) {x : Point Nat}
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	46	  have hm : a ∈ encodedCells suppliedModel.oriented 131072 t := by
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	65	theorem sector_overlap_edge (t : Fin (4*suppliedModel.oriented.size)) (l : Fin 17)
+production	selective-small-number	VennTopology/SectorIntersections.lean	67	    ∃ j : Fin 34,
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	72	      ((suppliedSectorMasks.getD (LinkProof.triangleVertex suppliedModel.oriented 131072 t.val 1) 0).testBit l.val = true →
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	73	        LinkProof.triangleVertex suppliedModel.oriented 131072 t.val 1 = a ∨
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	74	        LinkProof.triangleVertex suppliedModel.oriented 131072 t.val 1 = b) ∧
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	75	      ((suppliedSectorMasks.getD (LinkProof.triangleVertex suppliedModel.oriented 131072 t.val 2) 0).testBit l.val = true →
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	76	        LinkProof.triangleVertex suppliedModel.oriented 131072 t.val 2 = a ∨
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	77	        LinkProof.triangleVertex suppliedModel.oriented 131072 t.val 2 = b) := by
+production	selective-small-number	VennTopology/SectorIntersections.lean	85	  have hj' : j < 34 := by simpa using hj
+production	selective-small-number	VennTopology/SectorIntersections.lean	87	  have hrow (i : Fin 34) :
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	93	    show suppliedSectorColors.getD (t.val/4) 17 = (sectorColor (triangleFace _ t)).val from rfl,
+production	selective-small-number	VennTopology/SectorIntersections.lean	94	    hrow ⟨j, hj'⟩, hrow ⟨(j+1)%34, Nat.mod_lt _ (by decide)⟩, Bool.and_eq_true] at he
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	103	theorem sector_inter_subset_boundary (k l : Fin 17) (hkl : k ≠ l) :
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	120	    have hm : a ∈ encodedCells suppliedModel.oriented 131072 t := by
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	132	      have hb : LinkProof.triangleVertex suppliedModel.oriented 131072 t.val 1 < 131072 := by
+production	dimension-or-derived	VennTopology/SectorIntersections.lean	137	      have hb : LinkProof.triangleVertex suppliedModel.oriented 131072 t.val 2 < 131072 := by
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	99	/-- The 17 equally spaced meridian directions. -/
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	100	def rigidDirection (k : Fin 17) : Circle := rigidGenerator ^ k.val
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	102	theorem rigidDirection_next (k : Fin 17) :
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	104	  change rigidGenerator ^ ((k.val+1)%17) = rigidGenerator * rigidGenerator^k.val
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	105	  by_cases h : k.val + 1 < 17
+production	selective-small-number	VennTopology/SphereMeridians.lean	107	  · have hk : k.val = 16 := by omega
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	112	  have ha : 0 < 2 * Real.pi / 17 := by positivity
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	113	  have hm (i : Fin 17) : (i.val : ℝ) * (2 * Real.pi / 17) ∈ Ico 0 (2 * Real.pi) := by
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	114	    have hi : (i.val : ℝ) < 17 := by exact_mod_cast i.isLt
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	118	  have he : Circle.exp ((k.val : ℝ) * (2 * Real.pi / 17)) =
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	119	      Circle.exp ((l.val : ℝ) * (2 * Real.pi / 17)) := by
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	127	theorem rigidDirection_ne_next (k : Fin 17) : rigidDirection k ≠ rigidDirection (cyclicNext k) := by
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	130	  change k.val = (k.val+1)%17 at hval
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	134	def rigidSectorBoundary (k : Fin 17) : Circle → SphereRepresentative :=
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	137	theorem rigidSectorBoundary_continuous (k : Fin 17) : Continuous (rigidSectorBoundary k) :=
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	140	theorem rigidSectorBoundary_injective (k : Fin 17) : Function.Injective (rigidSectorBoundary k) :=
+production	dimension-or-derived	VennTopology/SphereMeridians.lean	143	theorem rigidSectorBoundary_rotation (k : Fin 17) (z : Circle) :
+production	dimension-or-derived	VennTopology/CrossingCharts.lean	94	    ∃ i j : Fin 17, i ≠ j ∧ CrossingSquare.HasCrossingChart
+production	dimension-or-derived	VennTopology/CrossingCharts.lean	96	  obtain ⟨i,j,hij,hi,hj⟩ := crossing_labels_alternate suppliedModel.oriented 131072 17
+production	dimension-or-derived	VennTopology/Surface.lean	16	    Coordinates.labelEquiv 131072 suppliedModel.oriented.size a < suppliedLinkStars.size := by
+production	dimension-or-derived	VennTopology/Surface.lean	28	    have hv : v < 131072 := by
+production	dimension-or-derived	VennTopology/Surface.lean	43	    (ha : Coordinates.labelEquiv 131072 suppliedModel.oriented.size a < suppliedLinkStars.size) :
+production	dimension-or-derived	VennTopology/SideComponents.lean	8	theorem diagramSide_isOpen (i : Fin 17) (b : Bool) : IsOpen (diagramSide i b) :=
+production	dimension-or-derived	VennTopology/SideComponents.lean	11	theorem diagramSide_subset_complement (i : Fin 17) (b : Bool) :
+production	dimension-or-derived	VennTopology/SideComponents.lean	19	theorem diagramSide_disjoint (i : Fin 17) : Disjoint (diagramSide i false) (diagramSide i true) := by
+production	dimension-or-derived	VennTopology/SideComponents.lean	27	theorem diagramSide_cover (i : Fin 17) : (⋃ b : Bool, diagramSide i b) = (diagramCurve i)ᶜ := by
+production	dimension-or-derived	VennTopology/SideComponents.lean	42	def diagramCurveComplement (i : Fin 17) : Set Diagram := (diagramCurve i)ᶜ
+production	dimension-or-derived	VennTopology/SideComponents.lean	44	def curveComplementSide (i : Fin 17) (b : Bool) : Set (diagramCurveComplement i) :=
+production	dimension-or-derived	VennTopology/SideComponents.lean	47	theorem curveComplementSide_isOpen (i : Fin 17) (b : Bool) : IsOpen (curveComplementSide i b) :=
+production	dimension-or-derived	VennTopology/SideComponents.lean	50	theorem curveComplementSide_pairwise (i : Fin 17) :
+production	dimension-or-derived	VennTopology/SideComponents.lean	59	theorem curveComplementSide_cover (i : Fin 17) : (⋃ b, curveComplementSide i b) = univ := by
+production	dimension-or-derived	VennTopology/SideComponents.lean	66	theorem curveComplementSide_isClopen (i : Fin 17) (b : Bool) : IsClopen (curveComplementSide i b) := by
+production	dimension-or-derived	VennTopology/SideComponents.lean	78	theorem curveComplementSide_pathConnected (i : Fin 17) (b : Bool) :
+production	dimension-or-derived	VennTopology/SideComponents.lean	84	def diagramSideComponentsEquiv (i : Fin 17) : ConnectedComponents (diagramCurveComplement i) ≃ Bool :=
+production	dimension-or-derived	VennTopology/SideComponents.lean	89	theorem diagram_curve_complement_component_count (i : Fin 17) :
+production	dimension-or-derived	VennTopology/SideComponents.lean	94	theorem diagram_region_side_iff (i : Fin 17) (v : Fin 131072) (b : Bool)
+production	dimension-or-derived	VennTopology/SideComponents.lean	104	theorem pattern_eq_of_bits {u v : Fin 131072}
+production	dimension-or-derived	VennTopology/SideComponents.lean	105	    (h : ∀ i : Fin 17, u.val.testBit i.val = v.val.testBit i.val) : u = v := by
+production	dimension-or-derived	VennTopology/SideComponents.lean	109	  by_cases hi : i < 17
+production	dimension-or-derived	VennTopology/SideComponents.lean	111	  · have hp : 131072 ≤ 2^i := by
+production	dimension-or-derived	VennTopology/SideComponents.lean	113	        131072 = 2^17 := by norm_num
+production	dimension-or-derived	VennTopology/SideComponents.lean	118	/-- Regions are exactly the intersections specified by their 17 geometric
+production	dimension-or-derived	VennTopology/SideComponents.lean	120	theorem diagramRegion_eq_sides (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/SideComponents.lean	121	    diagramRegion v = ⋂ i : Fin 17, diagramSide i (v.val.testBit i.val) := by
+production	dimension-or-derived	VennTopology/SideComponents.lean	128	    have hc : x ∉ ⋃ i : Fin 17, diagramCurve i := by
+production	dimension-or-derived	VennTopology/SideComponents.lean	139	theorem diagram_sides_verified (i : Fin 17) :
+production	dimension-or-derived	VennTopology/SideComponents.lean	144	    (∀ v : Fin 131072, ∀ b : Bool, ∀ x ∈ diagramRegion v,
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	102	    (_ha : a ∈ encodedCells suppliedModel.oriented 131072 t) :
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	103	    ((encodedCells suppliedModel.oriented 131072 t).erase a).Nonempty := by
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	109	def encodedRegionLinkCircle (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	110	    Circle ≃ₜ Coordinates.link (encodedCells suppliedModel.oriented 131072) v.val :=
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	115	theorem encoded_region_link_pathConnected (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	116	    IsPathConnected (Coordinates.link (encodedCells suppliedModel.oriented 131072) v.val) := by
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	120	      Coordinates.link (encodedCells suppliedModel.oriented 131072) v.val := by
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	130	theorem patternPoint_encoded (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	132	  change Coordinates.reindex (Coordinates.labelEquiv 131072 suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	138	theorem diagramRegion_punctured_pathConnected (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/PuncturedRegions.lean	141	    (encodedCells suppliedModel.oriented 131072) 131072 v.val
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	10	def diagramEncodedHomeomorph : Diagram ≃ₜ Coordinates.realization (encodedCells suppliedModel.oriented 131072) :=
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	15	def diagramCurve (i : Fin 17) : Set Diagram :=
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	16	  {x | (diagramEncodedHomeomorph x).val ∈ encodedCurve suppliedModel.oriented 131072 i.val}
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	25	/-- An actual circle homeomorphism for each of the 17 labelled curves. The range
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	27	def diagramCurveHomeomorph (i : Fin 17) : Circle ≃ₜ diagramCurve i :=
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	28	  (encodedCurveHomeomorph suppliedModel.oriented 131072 i.val
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	32	      (q := fun x => x.val ∈ encodedCurve suppliedModel.oriented 131072 i.val)
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	35	def diagramCurveMap (i : Fin 17) (z : Circle) : Diagram := (diagramCurveHomeomorph i z).val
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	37	theorem diagramCurveMap_continuous (i : Fin 17) : Continuous (diagramCurveMap i) :=
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	40	theorem diagramCurveMap_injective (i : Fin 17) : Function.Injective (diagramCurveMap i) :=
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	43	theorem diagramCurveMap_range (i : Fin 17) : Set.range (diagramCurveMap i) = diagramCurve i := by
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	51	theorem diagramCurve_compact (i : Fin 17) : IsCompact (diagramCurve i) := by
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	55	theorem diagramCurve_closed (i : Fin 17) : IsClosed (diagramCurve i) :=
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	58	/-- All 17 concrete labelled curve sets are simple closed curves on `Diagram`.
+production	dimension-or-derived	VennTopology/DiagramCurves.lean	61	    ∀ i : Fin 17, ∃ f : Circle → Diagram,
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	34	theorem rigid_sector_angle_bounds (k : Fin 17) {θ : ℝ} (hθ : θ ∈ Ico 0 (2 * Real.pi))
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	37	    ((k.val : ℝ) * (2 * Real.pi / 17) ≤ θ ∧
+production	selective-small-number	VennTopology/RigidSectorIntersections.lean	38	      θ ≤ ((k.val : ℝ)+1) * (2 * Real.pi / 17)) ∨ (θ = 0 ∧ k.val = 16) := by
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	41	  have hδ : 0 < 2 * Real.pi / 17 := by positivity
+production	selective-small-number	VennTopology/RigidSectorIntersections.lean	43	  have hk16 : (k.val : ℝ) ≤ 16 := by exact_mod_cast (show k.val ≤ 16 by omega)
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	44	  have ht : Real.sin ((θ-(k.val : ℝ)*(2*Real.pi/17))-(2*Real.pi/17)) ≤ 0 := by
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	47	    (a := θ-(k.val : ℝ)*(2*Real.pi/17))
+production	selective-small-number	VennTopology/RigidSectorIntersections.lean	54	    have heq : (k.val : ℝ) = 16 := by nlinarith [hθ.1]
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	57	theorem rigidSector_polar_bounds (k : Fin 17) (x : SphereRepresentative)
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	61	    ((k.val : ℝ) * (2 * Real.pi / 17) ≤ θ ∧
+production	selective-small-number	VennTopology/RigidSectorIntersections.lean	62	      θ ≤ ((k.val : ℝ)+1) * (2 * Real.pi / 17)) ∨ (θ = 0 ∧ k.val = 16) := by
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	71	theorem rigidSectorParam_range (k : Fin 17) :
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	76	theorem rigidSector_polar_endpoint (k : Fin 17) (x : SphereRepresentative)
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	78	    (he : θ = (k.val : ℝ) * (2 * Real.pi / 17) ∨
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	79	      θ = ((k.val : ℝ)+1) * (2 * Real.pi / 17)) : x ∈ range (rigidSectorParam k) := by
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	90	theorem rigid_sector_inter_subset_boundary (k l : Fin 17) (hkl : k ≠ l) :
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	100	  have hδ : 0 < 2 * Real.pi / 17 := by positivity
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	102	  · by_cases he : θ = (k.val : ℝ) * (2 * Real.pi / 17) ∨
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	103	        θ = ((k.val : ℝ)+1) * (2 * Real.pi / 17)
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	105	    have hlow : (k.val : ℝ) * (2 * Real.pi / 17) < θ := lt_of_le_of_ne hk.1
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	107	    have hupp : θ < ((k.val : ℝ)+1) * (2 * Real.pi / 17) := lt_of_le_of_ne hk.2
+production	dimension-or-derived	VennTopology/RigidSectorIntersections.lean	121	    have hnext : cyclicNext k = (0 : Fin 17) := by
+production	dimension-or-derived	VennTopology/RigidSphereConjugacy.lean	12	theorem meridian_boundary_parameter_compatibility (k l a b : Fin 17) (z w : Circle) :
+production	dimension-or-derived	VennTopology/RigidSphereConjugacy.lean	39	theorem rigidSphereConjugacy_sector (k : Fin 17) (x : Diagram) (hx : x ∈ diagramSector k) :
+production	dimension-or-derived	VennTopology/RigidSphereConjugacy.lean	48	theorem rigidSphereConjugacy_boundary (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/RigidSphereConjugacy.lean	53	theorem rigidSphereConjugacy_meridian (k : Fin 17) (t : MeridianParameter) :
+production	dimension-or-derived	VennTopology/RigidSphereConjugacy.lean	73	theorem rigidSphereConjugacy_one : rigidSphereConjugacy (patternPoint 131071) = rigidSouth := by
+production	dimension-or-derived	VennTopology/RigidSphereConjugacy.lean	75	  rw [show diagramMeridianMap 0 meridianEnd = patternPoint 131071 from diagramMeridianMap_one 0] at h
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	14	    (∀ i : Fin 17, ∃ f : Circle → Diagram,
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	16	    (∀ v : Fin 131072, patternPoint v ∈ diagramRegion v ∧ IsPathConnected (diagramRegion v)) ∧
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	17	    (∀ x : Diagram, x ∉ ⋃ i : Fin 17, diagramCurve i ↔ ∃! v : Fin 131072, x ∈ diagramRegion v) ∧
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	18	    Nat.card (ConnectedComponents diagramComplement) = 131072 ∧
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	19	    (∀ i j k : Fin 17, i ≠ j → i ≠ k → j ≠ k → ∀ x : Diagram,
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	21	    (∀ x : Diagram, (∃ i j : Fin 17, i ≠ j ∧ x ∈ diagramCurve i ∧ x ∈ diagramCurve j) ↔
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	23	    (∀ f : Fin suppliedModel.oriented.size, ∃ i j : Fin 17, i ≠ j ∧ ∀ k : Fin 17,
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	25	    (∀ f : Fin suppliedModel.oriented.size, ∃ i j : Fin 17, i ≠ j ∧
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	27	    (∀ i : Fin 17, Nat.card (ConnectedComponents (diagramCurveComplement i)) = 2 ∧
+production	dimension-or-derived	VennTopology/ArrangementCertificate.lean	29	    (∀ v : Fin 131072, diagramRegion v = ⋂ i : Fin 17, diagramSide i (v.val.testBit i.val)) :=
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	171	theorem diagram_no_triple_intersections (i j k : Fin 17) (hij : i ≠ j) (hik : i ≠ k) (hjk : j ≠ k)
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	173	  encoded_no_triple suppliedModel.oriented 131072 supplied_corners_bounded
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	185	    (diagramEncodedHomeomorph (crossingPoint f)).val = Coordinates.vertex (131072+f.val) := by
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	186	  change Coordinates.reindex (Coordinates.labelEquiv 131072 suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	193	    (∃ i j : Fin 17, i ≠ j ∧ x ∈ diagramCurve i ∧ x ∈ diagramCurve j) ↔
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	197	    obtain ⟨f,hf⟩ := encodedCurve_intersection_center suppliedModel.oriented 131072
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	205	    obtain ⟨i,j,hij,hi,hj⟩ := center_has_two_curves suppliedModel.oriented 131072 17
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	208	    · change (diagramEncodedHomeomorph (crossingPoint f)).val ∈ encodedCurve suppliedModel.oriented 131072 i.val
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	211	    · change (diagramEncodedHomeomorph (crossingPoint f)).val ∈ encodedCurve suppliedModel.oriented 131072 j.val
+production	dimension-or-derived	VennTopology/CurveIntersections.lean	216	    ∃ i j : Fin 17, i ≠ j ∧ ∀ k : Fin 17,
+production	dimension-or-derived	VennTopology/CurveSides.lean	19	def ambientSide (i : Fin 17) (b : Bool) : Set (Quad.Ambient Nat (Fin suppliedModel.oriented.size)) :=
+production	dimension-or-derived	VennTopology/CurveSides.lean	20	  diagramQuad.space ∩ {x | 0 < sideSign b * diagramQuad.bitField 131072 i.val x}
+production	dimension-or-derived	VennTopology/CurveSides.lean	22	def diagramSide (i : Fin 17) (b : Bool) : Set Diagram :=
+production	dimension-or-derived	VennTopology/CurveSides.lean	25	theorem signed_halfspace_convex (i : Fin 17) (b : Bool) :
+production	dimension-or-derived	VennTopology/CurveSides.lean	26	    Convex ℝ {x | 0 < sideSign b * diagramQuad.bitField 131072 i.val x} := by
+production	dimension-or-derived	VennTopology/CurveSides.lean	27	  exact (convex_Ioi (0 : ℝ)).linear_preimage (sideSign b • diagramQuad.bitField 131072 i.val)
+production	dimension-or-derived	VennTopology/CurveSides.lean	29	theorem side_triangle_joined (i : Fin 17) (b : Bool)
+production	dimension-or-derived	VennTopology/CurveSides.lean	33	    (hsx : 0 < sideSign b * diagramQuad.bitField 131072 i.val x)
+production	dimension-or-derived	VennTopology/CurveSides.lean	34	    (hsy : 0 < sideSign b * diagramQuad.bitField 131072 i.val y) :
+production	dimension-or-derived	VennTopology/CurveSides.lean	41	theorem side_point_joined_vertex (i : Fin 17) (b : Bool)
+production	dimension-or-derived	VennTopology/CurveSides.lean	43	    ∃ v : Fin 131072, sideActive i.val b v.val = true ∧
+production	dimension-or-derived	VennTopology/CurveSides.lean	47	  have hb : ∀ k, diagramQuad.corner f k < 131072 := cornersCheck_sound _ _ supplied_corners_bounded f
+production	dimension-or-derived	VennTopology/CurveSides.lean	48	  have hf := diagramQuad.bitField_triangle 131072 i.val f hc hb k ht
+production	dimension-or-derived	VennTopology/CurveSides.lean	59	      have he : diagramQuad.bitField 131072 i.val x = diagramQuad.faceSign i.val f := by
+production	dimension-or-derived	VennTopology/CurveSides.lean	67	      have he : sideSign b * diagramQuad.bitField 131072 i.val x =
+production	dimension-or-derived	VennTopology/CurveSides.lean	70	      have hp : 0 < sideSign b * diagramQuad.bitField 131072 i.val x := hx.2
+production	dimension-or-derived	VennTopology/CurveSides.lean	76	    rwa [diagramQuad.bitField_region 131072 i.val _ (hb k)]
+production	dimension-or-derived	VennTopology/CurveSides.lean	79	    rwa [diagramQuad.bitField_region 131072 i.val _ (hb (Quad.next k))]
+production	dimension-or-derived	VennTopology/CurveSides.lean	81	theorem side_vertex_mem (i : Fin 17) (b : Bool) (v : Nat) (hv : v < 131072)
+production	dimension-or-derived	VennTopology/CurveSides.lean	84	  change 0 < sideSign b * diagramQuad.bitField 131072 i.val (Quad.point (.inl v))
+production	dimension-or-derived	VennTopology/CurveSides.lean	85	  rw [diagramQuad.bitField_region 131072 i.val v hv]
+production	dimension-or-derived	VennTopology/CurveSides.lean	88	theorem side_walk_joined (i : Fin 17) (b : Bool) {u v : Nat}
+production	dimension-or-derived	VennTopology/CurveSides.lean	89	    (hw : GraphProof.Walk suppliedModel.graph (sideActive i.val b) u v) (hu : u < 131072) :
+production	dimension-or-derived	VennTopology/CurveSides.lean	98	    have hv : v < 131072 := hfv ▸ hb (Quad.next k)
+production	dimension-or-derived	VennTopology/CurveSides.lean	110	theorem ambientSide_pathConnected (i : Fin 17) (b : Bool) : IsPathConnected (ambientSide i b) := by
+production	dimension-or-derived	VennTopology/CurveSides.lean	112	  have hr' : r < 131072 := by simpa only [supplied_graph_size] using hr
+production	dimension-or-derived	VennTopology/CurveSides.lean	117	theorem diagramSide_pathConnected (i : Fin 17) (b : Bool) : IsPathConnected (diagramSide i b) := by
+production	selective-small-number	VennTopology/PoleRotationData.lean	6	check the actual 34-vertex triangulated links, not a topological conjugacy. -/
+production	dimension-or-derived	VennTopology/PoleRotationData.lean	10	  if x < 131072 then regionStep x else 131072 + table.getD (x - 131072) 0
+production	selective-small-number	VennTopology/PoleRotationData.lean	18	  row.size == 34 && (Array.range row.size).all fun i =>
+production	dimension-or-derived	VennTopology/PoleRotationData.lean	19	    let v := LinkProof.tail fs 131072 (row.getD i 0)
+production	dimension-or-derived	VennTopology/PoleRotationData.lean	20	    decide (v < 131072 + fs.size) &&
+production	dimension-or-derived	VennTopology/PoleRotationData.lean	21	      encodedRotationStepWith table v == LinkProof.tail fs 131072 (row.getD ((i + step) % row.size) 0)
+production	selective-small-number	VennTopology/PoleRotationData.lean	25	    poleLinkActionCheck suppliedModel.oriented suppliedLinkStars 131071 32 = true := by
+production	dimension-or-derived	VennTopology/PuncturedCrossings.lean	32	    ∃ i j : Fin 17, i ≠ j ∧ CrossingSquare.HasCrossingChart
+production	dimension-or-derived	VennTopology/PuncturedCrossings.lean	34	  obtain ⟨i,j,hij,hi,hj⟩ := crossing_labels_alternate suppliedModel.oriented 131072 17
+production	dimension-or-derived	VennTopology/SectorGluing.lean	16	  ∀ (k l : Fin 17) (z w : UnitCircle),
+production	dimension-or-derived	VennTopology/SectorGluing.lean	20	theorem sectorConjugacy_agrees (h : SectorBoundaryCompatibility) (k l : Fin 17)
+production	dimension-or-derived	VennTopology/SectorGluing.lean	38	theorem sectorConjugacy_symm_agrees (h : SectorBoundaryCompatibility) (k l : Fin 17)
+production	dimension-or-derived	VennTopology/SectorGluing.lean	58	  let u : Finset (Fin 17) := Finset.univ
+production	dimension-or-derived	VennTopology/SectorGluing.lean	73	  have hv (k : Fin 17) (x : Diagram) (hx : x ∈ diagramSector k) :
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	12	abbrev MeridianParameter := Icc (0 : ℝ) 17
+production	selective-small-number	VennTopology/MeridianArcs.lean	15	  AddCircle.toCircle (t.val : AddCircle (34 : ℝ))
+production	selective-small-number	VennTopology/MeridianArcs.lean	21	  letI : Fact (0 < (34 : ℝ)) := ⟨by norm_num⟩
+production	selective-small-number	VennTopology/MeridianArcs.lean	24	  have he := AddCircle.injective_toCircle (by norm_num : (34 : ℝ) ≠ 0) h
+production	selective-small-number	VennTopology/MeridianArcs.lean	26	    (show t.val ∈ Ico 0 (0 + 34) from ⟨t.property.1, by linarith [t.property.2]⟩)
+production	selective-small-number	VennTopology/MeridianArcs.lean	27	    (show u.val ∈ Ico 0 (0 + 34) from ⟨u.property.1, by linarith [u.property.2]⟩)).mp he
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	29	def diagramMeridianMap (k : Fin 17) (t : MeridianParameter) : Diagram :=
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	32	theorem diagramMeridianMap_continuous (k : Fin 17) : Continuous (diagramMeridianMap k) :=
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	35	theorem diagramMeridianMap_injective (k : Fin 17) : Function.Injective (diagramMeridianMap k) :=
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	39	/-- Every point of the parameter interval is on one of its 17 unit edges. -/
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	41	    ∃ i : Fin 17, ∃ r : Icc (0 : ℝ) 1, t.val = (i.val : ℝ) + r.val := by
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	42	  by_cases ht : t.val = 17
+production	selective-small-number	VennTopology/MeridianArcs.lean	43	  · exact ⟨16, ⟨1, by norm_num⟩, by norm_num; exact ht⟩
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	44	  · have ht' : t.val < 17 := lt_of_le_of_ne t.property.2 ht
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	47	    have hi : ⌊t.val⌋₊ < 17 := by exact_mod_cast (lt_of_le_of_lt hf ht')
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	50	def meridianEdgeParameter (i : Fin 17) (r : Icc (0 : ℝ) 1) : MeridianParameter :=
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	52	    have hi : (i.val : ℝ) + 1 ≤ 17 := by exact_mod_cast i.isLt
+production	selective-small-number	VennTopology/MeridianArcs.lean	55	theorem meridian_boundary_front (k l : Fin 17) (i : Fin 18) :
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	59	theorem diagramMeridianMap_edge (k : Fin 17) (i : Fin 17) (r : Icc (0 : ℝ) 1) :
+production	selective-small-number	VennTopology/MeridianArcs.lean	66	      AddCircle.toCircle (edgePhase ((⟨i.val, by omega⟩ : Fin 34), r)) := rfl
+production	selective-small-number	VennTopology/MeridianArcs.lean	68	  rw [meridian_boundary_front k (cyclicNext k) (⟨i.val, by omega⟩ : Fin 18)]
+production	selective-small-number	VennTopology/MeridianArcs.lean	69	  have hn : cyclicNext (⟨i.val, by omega⟩ : Fin 34) = ⟨i.val+1, by omega⟩ := by
+production	selective-small-number	VennTopology/MeridianArcs.lean	71	    change (i.val + 1) % 34 = i.val + 1
+production	selective-small-number	VennTopology/MeridianArcs.lean	73	  rw [hn, meridian_boundary_front k (cyclicNext k) (⟨i.val+1, by omega⟩ : Fin 18)]
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	75	def encodedMeridian (k : Fin 17) : Set (Point Nat) :=
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	76	  ⋃ i : Fin 17, segment ℝ (vertex (meridianLabel k ⟨i.val, by omega⟩))
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	79	def diagramMeridian (k : Fin 17) : Set Diagram :=
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	82	theorem diagramMeridianMap_range (k : Fin 17) : range (diagramMeridianMap k) = diagramMeridian k := by
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	103	theorem diagramMeridianMap_zero (k : Fin 17) :
+production	selective-small-number	VennTopology/MeridianArcs.lean	108	  simpa [meridianEdgeParameter, meridian_labels_verified.1 k, patternPoint_encoded, show (16 : ℝ) + 1 = 17 by norm_num] using h
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	110	theorem diagramMeridianMap_one (k : Fin 17) :
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	111	    diagramMeridianMap k ⟨17, by norm_num⟩ = patternPoint 131071 := by
+production	selective-small-number	VennTopology/MeridianArcs.lean	114	  have h := diagramMeridianMap_edge k 16 ⟨1, by norm_num⟩
+production	selective-small-number	VennTopology/MeridianArcs.lean	115	  simpa [meridianEdgeParameter, meridian_labels_verified.1 k, patternPoint_encoded, show (16 : ℝ) + 1 = 17 by norm_num] using h
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	117	theorem diagramMeridianMap_rotation (k : Fin 17) (t : MeridianParameter) :
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	121	theorem diagram_meridian_rotation (k : Fin 17) :
+production	dimension-or-derived	VennTopology/MeridianArcs.lean	129	def diagramMeridianHomeomorph (k : Fin 17) : MeridianParameter ≃ₜ diagramMeridian k :=
+production	dimension-or-derived	VennTopology/CurveCertificate.lean	77	theorem each_curve_polygon_verified (i : Fin 17) :
+production	dimension-or-derived	VennTopology/CurveCertificate.lean	78	    CurveProof.check suppliedModel.oriented 131072 i.val
+production	dimension-or-derived	VennTopology/CurveCertificate.lean	80	    (suppliedCurvePolygons.getD i.val default).vertices.size = 30840 := by
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	8	theorem regionStep_lt {v : Nat} (hv : v < 131072) : regionStep v < 131072 := by
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	14	def patternRotation : Equiv.Perm (Fin 131072) :=
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	16	    (p := fun v => v < 131072) (q := fun v => v < 131072) (by
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	18	    change v < 131072 ↔ regionStep v < 131072
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	25	@[simp] theorem patternRotation_val (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	28	theorem diagram_encoded_region_coordinate (x : Diagram) (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	30	  change Coordinates.reindex (Coordinates.labelEquiv 131072 suppliedModel.oriented.size) x.val v.val = _
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	33	  exact (Coordinates.labelEquiv 131072 suppliedModel.oriented.size).symm_apply_eq.mpr
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	36	theorem diagram_rotation_region_coordinate (x : Diagram) (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	45	theorem diagram_rotation_mem_region (x : Diagram) (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/RegionSymmetry.lean	63	theorem diagram_rotation_region_image (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/LinkData.lean	7	  LinkProof.propose suppliedModel.oriented 131072
+production	dimension-or-derived	VennTopology/LinkData.lean	10	    LinkProof.check suppliedModel.oriented 131072 suppliedLinkStars = true := by
+production	dimension-or-derived	VennTopology/GeometricLinks.lean	56	theorem supplied_corners_bounded : cornersCheck suppliedModel.oriented 131072 = true := by
+production	dimension-or-derived	VennTopology/GeometricLinks.lean	64	    (ha : Coordinates.labelEquiv 131072 suppliedModel.oriented.size a < suppliedLinkStars.size) :
+production	dimension-or-derived	VennTopology/GeometricLinks.lean	67	    (geometricLinkDartHomeomorph suppliedModel.oriented 131072
+production	dimension-or-derived	VennTopology/GeometricLinks.lean	72	    (ha : Coordinates.labelEquiv 131072 suppliedModel.oriented.size a < suppliedLinkStars.size) :
+production	dimension-or-derived	VennTopology/PoleRotation.lean	7	angles +2π/17 and -2π/17. This identifies the local generator; extending it
+production	dimension-or-derived	VennTopology/PoleRotation.lean	17	  (Coordinates.labelEquiv 131072 suppliedModel.oriented.size).symm.trans
+production	dimension-or-derived	VennTopology/PoleRotation.lean	18	    (diagramAutomorphism.labels.trans (Coordinates.labelEquiv 131072 suppliedModel.oriented.size))
+production	dimension-or-derived	VennTopology/PoleRotation.lean	20	theorem encodedRotation_step (x : Nat) (hx : x < 131072 + suppliedModel.oriented.size) :
+production	dimension-or-derived	VennTopology/PoleRotation.lean	22	  by_cases h : x < 131072
+production	dimension-or-derived	VennTopology/PoleRotation.lean	23	  · have he : (Coordinates.labelEquiv 131072 suppliedModel.oriented.size).symm x = .inl x := by
+production	dimension-or-derived	VennTopology/PoleRotation.lean	24	      apply (Coordinates.labelEquiv 131072 suppliedModel.oriented.size).injective
+production	dimension-or-derived	VennTopology/PoleRotation.lean	26	    change Coordinates.labelEquiv 131072 suppliedModel.oriented.size
+production	dimension-or-derived	VennTopology/PoleRotation.lean	27	      (diagramAutomorphism.labels ((Coordinates.labelEquiv 131072 suppliedModel.oriented.size).symm x)) = _
+production	dimension-or-derived	VennTopology/PoleRotation.lean	29	    change Coordinates.labelEquiv 131072 suppliedModel.oriented.size (.inl (regionStep x)) = _
+production	dimension-or-derived	VennTopology/PoleRotation.lean	32	  · let f : Fin suppliedModel.oriented.size := ⟨x - 131072, by omega⟩
+production	dimension-or-derived	VennTopology/PoleRotation.lean	33	    have he : (Coordinates.labelEquiv 131072 suppliedModel.oriented.size).symm x = .inr f := by
+production	dimension-or-derived	VennTopology/PoleRotation.lean	34	      apply (Coordinates.labelEquiv 131072 suppliedModel.oriented.size).injective
+production	dimension-or-derived	VennTopology/PoleRotation.lean	38	    change Coordinates.labelEquiv 131072 suppliedModel.oriented.size
+production	dimension-or-derived	VennTopology/PoleRotation.lean	39	      (diagramAutomorphism.labels ((Coordinates.labelEquiv 131072 suppliedModel.oriented.size).symm x)) = _
+production	dimension-or-derived	VennTopology/PoleRotation.lean	41	    change 131072 + (rotationWitnesses suppliedModel.oriented)[f.val]! = _
+production	selective-small-number	VennTopology/PoleRotation.lean	57	    (stars.getD pole #[]).size = 34 ∧ ∀ j : Fin (stars.getD pole #[]).size,
+production	dimension-or-derived	VennTopology/PoleRotation.lean	58	      rowVertices fs 131072 (stars.getD pole #[]) j < 131072 + fs.size ∧
+production	dimension-or-derived	VennTopology/PoleRotation.lean	59	      encodedRotationStep fs (rowVertices fs 131072 (stars.getD pole #[]) j) =
+production	dimension-or-derived	VennTopology/PoleRotation.lean	60	        rowVertices fs 131072 (stars.getD pole #[]) (Coordinates.cyclicNext^[step] j) := by
+production	dimension-or-derived	VennTopology/PoleRotation.lean	69	  ⟨if p = 0 then 0 else 131071, by rw [supplied_link_rows.1]; split_ifs <;> omega⟩
+production	selective-small-number	VennTopology/PoleRotation.lean	71	def poleLinkStep (p : Fin 2) : ℕ := if p = 0 then 2 else 32
+production	selective-small-number	VennTopology/PoleRotation.lean	75	    row.size = 34 ∧ ∀ j : Fin row.size,
+production	dimension-or-derived	VennTopology/PoleRotation.lean	76	      encodedRotation (rowVertices suppliedModel.oriented 131072 row j) =
+production	dimension-or-derived	VennTopology/PoleRotation.lean	77	        rowVertices suppliedModel.oriented 131072 row (Coordinates.cyclicNext^[poleLinkStep p] j) := by
+production	selective-small-number	VennTopology/PoleRotation.lean	93	        (Circle.exp (2 * Real.pi / 34 * poleLinkStep p) * z)).val := by
+production	dimension-or-derived	VennTopology/PoleRotation.lean	97	    (rowVertices suppliedModel.oriented 131072 (suppliedLinkStars.getD (poleIndex p).val #[]))
+production	selective-small-number	VennTopology/PoleRotation.lean	100	  have he : (↑(suppliedLinkStars.getD (poleIndex p).val #[]).size : ℝ) = 34 := by
+production	dimension-or-derived	VennTopology/PoleRotation.lean	107	      (supplied_dart_link_circle (poleIndex 0) (Circle.exp (2 * Real.pi / 17) * z)).val := by
+production	selective-small-number	VennTopology/PoleRotation.lean	109	  change _ = (supplied_dart_link_circle (poleIndex 0) (Circle.exp (2 * Real.pi / 34 * 2) * z)).val at h
+production	selective-small-number	VennTopology/PoleRotation.lean	110	  rw [show 2 * Real.pi / 34 * 2 = 2 * Real.pi / 17 by ring] at h
+production	dimension-or-derived	VennTopology/PoleRotation.lean	115	      (supplied_dart_link_circle (poleIndex 1) (Circle.exp (-(2 * Real.pi / 17)) * z)).val := by
+production	selective-small-number	VennTopology/PoleRotation.lean	117	  change _ = (supplied_dart_link_circle (poleIndex 1) (Circle.exp (2 * Real.pi / 34 * 32) * z)).val at h
+production	selective-small-number	VennTopology/PoleRotation.lean	118	  rw [show 2 * Real.pi / 34 * 32 = -(2 * Real.pi / 17) + 2 * Real.pi by ring,
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	7	theorem supplied_oriented_face_count : suppliedModel.oriented.size = 131070 := by
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	18	theorem diagram_geometric_vertex_count : Nat.card (GeometricFace diagramQuad 1) = 262142 := by
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	19	  have h := geometric_vertex_count suppliedModel.oriented 131072 supplied_corners_bounded supplied_region_coverage
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	22	theorem diagram_geometric_edge_count : Nat.card (GeometricFace diagramQuad 2) = 786420 := by
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	23	  have h := geometric_edge_count suppliedModel.oriented 131072 suppliedLinkStars
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	29	theorem diagram_geometric_triangle_count : Nat.card (GeometricFace diagramQuad 3) = 524280 := by
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	30	  have h := geometric_triangle_count suppliedModel.oriented 131072
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	43	    Nat.card (GeometricFace diagramQuad 1) = 262142 ∧
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	44	    Nat.card (GeometricFace diagramQuad 2) = 786420 ∧
+production	dimension-or-derived	VennTopology/EulerCharacteristic.lean	45	    Nat.card (GeometricFace diagramQuad 3) = 524280 ∧
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	53	    suppliedLinkStars.size = 131072 + suppliedModel.oriented.size ∧
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	55	      LinkProof.rowCheck suppliedModel.oriented 131072 v.val
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	65	    Function.Injective (fun k : Fin row.size => LinkProof.tail suppliedModel.oriented 131072
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	69	      LinkProof.owner suppliedModel.oriented 131072 (row.getD k.val 0) = v.val ∧
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	70	      LinkProof.head suppliedModel.oriented 131072 (row.getD k.val 0) =
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	71	        LinkProof.tail suppliedModel.oriented 131072 (row.getD ((k.val+1)%row.size) 0) :=
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	76	    LinkProof.owner suppliedModel.oriented 131072 d.val < suppliedLinkStars.size ∧
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	77	    ∃ k : Fin (suppliedLinkStars.getD (LinkProof.owner suppliedModel.oriented 131072 d.val) #[]).size,
+production	dimension-or-derived	VennTopology/LinkCertificate.lean	78	      (suppliedLinkStars.getD (LinkProof.owner suppliedModel.oriented 131072 d.val) #[]).getD k.val 0 =
+production	dimension-or-derived	VennTopology/SurfaceCertificate.lean	8	two-fixed-point action of exact order 17.
+production	dimension-or-derived	VennTopology/SurfaceCertificate.lean	15	    (∀ x : Diagram, diagramRotation^[17] x = x) ∧
+production	dimension-or-derived	VennTopology/SurfaceCertificate.lean	16	    (∀ k : Nat, 0 < k → k < 17 → ∃ x : Diagram, diagramRotation^[k] x ≠ x) ∧
+production	dimension-or-derived	VennTopology/SurfaceCertificate.lean	17	    (∀ x : Diagram, diagramRotation x = x ↔ x = patternPoint 0 ∨ x = patternPoint 131071) ∧
+production	dimension-or-derived	VennTopology/Regions.lean	95	def diagramRegion (v : Fin 131072) : Set Diagram :=
+production	dimension-or-derived	VennTopology/Regions.lean	96	  {x | Coordinates.Dominates 131072 v.val (diagramEncodedHomeomorph x).val}
+production	dimension-or-derived	VennTopology/Regions.lean	99	    x ∉ ⋃ i : Fin 17, diagramCurve i ↔ ∃! v : Fin 131072, x ∈ diagramRegion v := by
+production	dimension-or-derived	VennTopology/Regions.lean	100	  have h := curve_complement_unique_region suppliedModel.oriented 131072 17
+production	dimension-or-derived	VennTopology/Regions.lean	105	theorem diagramRegion_disjoint {u v : Fin 131072} (huv : u ≠ v) :
+production	dimension-or-derived	VennTopology/Regions.lean	111	theorem supplied_region_coverage : coverageCheck suppliedModel.oriented 131072 = true := by
+production	dimension-or-derived	VennTopology/Regions.lean	116	theorem patternPoint_mem_region (v : Fin 131072) : patternPoint v ∈ diagramRegion v := by
+production	dimension-or-derived	VennTopology/Regions.lean	117	  change Coordinates.Dominates 131072 v.val
+production	dimension-or-derived	VennTopology/Regions.lean	118	    (Coordinates.reindex (Coordinates.labelEquiv 131072 suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/Regions.lean	124	theorem diagramRegion_pathConnected (v : Fin 131072) : IsPathConnected (diagramRegion v) := by
+production	dimension-or-derived	VennTopology/Regions.lean	125	  have hp := encoded_region_pathConnected suppliedModel.oriented 131072 supplied_region_coverage v
+production	dimension-or-derived	VennTopology/Regions.lean	127	  have he : (((↑) : Coordinates.realization (encodedCells suppliedModel.oriented 131072) →
+production	dimension-or-derived	VennTopology/Regions.lean	128	      Coordinates.Point Nat) ⁻¹' Coordinates.region (encodedCells suppliedModel.oriented 131072) 131072 v.val) =
+production	dimension-or-derived	VennTopology/Regions.lean	129	      {x | Coordinates.Dominates 131072 v.val x.val} := by
+production	dimension-or-derived	VennTopology/Regions.lean	150	theorem diagramRegion_isOpen (v : Fin 131072) : IsOpen (diagramRegion v) :=
+production	dimension-or-derived	VennTopology/Regions.lean	151	  (dominates_isOpen 131072 v.val).preimage
+production	dimension-or-derived	VennTopology/Regions.lean	154	def diagramComplement : Set Diagram := (⋃ i : Fin 17, diagramCurve i)ᶜ
+production	dimension-or-derived	VennTopology/Regions.lean	156	def complementRegion (v : Fin 131072) : Set diagramComplement :=
+production	dimension-or-derived	VennTopology/Regions.lean	159	theorem region_subset_complement (v : Fin 131072) : diagramRegion v ⊆ diagramComplement := by
+production	dimension-or-derived	VennTopology/Regions.lean	166	theorem complementRegion_isOpen (v : Fin 131072) : IsOpen (complementRegion v) :=
+production	dimension-or-derived	VennTopology/Regions.lean	179	theorem complementRegion_isClopen (v : Fin 131072) : IsClopen (complementRegion v) := by
+production	dimension-or-derived	VennTopology/Regions.lean	180	  have he : (complementRegion v)ᶜ = ⋃ w : {w : Fin 131072 // w ≠ v}, complementRegion w.val := by
+production	dimension-or-derived	VennTopology/Regions.lean	194	theorem complementRegion_pathConnected (v : Fin 131072) : IsPathConnected (complementRegion v) :=
+production	dimension-or-derived	VennTopology/Regions.lean	199	def diagramComponentsEquiv : ConnectedComponents diagramComplement ≃ Fin 131072 :=
+production	dimension-or-derived	VennTopology/Regions.lean	204	theorem diagram_complement_component_count : Nat.card (ConnectedComponents diagramComplement) = 131072 := by
+production	dimension-or-derived	VennTopology/RegionBits.lean	9	theorem diagram_region_field_ne_zero (i : Fin 17) (v : Fin 131072)
+production	dimension-or-derived	VennTopology/RegionBits.lean	17	theorem diagram_region_field_sign (i : Fin 17) (v : Fin 131072)
+production	dimension-or-derived	VennTopology/RegionBits.lean	35	theorem diagram_region_positive_iff (i : Fin 17) (v : Fin 131072)
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	9	theorem supplied_graph_size : suppliedModel.graph.size = 131072 := by native_decide
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	20	theorem diagram_rotation_period (x : Diagram) : diagramRotation^[17] x = x :=
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	21	  diagramAutomorphism.homeomorph_period 17 region_period
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	24	noncomputable def patternPoint (v : Fin 131072) : Diagram := by
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	36	theorem diagram_rotation_pattern (n : Nat) (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	47	    ∀ k : Fin 17, k.val ≠ 0 → steps regionStep k.val 1 ≠ 1 := by decide
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	49	/-- The homeomorphism has exact order 17: every smaller positive power moves
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	51	theorem diagram_rotation_no_short_period (k : Nat) (hk : 0 < k) (hk17 : k < 17) :
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	66	    diagramRotation (patternPoint 131071) = patternPoint 131071 := by
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	68	  exact diagram_rotation_pattern 1 131071
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	70	theorem diagram_poles_distinct : patternPoint 0 ≠ patternPoint 131071 := by
+production	dimension-or-derived	VennTopology/DiagramSymmetry.lean	71	  exact fun h => (by decide : (0 : Fin 131072) ≠ 131071) (patternPoint_injective h)
+production	dimension-or-derived	VennTopology/Certificate.lean	15	    (∀ x : Diagram, diagramRotation^[17] x = x) ∧
+production	dimension-or-derived	VennTopology/Certificate.lean	16	    (∀ k : Nat, 0 < k → k < 17 → ∃ x : Diagram, diagramRotation^[k] x ≠ x) ∧
+production	dimension-or-derived	VennTopology/Certificate.lean	17	    (∀ x : Diagram, diagramRotation x = x ↔ x = patternPoint 0 ∨ x = patternPoint 131071) := by
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	23	theorem rigidDirection_angle (k : Fin 17) :
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	24	    rigidDirection k = Circle.exp ((k.val : ℝ) * (2 * Real.pi / 17)) := by
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	28	theorem rigidDirection_next_angle (k : Fin 17) :
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	29	    rigidDirection (cyclicNext k) = Circle.exp (((k.val : ℝ)+1) * (2 * Real.pi / 17)) := by
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	35	    ∃ k : Fin 17, (k.val : ℝ) * (2 * Real.pi / 17) ≤ θ ∧
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	36	      θ ≤ ((k.val : ℝ)+1) * (2 * Real.pi / 17) := by
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	37	  let a : ℝ := 2 * Real.pi / 17
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	41	  have hn : n < 17 := by
+production	dimension-or-derived	VennTopology/RigidSectorCover.lean	51	    ∃ k : Fin 17, 0 ≤ planarCross (rigidDirection k) c ∧
+production	dimension-or-derived	VennTopology/BitField.lean	73	def diagramBitField (i : Fin 17) (x : Diagram) : ℝ := diagramQuad.bitField 131072 i.val x.val
+production	dimension-or-derived	VennTopology/BitField.lean	75	theorem diagramBitField_continuous (i : Fin 17) : Continuous (diagramBitField i) :=
+production	dimension-or-derived	VennTopology/BitField.lean	76	  (diagramQuad.bitField_continuous 131072 i.val).comp continuous_subtype_val
+production	dimension-or-derived	VennTopology/BitField.lean	78	theorem diagramBitField_pattern (i : Fin 17) (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/BitField.lean	80	  diagramQuad.bitField_region 131072 i.val v.val v.isLt
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	7	not yet identify the induced order-17 homeomorphism with a rigid rotation. -/
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	37	def realizedPlaneCurve (i : Fin 17) : Set Plane := planeCurve diagramPlaneHomeomorph i
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	38	def realizedPlaneSide (i : Fin 17) (b : Bool) : Set Plane := planeSide diagramPlaneHomeomorph i b
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	39	def realizedPlaneRegion (v : Fin 131072) : Set Plane := planeRegion diagramPlaneHomeomorph v
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	41	/-- Actual planar Jordan curves with all 2^17 nonempty connected membership
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	44	    (∀ i : Fin 17,
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	51	    (∀ v : Fin 131072, IsPathConnected (realizedPlaneRegion v) ∧
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	52	      realizedPlaneRegion v = ⋂ i : Fin 17, realizedPlaneSide i (v.val.testBit i.val)) ∧
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	53	    (∀ x : Plane, x ∉ ⋃ i : Fin 17, realizedPlaneCurve i ↔
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	54	      ∃! v : Fin 131072, x ∈ realizedPlaneRegion v) ∧
+production	dimension-or-derived	VennTopology/PlaneRealization.lean	55	    (∀ b : Fin 17 → Bool, IsPathConnected (⋂ i : Fin 17, realizedPlaneSide i (b i))) :=
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	72	    (hi : i ∈ encodedCells suppliedModel.oriented 131072 t) :
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	73	    i < 131072 + suppliedModel.oriented.size :=
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	77	    (encodedCells suppliedModel.oriented 131072 t).card = 3 :=
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	85	  let tr := finiteTriangulation (encodedCells suppliedModel.oriented 131072)
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	86	    (131072 + suppliedModel.oriented.size) diagram_cells_bounded diagram_encoded_cell_card
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	90	    Fintype.card diagramFiniteTriangulation.Vertex = 262142 := by
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	91	  change Fintype.card (Fin (131072 + suppliedModel.oriented.size)) = _
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	94	theorem diagram_finite_edge_count : diagramFiniteTriangulation.edges.card = 786420 := by
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	96	    (encodedCells suppliedModel.oriented 131072) (131072 + suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	98	  have he := encoded_edge_count suppliedModel.oriented 131072 suppliedLinkStars
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	106	theorem diagram_finite_triangle_count : diagramFiniteTriangulation.faces.card = 524280 := by
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	107	  have h := finiteTriangulation_faces_card (encodedCells suppliedModel.oriented 131072)
+production	dimension-or-derived	VennTopology/FiniteTriangulation.lean	108	    (131072 + suppliedModel.oriented.size) diagram_cells_bounded diagram_encoded_cell_card
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	235	theorem diagram_encoded_link_preconnected (v : Fin (131072 + suppliedModel.oriented.size)) :
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	236	    IsPreconnected (Coordinates.link (encodedCells suppliedModel.oriented 131072) v.val) := by
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	242	      dartLink suppliedModel.oriented 131072 v.val := by
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	255	    (fun t => cell (131072 + suppliedModel.oriented.size)
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	256	      (encodedCells suppliedModel.oriented 131072 t))
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	266	    exact finite_encoded_edge_valence_le_two suppliedModel.oriented 131072
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	267	      (131072 + suppliedModel.oriented.size) suppliedLinkStars
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	278	  have hex : ∃ t, a.val ∈ encodedCells suppliedModel.oriented 131072 t ∧
+production	dimension-or-derived	VennTopology/TriangulationIncidence.lean	279	      b.val ∈ encodedCells suppliedModel.oriented 131072 t := by
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	11	def meridianEnd : MeridianParameter := ⟨17, by norm_num⟩
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	19	  have he : Real.pi / 17 * meridianEnd.val = Real.pi := by simp [meridianEnd]
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	41	theorem diagramMeridianMap_eq_iff (k l : Fin 17) (t u : MeridianParameter) :
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	53	    have he : diagramMeridianMap k t ∈ {patternPoint 0, patternPoint 131071} :=
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	72	def rigidMeridianMap (k : Fin 17) (t : MeridianParameter) : SphereRepresentative :=
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	75	theorem rigidMeridianMap_val (k : Fin 17) (t : MeridianParameter) :
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	83	theorem rigidMeridianMap_horizontal (k : Fin 17) (t : MeridianParameter) :
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	88	theorem rigidMeridianMap_vertical (k : Fin 17) (t : MeridianParameter) :
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	92	theorem sphereMeridianBoundary_front (k l : Fin 17) (t : MeridianParameter) :
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	101	theorem sphereMeridianBoundary_back (k l : Fin 17) (t : MeridianParameter) :
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	110	theorem rigidMeridianMap_eq_iff (k l : Fin 17) (t u : MeridianParameter) :
+production	dimension-or-derived	VennTopology/MeridianParameterEquality.lean	137	theorem meridian_parameter_compatibility (k l : Fin 17) (t u : MeridianParameter) :
+production	selective-small-number	VennTopology/MeridianGeometry.lean	29	theorem meridianBoundaryLabel_rotation (k l : Fin 17) (j : Fin 34) :
+production	selective-small-number	VennTopology/MeridianGeometry.lean	32	  have hr (k : Fin 17) (i : Fin 18) :
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	41	theorem meridian_boundary_subset_realization (k l : Fin 17) :
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	43	      Coordinates.realization (encodedCells suppliedModel.oriented 131072) := by
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	51	    131072 t.val 1 ∈ encodedCells suppliedModel.oriented 131072 t by simp [encodedCells])
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	53	    131072 t.val 2 ∈ encodedCells suppliedModel.oriented 131072 t by simp [encodedCells])
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	63	def diagramMeridianBoundary (k l : Fin 17) : Set Diagram :=
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	66	def diagramMeridianBoundaryMap (k l : Fin 17) (z : Circle) : Diagram :=
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	72	theorem diagramMeridianBoundaryMap_continuous (k l : Fin 17) :
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	77	theorem diagramMeridianBoundaryMap_injective (k l : Fin 17) (hkl : k ≠ l) :
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	84	theorem diagramMeridianBoundaryMap_range (k l : Fin 17) :
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	102	theorem diagram_meridian_boundaries_are_circles (k l : Fin 17) (hkl : k ≠ l) :
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	109	theorem diagramMeridianBoundaryMap_rotation (k l : Fin 17) (z : Circle) :
+production	dimension-or-derived	VennTopology/MeridianGeometry.lean	121	theorem diagram_meridian_boundary_rotation (k l : Fin 17) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	3	/-! The 17 standard spherical sectors and equivariant disk coordinates. -/
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	16	  have ha : 0 < 2 * Real.pi / 17 := by positivity
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	17	  have hb : 2 * Real.pi / 17 < Real.pi := by linarith [Real.pi_pos]
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	21	theorem rigidDirection_cross_pos (k : Fin 17) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	29	def rigidSector (k : Fin 17) : Set SphereRepresentative :=
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	32	theorem rigidSector_closed (k : Fin 17) : IsClosed (rigidSector k) := sphereLune_closed _ _
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	33	theorem rigidSector_compact (k : Fin 17) : IsCompact (rigidSector k) := sphereLune_compact _ _
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	35	def rigidSectorParam (k : Fin 17) : UnitCircle → SphereRepresentative :=
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	38	theorem rigidSectorParam_subset (k : Fin 17) : range (rigidSectorParam k) ⊆ rigidSector k :=
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	41	theorem rigidSectorParam_rotation (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	45	def rigidSectorDisk (k : Fin 17) : rigidSector k ≃ₜ PlaneClosedDisk :=
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	48	theorem rigidSectorDisk_boundary (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	68	theorem rigidSector_rotation (k : Fin 17) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	73	theorem rigidSector_from_zero (k : Fin 17) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	82	def rigidSectorFromZero (k : Fin 17) : rigidSector 0 ≃ₜ rigidSector k :=
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	86	theorem rigidSectorFromZero_apply (k : Fin 17) (x : rigidSector 0) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	89	theorem rigidSectorParam_from_zero (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	99	def equivariantRigidSectorDisk (k : Fin 17) : rigidSector k ≃ₜ PlaneClosedDisk :=
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	102	theorem equivariantRigidSectorDisk_boundary (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	116	def rigidSectorRotatePoint (k : Fin 17) (x : rigidSector k) : rigidSector (cyclicNext k) :=
+production	dimension-or-derived	VennTopology/RigidSectorDisk.lean	120	theorem equivariantRigidSectorDisk_rotation (k : Fin 17) (x : rigidSector k) :
+production	dimension-or-derived	VennTopology/PolygonalModel.lean	33	theorem diagram_presentation_edge_count : diagramPresentation.edgeCount = 786420 := by
+production	dimension-or-derived	VennTopology/PolygonalModel.lean	38	theorem diagram_presentation_face_count : diagramPresentation.faces.length = 524280 := by
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	11	    cs.getD f 17 < 17 && cs.getD (rotations.getD f 0) 17 == (cs.getD f 17 + 1) % 17
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	14	  let mut masks := Array.replicate 131072 0
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	17	      masks := masks.modify v (fun m => m ||| 2^(cs.getD f 17))
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	23	    v < 131072 && (masks.getD v 0).testBit (cs.getD f 17)
+production	selective-small-number	VennTopology/SectorCertificate.lean	25	def sectorBoundaryTriangle (fs : Array Face) (k : Fin 17) (j : Fin 34) : Nat :=
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	34	def sectorBoundaryRows : Array (Array Nat) := Array.ofFn fun k : Fin 17 =>
+production	selective-small-number	VennTopology/SectorCertificate.lean	38	34 boundary edges of its own sector. This is only a finite support statement. -/
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	44	    let k := cs.getD f 17
+production	selective-small-number	VennTopology/SectorCertificate.lean	46	    (Array.range 17).all fun l => l == k || (Array.range 34).any fun j =>
+production	selective-small-number	VennTopology/SectorCertificate.lean	48	      let b := row.getD ((j+1)%34) 0
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	74	    t < 4 * suppliedModel.oriented.size ∧ suppliedSectorColors.getD (t/4) 17 = k.val ∧
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	75	    ((LinkProof.triangleVertex suppliedModel.oriented 131072 t 1 = a ∧
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	76	      LinkProof.triangleVertex suppliedModel.oriented 131072 t 2 = b) ∨
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	77	     (LinkProof.triangleVertex suppliedModel.oriented 131072 t 1 = b ∧
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	78	      LinkProof.triangleVertex suppliedModel.oriented 131072 t 2 = a)) := by
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	84	theorem sector_connected_verified : ∀ k : Fin 17,
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	86	      (fun f => suppliedSectorColors.getD f 17 == k.val) = true := by
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	89	theorem sector_face_counts_verified : ∀ k : Fin 17,
+production	dimension-or-derived	VennTopology/SectorCertificate.lean	90	    (suppliedSectorColors.filter (· == k.val)).size = 7710 := by
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	12	    (∀ i : Fin 17, ∃ f : Circle → PuncturedDiagram,
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	14	    (∀ v : Fin 131072, IsPathConnected (puncturedRegion v)) ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	15	    (∀ x : PuncturedDiagram, x ∈ puncturedComplement ↔ ∃! v : Fin 131072, x ∈ puncturedRegion v) ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	16	    Nat.card (ConnectedComponents puncturedComplement) = 131072 ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	17	    (∀ i j k : Fin 17, i ≠ j → i ≠ k → j ≠ k → ∀ x : PuncturedDiagram,
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	20	      (∃ i j : Fin 17, i ≠ j ∧ x ∈ puncturedCurve i ∧ x ∈ puncturedCurve j) ↔
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	22	    (∀ i : Fin 17, puncturedRotation '' puncturedCurve i = puncturedCurve (curveRotation i)) ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	23	    (∀ v : Fin 131072, puncturedRotation '' puncturedRegion v = puncturedRegion (patternRotation v)) ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	24	    (∀ x : PuncturedDiagram, puncturedRotation^[17] x = x) ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	25	    (∀ k : Nat, 0 < k → k < 17 → ∃ x : PuncturedDiagram, puncturedRotation^[k] x ≠ x) ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	26	    (∀ x : PuncturedDiagram, puncturedRotation x = x ↔ x.val = patternPoint 131071) ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	27	    (∀ f : Fin suppliedModel.oriented.size, ∃ i j : Fin 17, i ≠ j ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	29	    (∀ i : Fin 17, Nat.card (ConnectedComponents (puncturedCurveComplement i)) = 2 ∧
+production	dimension-or-derived	VennTopology/PuncturedCertificate.lean	31	    (∀ v : Fin 131072, puncturedRegion v = ⋂ i : Fin 17, puncturedSide i (v.val.testBit i.val)) :=
+production	dimension-or-derived	VennTopology/SectorConjugacy.lean	13	def sectorConjugacy (k : Fin 17) : diagramSector k ≃ₜ rigidSector k :=
+production	dimension-or-derived	VennTopology/SectorConjugacy.lean	16	theorem sectorConjugacy_coordinates (k : Fin 17) (x : diagramSector k) :
+production	dimension-or-derived	VennTopology/SectorConjugacy.lean	20	theorem sectorConjugacy_boundary (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/SectorConjugacy.lean	33	theorem sectorConjugacy_symm_boundary (k : Fin 17) (z : UnitCircle) :
+production	dimension-or-derived	VennTopology/SectorConjugacy.lean	43	theorem sectorConjugacy_rotation (k : Fin 17) (x : diagramSector k) :
+production	dimension-or-derived	VennTopology/SectorConjugacy.lean	55	    ∃ E : ∀ k : Fin 17, diagramSector k ≃ₜ rigidSector k,
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	7	orbit quotient is a genuine 17-sheeted covering, as needed for a construction
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	25	    minimalPeriod realizedPlaneSymmetry x = 17 :=
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	29	    Function.Injective (fun k : Fin 17 => realizedPlaneSymmetry^[k.val] x) := by
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	61	theorem freePlaneSymmetry_period (x : FreePlane) : freePlaneSymmetry^[17] x = x := by
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	66	    Function.Injective (fun k : Fin 17 => freePlaneSymmetry^[k.val] x) := by
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	71	abbrev RotationGroup := Multiplicative (ZMod 17)
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	80	      (show IsPeriodicPt freePlaneSymmetry 17 x from freePlaneSymmetry_period x).iterate_mod_apply,
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	94	    exact ZMod.val_injective 17 (congrArg Fin.val hv)
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	109	    Nat.card (rotationOrbitProjection ⁻¹' {q}) = 17 := by
+production	dimension-or-derived	VennTopology/RotationOrbits.lean	112	  change Nat.card (ZMod 17) = 17
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	12	def rigidPlaneCurve (i : Fin 17) : Set Plane := planeCurve rigidPlaneHomeomorph i
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	13	def rigidPlaneSide (i : Fin 17) (b : Bool) : Set Plane := planeSide rigidPlaneHomeomorph i b
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	14	def rigidPlaneRegion (v : Fin 131072) : Set Plane := planeRegion rigidPlaneHomeomorph v
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	18	theorem rigidPlaneCurve_mem (x : PuncturedDiagram) (i : Fin 17) :
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	22	theorem rigidPlane_curve_rotation (i : Fin 17) :
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	31	theorem rigidPlane_region_rotation (v : Fin 131072) :
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	42	    (∀ v : Fin 131072, IsPathConnected (rigidPlaneRegion v) ∧
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	43	      rigidPlaneRegion v = ⋂ i : Fin 17, rigidPlaneSide i (v.val.testBit i.val)) ∧
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	44	    (∀ x : Plane, x ∉ ⋃ i : Fin 17, rigidPlaneCurve i ↔
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	45	      ∃! v : Fin 131072, x ∈ rigidPlaneRegion v) :=
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	57	theorem rigidPlaneRotation_period (x : Plane) : rigidPlaneRotation^[17] x = x := by
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	61	theorem rigidPlaneRotation_no_short_period (k : ℕ) (hk : 0 < k) (hk17 : k < 17) :
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	68	theorem rigidPlane_no_triple (i j k : Fin 17) (hij : i ≠ j) (hik : i ≠ k) (hjk : j ≠ k)
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	74	    (∃ i j : Fin 17, i ≠ j ∧ x ∈ rigidPlaneCurve i ∧ x ∈ rigidPlaneCurve j) ↔
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	81	    ∃ i j : Fin 17, i ≠ j ∧ CrossingSquare.HasCrossingChart
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	94	def vennIndexOrder : Equiv.Perm (Fin 17) := Equiv.neg _
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	96	theorem vennIndexOrder_next (i : Fin 17) :
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	100	def rotationalVennCurve (i : Fin 17) : Set Plane := rigidPlaneCurve (vennIndexOrder i)
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	101	def rotationalVennSide (i : Fin 17) (b : Bool) : Set Plane := rigidPlaneSide (vennIndexOrder i) b
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	103	theorem rotationalVenn_rotation (i : Fin 17) :
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	108	theorem rotationalVenn_all_patterns (b : Fin 17 → Bool) :
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	128	angle `2π/17` about zero. `IsPathConnected` includes nonemptiness. -/
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	129	structure SimpleRotationalVenn (C : Fin 17 → Set Plane) (S : Fin 17 → Bool → Set Plane) : Prop where
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	136	  regions : ∀ b : Fin 17 → Bool, IsPathConnected (⋂ i, S i (b i))
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	168	theorem exists_simple_rotational_venn_17 :
+production	dimension-or-derived	VennTopology/RotationalVenn.lean	169	    ∃ (C : Fin 17 → Set Plane) (S : Fin 17 → Bool → Set Plane), SimpleRotationalVenn C S :=
+

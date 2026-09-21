@@ -1,0 +1,114 @@
+{
+  "sha256": "c178d7bdde6e02b1b0c2780339434095d3633b8bb77a7293e9d575d04ad7ae77",
+  "n": 17,
+  "regions": 131072,
+  "arcs": 262140,
+  "crossings": 131070,
+  "euler": 2,
+  "checks": {
+    "square_crossings": true,
+    "two_faces_per_arc": true,
+    "connected_oriented_surface": true,
+    "single_vertex_links": true,
+    "euler_two": true,
+    "single_cycle_per_curve": true,
+    "connected_sides": true,
+    "all_patterns": true,
+    "simple_crossings": true,
+    "orientation_preserving_rotation": true
+  },
+  "curve_lengths": [
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420,
+    15420
+  ],
+  "side_sizes": [
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ],
+    [
+      65536,
+      65536
+    ]
+  ],
+  "pole_steps": [
+    -1,
+    1
+  ],
+  "verdict": "PASS: finite combinatorial conditions; geometric realization is a separate theorem"
+}

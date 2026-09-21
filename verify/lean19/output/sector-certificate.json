@@ -1,0 +1,154 @@
+[
+  {
+    "sector": 0,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 1,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 2,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 3,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 4,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 5,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 6,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 7,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 8,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 9,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 10,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 11,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 12,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 13,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 14,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 15,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 16,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 17,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  },
+  {
+    "sector": 18,
+    "vertices": 27614,
+    "edges": 55207,
+    "faces": 27594,
+    "euler": 1,
+    "boundary_edges": 38
+  }
+]

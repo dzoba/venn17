@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "finished_utc": "2026-09-21T04:13:43.263416+00:00",
+  "limits": {
+    "wall_limit_seconds": 7200,
+    "rss_limit_bytes": 34359738368,
+    "evidence_limit_bytes": 2147483648,
+    "owned_lean_directory_limit_bytes": 10737418240,
+    "filesystem_reserve_bytes": 8589934592
+  }
+}

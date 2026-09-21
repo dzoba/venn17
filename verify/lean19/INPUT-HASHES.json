@@ -1,0 +1,28 @@
+{
+  "selected_lean19_input": {
+    "path": "venn19-closure-s196002.json",
+    "sha256": "ed26b3baa6e5c02bc3a4239b1dfbf84d66f731cad2dd2805a8c1770e2c1fdb5d",
+    "bytes": 47185825
+  },
+  "upstream_lean17_input": {
+    "path": "provenance/upstream-17/venn17-local-c3-s2.json",
+    "sha256": "c178d7bdde6e02b1b0c2780339434095d3633b8bb77a7293e9d575d04ad7ae77"
+  },
+  "generated_witness_inputs": {
+    "output/meridian-certificate.json": "fe99713fbca021461e4f807019e16731b47dd8ac9203fc46ca5dd852216b9ae3",
+    "output/sector-certificate.json": "ba2aeb1aa7d6c2f490cdae9f6ec52aa6cd9f4d477fd0f3a8fe43a2e4527c0520"
+  },
+  "configuration_inputs": {
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "lake-manifest.json": "764496d4901574a608c77df5f6ddcc6ab544f864e5f5c0774635d0e894e6cb7f"
+  },
+  "historical_prepackaging_source_inventory": {
+    "path": "provenance/port-working/PORT-SHA256SUMS",
+    "entries": 457,
+    "sha256": "14c74d90734d44cc7a4394e7529347bdee1e1978564f632feb708135d86edafc"
+  },
+  "additional_candidate_hashes": {
+    "path": "provenance/candidate-discovery/for-lean/SHA256SUMS",
+    "note": "Hashes for the other independently verified 19-curve candidates; their large JSON files are not duplicated here."
+  }
+}

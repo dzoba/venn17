@@ -1,0 +1,31 @@
+{
+  "project": "/Users/dzoba/Developer/venn-diagram/research/lean19-port/baseline17",
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "-p",
+    "-o",
+    "/Users/dzoba/Developer/venn-diagram/research/lean19-port/logs/baseline17/time.txt",
+    "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lake",
+    "--no-cache",
+    "--no-ansi",
+    "build"
+  ],
+  "pid": 62304,
+  "started_utc": "2026-09-21T02:42:08.096175+00:00",
+  "wall_limit_seconds": 43200,
+  "aggregate_rss_limit_bytes": 34359738368,
+  "owned_disk_limit_bytes": 10737418240,
+  "LEAN_NUM_THREADS": "1",
+  "peak_aggregate_rss_bytes": 4240850944,
+  "peak_processes": 3,
+  "status": "PASS",
+  "elapsed_seconds": 3093.8609540410107,
+  "current_rss_bytes": 1371586560,
+  "current_processes": 3,
+  "checked_utc": "2026-09-21T03:33:31.982175+00:00",
+  "owned_disk_bytes": 1145012224,
+  "filesystem_available_bytes": 21917184000,
+  "finished_utc": "2026-09-21T03:33:42.014107+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,52 @@
+{
+  "build": {
+    "status": "PASS",
+    "jobs": 3468,
+    "controller_elapsed_seconds": 3093.8609540410107,
+    "time_real_seconds": 3087.36,
+    "time_maximum_resident_set_bytes": 3439067136,
+    "controller_peak_aggregate_rss_bytes": 4240850944,
+    "owned_disk_bytes": 1145012224
+  },
+  "process_sampling": {
+    "interval_seconds": 2.0,
+    "samples": 1408,
+    "sampled_process_records": 425,
+    "started_utc": "2026-09-21T02:43:46.102023+00:00",
+    "finished_utc": "2026-09-21T03:33:46.985137+00:00",
+    "peak_aggregate_rss_bytes_lower_bound": 4224008192,
+    "peak_owned_processes_observed": 4,
+    "maximum_simultaneous_lean_compile_processes_observed": 1,
+    "concurrency_note": "Compile samples contained time + lake + at most one lean process. The four-process peak was the final clang/ld64.lld link, not two Lean module workers. This supports effective single-module Lake concurrency with LEAN_NUM_THREADS=1; OS thread counts were not measured.",
+    "measurement_note": "Polling began about 98 seconds after the build started. Sampled aggregate and per-process RSS peaks and observed durations are lower bounds between polls. The controller covered the full build."
+  },
+  "selected_module_samples": [
+    {"module": "Vendor/ClassificationOfSurfaces/Moise/AdaptiveFanComplex.lean", "observed_seconds_lower_bound": 86.0, "peak_rss_bytes_lower_bound": 3055534080},
+    {"module": "Vendor/ClassificationOfSurfaces/WeightedCircle.lean", "observed_seconds_lower_bound": 70.3, "peak_rss_bytes_lower_bound": 3402711040},
+    {"module": "VennTopology/SectorCertificate.lean", "observed_seconds_lower_bound": 57.1, "peak_rss_bytes_lower_bound": 3227582464},
+    {"module": "Vendor/ClassificationOfSurfaces/Moise/ChartInduction.lean", "observed_seconds_lower_bound": 50.9, "peak_rss_bytes_lower_bound": 3274113024},
+    {"module": "Vendor/ClassificationOfSurfaces/Moise/LineSubdivision.lean", "observed_seconds_lower_bound": 38.1, "peak_rss_bytes_lower_bound": 2907914240},
+    {"module": "VennTopology/RigidSectorIntersections.lean", "observed_seconds_lower_bound": 6.4, "peak_rss_bytes_lower_bound": 3318349824},
+    {"module": "VennTopology/RotationalVenn.lean", "observed_seconds_lower_bound": 4.3, "peak_rss_bytes_lower_bound": 3310501888}
+  ],
+  "topology_audit": {
+    "status": "PASS",
+    "real_seconds": 7.22,
+    "maximum_resident_set_bytes": 3263905792,
+    "output_byte_identical_to_topology_axioms_txt": true,
+    "output_whitespace_normalized_equal": true,
+    "supplied_simple_rotational_venn_axioms_equal": true,
+    "supplied_simple_rotational_venn_axiom_count": 23,
+    "logical_axiom_count": 3,
+    "native_decide_axiom_count": 20,
+    "unexpected_axioms": []
+  },
+  "logs": {
+    "controller": "status.json",
+    "build_output": "build.log",
+    "build_time": "time.txt",
+    "process_samples": "process-samples.json",
+    "audit_output": "audit-topology-output.txt",
+    "audit_time": "audit-topology-time.txt"
+  }
+}

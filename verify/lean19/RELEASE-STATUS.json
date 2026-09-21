@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "finished_utc": "2026-09-21T04:13:43.263416+00:00",
+  "theorems": {
+    "concrete": "Venn19.Topology.supplied_simple_rotational_venn",
+    "existential": "Venn19.Topology.exists_simple_rotational_venn_19",
+    "compiled_type_ascriptions_passed": true,
+    "check_print_output_sha256": "8008bc15523b0cd480538bc7c725eebd373978be55892f3d75931b6a0a0ec3d7"
+  },
+  "axioms": {
+    "total": 23,
+    "native_decide": 20,
+    "logical": ["propext", "Classical.choice", "Quot.sound"],
+    "baseline_equal_after_documented_namespace_rename": true
+  },
+  "build": {
+    "jobs": 3468,
+    "exit_code": 0,
+    "controller_elapsed_seconds": 1208.5342169579817,
+    "time_real_seconds": 1205.65,
+    "time_maximum_resident_set_bytes": 4169744384,
+    "sampled_peak_aggregate_rss_bytes_lower_bound": 4959027200,
+    "owned_disk_bytes": 1789259776
+  },
+  "postbuild": {
+    "steps": 8,
+    "passed_steps": 8,
+    "elapsed_seconds": 303.72146624990273,
+    "all_active_hashes_match": true,
+    "active_hash_count": 457,
+    "license_preserved": true,
+    "citation_preserved": true
+  },
+  "input_sha256": "ed26b3baa6e5c02bc3a4239b1dfbf84d66f731cad2dd2805a8c1770e2c1fdb5d",
+  "toolchain": "leanprover/lean4:v4.32.1",
+  "mathlib_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "published": false
+}

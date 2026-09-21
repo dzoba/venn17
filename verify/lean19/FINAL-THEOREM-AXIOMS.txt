@@ -1,0 +1,32 @@
+Venn19.Topology.supplied_simple_rotational_venn
+
+Logical axioms (3):
+propext
+Classical.choice
+Quot.sound
+
+Input-specific native_decide axioms (20):
+Venn19.graph_certificates_pass._native.native_decide.ax_1_1
+Venn19.Topology.bit_rotation_verified._native.native_decide.ax_1_1
+Venn19.Topology.meridian_labels_verified._native.native_decide.ax_1_1
+Venn19.Topology.meridian_triangles_verified._native.native_decide.ax_1_1
+Venn19.Topology.region_rotation_verified._native.native_decide.ax_1_1
+Venn19.Topology.sector_boundary_verified._native.native_decide.ax_1_1
+Venn19.Topology.sector_colors_verified._native.native_decide.ax_1_1
+Venn19.Topology.sector_connected_verified._native.native_decide.ax_1_1
+Venn19.Topology.sector_corners_verified._native.native_decide.ax_1_1
+Venn19.Topology.sector_dual_verified._native.native_decide.ax_1_1
+Venn19.Topology.sector_overlaps_verified._native.native_decide.ax_1_1
+Venn19.Topology.supplied_crossing_labels_verified._native.native_decide.ax_1_1
+Venn19.Topology.supplied_curve_labels_verified._native.native_decide.ax_1_1
+Venn19.Topology.supplied_curve_polygons_verified._native.native_decide.ax_1_1
+Venn19.Topology.supplied_distinct_corners_verified._native.native_decide.ax_1_1
+Venn19.Topology.supplied_graph_size._native.native_decide.ax_1_1
+Venn19.Topology.supplied_incidence_verified._native.native_decide.ax_1_1
+Venn19.Topology.supplied_link_stars_verified._native.native_decide.ax_1_1
+Venn19.Topology.supplied_oriented_face_count._native.native_decide.ax_1_1
+Venn19.Topology.supplied_rotation_verified._native.native_decide.ax_1_1
+
+This list was extracted from the passing Lean19 `#print axioms` output in
+topology-axioms.txt. The postbuild comparison confirmed that it equals the
+Lean17 final-theorem list after only the documented namespace rename.

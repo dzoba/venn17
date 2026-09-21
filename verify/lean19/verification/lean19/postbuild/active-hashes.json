@@ -1,0 +1,2744 @@
+[
+  {
+    "path": "CITATION.cff",
+    "expected_sha256": "983a71f14094cc18d9eb8836bba7ff149848e868aef6a7317c6822cf2079a82c",
+    "actual_sha256": "983a71f14094cc18d9eb8836bba7ff149848e868aef6a7317c6822cf2079a82c",
+    "match": true
+  },
+  {
+    "path": "LICENSE",
+    "expected_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "actual_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "match": true
+  },
+  {
+    "path": "Main.lean",
+    "expected_sha256": "a8a886af844138a4d55765acd7cd1bd9f3be281aaeb142cd084c6945f39e625c",
+    "actual_sha256": "a8a886af844138a4d55765acd7cd1bd9f3be281aaeb142cd084c6945f39e625c",
+    "match": true
+  },
+  {
+    "path": "PORT-README.md",
+    "expected_sha256": "0b7a815373e0334ea43813e378b1f5f7c06c9d3be842a0d4b8983763b61a8364",
+    "actual_sha256": "0b7a815373e0334ea43813e378b1f5f7c06c9d3be842a0d4b8983763b61a8364",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/CanonicalCoordinates.lean",
+    "expected_sha256": "7498ad92994060f5d52ef64a9c68c6b00d86f4474eb3c5b9963b153bcf7bda98",
+    "actual_sha256": "7498ad92994060f5d52ef64a9c68c6b00d86f4474eb3c5b9963b153bcf7bda98",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/CanonicalGeneratorMaps.lean",
+    "expected_sha256": "e30ecf9b50086feaa6e9450405e7630564b6667cb069c72a81c630a374bb75da",
+    "actual_sha256": "e30ecf9b50086feaa6e9450405e7630564b6667cb069c72a81c630a374bb75da",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/CanonicalPairings.lean",
+    "expected_sha256": "0701ef2ba96f168602308b26a03a2454b6a86fe0698977cd25e423b2c1e3f289",
+    "actual_sha256": "0701ef2ba96f168602308b26a03a2454b6a86fe0698977cd25e423b2c1e3f289",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/CanonicalWords.lean",
+    "expected_sha256": "df4974da95a46f0536b6ef8271c6c85834c36bc6b09a83bb450c2e449e4654dd",
+    "actual_sha256": "df4974da95a46f0536b6ef8271c6c85834c36bc6b09a83bb450c2e449e4654dd",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/CellComplex.lean",
+    "expected_sha256": "6800a64d3c14e25f07d18ad05b36c58c7a495bae7e1e0b88ecd7525c6828756c",
+    "actual_sha256": "6800a64d3c14e25f07d18ad05b36c58c7a495bae7e1e0b88ecd7525c6828756c",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/CellComplexQuotient.lean",
+    "expected_sha256": "f946f36a3732b38e344d12ab92dc2ba795668d33bd9f7d3deac1063ed0515baa",
+    "actual_sha256": "f946f36a3732b38e344d12ab92dc2ba795668d33bd9f7d3deac1063ed0515baa",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/DiskSquare.lean",
+    "expected_sha256": "7d4c49a4f40107a840073195a9f2b389a721ab5ee87749c9609d94aeb44e80d3",
+    "actual_sha256": "7d4c49a4f40107a840073195a9f2b389a721ab5ee87749c9609d94aeb44e80d3",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicCancellation.lean",
+    "expected_sha256": "398bf8e1758d2883fde619a9c0d83560af1289e78daaf402cbe6e21dd217eef2",
+    "actual_sha256": "398bf8e1758d2883fde619a9c0d83560af1289e78daaf402cbe6e21dd217eef2",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicCanonical.lean",
+    "expected_sha256": "38df8f546a41fa31c83338e7776b68f817a11e614d132de44e196c5dad373469",
+    "actual_sha256": "38df8f546a41fa31c83338e7776b68f817a11e614d132de44e196c5dad373469",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicCanonicalRealization.lean",
+    "expected_sha256": "b49135f4fa653e137ee8a1975a149d972cac5fb7b5f59bbfbf87896a21393b87",
+    "actual_sha256": "b49135f4fa653e137ee8a1975a149d972cac5fb7b5f59bbfbf87896a21393b87",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicCrosscap.lean",
+    "expected_sha256": "f9ea928af1159ddab15cbd40aee5dde4874b54448273ca05608da500c4dc091f",
+    "actual_sha256": "f9ea928af1159ddab15cbd40aee5dde4874b54448273ca05608da500c4dc091f",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicDerivedRewrites.lean",
+    "expected_sha256": "7d9fa36c82c7b5e31e0422f750e03261e2c27f3f869beab64d388fc892464c49",
+    "actual_sha256": "7d9fa36c82c7b5e31e0422f750e03261e2c27f3f869beab64d388fc892464c49",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicDyck.lean",
+    "expected_sha256": "c99ff082558f72b969e7104b4b742edfa71d14ec5cc8178900632abab297a366",
+    "actual_sha256": "c99ff082558f72b969e7104b4b742edfa71d14ec5cc8178900632abab297a366",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicFaceMerge.lean",
+    "expected_sha256": "12e43ecb90dd109e376d18dfbf03d37ff4b8412fa34917add26494d107cd2ac7",
+    "actual_sha256": "12e43ecb90dd109e376d18dfbf03d37ff4b8412fa34917add26494d107cd2ac7",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicMoveRealization.lean",
+    "expected_sha256": "0379f4a52b5b253027d6c6d3c8f25fc2c5f8ecd61da665dffdd8c3b6d59a79a1",
+    "actual_sha256": "0379f4a52b5b253027d6c6d3c8f25fc2c5f8ecd61da665dffdd8c3b6d59a79a1",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicMoves.lean",
+    "expected_sha256": "f08eeada65ef056c77ad07493bba3f16be6e752efc81e476c78d28404f4693fb",
+    "actual_sha256": "f08eeada65ef056c77ad07493bba3f16be6e752efc81e476c78d28404f4693fb",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicNormalization.lean",
+    "expected_sha256": "3e250b2916b1be280ab3cf319454f2a179f14d7099a7ad8beedbf220928a00ac",
+    "actual_sha256": "3e250b2916b1be280ab3cf319454f2a179f14d7099a7ad8beedbf220928a00ac",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicNormalizationResult.lean",
+    "expected_sha256": "f8f00f58d65e7a043dfaa7044eb625191262a4f926311cbdb43c6fa1680437a3",
+    "actual_sha256": "f8f00f58d65e7a043dfaa7044eb625191262a4f926311cbdb43c6fa1680437a3",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicP1.lean",
+    "expected_sha256": "01419082d3453cbac0fc44e0737f8090b0dd56ed298f175e5f70046b5a98e6a3",
+    "actual_sha256": "01419082d3453cbac0fc44e0737f8090b0dd56ed298f175e5f70046b5a98e6a3",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicP1Realization.lean",
+    "expected_sha256": "55ccfa398ff8f742ac2bbdf73793ed2692a18671c309d6124c60861bbc46b1f9",
+    "actual_sha256": "55ccfa398ff8f742ac2bbdf73793ed2692a18671c309d6124c60861bbc46b1f9",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicP2.lean",
+    "expected_sha256": "689af7307d8020c6d035347359af3a33e02ee78eca0a527fae678615de441d18",
+    "actual_sha256": "689af7307d8020c6d035347359af3a33e02ee78eca0a527fae678615de441d18",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicP2DegenerateRealization.lean",
+    "expected_sha256": "ff01c5f9a7b706ffaa4eb5755e96af54eabfe0aec8fd78603c185791687ac6cc",
+    "actual_sha256": "ff01c5f9a7b706ffaa4eb5755e96af54eabfe0aec8fd78603c185791687ac6cc",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicP2Realization.lean",
+    "expected_sha256": "f0b831a50edeac583b698ff2c772e7c2f4ba42925047f884423d4f22f3f51366",
+    "actual_sha256": "f0b831a50edeac583b698ff2c772e7c2f4ba42925047f884423d4f22f3f51366",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicPresentation.lean",
+    "expected_sha256": "ee11c1228a3d4faa52dc32d6745e51ccca88c67c7ee8c655b90779538e2d1564",
+    "actual_sha256": "ee11c1228a3d4faa52dc32d6745e51ccca88c67c7ee8c655b90779538e2d1564",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicRealization.lean",
+    "expected_sha256": "0e435f210577312ef2deeca1f79b49b41d323997881019dadc3507d2c4973388",
+    "actual_sha256": "0e435f210577312ef2deeca1f79b49b41d323997881019dadc3507d2c4973388",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicReduction.lean",
+    "expected_sha256": "17a36c353c755ac97f77e1ebc49c705cd702770d7fea1c1a70e05b7de3310bef",
+    "actual_sha256": "17a36c353c755ac97f77e1ebc49c705cd702770d7fea1c1a70e05b7de3310bef",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicSignedRealization.lean",
+    "expected_sha256": "42d5409f222c370164cff54bf78fcc1e0673eb6a864cc503cf536bbab69dcb20",
+    "actual_sha256": "42d5409f222c370164cff54bf78fcc1e0673eb6a864cc503cf536bbab69dcb20",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicSphereRealization.lean",
+    "expected_sha256": "20ea1e87c8f759de459d6679bb0c7bc1dc9448055903e701c5f0b17c956c9da0",
+    "actual_sha256": "20ea1e87c8f759de459d6679bb0c7bc1dc9448055903e701c5f0b17c956c9da0",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicTerminalNormalization.lean",
+    "expected_sha256": "db30eafb8fe4f21cfed51f2704bba5c6d56d8bec490abeef2e216795bb6fefc6",
+    "actual_sha256": "db30eafb8fe4f21cfed51f2704bba5c6d56d8bec490abeef2e216795bb6fefc6",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicTriangulation.lean",
+    "expected_sha256": "1ea00c9c0997110383e1da0c17a0fbb3eb6fd1979405023e92cda74b9ee8054d",
+    "actual_sha256": "1ea00c9c0997110383e1da0c17a0fbb3eb6fd1979405023e92cda74b9ee8054d",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicUnorientedRealization.lean",
+    "expected_sha256": "0bad4bdc972ecb86706547020092bfb7ccbed41125688b1c3bd9c86d7be23d38",
+    "actual_sha256": "0bad4bdc972ecb86706547020092bfb7ccbed41125688b1c3bd9c86d7be23d38",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicWordReduction.lean",
+    "expected_sha256": "0ecc018e36c1140de34520487d5e01e5e1df83ad138510056a721da0afad334c",
+    "actual_sha256": "0ecc018e36c1140de34520487d5e01e5e1df83ad138510056a721da0afad334c",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/FiniteCyclicWordReductionCore.lean",
+    "expected_sha256": "013200811d0111b7ed656d7a7205dee25082b42ef4802fff0fa0e0c5e78a8442",
+    "actual_sha256": "013200811d0111b7ed656d7a7205dee25082b42ef4802fff0fa0e0c5e78a8442",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/GeometricTriangulationRealization.lean",
+    "expected_sha256": "2e72c1b1e7bef0dcd47b1fe7da2b2200674825af05a908d0dd1d624365d9af7e",
+    "actual_sha256": "2e72c1b1e7bef0dcd47b1fe7da2b2200674825af05a908d0dd1d624365d9af7e",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/LeanEval/ChallengeDeps.lean",
+    "expected_sha256": "cc1ea7b804f0b6915b0809c05a9af9435cc24067bdba31c2e743736375135b6e",
+    "actual_sha256": "cc1ea7b804f0b6915b0809c05a9af9435cc24067bdba31c2e743736375135b6e",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/AdaptiveControlledApproximation.lean",
+    "expected_sha256": "3bc662a28601e368248cacbc7995af41b4fef36a5e5fcdf372d679d9d218e780",
+    "actual_sha256": "3bc662a28601e368248cacbc7995af41b4fef36a5e5fcdf372d679d9d218e780",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/AdaptiveFanAffine.lean",
+    "expected_sha256": "fc8a6dd90ca7599fa73d14955f58af470318868ff0d7d50b25bff0db1b3f6cfd",
+    "actual_sha256": "fc8a6dd90ca7599fa73d14955f58af470318868ff0d7d50b25bff0db1b3f6cfd",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/AdaptiveFanComplex.lean",
+    "expected_sha256": "6de4a25bbd948d3b7ae932bbd2ed77de1d572b61dd7aa01248a04d82afb35cad",
+    "actual_sha256": "6de4a25bbd948d3b7ae932bbd2ed77de1d572b61dd7aa01248a04d82afb35cad",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/AdaptiveOpenComplex.lean",
+    "expected_sha256": "eb74dc0567f77b312364a70cb9d050bdfeb718965b17152080a9396eee2ee3d2",
+    "actual_sha256": "eb74dc0567f77b312364a70cb9d050bdfeb718965b17152080a9396eee2ee3d2",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/AdaptiveOpenCover.lean",
+    "expected_sha256": "3153aab5a4fcdb744a54d26462d3f76b320644b387b8e34b5a61cf13a4d6a397",
+    "actual_sha256": "3153aab5a4fcdb744a54d26462d3f76b320644b387b8e34b5a61cf13a4d6a397",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/AdaptiveTileComplex.lean",
+    "expected_sha256": "cc7497ba1325e1f8e0099b54866f0c09db52388d6945bbddd92be8db81424c24",
+    "actual_sha256": "cc7497ba1325e1f8e0099b54866f0c09db52388d6945bbddd92be8db81424c24",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/AdaptiveTriangulation.lean",
+    "expected_sha256": "8c720253d05d3a25538fb24fad012f4a75861df70bb425b4e04c5d7a9e1a241b",
+    "actual_sha256": "8c720253d05d3a25538fb24fad012f4a75861df70bb425b4e04c5d7a9e1a241b",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/AmbientHomeomorph.lean",
+    "expected_sha256": "2fa3e6f6bf6eacd7abfde9428a0149c64e69944cba4d81dd36a2859be816b9e6",
+    "actual_sha256": "2fa3e6f6bf6eacd7abfde9428a0149c64e69944cba4d81dd36a2859be816b9e6",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/Anchors.lean",
+    "expected_sha256": "176ef9b5a42b320df1b4356be89615dbc62f1673f2be0ca80c38db90524522a2",
+    "actual_sha256": "176ef9b5a42b320df1b4356be89615dbc62f1673f2be0ca80c38db90524522a2",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/BoundaryInvariant.lean",
+    "expected_sha256": "586553eabac6a7f6369289ef61e85c8363f562fed08e47df7b2853decab87531",
+    "actual_sha256": "586553eabac6a7f6369289ef61e85c8363f562fed08e47df7b2853decab87531",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/BrokenLine.lean",
+    "expected_sha256": "146fe660bd345e0f82c767f0daa77c0f358952f5d11a483509482a0439b9b2cd",
+    "actual_sha256": "146fe660bd345e0f82c767f0daa77c0f358952f5d11a483509482a0439b9b2cd",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/Brouwer.lean",
+    "expected_sha256": "edb39f07609cefde882196306cbe572631c0a9eba45d8548e7ceaaefa7dd62b8",
+    "actual_sha256": "edb39f07609cefde882196306cbe572631c0a9eba45d8548e7ceaaefa7dd62b8",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/ChartExtraction.lean",
+    "expected_sha256": "67ab4d05a3a8119cd9409044283d6b262a8d9c203d8f62adda7efde3688bbaa7",
+    "actual_sha256": "67ab4d05a3a8119cd9409044283d6b262a8d9c203d8f62adda7efde3688bbaa7",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/ChartInduction.lean",
+    "expected_sha256": "425f331540f1c639802467ac07d0a21e5d29176d7a1e708d19f433ad352a38c6",
+    "actual_sha256": "425f331540f1c639802467ac07d0a21e5d29176d7a1e708d19f433ad352a38c6",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/ChartInductionCore.lean",
+    "expected_sha256": "ed2c33678f81d485ca72e8c40ab98ee9672eb65e4d873b71233176a770c67e2d",
+    "actual_sha256": "ed2c33678f81d485ca72e8c40ab98ee9672eb65e4d873b71233176a770c67e2d",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/ChartPatch.lean",
+    "expected_sha256": "25a9e176780ac7e566131bc5e4640da95090097993cd9c682a647071299cfa83",
+    "actual_sha256": "25a9e176780ac7e566131bc5e4640da95090097993cd9c682a647071299cfa83",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/CommonSubdivision.lean",
+    "expected_sha256": "2dc0ddf525209a38bde418b8a82d22c8b01179e0962f0176fac44acd3cd403bf",
+    "actual_sha256": "2dc0ddf525209a38bde418b8a82d22c8b01179e0962f0176fac44acd3cd403bf",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/ConeExtension.lean",
+    "expected_sha256": "d3dd385e421484ab22476911938672403b390ee834c14d7b81b4e703d0f5bcf1",
+    "actual_sha256": "d3dd385e421484ab22476911938672403b390ee834c14d7b81b4e703d0f5bcf1",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/DualConnectivity.lean",
+    "expected_sha256": "483611b92d1f1ec39db0fe0b6f89c4e33e155d746d2033b6cb70c8a2ed43e943",
+    "actual_sha256": "483611b92d1f1ec39db0fe0b6f89c4e33e155d746d2033b6cb70c8a2ed43e943",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/ElementaryMove.lean",
+    "expected_sha256": "224b60267b93ac35531eda7b0dadaf797cbc4f58477c22c1730fd5d74a4a0d32",
+    "actual_sha256": "224b60267b93ac35531eda7b0dadaf797cbc4f58477c22c1730fd5d74a4a0d32",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/EmbeddedComplexValence.lean",
+    "expected_sha256": "483270c1feab0697d6d0d385e82c2d5ea9f2e70aeef33f05af4dd87dade2aed3",
+    "actual_sha256": "483270c1feab0697d6d0d385e82c2d5ea9f2e70aeef33f05af4dd87dade2aed3",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/FacewiseComparison.lean",
+    "expected_sha256": "9b56d43763ffcda1c8d41a8f6f2300d898368ded3e2a4740dcf25ec9d34757fd",
+    "actual_sha256": "9b56d43763ffcda1c8d41a8f6f2300d898368ded3e2a4740dcf25ec9d34757fd",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/FineSubdivision.lean",
+    "expected_sha256": "1af8733308ee7b794af99023e6a5e1d3c28f31eba9638dff732aa6f63d3df618",
+    "actual_sha256": "1af8733308ee7b794af99023e6a5e1d3c28f31eba9638dff732aa6f63d3df618",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/FinitePLHomeomorph.lean",
+    "expected_sha256": "f59345232df197d4aef68484023d99af2cabe8bb87bc23f4eeb07e17240c300c",
+    "actual_sha256": "f59345232df197d4aef68484023d99af2cabe8bb87bc23f4eeb07e17240c300c",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/FreeTriangle.lean",
+    "expected_sha256": "2a0eb938f16ed1c152ab95120b7b6069317b0124c77bea64cb9c168e1910e132",
+    "actual_sha256": "2a0eb938f16ed1c152ab95120b7b6069317b0124c77bea64cb9c168e1910e132",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/FreeTriangleMove.lean",
+    "expected_sha256": "8b37afc857119ad493869d06f06c8c59c6aff251ccbb0e1c13b3d1a3fe91559a",
+    "actual_sha256": "8b37afc857119ad493869d06f06c8c59c6aff251ccbb0e1c13b3d1a3fe91559a",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/FrontierGlue.lean",
+    "expected_sha256": "a7cf1e41713ddc27a376c9c3e765aaee5a40c39cb6c6b2b382de89f664e69016",
+    "actual_sha256": "a7cf1e41713ddc27a376c9c3e765aaee5a40c39cb6c6b2b382de89f664e69016",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/GeometricTriangulation.lean",
+    "expected_sha256": "0fafc52d970495214c5f7f7f4961d13d0cf21bcc325e83d00b3f32c1aa2418d4",
+    "actual_sha256": "0fafc52d970495214c5f7f7f4961d13d0cf21bcc325e83d00b3f32c1aa2418d4",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/GraphPolygonalization.lean",
+    "expected_sha256": "17e2a67a05a1755519cb48569c56e1930a06670c3f988e7f2a78507c31df2a0e",
+    "actual_sha256": "17e2a67a05a1755519cb48569c56e1930a06670c3f988e7f2a78507c31df2a0e",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/GraphRefinement.lean",
+    "expected_sha256": "6739e8339544e3fccfae03b71ef374c35245d5109a7b07c0452e7e4cb5453968",
+    "actual_sha256": "6739e8339544e3fccfae03b71ef374c35245d5109a7b07c0452e7e4cb5453968",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/GraphSubdivision.lean",
+    "expected_sha256": "29be3ab2363fc310c42ce77a5cd3fefbc0cd8a62819037ce9b4011bdbaa4a947",
+    "actual_sha256": "29be3ab2363fc310c42ce77a5cd3fefbc0cd8a62819037ce9b4011bdbaa4a947",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/HalfPlanePolygon.lean",
+    "expected_sha256": "87050735616428c5405324a955d0d3d88b1a79f82853130f6bd4302c7fa43aa5",
+    "actual_sha256": "87050735616428c5405324a955d0d3d88b1a79f82853130f6bd4302c7fa43aa5",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicCellwiseExtension.lean",
+    "expected_sha256": "1779256720825946af3550d838b88053d6d036a1226141847186112378fc7509",
+    "actual_sha256": "1779256720825946af3550d838b88053d6d036a1226141847186112378fc7509",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicComplex.lean",
+    "expected_sha256": "9f0abd75a4219befca2f2699bab1d492590f40f2c507e5d0022ed2569ae978d7",
+    "actual_sha256": "9f0abd75a4219befca2f2699bab1d492590f40f2c507e5d0022ed2569ae978d7",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFaceBoundary.lean",
+    "expected_sha256": "5318bd6647f3e989a86f360239c52c6532d51310d45c281fbaa8b78e7944ef4c",
+    "actual_sha256": "5318bd6647f3e989a86f360239c52c6532d51310d45c281fbaa8b78e7944ef4c",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFaceExtension.lean",
+    "expected_sha256": "56f8bbc6d3163bf897e3ab91e22750d76b10f2bc4470666f9cb1b4bb9c5350e6",
+    "actual_sha256": "56f8bbc6d3163bf897e3ab91e22750d76b10f2bc4470666f9cb1b4bb9c5350e6",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFaceFilling.lean",
+    "expected_sha256": "7dcc426d7bb7f45986ab84dc3f3dd10eb4fcf95917909eeaff9ed141f07f7ffe",
+    "actual_sha256": "7dcc426d7bb7f45986ab84dc3f3dd10eb4fcf95917909eeaff9ed141f07f7ffe",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFaceModel.lean",
+    "expected_sha256": "3054dffda2bfe032576957c8cd15dc07751112479e8bef021d9448f332b44e8e",
+    "actual_sha256": "3054dffda2bfe032576957c8cd15dc07751112479e8bef021d9448f332b44e8e",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicFineSubdivision.lean",
+    "expected_sha256": "e9744546f8b8951d8e637408a81c70c8b62b441a072294d883a21cf82b7a6ccf",
+    "actual_sha256": "e9744546f8b8951d8e637408a81c70c8b62b441a072294d883a21cf82b7a6ccf",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicGraphApproximation.lean",
+    "expected_sha256": "0c2b06c940f37ae244778f4dc80a5408e320708e1b077721da6a824744aa93c5",
+    "actual_sha256": "0c2b06c940f37ae244778f4dc80a5408e320708e1b077721da6a824744aa93c5",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicGraphPL.lean",
+    "expected_sha256": "cab0b48f70243e80a49eecaca08f34f9b1ceb3b121b1601c10588b3cd039a4e4",
+    "actual_sha256": "cab0b48f70243e80a49eecaca08f34f9b1ceb3b121b1601c10588b3cd039a4e4",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicMarkedFan.lean",
+    "expected_sha256": "c5947282d7aa9308a9c4260199c5d2086a4ffc3e39a6f93de0c08fe3c52ccfb3",
+    "actual_sha256": "c5947282d7aa9308a9c4260199c5d2086a4ffc3e39a6f93de0c08fe3c52ccfb3",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicMidpointSubdivision.lean",
+    "expected_sha256": "8f0b3062360f81b0c33dfccfc93099b71657d84201b2addaa357f86015ed6b31",
+    "actual_sha256": "8f0b3062360f81b0c33dfccfc93099b71657d84201b2addaa357f86015ed6b31",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/IntrinsicSubdivision.lean",
+    "expected_sha256": "d1def77cfbae9ccfd1ec9156eddde82174301976b3b9d4226b9233d539131dae",
+    "actual_sha256": "d1def77cfbae9ccfd1ec9156eddde82174301976b3b9d4226b9233d539131dae",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LineSubdivision.lean",
+    "expected_sha256": "4203bf915073953d29b93830b4836119fa15721b6934d5b91504fecb35bc65b4",
+    "actual_sha256": "4203bf915073953d29b93830b4836119fa15721b6934d5b91504fecb35bc65b4",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteCellwiseExtension.lean",
+    "expected_sha256": "3459266df04c60bc35555021690f070c61447c80d2c6c7566165f0a260c6f1c1",
+    "actual_sha256": "3459266df04c60bc35555021690f070c61447c80d2c6c7566165f0a260c6f1c1",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteControlledApproximation.lean",
+    "expected_sha256": "22be3ca46711c3cd750b81e3c5c3be4cacfd4974886c39692cdd162557b0e350",
+    "actual_sha256": "22be3ca46711c3cd750b81e3c5c3be4cacfd4974886c39692cdd162557b0e350",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteFaceBoundary.lean",
+    "expected_sha256": "a86190f53ea5775663bcc2db60b3b7a0eb57660747185eab19dc632662afa042",
+    "actual_sha256": "a86190f53ea5775663bcc2db60b3b7a0eb57660747185eab19dc632662afa042",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteFaceExtension.lean",
+    "expected_sha256": "e3e18eaf47558c548f7bf53a2c22c15f8477c302dcf779a3a39801c27823e4ce",
+    "actual_sha256": "e3e18eaf47558c548f7bf53a2c22c15f8477c302dcf779a3a39801c27823e4ce",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteFaceFilling.lean",
+    "expected_sha256": "e37e82c1d9da700e8c997cc8e48a9efd892464c328a2f91f2c97616216448ecc",
+    "actual_sha256": "e37e82c1d9da700e8c997cc8e48a9efd892464c328a2f91f2c97616216448ecc",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteFaceModel.lean",
+    "expected_sha256": "515cd645cc5dbdb571cf4a4c5d205c5795b872316f6211856303adbb9e550c4f",
+    "actual_sha256": "515cd645cc5dbdb571cf4a4c5d205c5795b872316f6211856303adbb9e550c4f",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteGraphApproximation.lean",
+    "expected_sha256": "202cbd3f2bbb3c6bdf0f03e28b3d1abc4a923567107f3b03e86b76b14735d268",
+    "actual_sha256": "202cbd3f2bbb3c6bdf0f03e28b3d1abc4a923567107f3b03e86b76b14735d268",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteGraphPL.lean",
+    "expected_sha256": "b76d742ef025889639e1d34a3094691a20dc46473526c189c892b32fa24935c2",
+    "actual_sha256": "b76d742ef025889639e1d34a3094691a20dc46473526c189c892b32fa24935c2",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFinitePLApproximation.lean",
+    "expected_sha256": "7ed5b85f85b5cfb34e1d5f0aee6cc4691f17f2fbe72685d2d9be035e6020d825",
+    "actual_sha256": "7ed5b85f85b5cfb34e1d5f0aee6cc4691f17f2fbe72685d2d9be035e6020d825",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteSidePreservation.lean",
+    "expected_sha256": "5bf1661e51a1bcb96857928ebe27669444b61c458efe4dec5a916256ef28d072",
+    "actual_sha256": "5bf1661e51a1bcb96857928ebe27669444b61c458efe4dec5a916256ef28d072",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/LocallyFiniteTriangulation.lean",
+    "expected_sha256": "5812bcae5af90486e204e5a2254f8d0bb2a3de7e08329ef32f9378f09f837eab",
+    "actual_sha256": "5812bcae5af90486e204e5a2254f8d0bb2a3de7e08329ef32f9378f09f837eab",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/NoRetraction.lean",
+    "expected_sha256": "ae8dc8e70bb6bacc3127e708d0e533ba9c6a59368ad5dbe9448772862ac2fbf0",
+    "actual_sha256": "ae8dc8e70bb6bacc3127e708d0e533ba9c6a59368ad5dbe9448772862ac2fbf0",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/OpenMidpointComplex.lean",
+    "expected_sha256": "fd3630d4023d9f458ccc157376dc19b5ddaf82915619298c7107385ba9b25d0c",
+    "actual_sha256": "fd3630d4023d9f458ccc157376dc19b5ddaf82915619298c7107385ba9b25d0c",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PLApproximation.lean",
+    "expected_sha256": "b23a1b06efdcd75be0a0363d00d934795e96d6626bfee7e05f072cea3165cc2d",
+    "actual_sha256": "b23a1b06efdcd75be0a0363d00d934795e96d6626bfee7e05f072cea3165cc2d",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PLMoves.lean",
+    "expected_sha256": "a689e4d3a6916ede440fe2272631a27a072c18b4c32729de7651f0210029714d",
+    "actual_sha256": "a689e4d3a6916ede440fe2272631a27a072c18b4c32729de7651f0210029714d",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PlaneComplex.lean",
+    "expected_sha256": "289d152b60da667c2022c5d811be8718d93a2a95181f7aa31654193a7c1a115a",
+    "actual_sha256": "289d152b60da667c2022c5d811be8718d93a2a95181f7aa31654193a7c1a115a",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PlaneCycle.lean",
+    "expected_sha256": "edb6d36ce01be6b914444c2b51a58c2d85a8b9692fb86106ac79490e5f8549b6",
+    "actual_sha256": "edb6d36ce01be6b914444c2b51a58c2d85a8b9692fb86106ac79490e5f8549b6",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PolygonalArc.lean",
+    "expected_sha256": "7d31e62f3b97787e630dc73a5bdcce3314aa4520f60587471493c120730fc9fd",
+    "actual_sha256": "7d31e62f3b97787e630dc73a5bdcce3314aa4520f60587471493c120730fc9fd",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PolygonalArcModel.lean",
+    "expected_sha256": "121667ae9bf8719a4073de58fde4fdfdda54a0dd582ce9b571800d2b60598e4e",
+    "actual_sha256": "121667ae9bf8719a4073de58fde4fdfdda54a0dd582ce9b571800d2b60598e4e",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PolygonalCrosscut.lean",
+    "expected_sha256": "c10b056867affa21641a5ec4d08b84deebfb8d6e334ec3613ca33c68514ac5e7",
+    "actual_sha256": "c10b056867affa21641a5ec4d08b84deebfb8d6e334ec3613ca33c68514ac5e7",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PolygonalFamilyPolyhedron.lean",
+    "expected_sha256": "fbe1f485bfca13a7f6075e561a3640b8ed797acb5e2a6c6a3eac7aa65e63ac52",
+    "actual_sha256": "fbe1f485bfca13a7f6075e561a3640b8ed797acb5e2a6c6a3eac7aa65e63ac52",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PolygonalJordan.lean",
+    "expected_sha256": "a4ef4a004be853244068070b5e04ba10002d0e6dc684d16c14a269090b7175ad",
+    "actual_sha256": "a4ef4a004be853244068070b5e04ba10002d0e6dc684d16c14a269090b7175ad",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PolygonalPolyhedron.lean",
+    "expected_sha256": "09a24d893e9c649374162e247b35c045db9c9a1f0797cc90803887f14522d72f",
+    "actual_sha256": "09a24d893e9c649374162e247b35c045db9c9a1f0797cc90803887f14522d72f",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PolygonalSchoenflies.lean",
+    "expected_sha256": "8b3aa241482b4e551817f1ea0111f6cbc52d494a950268eb8a3e78c99ff3963f",
+    "actual_sha256": "8b3aa241482b4e551817f1ea0111f6cbc52d494a950268eb8a3e78c99ff3963f",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/PuncturedSurface.lean",
+    "expected_sha256": "119fab13e14e6638be27d7687f823b8de35f8e47a678816faec5b9047af8537a",
+    "actual_sha256": "119fab13e14e6638be27d7687f823b8de35f8e47a678816faec5b9047af8537a",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/RelativeSynchronizedArrangement.lean",
+    "expected_sha256": "32d6f58f5fc9b20b7f57dc28a5e257b2a9e098d00d0cf8cddd8c5e17b48ba5a1",
+    "actual_sha256": "32d6f58f5fc9b20b7f57dc28a5e257b2a9e098d00d0cf8cddd8c5e17b48ba5a1",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Moise/ThinKiteMove.lean",
+    "expected_sha256": "d3158c14887c58cbc791c72aaaf4d9d53bfa57a43270853f36f71da2e75c59e7",
+    "actual_sha256": "d3158c14887c58cbc791c72aaaf4d9d53bfa57a43270853f36f71da2e75c59e7",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/NormalForm.lean",
+    "expected_sha256": "5caab579d3ad34d6de90858b9554b48a94addce8f3bde08ca8eda8ebac8ed9f0",
+    "actual_sha256": "5caab579d3ad34d6de90858b9554b48a94addce8f3bde08ca8eda8ebac8ed9f0",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/P2DegenerateDisk.lean",
+    "expected_sha256": "e708766a8a50023cf9dc49d36dae0ec4ff2bee4126faf16d8aa67f168f8424b8",
+    "actual_sha256": "e708766a8a50023cf9dc49d36dae0ec4ff2bee4126faf16d8aa67f168f8424b8",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/PolygonCellRadial.lean",
+    "expected_sha256": "db451e85a50b7bb2e1ce0d69b0e09ee7fe8e871f03c3664a1190e187a6bd0293",
+    "actual_sha256": "db451e85a50b7bb2e1ce0d69b0e09ee7fe8e871f03c3664a1190e187a6bd0293",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/PolygonalQuotient.lean",
+    "expected_sha256": "6c4e3ab33438355370f3336e06b8ed879d428484542226fe22132ae7b251856e",
+    "actual_sha256": "6c4e3ab33438355370f3336e06b8ed879d428484542226fe22132ae7b251856e",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/RepresentativeCarrier.lean",
+    "expected_sha256": "c111cc1294ce027ac3f4d36f19b1c3043bfceb0bdcaa9e789475ef6de4a7215f",
+    "actual_sha256": "c111cc1294ce027ac3f4d36f19b1c3043bfceb0bdcaa9e789475ef6de4a7215f",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Representatives.lean",
+    "expected_sha256": "4610448be8faca5b5e36288421751025c706acf654d54fd84aff4a72a2630076",
+    "actual_sha256": "4610448be8faca5b5e36288421751025c706acf654d54fd84aff4a72a2630076",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/SignedPresentation.lean",
+    "expected_sha256": "1bb6bda0b4171486f8bb4182aecd31558ac5895a743f8154a98745714d893021",
+    "actual_sha256": "1bb6bda0b4171486f8bb4182aecd31558ac5895a743f8154a98745714d893021",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/SphereCarrierGeometry.lean",
+    "expected_sha256": "6242ea99633cee9fc8ce5f7d916fe24b6df176507def164d1cf640ca35a2f085",
+    "actual_sha256": "6242ea99633cee9fc8ce5f7d916fe24b6df176507def164d1cf640ca35a2f085",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/SphereHemisphere.lean",
+    "expected_sha256": "7c64beef767600bc96b08fa7bef7fb7f47cc96557009fe234bb8954bae179c56",
+    "actual_sha256": "7c64beef767600bc96b08fa7bef7fb7f47cc96557009fe234bb8954bae179c56",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/SphereQuotientHomeomorph.lean",
+    "expected_sha256": "6c0ec8020a70ff930414d9e341f237599cac9a795132e1b1a45bc872b8fff01a",
+    "actual_sha256": "6c0ec8020a70ff930414d9e341f237599cac9a795132e1b1a45bc872b8fff01a",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/StrongVertexStar.lean",
+    "expected_sha256": "1db82fc609c4b913d96955b161bdede366c51aa99f9549c98457edc985b73768",
+    "actual_sha256": "1db82fc609c4b913d96955b161bdede366c51aa99f9549c98457edc985b73768",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Surface.lean",
+    "expected_sha256": "a79e0bf519f6cb767fcaffa98db76e810a2313f74117d235f5304c47cbf2f951",
+    "actual_sha256": "a79e0bf519f6cb767fcaffa98db76e810a2313f74117d235f5304c47cbf2f951",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Topology/InvarianceOfDomain.lean",
+    "expected_sha256": "d75eafa147b4a9bd9eca4c847636278c305fcaa3c1d13ddda628799ac67ce846",
+    "actual_sha256": "d75eafa147b4a9bd9eca4c847636278c305fcaa3c1d13ddda628799ac67ce846",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/TriangleCell.lean",
+    "expected_sha256": "6b57cfcafbeb97eb6fe219e4aea99a2fac958035d80ea6820d66e45e8841558e",
+    "actual_sha256": "6b57cfcafbeb97eb6fe219e4aea99a2fac958035d80ea6820d66e45e8841558e",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/Triangulation.lean",
+    "expected_sha256": "8f27ae73d6e3d76cb7ef35ea0bf4f0966fbbfc692cfeeb3894010fbe42f0e2a7",
+    "actual_sha256": "8f27ae73d6e3d76cb7ef35ea0bf4f0966fbbfc692cfeeb3894010fbe42f0e2a7",
+    "match": true
+  },
+  {
+    "path": "Vendor/ClassificationOfSurfaces/WeightedCircle.lean",
+    "expected_sha256": "b813b81fa9762ec4b8b96be24754d5741493db2c0ffc037eac4a44c863b310b1",
+    "actual_sha256": "b813b81fa9762ec4b8b96be24754d5741493db2c0ffc037eac4a44c863b310b1",
+    "match": true
+  },
+  {
+    "path": "Vendor/JordanCurve.lean",
+    "expected_sha256": "903b99b6142cf1e8222bfb8864aee033baf78bda09aa8362dbddf787d64616b2",
+    "actual_sha256": "903b99b6142cf1e8222bfb8864aee033baf78bda09aa8362dbddf787d64616b2",
+    "match": true
+  },
+  {
+    "path": "Vendor/JordanCurve/Arcs.lean",
+    "expected_sha256": "ed2ff16e5dacf30791eca0ed7b98a27004d8019fe4d79f2ba8d1169f3deacef3",
+    "actual_sha256": "ed2ff16e5dacf30791eca0ed7b98a27004d8019fe4d79f2ba8d1169f3deacef3",
+    "match": true
+  },
+  {
+    "path": "Vendor/JordanCurve/Brouwer.lean",
+    "expected_sha256": "7022c7989be745719cba0efa802d54d6681d77c882146076f15b20f6b220c72e",
+    "actual_sha256": "7022c7989be745719cba0efa802d54d6681d77c882146076f15b20f6b220c72e",
+    "match": true
+  },
+  {
+    "path": "Vendor/JordanCurve/Counting.lean",
+    "expected_sha256": "49289987da4c8de9d40ff328aebde18a3cf9bab8518ffece9b6eddde32aae29a",
+    "actual_sha256": "49289987da4c8de9d40ff328aebde18a3cf9bab8518ffece9b6eddde32aae29a",
+    "match": true
+  },
+  {
+    "path": "Vendor/JordanCurve/LICENSE",
+    "expected_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "actual_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "match": true
+  },
+  {
+    "path": "Vendor/JordanCurve/Main.lean",
+    "expected_sha256": "4970ab6e04d0618645632fb419f3fad9cccc135a15d8bf725fca159d4c572fca",
+    "actual_sha256": "4970ab6e04d0618645632fb419f3fad9cccc135a15d8bf725fca159d4c572fca",
+    "match": true
+  },
+  {
+    "path": "Vendor/README.md",
+    "expected_sha256": "718a0b62202e8ba197b70ad396cf57f19d19fc3b23d36ed6f5faaab18d422414",
+    "actual_sha256": "718a0b62202e8ba197b70ad396cf57f19d19fc3b23d36ed6f5faaab18d422414",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AccessHairs.lean",
+    "expected_sha256": "48c5506a8e206c81cc0cae184e406a9e52787ca14cfbcc2a9a04c3190f19024a",
+    "actual_sha256": "48c5506a8e206c81cc0cae184e406a9e52787ca14cfbcc2a9a04c3190f19024a",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/Accessibility.lean",
+    "expected_sha256": "8ad8cbbe6823266042713c7b2c67bceff27c902849eedc9e69affd2fb74367ab",
+    "actual_sha256": "8ad8cbbe6823266042713c7b2c67bceff27c902849eedc9e69affd2fb74367ab",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AmbientGluing.lean",
+    "expected_sha256": "8dac772c0b8fa22d10cb2fbcc092b584a7b3f43ea2853f359388759b8e5bb241",
+    "actual_sha256": "8dac772c0b8fa22d10cb2fbcc092b584a7b3f43ea2853f359388759b8e5bb241",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AngularDriftBounds.lean",
+    "expected_sha256": "057278b92c34da45b4e2d9661372129877d70b70c79097dd9b8f43f12ab06978",
+    "actual_sha256": "057278b92c34da45b4e2d9661372129877d70b70c79097dd9b8f43f12ab06978",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AngularSubdivisions.lean",
+    "expected_sha256": "778f4997fecc062e0a7f22f9be0e04c21910c9a40aeeccd9d42a2622bdad6596",
+    "actual_sha256": "778f4997fecc062e0a7f22f9be0e04c21910c9a40aeeccd9d42a2622bdad6596",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AnnularCellAttachments.lean",
+    "expected_sha256": "48116a29ead89c06ff7dbae013fab6f1f062265e3c826ee0a50ff392a2685b75",
+    "actual_sha256": "48116a29ead89c06ff7dbae013fab6f1f062265e3c826ee0a50ff392a2685b75",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AnnularCrosscutOrder.lean",
+    "expected_sha256": "210e5096c8b62ce5f61d9e6bc027fd3b4e58d1c862eb1d0f4ed6677b929fcd9c",
+    "actual_sha256": "210e5096c8b62ce5f61d9e6bc027fd3b4e58d1c862eb1d0f4ed6677b929fcd9c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AnnularCrosscutSeparators.lean",
+    "expected_sha256": "c2a7dc6ee521b75061ea540409d657bf79fea6e20f1b51bebe807d59b217249c",
+    "actual_sha256": "c2a7dc6ee521b75061ea540409d657bf79fea6e20f1b51bebe807d59b217249c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AnnularSeparatorPairs.lean",
+    "expected_sha256": "beb07cadd10c102740c666bebdc5410807d298878e2c304be24032748e0a623e",
+    "actual_sha256": "beb07cadd10c102740c666bebdc5410807d298878e2c304be24032748e0a623e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AnnularSeparatorSides.lean",
+    "expected_sha256": "6ca64434437fd9a6e4b916a96cb67859031beea907d657a6919f42427c604ed5",
+    "actual_sha256": "6ca64434437fd9a6e4b916a96cb67859031beea907d657a6919f42427c604ed5",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ArcNeighborhoods.lean",
+    "expected_sha256": "1eaf51595961d7d9dec60a2f2b8cf27af5715a664f1e7e63d9d2b28cc42dfb47",
+    "actual_sha256": "1eaf51595961d7d9dec60a2f2b8cf27af5715a664f1e7e63d9d2b28cc42dfb47",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AuxiliaryJordan.lean",
+    "expected_sha256": "3f767107e7dd2533d8470f7d483e95e8cb87a744bcb684937b36fb3cd8a60bc4",
+    "actual_sha256": "3f767107e7dd2533d8470f7d483e95e8cb87a744bcb684937b36fb3cd8a60bc4",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AuxiliaryTransverseIntersections.lean",
+    "expected_sha256": "aa8b2c39ee63f9d9266ef5645b58d504c28cfb72465b0782bb84355ed43bc131",
+    "actual_sha256": "aa8b2c39ee63f9d9266ef5645b58d504c28cfb72465b0782bb84355ed43bc131",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AvoidingControlledCrosscuts.lean",
+    "expected_sha256": "34e699acb23e9452e1d30f5d19fc00e9adc56dcf2a30b36ffd31e77f29fbde85",
+    "actual_sha256": "34e699acb23e9452e1d30f5d19fc00e9adc56dcf2a30b36ffd31e77f29fbde85",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/AvoidingLevelCollars.lean",
+    "expected_sha256": "38659fa0b0a9f505c1722627e1ba35264a765c39c74408b44ec6687c368f4fff",
+    "actual_sha256": "38659fa0b0a9f505c1722627e1ba35264a765c39c74408b44ec6687c368f4fff",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/BallPunctureExterior.lean",
+    "expected_sha256": "1aaa9a4ef30093e9c919702a673a3ab2d5c39d01674b5a4644a35fedf622aa87",
+    "actual_sha256": "1aaa9a4ef30093e9c919702a673a3ab2d5c39d01674b5a4644a35fedf622aa87",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/BoundaryPartitions.lean",
+    "expected_sha256": "62b6ebe584749803879149ae9ff4eab4f47db8b2cbb8f6a3a68eae0428a2a882",
+    "actual_sha256": "62b6ebe584749803879149ae9ff4eab4f47db8b2cbb8f6a3a68eae0428a2a882",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/BoundaryPathTransport.lean",
+    "expected_sha256": "0f28521246a3f25350e0259dfe85386849727fe1202980bfa379654a2cf27c05",
+    "actual_sha256": "0f28521246a3f25350e0259dfe85386849727fe1202980bfa379654a2cf27c05",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ClosedCoverHomeomorph.lean",
+    "expected_sha256": "56520c53171c97757a09f02fc37da0fab647405e33592837e63a0e3ce41873cd",
+    "actual_sha256": "56520c53171c97757a09f02fc37da0fab647405e33592837e63a0e3ce41873cd",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CollarBandSegments.lean",
+    "expected_sha256": "2e0bee27855be9b872e67b632c9b5b878d4d1bc161130751789e221f4cb92394",
+    "actual_sha256": "2e0bee27855be9b872e67b632c9b5b878d4d1bc161130751789e221f4cb92394",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CommonSegmentArrangement.lean",
+    "expected_sha256": "62fc81a480ff0d35f9d9123ac5145cb7c3f35610a6559d66839630f74d858ba7",
+    "actual_sha256": "62fc81a480ff0d35f9d9123ac5145cb7c3f35610a6559d66839630f74d858ba7",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CompatibleDiskStages.lean",
+    "expected_sha256": "73b8d876c6f318ea908668cbca5aa0b0e6fefdb61ab66d4b6be1114867913101",
+    "actual_sha256": "73b8d876c6f318ea908668cbca5aa0b0e6fefdb61ab66d4b6be1114867913101",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CompatibleInteriorHomeomorphism.lean",
+    "expected_sha256": "f1f1216908914b8b2b82aa506107e4e1760d0cad1006b3f93fd01af4d47a9a25",
+    "actual_sha256": "f1f1216908914b8b2b82aa506107e4e1760d0cad1006b3f93fd01af4d47a9a25",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CompatibleLocalizedCollars.lean",
+    "expected_sha256": "d61e919266f69d86c031e5562b3d99f6c47c944f7264112dbc9cf7ece90bb802",
+    "actual_sha256": "d61e919266f69d86c031e5562b3d99f6c47c944f7264112dbc9cf7ece90bb802",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CompatibleShrinkingMoiseDiskStages.lean",
+    "expected_sha256": "a042a174427a0f3a2d763c58649e73447458378800eec986ecfe4220e1c79b22",
+    "actual_sha256": "a042a174427a0f3a2d763c58649e73447458378800eec986ecfe4220e1c79b22",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CompleteRegionalExtension.lean",
+    "expected_sha256": "536d5d2ed96f45bc880c11c09a3575afb49915d51376c4f3503bc5fc75060783",
+    "actual_sha256": "536d5d2ed96f45bc880c11c09a3575afb49915d51376c4f3503bc5fc75060783",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ControlledCrosscuts.lean",
+    "expected_sha256": "10a40f497e4f4cfc40ed5534314562e6a0b42856db5de671f31ce1113dada66d",
+    "actual_sha256": "10a40f497e4f4cfc40ed5534314562e6a0b42856db5de671f31ce1113dada66d",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ControlledJordanArcPaths.lean",
+    "expected_sha256": "463fecdfbabb31fbe35c278b2758a9e01a0d193e929735f9ab9e03cf11de01df",
+    "actual_sha256": "463fecdfbabb31fbe35c278b2758a9e01a0d193e929735f9ab9e03cf11de01df",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ControlledTailJoin.lean",
+    "expected_sha256": "d63aa498f37c1689a4df09714167f9c06d1c2105cacf61fdf46943a19d42d090",
+    "actual_sha256": "d63aa498f37c1689a4df09714167f9c06d1c2105cacf61fdf46943a19d42d090",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/Crosscuts.lean",
+    "expected_sha256": "a6eb8b88391fe87645c0806f9ee75a15254d64f61ef24732de4f818c6d7a4f5d",
+    "actual_sha256": "a6eb8b88391fe87645c0806f9ee75a15254d64f61ef24732de4f818c6d7a4f5d",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CyclicCrossingParity.lean",
+    "expected_sha256": "5a1346b7729aaaefd11ff21a2c80d6911516e6246255ce19b067f90d416dd648",
+    "actual_sha256": "5a1346b7729aaaefd11ff21a2c80d6911516e6246255ce19b067f90d416dd648",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CyclicLevelAddresses.lean",
+    "expected_sha256": "95df5444e1394de58b38c397c007e282b8cc4b2fefa172a8e585a11caaadac10",
+    "actual_sha256": "95df5444e1394de58b38c397c007e282b8cc4b2fefa172a8e585a11caaadac10",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CyclicLevelEdges.lean",
+    "expected_sha256": "1feafa4ecb9dad3580fa2a9b752cad8c7cc4cf8bace294988b8480bd7701bfc9",
+    "actual_sha256": "1feafa4ecb9dad3580fa2a9b752cad8c7cc4cf8bace294988b8480bd7701bfc9",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CyclicTargetCellCompatibility.lean",
+    "expected_sha256": "562390e7f51c5b6cb618c56b6d7c71909f1dd82e032aa0126e9b91799b12cddb",
+    "actual_sha256": "562390e7f51c5b6cb618c56b6d7c71909f1dd82e032aa0126e9b91799b12cddb",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CyclicTargetCellCover.lean",
+    "expected_sha256": "d0bd8c5f418cfc9305924e811e33e5862489539c9cc72c74e9057d7bdded557d",
+    "actual_sha256": "d0bd8c5f418cfc9305924e811e33e5862489539c9cc72c74e9057d7bdded557d",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CyclicTargetCellGeometry.lean",
+    "expected_sha256": "ea35b1b77107ae1787e19307e519f4731e45b847987b7838f376d5003460eea6",
+    "actual_sha256": "ea35b1b77107ae1787e19307e519f4731e45b847987b7838f376d5003460eea6",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/CyclicTargetCells.lean",
+    "expected_sha256": "fd6e1d707676d3f59c56acc8d9a1603b8b124dce8391a90ad70e8f546e6ef0ee",
+    "actual_sha256": "fd6e1d707676d3f59c56acc8d9a1603b8b124dce8391a90ad70e8f546e6ef0ee",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/DampedShellAdjustment.lean",
+    "expected_sha256": "8983dd43a9ffc8ef933bd52ec6e517a35a4416b3a3e2a2095cb548442df4f091",
+    "actual_sha256": "8983dd43a9ffc8ef933bd52ec6e517a35a4416b3a3e2a2095cb548442df4f091",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/DampedTargetCellBounds.lean",
+    "expected_sha256": "bb7310fc3dc1626ad70ccf30da7ad9bdb2a3d773214a994f6612fddab3bbec3e",
+    "actual_sha256": "bb7310fc3dc1626ad70ccf30da7ad9bdb2a3d773214a994f6612fddab3bbec3e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ExactSynchronizedCollarCells.lean",
+    "expected_sha256": "03577cb4d0b027f50a322c8f61df331a554851c36ec45044320a1c8bb8861462",
+    "actual_sha256": "03577cb4d0b027f50a322c8f61df331a554851c36ec45044320a1c8bb8861462",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ExactSynchronizedCrosscutRanges.lean",
+    "expected_sha256": "7bbdff1338358d318d39fcf33a0052908c26a8e5756ccd60fbb415d0761fa94c",
+    "actual_sha256": "7bbdff1338358d318d39fcf33a0052908c26a8e5756ccd60fbb415d0761fa94c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteAnnularCrosscutOrder.lean",
+    "expected_sha256": "4efe22617c1717c6bd52aec2bdaabf1994ba34ea7b92e965d2eabae8de61af92",
+    "actual_sha256": "4efe22617c1717c6bd52aec2bdaabf1994ba34ea7b92e965d2eabae8de61af92",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteAvoidingCrosscuts.lean",
+    "expected_sha256": "d04383edf7632cfe4b2f3f0da42a906e13c90d977d5c3336f9cf6f831dc7a9db",
+    "actual_sha256": "d04383edf7632cfe4b2f3f0da42a906e13c90d977d5c3336f9cf6f831dc7a9db",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteBoundaryGraph.lean",
+    "expected_sha256": "b16b9d42c87db8b9e7cb29ebcbdab894453a25b1e4202b11d08c9c5ab3106afd",
+    "actual_sha256": "b16b9d42c87db8b9e7cb29ebcbdab894453a25b1e4202b11d08c9c5ab3106afd",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteClosedCoverHomeomorph.lean",
+    "expected_sha256": "25ad44a5039034e3884903ad4221266e10a74a328fff32667bdaa2054f2f1366",
+    "actual_sha256": "25ad44a5039034e3884903ad4221266e10a74a328fff32667bdaa2054f2f1366",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteCrossingParity.lean",
+    "expected_sha256": "34ae34b1db471018a38d5420187930269cf4031c1818400242b12949bd0e5477",
+    "actual_sha256": "34ae34b1db471018a38d5420187930269cf4031c1818400242b12949bd0e5477",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteJordanAnnularCrosscutOrder.lean",
+    "expected_sha256": "425dfb657b9e6f2c4c61fdd01c6d189e2157ecd30f4ce5811d1c1197c147cbbe",
+    "actual_sha256": "425dfb657b9e6f2c4c61fdd01c6d189e2157ecd30f4ce5811d1c1197c147cbbe",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteJordanArcOrder.lean",
+    "expected_sha256": "e132bb8db5b60b9adc4d7a1bf6b1c0fc7b2c569e86fa97154d9e612eb44ae778",
+    "actual_sha256": "e132bb8db5b60b9adc4d7a1bf6b1c0fc7b2c569e86fa97154d9e612eb44ae778",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteJordanCyclicOrder.lean",
+    "expected_sha256": "1a232f2be7e676b17c6c8b329451c4725ad4c851899696c09fbf70f2825dd77c",
+    "actual_sha256": "1a232f2be7e676b17c6c8b329451c4725ad4c851899696c09fbf70f2825dd77c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteLevelCrosscuts.lean",
+    "expected_sha256": "e17ea5fffa6cea87f9511cfa4d32d3a06aa0beced7c775c9c2d4edbc28df627c",
+    "actual_sha256": "e17ea5fffa6cea87f9511cfa4d32d3a06aa0beced7c775c9c2d4edbc28df627c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteLevelHairSynchronization.lean",
+    "expected_sha256": "1ce0c28406b4321275a9cd856b602b266a7e3e00f06d52451398e8e581ddddbd",
+    "actual_sha256": "1ce0c28406b4321275a9cd856b602b266a7e3e00f06d52451398e8e581ddddbd",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/FiniteSeparatorSetup.lean",
+    "expected_sha256": "2c86a833991039cf49ef72458141999c28835b50e9492a08cfe167de345e3129",
+    "actual_sha256": "2c86a833991039cf49ef72458141999c28835b50e9492a08cfe167de345e3129",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/GenericPolygonalFrame.lean",
+    "expected_sha256": "e7738517e0a53e305bf30f7f4fec3613bf8dfb26231fae82080b471b422a25f5",
+    "actual_sha256": "e7738517e0a53e305bf30f7f4fec3613bf8dfb26231fae82080b471b422a25f5",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/HairOrdering.lean",
+    "expected_sha256": "b0b1807df372c3b87d66353cd68ee186573b66cb596ab17546dc1d0088bfed5e",
+    "actual_sha256": "b0b1807df372c3b87d66353cd68ee186573b66cb596ab17546dc1d0088bfed5e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/HairReturns.lean",
+    "expected_sha256": "acc129ca90cf525885cd45a48a2830b6f5e2292132c152a322aa9bc41faa4f0e",
+    "actual_sha256": "acc129ca90cf525885cd45a48a2830b6f5e2292132c152a322aa9bc41faa4f0e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/HierarchicalCollarStages.lean",
+    "expected_sha256": "53b7cb15791289e71676d8d257af305ddc6bc715dc21bfd4378ef698114162f1",
+    "actual_sha256": "53b7cb15791289e71676d8d257af305ddc6bc715dc21bfd4378ef698114162f1",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/HierarchicalLevelHairs.lean",
+    "expected_sha256": "5aa3eec5be45fa3bd120c75394fdffb09890f718ad8d7433a0a01cbe2c01bf6b",
+    "actual_sha256": "5aa3eec5be45fa3bd120c75394fdffb09890f718ad8d7433a0a01cbe2c01bf6b",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/IndexedStandardCrosscuts.lean",
+    "expected_sha256": "d0f32ece6a7cdbad9511043388f089c7ee044ad719bbe96ee2ec80390e0a3e1f",
+    "actual_sha256": "d0f32ece6a7cdbad9511043388f089c7ee044ad719bbe96ee2ec80390e0a3e1f",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/InsideBoundaryExtension.lean",
+    "expected_sha256": "cd666a9e1f3703bf893f41d5c63b634e9599854047a69700adceb508a1618263",
+    "actual_sha256": "cd666a9e1f3703bf893f41d5c63b634e9599854047a69700adceb508a1618263",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/InvertedJordanRegions.lean",
+    "expected_sha256": "c5af5865e8eb49d1af87e1ec092788768a3cfbdd2acd40fc494c5b8ff165e89c",
+    "actual_sha256": "c5af5865e8eb49d1af87e1ec092788768a3cfbdd2acd40fc494c5b8ff165e89c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanAnnularCrosscutOrder.lean",
+    "expected_sha256": "a40b054b2f3c6c263766e418e252c822bb06e7971ab6ee94c36dfb919212e1d1",
+    "actual_sha256": "a40b054b2f3c6c263766e418e252c822bb06e7971ab6ee94c36dfb919212e1d1",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanAnnularCrosscutSeparators.lean",
+    "expected_sha256": "f180b718e64a01ca8e0475d22e447b5cab47eb8da2f8d82c81cd60573847e01c",
+    "actual_sha256": "f180b718e64a01ca8e0475d22e447b5cab47eb8da2f8d82c81cd60573847e01c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanAnnularSeparatorPairs.lean",
+    "expected_sha256": "86f2ea94dd303d638b48c8becb21b3d8775cc83391860376f96da383b3c33f94",
+    "actual_sha256": "86f2ea94dd303d638b48c8becb21b3d8775cc83391860376f96da383b3c33f94",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanAnnularTheta.lean",
+    "expected_sha256": "313da780c727c1a4d87d9784a71690a9cb3c4ca1372cc3d9869a031cdbc68a11",
+    "actual_sha256": "313da780c727c1a4d87d9784a71690a9cb3c4ca1372cc3d9869a031cdbc68a11",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanArcPaths.lean",
+    "expected_sha256": "58dd520ffbd17b41961b32e7e23f0be38078cbd9e986c5f5ab2a65ecee8ea9e9",
+    "actual_sha256": "58dd520ffbd17b41961b32e7e23f0be38078cbd9e986c5f5ab2a65ecee8ea9e9",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanCarrierInvariance.lean",
+    "expected_sha256": "61bfb51fb52b969bb2ae0fd10456b03e7aa4aa24b9744b6a233a1126d8dc849e",
+    "actual_sha256": "61bfb51fb52b969bb2ae0fd10456b03e7aa4aa24b9744b6a233a1126d8dc849e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanConvexHull.lean",
+    "expected_sha256": "fe9d6c4d595ef7db7144c19f18297e7e0b5afe7a4e868e4f3360a603f9d45998",
+    "actual_sha256": "fe9d6c4d595ef7db7144c19f18297e7e0b5afe7a4e868e4f3360a603f9d45998",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanRegionBounds.lean",
+    "expected_sha256": "db4b6522ebb81a191213d75deb49b0ddc927b40bd4fa9d3afe380d05a25f164b",
+    "actual_sha256": "db4b6522ebb81a191213d75deb49b0ddc927b40bd4fa9d3afe380d05a25f164b",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanRegionRecognition.lean",
+    "expected_sha256": "538d700b821daeb8daf3b03baeef23ad7c5b8a88856c4c6be9c11a446d8a74e4",
+    "actual_sha256": "538d700b821daeb8daf3b03baeef23ad7c5b8a88856c4c6be9c11a446d8a74e4",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanRegions.lean",
+    "expected_sha256": "0aa39fc56a4cd0eaff8a094078e4d8b02e98e0842016ab454a032466ba223138",
+    "actual_sha256": "0aa39fc56a4cd0eaff8a094078e4d8b02e98e0842016ab454a032466ba223138",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/JordanThetaRegions.lean",
+    "expected_sha256": "aaffa1a538df99daa1cf5e6206849167c6f2e51098d31b65116c299f83f61f2c",
+    "actual_sha256": "aaffa1a538df99daa1cf5e6206849167c6f2e51098d31b65116c299f83f61f2c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LevelArcCover.lean",
+    "expected_sha256": "0573b9d816e1a30620a1c8abc37024edeea4f6390e0b161a2e5a81b450995e80",
+    "actual_sha256": "0573b9d816e1a30620a1c8abc37024edeea4f6390e0b161a2e5a81b450995e80",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LevelBoundarySplits.lean",
+    "expected_sha256": "4f8d68e00bb15d7724487eec620eb86f5f5ffd8a9f42c769cd8edf0d00129927",
+    "actual_sha256": "4f8d68e00bb15d7724487eec620eb86f5f5ffd8a9f42c769cd8edf0d00129927",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LevelEndpointIncidence.lean",
+    "expected_sha256": "235d6ed61f9a5e92f0c2d999d01e6927384b7e0215eec5067c6021af9c400940",
+    "actual_sha256": "235d6ed61f9a5e92f0c2d999d01e6927384b7e0215eec5067c6021af9c400940",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LevelGenerationMarks.lean",
+    "expected_sha256": "253a0064bf4cf85626c1e1fe1ebaf5443fcd8c21223d0eb87c6ca99aed7f2fea",
+    "actual_sha256": "253a0064bf4cf85626c1e1fe1ebaf5443fcd8c21223d0eb87c6ca99aed7f2fea",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LevelHairSynchronization.lean",
+    "expected_sha256": "3550c936a318db5c8b630cd21e18cb0d3e6a0bffbdb1ef1c8e1d51e41154fd9c",
+    "actual_sha256": "3550c936a318db5c8b630cd21e18cb0d3e6a0bffbdb1ef1c8e1d51e41154fd9c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalStraightCrossing.lean",
+    "expected_sha256": "7d8e8400dab658055fa184a6ce73f527b009f0492b0f3a9559bd5947d17f6b67",
+    "actual_sha256": "7d8e8400dab658055fa184a6ce73f527b009f0492b0f3a9559bd5947d17f6b67",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedAdjacentCellCompatibility.lean",
+    "expected_sha256": "9a5449228e40a73d0ae206a251e66a984613100b64a384094cddd30565dbddb3",
+    "actual_sha256": "9a5449228e40a73d0ae206a251e66a984613100b64a384094cddd30565dbddb3",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedAnnularCrosscuts.lean",
+    "expected_sha256": "a1929bf92f157ab01f4f97ad8407e612ba3c0308b149b375c4304d2327e79961",
+    "actual_sha256": "a1929bf92f157ab01f4f97ad8407e612ba3c0308b149b375c4304d2327e79961",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedAnnularOrder.lean",
+    "expected_sha256": "7e6c85ceaffb53b477b4c557f371dcd58dc9771958081ffd24d28473c68bf880",
+    "actual_sha256": "7e6c85ceaffb53b477b4c557f371dcd58dc9771958081ffd24d28473c68bf880",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedAnnularTheta.lean",
+    "expected_sha256": "08eb7126c0578f3cc15daafa2b17e4d452dc71b86a3d758075e2c09deebf302a",
+    "actual_sha256": "08eb7126c0578f3cc15daafa2b17e4d452dc71b86a3d758075e2c09deebf302a",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedCellCover.lean",
+    "expected_sha256": "63a1c91a66f54fa78024a3bbb4b1d217e1e7a1e0170ebff30ceb28e5f22e641e",
+    "actual_sha256": "63a1c91a66f54fa78024a3bbb4b1d217e1e7a1e0170ebff30ceb28e5f22e641e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedCellGluing.lean",
+    "expected_sha256": "8ca7e8c9734627255bfe33f15b50156f628bd1880bee7c61c44b2a9fe217e9f2",
+    "actual_sha256": "8ca7e8c9734627255bfe33f15b50156f628bd1880bee7c61c44b2a9fe217e9f2",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedCellHomeomorphisms.lean",
+    "expected_sha256": "f9411af67c8fb437ccca6198a40d33315cf635bfa0292dc181cad5e8a646e321",
+    "actual_sha256": "f9411af67c8fb437ccca6198a40d33315cf635bfa0292dc181cad5e8a646e321",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedCutFreeCells.lean",
+    "expected_sha256": "e34630c5eba91989a63f210a8e5099ff7725e1916e9600fd03cdd057383a7281",
+    "actual_sha256": "e34630c5eba91989a63f210a8e5099ff7725e1916e9600fd03cdd057383a7281",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedJordanAnnularCrosscuts.lean",
+    "expected_sha256": "55fe265016b33845823d5a5ffd571439df8355a1c401a25ec9579616f2dc535a",
+    "actual_sha256": "55fe265016b33845823d5a5ffd571439df8355a1c401a25ec9579616f2dc535a",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedJordanAnnularOrder.lean",
+    "expected_sha256": "54f84554690063c0f8bd2d8cdfba26c7183d12d4655b17ac5c9b5d73be8486a9",
+    "actual_sha256": "54f84554690063c0f8bd2d8cdfba26c7183d12d4655b17ac5c9b5d73be8486a9",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedMarkedHairCrossings.lean",
+    "expected_sha256": "35cc6189b48f519a32ca2119c7a7a70b6e46edb0c51a41f5ddbb1d56d44e6a27",
+    "actual_sha256": "35cc6189b48f519a32ca2119c7a7a70b6e46edb0c51a41f5ddbb1d56d44e6a27",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedPolygonalDiskExhaustion.lean",
+    "expected_sha256": "bf511a7eabf35de6cbd50f6ec030ea73c1c76300ece459d9be9607f6518b2fcf",
+    "actual_sha256": "bf511a7eabf35de6cbd50f6ec030ea73c1c76300ece459d9be9607f6518b2fcf",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedShellCrosscuts.lean",
+    "expected_sha256": "c8f0d1c73e91c1a20085ca4abbc0c33074e20587f1efe0941f72227cb79f3123",
+    "actual_sha256": "c8f0d1c73e91c1a20085ca4abbc0c33074e20587f1efe0941f72227cb79f3123",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedShellCutPaths.lean",
+    "expected_sha256": "eaee0bbd82f42d1ff8e47ba82ec94d4d979d708498e2e41b2b6ce0b4cc2adf1e",
+    "actual_sha256": "eaee0bbd82f42d1ff8e47ba82ec94d4d979d708498e2e41b2b6ce0b4cc2adf1e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedTargetCellCover.lean",
+    "expected_sha256": "1a0a63548509b132e79690efb581e1cff9881e40e5fc462b602242d17ad89c6b",
+    "actual_sha256": "1a0a63548509b132e79690efb581e1cff9881e40e5fc462b602242d17ad89c6b",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocalizedTargetCells.lean",
+    "expected_sha256": "bab5442bc5b663eb6bd057c782d691c41b909f8d63592cb4d31e67062b035a13",
+    "actual_sha256": "bab5442bc5b663eb6bd057c782d691c41b909f8d63592cb4d31e67062b035a13",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/LocallyStraightSets.lean",
+    "expected_sha256": "e2680946246e984ec6da209f4be2b1786cabefbd9eb63fb22e20d50607a17c3c",
+    "actual_sha256": "e2680946246e984ec6da209f4be2b1786cabefbd9eb63fb22e20d50607a17c3c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/Main.lean",
+    "expected_sha256": "14a47b92bd19a4078fbc0169b92fc6ad75c74d615b60fccc7aa694538c377c05",
+    "actual_sha256": "14a47b92bd19a4078fbc0169b92fc6ad75c74d615b60fccc7aa694538c377c05",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MarkedHairCrossings.lean",
+    "expected_sha256": "9b4c35a0d85a7c50c6ef3528083734727bd6c35558c5f46e0c9b6630882b73b8",
+    "actual_sha256": "9b4c35a0d85a7c50c6ef3528083734727bd6c35558c5f46e0c9b6630882b73b8",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MarkedMoiseBandBoundaries.lean",
+    "expected_sha256": "17e65418b9cccbad6021be6c8efa9278ab29f21fbf3274fce95a3df6e6312396",
+    "actual_sha256": "17e65418b9cccbad6021be6c8efa9278ab29f21fbf3274fce95a3df6e6312396",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MarkedMoiseBandGluing.lean",
+    "expected_sha256": "7df404d457dda79875045fc15efa8e32c9f084e4e8887da2a86b26c742dc9d20",
+    "actual_sha256": "7df404d457dda79875045fc15efa8e32c9f084e4e8887da2a86b26c742dc9d20",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MarkedMoiseCellCompatibility.lean",
+    "expected_sha256": "1c8c4347fefd64e839faf8e8c942d40ad9373a534fba38c0f6de25d20982a4d3",
+    "actual_sha256": "1c8c4347fefd64e839faf8e8c942d40ad9373a534fba38c0f6de25d20982a4d3",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MarkedMoiseCellHomeomorphisms.lean",
+    "expected_sha256": "a7f8e653e6e1621d272c0044e603fa5b740855dbc8eb0a65fd4202bdc8f08703",
+    "actual_sha256": "a7f8e653e6e1621d272c0044e603fa5b740855dbc8eb0a65fd4202bdc8f08703",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MarkedMoiseCellOuterBoundaries.lean",
+    "expected_sha256": "35defadd2d141572a153e631c9b5c50cf86ced9f1ca21b99366095a087065b62",
+    "actual_sha256": "35defadd2d141572a153e631c9b5c50cf86ced9f1ca21b99366095a087065b62",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MarkedPolygonalDiskExhaustion.lean",
+    "expected_sha256": "8df4c4d58d4f4ba75e637c422d7f7132b2135be35b58ab06a46796060f4e26b6",
+    "actual_sha256": "8df4c4d58d4f4ba75e637c422d7f7132b2135be35b58ab06a46796060f4e26b6",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MasterParameters.lean",
+    "expected_sha256": "9ca84c6454baf4d9b320b509e61f95fb4fd3d606e67ed65bb603443fbc1ae2f1",
+    "actual_sha256": "9ca84c6454baf4d9b320b509e61f95fb4fd3d606e67ed65bb603443fbc1ae2f1",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellAttachments.lean",
+    "expected_sha256": "be55f66578f05520ddde2a70d2f9f88bf31bb4bc3a99b26c1c27a9ac825b7c83",
+    "actual_sha256": "be55f66578f05520ddde2a70d2f9f88bf31bb4bc3a99b26c1c27a9ac825b7c83",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellBounds.lean",
+    "expected_sha256": "6465710ffa76f7e0a1966d8e24c18097a303d464e8e17555b9d8f3d73ded2797",
+    "actual_sha256": "6465710ffa76f7e0a1966d8e24c18097a303d464e8e17555b9d8f3d73ded2797",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellCover.lean",
+    "expected_sha256": "95d0109c00c87def8e38dc88407026a989417a87df1c1af4b100ff3d19706b47",
+    "actual_sha256": "95d0109c00c87def8e38dc88407026a989417a87df1c1af4b100ff3d19706b47",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellCyclicAttachments.lean",
+    "expected_sha256": "b3152ab9296075cc873ff2bb4c1297a82874b15099c163bd4cf0b30b94f22918",
+    "actual_sha256": "b3152ab9296075cc873ff2bb4c1297a82874b15099c163bd4cf0b30b94f22918",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellInteriors.lean",
+    "expected_sha256": "66945b1e7cfbe3bf521fe224c2261662358608824a47ce094af0798ffd37229d",
+    "actual_sha256": "66945b1e7cfbe3bf521fe224c2261662358608824a47ce094af0798ffd37229d",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellNonadjacency.lean",
+    "expected_sha256": "398c7e9823fd203ec592322ba346b7a7dc9fd15e9cf8f2ece63117ada39b6de3",
+    "actual_sha256": "398c7e9823fd203ec592322ba346b7a7dc9fd15e9cf8f2ece63117ada39b6de3",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellParentSeams.lean",
+    "expected_sha256": "ad3a923c8507d5e44979a648e6146acaa808188956da5f74e78b894718ed7e25",
+    "actual_sha256": "ad3a923c8507d5e44979a648e6146acaa808188956da5f74e78b894718ed7e25",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellSeams.lean",
+    "expected_sha256": "01391a7ebc3a719bd450ccab65eae2c030644726d09f5520387763e2d5f37498",
+    "actual_sha256": "01391a7ebc3a719bd450ccab65eae2c030644726d09f5520387763e2d5f37498",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCellTopology.lean",
+    "expected_sha256": "bbe5e05237619648872b1c95afb48c9e71dd30d114689c6345e25721cb592b46",
+    "actual_sha256": "bbe5e05237619648872b1c95afb48c9e71dd30d114689c6345e25721cb592b46",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCells.lean",
+    "expected_sha256": "7a1c4b80b5efb337425c29502e1186238213cd6f35d837db906bf7769141c9dc",
+    "actual_sha256": "7a1c4b80b5efb337425c29502e1186238213cd6f35d837db906bf7769141c9dc",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandChildCarrier.lean",
+    "expected_sha256": "9db73a0115a92f144a41dde7310e1900642df781ec65ab6fa5eb5b1dba43de7b",
+    "actual_sha256": "9db73a0115a92f144a41dde7310e1900642df781ec65ab6fa5eb5b1dba43de7b",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandCrosscutLocalization.lean",
+    "expected_sha256": "b57ba3a039eaa838b2b56b7cd0e32ea3436ac0af304c30458aeb6f6c5380aa83",
+    "actual_sha256": "b57ba3a039eaa838b2b56b7cd0e32ea3436ac0af304c30458aeb6f6c5380aa83",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBandFilledDisk.lean",
+    "expected_sha256": "a533a2ad7ad71c474188aa02213a6c8fec2cf16af3d0577f9aada8fa127f436a",
+    "actual_sha256": "a533a2ad7ad71c474188aa02213a6c8fec2cf16af3d0577f9aada8fa127f436a",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseBoundaryDrift.lean",
+    "expected_sha256": "028c26ccad8ff459655c486f90a4fa3d69f63ffd6f34481e1d708b4618c49ffd",
+    "actual_sha256": "028c26ccad8ff459655c486f90a4fa3d69f63ffd6f34481e1d708b4618c49ffd",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseCellBoundaryRoutes.lean",
+    "expected_sha256": "c9eb4c7e082ab66bba6c95aaf17b1bf7010a95bef6cfe8ce01f5ac51eac2dd77",
+    "actual_sha256": "c9eb4c7e082ab66bba6c95aaf17b1bf7010a95bef6cfe8ce01f5ac51eac2dd77",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/MoiseChapter9.lean",
+    "expected_sha256": "7d969df7ec14ae3c94f7e708a6170ba76f696260a3067efb004356bbc6c5c356",
+    "actual_sha256": "7d969df7ec14ae3c94f7e708a6170ba76f696260a3067efb004356bbc6c5c356",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/NestedCollarStages.lean",
+    "expected_sha256": "8f7c77d029e6060b0ab7a708031b41285f26d0fb0a71087c3ece0566bdd3c7bc",
+    "actual_sha256": "8f7c77d029e6060b0ab7a708031b41285f26d0fb0a71087c3ece0566bdd3c7bc",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/OddWalkEdgeGraph.lean",
+    "expected_sha256": "47decbc990951d7bcae3f87d2ab9f3c261b757d94e7cdf5558db2c95d0833218",
+    "actual_sha256": "47decbc990951d7bcae3f87d2ab9f3c261b757d94e7cdf5558db2c95d0833218",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/OpenControlledCrosscuts.lean",
+    "expected_sha256": "304de07972f92469bb4eff9665e6a45c8eaac6e455912f78b7312ac63f226472",
+    "actual_sha256": "304de07972f92469bb4eff9665e6a45c8eaac6e455912f78b7312ac63f226472",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/OrderedPathCrossing.lean",
+    "expected_sha256": "ce60f081e624080fefbc1fd7ff42f01cb0dafe6356e17ee1c4b9e7272941146a",
+    "actual_sha256": "ce60f081e624080fefbc1fd7ff42f01cb0dafe6356e17ee1c4b9e7272941146a",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/OutsideBoundaryExtension.lean",
+    "expected_sha256": "a7c7e8fc05e64020d140dc6a7b586a3d63541c3b9b2ff1d5143660c94f17bcd7",
+    "actual_sha256": "a7c7e8fc05e64020d140dc6a7b586a3d63541c3b9b2ff1d5143660c94f17bcd7",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PlaneTopology.lean",
+    "expected_sha256": "3367ab63ba6d969deac672a96c98c3d8601b55ee46d6904b650c2f66cb26cac0",
+    "actual_sha256": "3367ab63ba6d969deac672a96c98c3d8601b55ee46d6904b650c2f66cb26cac0",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalAnnularCellDecomposition.lean",
+    "expected_sha256": "3fa7eac83067e129af2f16c5af38c233988648d54906efaf9757457f8c92405d",
+    "actual_sha256": "3fa7eac83067e129af2f16c5af38c233988648d54906efaf9757457f8c92405d",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalAnnularCellFilling.lean",
+    "expected_sha256": "1b0a63922d1747ed9786ad2b874957325fc62693bb4a87af1548c9d180959393",
+    "actual_sha256": "1b0a63922d1747ed9786ad2b874957325fc62693bb4a87af1548c9d180959393",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalAnnularCells.lean",
+    "expected_sha256": "8da60b02482559ee95b41fb012248a61b2f36499d4525d1a62a9ab7a52d2b40e",
+    "actual_sha256": "8da60b02482559ee95b41fb012248a61b2f36499d4525d1a62a9ab7a52d2b40e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalAnnularTheta.lean",
+    "expected_sha256": "5d6b34dba9aa5f32e19418277415472ca942b997c74aeddd25553e21bc686a32",
+    "actual_sha256": "5d6b34dba9aa5f32e19418277415472ca942b997c74aeddd25553e21bc686a32",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalBoundaryArcComparison.lean",
+    "expected_sha256": "088c9da9507341266c8cc64f60c89975fe246a06c8bdc50d3e8ff605dfeda040",
+    "actual_sha256": "088c9da9507341266c8cc64f60c89975fe246a06c8bdc50d3e8ff605dfeda040",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalCellPairFilling.lean",
+    "expected_sha256": "5ec7a2fcf223494de8e013098c99090f6933e2a33b30897954b847a7f4fd1bad",
+    "actual_sha256": "5ec7a2fcf223494de8e013098c99090f6933e2a33b30897954b847a7f4fd1bad",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalDiskBoundaryExtension.lean",
+    "expected_sha256": "1975b990d5b352b72a046a856ecff578e773fb4c4c83e6464125ad10e897b61c",
+    "actual_sha256": "1975b990d5b352b72a046a856ecff578e773fb4c4c83e6464125ad10e897b61c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalDiskExhaustion.lean",
+    "expected_sha256": "fbd851c521aebec579fd7461e406222f699f25214fd038e881566e6d6c79e11e",
+    "actual_sha256": "fbd851c521aebec579fd7461e406222f699f25214fd038e881566e6d6c79e11e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalJordanCircle.lean",
+    "expected_sha256": "6d2a772b00c5ee0c6020c6f3e3a7be6a3924762c68fcaba5373b5cd825754b37",
+    "actual_sha256": "6d2a772b00c5ee0c6020c6f3e3a7be6a3924762c68fcaba5373b5cd825754b37",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalJordanNesting.lean",
+    "expected_sha256": "72d78a4db626aae0e069592b35b6c99590a6489840cd6de78d100d9cf9121ed8",
+    "actual_sha256": "72d78a4db626aae0e069592b35b6c99590a6489840cd6de78d100d9cf9121ed8",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalPaths.lean",
+    "expected_sha256": "387032f8938df96d7ed43e24def39a9e3d84b9c9910d0369cad4ce1afa6c8f1a",
+    "actual_sha256": "387032f8938df96d7ed43e24def39a9e3d84b9c9910d0369cad4ce1afa6c8f1a",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalShellTriangulation.lean",
+    "expected_sha256": "47201f4675fe4982bbbff9b4c1420ddc32d64311f9b7fda9ae236acd21ea6711",
+    "actual_sha256": "47201f4675fe4982bbbff9b4c1420ddc32d64311f9b7fda9ae236acd21ea6711",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalShells.lean",
+    "expected_sha256": "458f5d9adfd522b905f4ecc139c2b1ef4116b7b22329760fb02f816447b0824b",
+    "actual_sha256": "458f5d9adfd522b905f4ecc139c2b1ef4116b7b22329760fb02f816447b0824b",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalSubarcs.lean",
+    "expected_sha256": "cb2a4ca543b8d7b2832d38182b113374b62273ce2751a89bd892af08b7c56aae",
+    "actual_sha256": "cb2a4ca543b8d7b2832d38182b113374b62273ce2751a89bd892af08b7c56aae",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalSubpathExtraction.lean",
+    "expected_sha256": "f0c29813f0d65a3ed6d1395685768cff2663b03390eb2d349f0a0a56596a31c9",
+    "actual_sha256": "f0c29813f0d65a3ed6d1395685768cff2663b03390eb2d349f0a0a56596a31c9",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalTransport.lean",
+    "expected_sha256": "ab26932ba1fa8402cee3b115491cc6f8d390527506b5d8e04e03120d99efdbeb",
+    "actual_sha256": "ab26932ba1fa8402cee3b115491cc6f8d390527506b5d8e04e03120d99efdbeb",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolygonalTwoArcCycle.lean",
+    "expected_sha256": "5f081cbe24a9b8e5df4525a31d609014a82ac6f47a0a6df1f119084239482c31",
+    "actual_sha256": "5f081cbe24a9b8e5df4525a31d609014a82ac6f47a0a6df1f119084239482c31",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PolyhedralDiskNeighborhoods.lean",
+    "expected_sha256": "80b046e8f6ebb238193f576081e69825830d70b112682bccaf5270c32e44747d",
+    "actual_sha256": "80b046e8f6ebb238193f576081e69825830d70b112682bccaf5270c32e44747d",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/PrescribedHairCrosscuts.lean",
+    "expected_sha256": "8d3e170d4d407cf9a86787b0d8ad7a1463668b3e1cbbfcde0142156e4b6df67e",
+    "actual_sha256": "8d3e170d4d407cf9a86787b0d8ad7a1463668b3e1cbbfcde0142156e4b6df67e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/RadialSectorTransport.lean",
+    "expected_sha256": "f7d0276db8e4b9e3934a07e10784144f30b29e32c3535125374d4e62d0b3cc97",
+    "actual_sha256": "f7d0276db8e4b9e3934a07e10784144f30b29e32c3535125374d4e62d0b3cc97",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/RecursiveCollarStages.lean",
+    "expected_sha256": "9ce19e550e6673fcc78cb6ff2225b4a7d91a1be71ed683e0b9f6b3e9a95cf6eb",
+    "actual_sha256": "9ce19e550e6673fcc78cb6ff2225b4a7d91a1be71ed683e0b9f6b3e9a95cf6eb",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/RefinedCyclicCuts.lean",
+    "expected_sha256": "890d837ab981d512700f3ddbc7feee6af1c51b1e5921e76a9b7074b550583615",
+    "actual_sha256": "890d837ab981d512700f3ddbc7feee6af1c51b1e5921e76a9b7074b550583615",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/RefinedEdgeSides.lean",
+    "expected_sha256": "39d06ae7d9019d782374e1f3d46c7b25c67d29b1816ca2e378bb2e1da5bc5472",
+    "actual_sha256": "39d06ae7d9019d782374e1f3d46c7b25c67d29b1816ca2e378bb2e1da5bc5472",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/RefinedSeparatorFrame.lean",
+    "expected_sha256": "7521d7c0ab7e9a1e7534f5eaaad5e2844edca23becedd30cb6023c5c7eb3824f",
+    "actual_sha256": "7521d7c0ab7e9a1e7534f5eaaad5e2844edca23becedd30cb6023c5c7eb3824f",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/RegionalExtensions.lean",
+    "expected_sha256": "9b1e57ce1915d2488506aa66e3c9c5f4755b958ee636310d10dd8b6ca838ab98",
+    "actual_sha256": "9b1e57ce1915d2488506aa66e3c9c5f4755b958ee636310d10dd8b6ca838ab98",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ResolvedPolygonalArcs.lean",
+    "expected_sha256": "bc1c76222a43647b1835b0788d944fcd104653e4a9543f639a6ada43cf83ded5",
+    "actual_sha256": "bc1c76222a43647b1835b0788d944fcd104653e4a9543f639a6ada43cf83ded5",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ReturnArcFrames.lean",
+    "expected_sha256": "65ba3c63b034950f42a7ac5302c7bd55c189c763113886845c59701d8ad829e0",
+    "actual_sha256": "65ba3c63b034950f42a7ac5302c7bd55c189c763113886845c59701d8ad829e0",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ReturnArcParity.lean",
+    "expected_sha256": "75647c6c1be97ea3ba2e31166d62f454c98f95438a3351266fdcf3b194cdedac",
+    "actual_sha256": "75647c6c1be97ea3ba2e31166d62f454c98f95438a3351266fdcf3b194cdedac",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ReturnPathCrossings.lean",
+    "expected_sha256": "e21a8384da550dcb60412d49c92314b4d0369cedb53c7e358fd512aa80210e28",
+    "actual_sha256": "e21a8384da550dcb60412d49c92314b4d0369cedb53c7e358fd512aa80210e28",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ReturnPathParity.lean",
+    "expected_sha256": "b58137598e59981211ff447169b1a5be531a57c783ab440ae294322d948ecc40",
+    "actual_sha256": "b58137598e59981211ff447169b1a5be531a57c783ab440ae294322d948ecc40",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/SegmentChainWalk.lean",
+    "expected_sha256": "e8ea3750cd30b56085f7be488a164bdeef30f5975e31da35b829b4ce5f972ede",
+    "actual_sha256": "e8ea3750cd30b56085f7be488a164bdeef30f5975e31da35b829b4ce5f972ede",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/SeparatorFrame.lean",
+    "expected_sha256": "bd9f2a9844aa4a1f549d9466742abfdffd9328e1066a7f7a6a4592efe6c74e65",
+    "actual_sha256": "bd9f2a9844aa4a1f549d9466742abfdffd9328e1066a7f7a6a4592efe6c74e65",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/SharedArcDiskSeparation.lean",
+    "expected_sha256": "1b5c4161633f6ecb63b87ef8476570e8499aa2d5d44db015a5840cbdcc4909db",
+    "actual_sha256": "1b5c4161633f6ecb63b87ef8476570e8499aa2d5d44db015a5840cbdcc4909db",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ShortCircleIsotopy.lean",
+    "expected_sha256": "4dd801f6a743e8dd395d21a38a1ce830c47d51867d84b059056e6d3f5ea40aea",
+    "actual_sha256": "4dd801f6a743e8dd395d21a38a1ce830c47d51867d84b059056e6d3f5ea40aea",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ShrinkingBoundaryConvergence.lean",
+    "expected_sha256": "6cdf141d45acbf948082b489a8a7713c454260e51d2fef182e50ce4ded7994aa",
+    "actual_sha256": "6cdf141d45acbf948082b489a8a7713c454260e51d2fef182e50ce4ded7994aa",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ShrinkingCollars.lean",
+    "expected_sha256": "730b1b6cb11375f785a009b28a98db6ca3bfa6b260a9826e40d50b4570caaf26",
+    "actual_sha256": "730b1b6cb11375f785a009b28a98db6ca3bfa6b260a9826e40d50b4570caaf26",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ShrinkingInteriorHomeomorphism.lean",
+    "expected_sha256": "3b4bba172e8fe38ca155b7a7bacfe915925c7af1687c80b88dc9b0bf0e0ad2c5",
+    "actual_sha256": "3b4bba172e8fe38ca155b7a7bacfe915925c7af1687c80b88dc9b0bf0e0ad2c5",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ShrinkingMoiseBandCells.lean",
+    "expected_sha256": "d8e8a5af91e2b3e29e2e10510a3b36d6dc1d97cbe8b5f556191671ebf6a1cd83",
+    "actual_sha256": "d8e8a5af91e2b3e29e2e10510a3b36d6dc1d97cbe8b5f556191671ebf6a1cd83",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ShrinkingMoiseBandHomeomorphisms.lean",
+    "expected_sha256": "bfb237bf1e308d87de86495d27510ab27ceeecb3a3a3af8b4dd5b7a73b761cf9",
+    "actual_sha256": "bfb237bf1e308d87de86495d27510ab27ceeecb3a3a3af8b4dd5b7a73b761cf9",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/ShrinkingSourceExhaustion.lean",
+    "expected_sha256": "ebce37acccca9ef38a9a5b77488e70878167cacfe06c1354237bc3e66485c77e",
+    "actual_sha256": "ebce37acccca9ef38a9a5b77488e70878167cacfe06c1354237bc3e66485c77e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/SideConstancy.lean",
+    "expected_sha256": "c0c02e48eb77a6c60caa73bfd4addbd64283c50668eb6d13ad0419db924e238e",
+    "actual_sha256": "c0c02e48eb77a6c60caa73bfd4addbd64283c50668eb6d13ad0419db924e238e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/StandardPolygonalCollars.lean",
+    "expected_sha256": "2c9ceff8f6aadc5aac612919580a6cfa0b663524c7adda37b8e70855eaa77570",
+    "actual_sha256": "2c9ceff8f6aadc5aac612919580a6cfa0b663524c7adda37b8e70855eaa77570",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/StandardRadialCollars.lean",
+    "expected_sha256": "a053aa32d0efd4f3d84a27c605fc0a78a6312bf6448cf922f70791f8d66bae1b",
+    "actual_sha256": "a053aa32d0efd4f3d84a27c605fc0a78a6312bf6448cf922f70791f8d66bae1b",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/SynchronizedCollarCells.lean",
+    "expected_sha256": "3928bb1e2a9070d7583b4d36d3a109509df678b58dd7237d50a8163c3ad9aa88",
+    "actual_sha256": "3928bb1e2a9070d7583b4d36d3a109509df678b58dd7237d50a8163c3ad9aa88",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/SynchronizedLevelReturns.lean",
+    "expected_sha256": "d025c1807ce72f9a0f76d6f33604c806b819bc026ca82e98bf1e628fb6316993",
+    "actual_sha256": "d025c1807ce72f9a0f76d6f33604c806b819bc026ca82e98bf1e628fb6316993",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/SynchronizedPolygonalCircle.lean",
+    "expected_sha256": "f0ef4adb555feb368c94eaf7edcf1535b13b306805c7c1a25677502d312d8a23",
+    "actual_sha256": "f0ef4adb555feb368c94eaf7edcf1535b13b306805c7c1a25677502d312d8a23",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TopologicalAnnularCellFilling.lean",
+    "expected_sha256": "d1f40b44f5508a97acc30a40a061a1a024fd36414a7508ce2f6235461bc724f3",
+    "actual_sha256": "d1f40b44f5508a97acc30a40a061a1a024fd36414a7508ce2f6235461bc724f3",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TopologicalDiskAttachment.lean",
+    "expected_sha256": "98ab5945208929eb0746b3dd12530a97e44add02294ed0325838baeca01a9b9a",
+    "actual_sha256": "98ab5945208929eb0746b3dd12530a97e44add02294ed0325838baeca01a9b9a",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TopologicalDiskBoundaryExtension.lean",
+    "expected_sha256": "0b7ee72ecba3942ce88e6810e3d0b609e82c708c011ecd6061f9c26e6a70ad4d",
+    "actual_sha256": "0b7ee72ecba3942ce88e6810e3d0b609e82c708c011ecd6061f9c26e6a70ad4d",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TransverseIntersections.lean",
+    "expected_sha256": "216e53eb2e542d6ba57e25b1c91d9a27c255070973241245c875074406ca7c4e",
+    "actual_sha256": "216e53eb2e542d6ba57e25b1c91d9a27c255070973241245c875074406ca7c4e",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TrimmedCollarCells.lean",
+    "expected_sha256": "4a0a38bca20acee26f73fac1ad73977e9d6eddb3fec7cd1eb32799207f3937a0",
+    "actual_sha256": "4a0a38bca20acee26f73fac1ad73977e9d6eddb3fec7cd1eb32799207f3937a0",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TrimmedHairCrosscuts.lean",
+    "expected_sha256": "a54ce1284a5452db64e54a9adb0502e4559fdaa34242918fd4c7f232bdd15bba",
+    "actual_sha256": "a54ce1284a5452db64e54a9adb0502e4559fdaa34242918fd4c7f232bdd15bba",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TrimmedLevelEdges.lean",
+    "expected_sha256": "3c9dadfef82bff0fe2f7bba189538db00da960c0ab82b58d7ed033448fda064c",
+    "actual_sha256": "3c9dadfef82bff0fe2f7bba189538db00da960c0ab82b58d7ed033448fda064c",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TwoArcCarrierHomeomorph.lean",
+    "expected_sha256": "6549337ddb23501d23ec76e524606ace46a2e96bcb3bb71fb51f2b1c0dac195a",
+    "actual_sha256": "6549337ddb23501d23ec76e524606ace46a2e96bcb3bb71fb51f2b1c0dac195a",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TwoArcJordan.lean",
+    "expected_sha256": "dbb7c5430d23cf17ad1dfcf6606af3c5f28f5c62bbe5a35893b1c01c73044fcd",
+    "actual_sha256": "dbb7c5430d23cf17ad1dfcf6606af3c5f28f5c62bbe5a35893b1c01c73044fcd",
+    "match": true
+  },
+  {
+    "path": "Vendor/Schoenflies/TwoBoundaryArcRigidity.lean",
+    "expected_sha256": "591fe5fc161fa98e670744c7a44bf6182378eca690b53089a0250a943be64d4c",
+    "actual_sha256": "591fe5fc161fa98e670744c7a44bf6182378eca690b53089a0250a943be64d4c",
+    "match": true
+  },
+  {
+    "path": "Vendor/classification-sources.json",
+    "expected_sha256": "1d4ef387a12c36ece5b953ccf93494385fab1ae8ba7804ca7b6c575b8507fcc6",
+    "actual_sha256": "1d4ef387a12c36ece5b953ccf93494385fab1ae8ba7804ca7b6c575b8507fcc6",
+    "match": true
+  },
+  {
+    "path": "Venn19.lean",
+    "expected_sha256": "1e0d4b7a75fb3d7b59d2e4b9801c840fd389e09a516c13bd72fb29cfb3ac43a3",
+    "actual_sha256": "1e0d4b7a75fb3d7b59d2e4b9801c840fd389e09a516c13bd72fb29cfb3ac43a3",
+    "match": true
+  },
+  {
+    "path": "Venn19/Facts.lean",
+    "expected_sha256": "a2a957f3d8f0c45eff9d1a4cbc637856ae33fe8b673106def91f40307fe5b0be",
+    "actual_sha256": "a2a957f3d8f0c45eff9d1a4cbc637856ae33fe8b673106def91f40307fe5b0be",
+    "match": true
+  },
+  {
+    "path": "Venn19/GraphCertificate.lean",
+    "expected_sha256": "fbd8e6380e86fa214a4537baa922e163b268f6f6939eb7d971c1170378587e26",
+    "actual_sha256": "fbd8e6380e86fa214a4537baa922e163b268f6f6939eb7d971c1170378587e26",
+    "match": true
+  },
+  {
+    "path": "Venn19/Proof.lean",
+    "expected_sha256": "f154a66210077e62e14c9961ffcf0c7832fd4fae8fe80a237a50480d5cd7d0c2",
+    "actual_sha256": "f154a66210077e62e14c9961ffcf0c7832fd4fae8fe80a237a50480d5cd7d0c2",
+    "match": true
+  },
+  {
+    "path": "Venn19/Tests.lean",
+    "expected_sha256": "62840baa8a4afbfed5512e6c4ff9543f9f01808d7e940563f880f34f747bc70b",
+    "actual_sha256": "62840baa8a4afbfed5512e6c4ff9543f9f01808d7e940563f880f34f747bc70b",
+    "match": true
+  },
+  {
+    "path": "VennCore.lean",
+    "expected_sha256": "bfe08a05a17b377d8acee304e6f3334bea82e105ad63777a860d60fbdb893270",
+    "actual_sha256": "bfe08a05a17b377d8acee304e6f3334bea82e105ad63777a860d60fbdb893270",
+    "match": true
+  },
+  {
+    "path": "VennCore/Checker.lean",
+    "expected_sha256": "8c072999566f8de9d7846113080d11d6d59ff55738fb5f5f9aba90a0492ff326",
+    "actual_sha256": "8c072999566f8de9d7846113080d11d6d59ff55738fb5f5f9aba90a0492ff326",
+    "match": true
+  },
+  {
+    "path": "VennCore/Connectivity.lean",
+    "expected_sha256": "699bafacb8a7670fe93e24e15e2cbe0dec0e2a23b1a80f49015ea1437bf4b668",
+    "actual_sha256": "699bafacb8a7670fe93e24e15e2cbe0dec0e2a23b1a80f49015ea1437bf4b668",
+    "match": true
+  },
+  {
+    "path": "VennCore/CurvePolygon.lean",
+    "expected_sha256": "7b6408ce1333ae975394d55b47c729d361c435208f6cd4e1f935ffbfe223deb2",
+    "actual_sha256": "7b6408ce1333ae975394d55b47c729d361c435208f6cd4e1f935ffbfe223deb2",
+    "match": true
+  },
+  {
+    "path": "VennCore/Embed.lean",
+    "expected_sha256": "0536e4a9d1c15d368c9059e2e4c45444b4a065ac98892d97111d9b3fa9e24976",
+    "actual_sha256": "0536e4a9d1c15d368c9059e2e4c45444b4a065ac98892d97111d9b3fa9e24976",
+    "match": true
+  },
+  {
+    "path": "VennCore/Incidence.lean",
+    "expected_sha256": "eb2869e56526fec8781c70b664a0e858507964ef50c3c552273e68872fd85bc4",
+    "actual_sha256": "eb2869e56526fec8781c70b664a0e858507964ef50c3c552273e68872fd85bc4",
+    "match": true
+  },
+  {
+    "path": "VennCore/Links.lean",
+    "expected_sha256": "6a51eb70f80d1165895544e8df36ba78c8e3153d9ca1946b01e0aa34f93918c9",
+    "actual_sha256": "6a51eb70f80d1165895544e8df36ba78c8e3153d9ca1946b01e0aa34f93918c9",
+    "match": true
+  },
+  {
+    "path": "VennCore/Rotation.lean",
+    "expected_sha256": "e2d8c928b555eb7181ea3bdb210389510546d9ee1293d9d20cb52aa37ba1a09c",
+    "actual_sha256": "e2d8c928b555eb7181ea3bdb210389510546d9ee1293d9d20cb52aa37ba1a09c",
+    "match": true
+  },
+  {
+    "path": "VennCore/Symmetry.lean",
+    "expected_sha256": "339d6379d2e22382ea83118f82b60f50c72b399df57b52405a312c41c90b4fc6",
+    "actual_sha256": "339d6379d2e22382ea83118f82b60f50c72b399df57b52405a312c41c90b4fc6",
+    "match": true
+  },
+  {
+    "path": "VennTopology.lean",
+    "expected_sha256": "69151e6efe79fed216c963c81e0da65b1633446f9e959c3ad7feead993a0ce6b",
+    "actual_sha256": "69151e6efe79fed216c963c81e0da65b1633446f9e959c3ad7feead993a0ce6b",
+    "match": true
+  },
+  {
+    "path": "VennTopology/ArmSymmetry.lean",
+    "expected_sha256": "02f7d5c1f5619fbbc8a0997f26041c750e418f7672e0b8f51b315f07e8547164",
+    "actual_sha256": "02f7d5c1f5619fbbc8a0997f26041c750e418f7672e0b8f51b315f07e8547164",
+    "match": true
+  },
+  {
+    "path": "VennTopology/ArrangementCertificate.lean",
+    "expected_sha256": "cfa59798842d1276f2972647308248f78b13552912d32d32bfadd8c61693fb46",
+    "actual_sha256": "cfa59798842d1276f2972647308248f78b13552912d32d32bfadd8c61693fb46",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Automorphism.lean",
+    "expected_sha256": "678a446d8613ace9f30af6e24451ffc4d7815f0743b7f2b206728c5fa77fbf4c",
+    "actual_sha256": "678a446d8613ace9f30af6e24451ffc4d7815f0743b7f2b206728c5fa77fbf4c",
+    "match": true
+  },
+  {
+    "path": "VennTopology/BitField.lean",
+    "expected_sha256": "7a16db0cd642f7ff72515819edd93a943662c810f0ed47f97f956250f59951a3",
+    "actual_sha256": "7a16db0cd642f7ff72515819edd93a943662c810f0ed47f97f956250f59951a3",
+    "match": true
+  },
+  {
+    "path": "VennTopology/BitSigns.lean",
+    "expected_sha256": "9ca9f55ac9b6412ef2cbe6913f8d53c9e8c6ce0e6a4334b2c020090b9d90c92c",
+    "actual_sha256": "9ca9f55ac9b6412ef2cbe6913f8d53c9e8c6ce0e6a4334b2c020090b9d90c92c",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CanonicalEuler.lean",
+    "expected_sha256": "1843b790b3e52a5888b7bcd916aea4d2cb0637fbff25941cad5fb0f1e2e0e7ce",
+    "actual_sha256": "1843b790b3e52a5888b7bcd916aea4d2cb0637fbff25941cad5fb0f1e2e0e7ce",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CenterChart.lean",
+    "expected_sha256": "0492e23312cb6d7e3621c7d6a6d29a5ae385ee8c07cbf45fadf033587adf1672",
+    "actual_sha256": "0492e23312cb6d7e3621c7d6a6d29a5ae385ee8c07cbf45fadf033587adf1672",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Certificate.lean",
+    "expected_sha256": "55dfa1f30dede28031d9da7d3282b03f7e9bd89d2f6bc855e73b3bd66ce66efb",
+    "actual_sha256": "55dfa1f30dede28031d9da7d3282b03f7e9bd89d2f6bc855e73b3bd66ce66efb",
+    "match": true
+  },
+  {
+    "path": "VennTopology/ClassifiedSurface.lean",
+    "expected_sha256": "a6e154584f82afe096a4b750f00e21dbae9c97ccd62ed8de8f94eb3c60ecac07",
+    "actual_sha256": "a6e154584f82afe096a4b750f00e21dbae9c97ccd62ed8de8f94eb3c60ecac07",
+    "match": true
+  },
+  {
+    "path": "VennTopology/ClosedNormalization.lean",
+    "expected_sha256": "d8e1ba0735ab22cd9d929643ddcccc0e31ef8b15179ce3ad5f6ad949f7e22c61",
+    "actual_sha256": "d8e1ba0735ab22cd9d929643ddcccc0e31ef8b15179ce3ad5f6ad949f7e22c61",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CompactParametrization.lean",
+    "expected_sha256": "862341a84c416f44eef883cadfb07c8d2ce180fe4e98371cdc0545864f510781",
+    "actual_sha256": "862341a84c416f44eef883cadfb07c8d2ce180fe4e98371cdc0545864f510781",
+    "match": true
+  },
+  {
+    "path": "VennTopology/ConeDisk.lean",
+    "expected_sha256": "b2357f0104b7aa34aae9fc2b47123fbb74c8e5b28c493fdabbcdb7cc3e3208c2",
+    "actual_sha256": "b2357f0104b7aa34aae9fc2b47123fbb74c8e5b28c493fdabbcdb7cc3e3208c2",
+    "match": true
+  },
+  {
+    "path": "VennTopology/ConeRotation.lean",
+    "expected_sha256": "408ce574b219f9f1e3b3b62375423b2ae9732acc86ca9a465612432826c0f406",
+    "actual_sha256": "408ce574b219f9f1e3b3b62375423b2ae9732acc86ca9a465612432826c0f406",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CoordinateRelabel.lean",
+    "expected_sha256": "9fc9b27a44691470d722fc528685a6fd34a53e193e41e38bb4a2fbbe203fa70b",
+    "actual_sha256": "9fc9b27a44691470d722fc528685a6fd34a53e193e41e38bb4a2fbbe203fa70b",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CoordinateSimplex.lean",
+    "expected_sha256": "4e19ef5ac37b2fc9bd70cac5fa44152f85690c4f6c79777af9c6080d0d566d1f",
+    "actual_sha256": "4e19ef5ac37b2fc9bd70cac5fa44152f85690c4f6c79777af9c6080d0d566d1f",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CrossingAxes.lean",
+    "expected_sha256": "5d42a8998d8d08b8d9a0e3a9c1b61246fa63d2247feefe3c815fa8005325f6bb",
+    "actual_sha256": "5d42a8998d8d08b8d9a0e3a9c1b61246fa63d2247feefe3c815fa8005325f6bb",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CrossingCharts.lean",
+    "expected_sha256": "916dab845cefea1beec856fcba4776e1fab675d7e5a52cb7dffc1270a5bad34d",
+    "actual_sha256": "916dab845cefea1beec856fcba4776e1fab675d7e5a52cb7dffc1270a5bad34d",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CrossingSquare.lean",
+    "expected_sha256": "0aa00c9734c1e4950adef75b99c982ef6878f4b179e295d186f1340521ab27e8",
+    "actual_sha256": "0aa00c9734c1e4950adef75b99c982ef6878f4b179e295d186f1340521ab27e8",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CurveCertificate.lean",
+    "expected_sha256": "f2e580f1a686506a6dc161cfb9c0cd6e78b04831107797b60b1fafb00c6edc5a",
+    "actual_sha256": "f2e580f1a686506a6dc161cfb9c0cd6e78b04831107797b60b1fafb00c6edc5a",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CurveData.lean",
+    "expected_sha256": "76fb6e551f66c7340eb57f1febb4eb0db0f060ad6873b0f7fc0c7a54226360d1",
+    "actual_sha256": "76fb6e551f66c7340eb57f1febb4eb0db0f060ad6873b0f7fc0c7a54226360d1",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CurveGeometry.lean",
+    "expected_sha256": "1a4d5647cc4ce5bcbe0004df44741d578b39792153191de33fcc35b436b0bf45",
+    "actual_sha256": "1a4d5647cc4ce5bcbe0004df44741d578b39792153191de33fcc35b436b0bf45",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CurveIntersections.lean",
+    "expected_sha256": "8020d13b19a06905ba919a65154db2fb13fff7713a8805e349e51b2a564a2188",
+    "actual_sha256": "8020d13b19a06905ba919a65154db2fb13fff7713a8805e349e51b2a564a2188",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CurveLevelSet.lean",
+    "expected_sha256": "17ce900ca0239d2fe39781d146b06b17315779325c4803e801c61eb72e7955b2",
+    "actual_sha256": "17ce900ca0239d2fe39781d146b06b17315779325c4803e801c61eb72e7955b2",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CurveSides.lean",
+    "expected_sha256": "794d45598fabdaef6dbd20183cfb42ca6cdf4777839c50227d35be495c8ce05a",
+    "actual_sha256": "794d45598fabdaef6dbd20183cfb42ca6cdf4777839c50227d35be495c8ce05a",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CurveSymmetry.lean",
+    "expected_sha256": "a44d8e2ee0af41e859e8af21a846a36c0f99cbf69a4c0b892ce053f67de8d2d6",
+    "actual_sha256": "a44d8e2ee0af41e859e8af21a846a36c0f99cbf69a4c0b892ce053f67de8d2d6",
+    "match": true
+  },
+  {
+    "path": "VennTopology/CyclicPolygon.lean",
+    "expected_sha256": "3e00a86f1466d994a56aa17b13d94d69a7f237efabc9c18f71df12a8500473bb",
+    "actual_sha256": "3e00a86f1466d994a56aa17b13d94d69a7f237efabc9c18f71df12a8500473bb",
+    "match": true
+  },
+  {
+    "path": "VennTopology/DartIncidence.lean",
+    "expected_sha256": "3d5db83284707cdee620e59c2693743d576726715ba795610d2dceec8e9e53ea",
+    "actual_sha256": "3d5db83284707cdee620e59c2693743d576726715ba795610d2dceec8e9e53ea",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Dataset.lean",
+    "expected_sha256": "d14fd30d3a194f0232e27acd3626b86743320765e756eb7ee49dc42f488df6aa",
+    "actual_sha256": "d14fd30d3a194f0232e27acd3626b86743320765e756eb7ee49dc42f488df6aa",
+    "match": true
+  },
+  {
+    "path": "VennTopology/DiagramCurves.lean",
+    "expected_sha256": "b14c28da3187d13ec5799e6ae28ea9736596f4a92b3d33a455d2abe27a85e5ff",
+    "actual_sha256": "b14c28da3187d13ec5799e6ae28ea9736596f4a92b3d33a455d2abe27a85e5ff",
+    "match": true
+  },
+  {
+    "path": "VennTopology/DiagramSymmetry.lean",
+    "expected_sha256": "a15fd34c2a7f1d5ad05daa3d4f0c940b9de6337733401fb6e449d5c70681b567",
+    "actual_sha256": "a15fd34c2a7f1d5ad05daa3d4f0c940b9de6337733401fb6e449d5c70681b567",
+    "match": true
+  },
+  {
+    "path": "VennTopology/EncodedLinks.lean",
+    "expected_sha256": "ec11db278c8bbf091fca41436d6959be67e8f581d42312b5a0716b86aa81b8bc",
+    "actual_sha256": "ec11db278c8bbf091fca41436d6959be67e8f581d42312b5a0716b86aa81b8bc",
+    "match": true
+  },
+  {
+    "path": "VennTopology/EquivariantSectorDisk.lean",
+    "expected_sha256": "4d2363cad466ae4ebf5042664373daad228b73b0eaa182b7d034bafe2b54a6e3",
+    "actual_sha256": "4d2363cad466ae4ebf5042664373daad228b73b0eaa182b7d034bafe2b54a6e3",
+    "match": true
+  },
+  {
+    "path": "VennTopology/EquivariantStereographic.lean",
+    "expected_sha256": "b07afcf27347e4fab54b53f6e8cb8f9a980fa1ae5fa2bb5c359b3b764a28619c",
+    "actual_sha256": "b07afcf27347e4fab54b53f6e8cb8f9a980fa1ae5fa2bb5c359b3b764a28619c",
+    "match": true
+  },
+  {
+    "path": "VennTopology/EulerCharacteristic.lean",
+    "expected_sha256": "e5e75527d80496cbab5b9d6d1ba98a7ea666197ed2723f1c305814e5beb5aa52",
+    "actual_sha256": "e5e75527d80496cbab5b9d6d1ba98a7ea666197ed2723f1c305814e5beb5aa52",
+    "match": true
+  },
+  {
+    "path": "VennTopology/EulerSphereCriterion.lean",
+    "expected_sha256": "d7c6a6b2949c7283a64c32c431c05f5b9654e8e0b608ba499c405e503cd4dae7",
+    "actual_sha256": "d7c6a6b2949c7283a64c32c431c05f5b9654e8e0b608ba499c405e503cd4dae7",
+    "match": true
+  },
+  {
+    "path": "VennTopology/FiniteRealization.lean",
+    "expected_sha256": "e2f992a50e5c62b3888b22296e68c46ea9a70261ec3cb29c35d8082b154f4b05",
+    "actual_sha256": "e2f992a50e5c62b3888b22296e68c46ea9a70261ec3cb29c35d8082b154f4b05",
+    "match": true
+  },
+  {
+    "path": "VennTopology/FiniteTriangulation.lean",
+    "expected_sha256": "8e32e48e15be4db381f9a0309e0e1fc0073b6ee84584bad2c8159f82bd9b6f4b",
+    "actual_sha256": "8e32e48e15be4db381f9a0309e0e1fc0073b6ee84584bad2c8159f82bd9b6f4b",
+    "match": true
+  },
+  {
+    "path": "VennTopology/FixedPoints.lean",
+    "expected_sha256": "5dd76ae0461093002a23c582f8fea40608a147083bed5a8d36205af68f18a237",
+    "actual_sha256": "5dd76ae0461093002a23c582f8fea40608a147083bed5a8d36205af68f18a237",
+    "match": true
+  },
+  {
+    "path": "VennTopology/GeometricCounting.lean",
+    "expected_sha256": "c80dd29e15c2f9f73a726749a3621b193c4002f7bdfdc7dca576975e92890359",
+    "actual_sha256": "c80dd29e15c2f9f73a726749a3621b193c4002f7bdfdc7dca576975e92890359",
+    "match": true
+  },
+  {
+    "path": "VennTopology/GeometricLinks.lean",
+    "expected_sha256": "085c6d13d1dc443949c25e7b1aeca2f1de515dcdf8d87ad0a6f8d89bc59220c4",
+    "actual_sha256": "085c6d13d1dc443949c25e7b1aeca2f1de515dcdf8d87ad0a6f8d89bc59220c4",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Incidence.lean",
+    "expected_sha256": "a78a9ed5d8b40101cc61809e67c8b311da4072f898897eadb060a8dd30d7137f",
+    "actual_sha256": "a78a9ed5d8b40101cc61809e67c8b311da4072f898897eadb060a8dd30d7137f",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Intersections.lean",
+    "expected_sha256": "831151f3d441eec08972619ea74119e58f05e129939c822844f91c195ee48ec6",
+    "actual_sha256": "831151f3d441eec08972619ea74119e58f05e129939c822844f91c195ee48ec6",
+    "match": true
+  },
+  {
+    "path": "VennTopology/JordanDisk.lean",
+    "expected_sha256": "8898347896e5ad254c7b58059710070bb71cac6d09cffadcf8735fe6dcd53f39",
+    "actual_sha256": "8898347896e5ad254c7b58059710070bb71cac6d09cffadcf8735fe6dcd53f39",
+    "match": true
+  },
+  {
+    "path": "VennTopology/LabeledPolygon.lean",
+    "expected_sha256": "2a9aff1e17e087c0bad89bb64c6cee4a32c76a3aca59acdb9374f3aa5ff51bdb",
+    "actual_sha256": "2a9aff1e17e087c0bad89bb64c6cee4a32c76a3aca59acdb9374f3aa5ff51bdb",
+    "match": true
+  },
+  {
+    "path": "VennTopology/LinkCertificate.lean",
+    "expected_sha256": "2cd754f874920539f75d2c9319d1a796f768aacd24c3872b6cbe0fab77576919",
+    "actual_sha256": "2cd754f874920539f75d2c9319d1a796f768aacd24c3872b6cbe0fab77576919",
+    "match": true
+  },
+  {
+    "path": "VennTopology/LinkCircles.lean",
+    "expected_sha256": "624936bf62a47f723ee82932ca2eb62c5b50f0d5a8cda33a6fc1cd7d32a53ecf",
+    "actual_sha256": "624936bf62a47f723ee82932ca2eb62c5b50f0d5a8cda33a6fc1cd7d32a53ecf",
+    "match": true
+  },
+  {
+    "path": "VennTopology/LinkData.lean",
+    "expected_sha256": "71d8d3457b95c15e24f62109a7b26cbbd64a678f8cc83d216238863b7a70272d",
+    "actual_sha256": "71d8d3457b95c15e24f62109a7b26cbbd64a678f8cc83d216238863b7a70272d",
+    "match": true
+  },
+  {
+    "path": "VennTopology/LocalGeometry.lean",
+    "expected_sha256": "457082cb2fd4b63dc496105b47f37f87c617a428d6c098dc37e1ac25295bc6eb",
+    "actual_sha256": "457082cb2fd4b63dc496105b47f37f87c617a428d6c098dc37e1ac25295bc6eb",
+    "match": true
+  },
+  {
+    "path": "VennTopology/MeridianArcs.lean",
+    "expected_sha256": "1fa8c480c987fea09fd7e948f67271504f37c67509fc12b75724aa1741d9fef6",
+    "actual_sha256": "1fa8c480c987fea09fd7e948f67271504f37c67509fc12b75724aa1741d9fef6",
+    "match": true
+  },
+  {
+    "path": "VennTopology/MeridianBoundaryParameters.lean",
+    "expected_sha256": "91c053610c57760fbc70f87a09a802158b6113c55f9a6717483efb77124c4919",
+    "actual_sha256": "91c053610c57760fbc70f87a09a802158b6113c55f9a6717483efb77124c4919",
+    "match": true
+  },
+  {
+    "path": "VennTopology/MeridianCertificate.lean",
+    "expected_sha256": "d23d63013ae03abcb8140851274b0a367202b3d4163757822e3955c1b5f96fa8",
+    "actual_sha256": "d23d63013ae03abcb8140851274b0a367202b3d4163757822e3955c1b5f96fa8",
+    "match": true
+  },
+  {
+    "path": "VennTopology/MeridianData.lean",
+    "expected_sha256": "400ef6afcad17828e959a4eb7052009fc7914ddfbf9822092b571c996c94e2e3",
+    "actual_sha256": "400ef6afcad17828e959a4eb7052009fc7914ddfbf9822092b571c996c94e2e3",
+    "match": true
+  },
+  {
+    "path": "VennTopology/MeridianGeometry.lean",
+    "expected_sha256": "73797d18cb788c875c36f048d09135c5d23e4ecfa60997eea84ee48c1a5e0b8d",
+    "actual_sha256": "73797d18cb788c875c36f048d09135c5d23e4ecfa60997eea84ee48c1a5e0b8d",
+    "match": true
+  },
+  {
+    "path": "VennTopology/MeridianIntersections.lean",
+    "expected_sha256": "952d62cc54df03577a8ae3af10aa2d36b333bcbb3f15087881d210cab0604d47",
+    "actual_sha256": "952d62cc54df03577a8ae3af10aa2d36b333bcbb3f15087881d210cab0604d47",
+    "match": true
+  },
+  {
+    "path": "VennTopology/MeridianParameterEquality.lean",
+    "expected_sha256": "850dae7078071eaf5fbb5aa261213ca5ce9c11c46d8e8dc6d74472a50df7bd7d",
+    "actual_sha256": "850dae7078071eaf5fbb5aa261213ca5ce9c11c46d8e8dc6d74472a50df7bd7d",
+    "match": true
+  },
+  {
+    "path": "VennTopology/MidpointPolygon.lean",
+    "expected_sha256": "9edf6579f02127a575b76216b942d749c7e09c083bdf419045d2d6fd65dcb6fb",
+    "actual_sha256": "9edf6579f02127a575b76216b942d749c7e09c083bdf419045d2d6fd65dcb6fb",
+    "match": true
+  },
+  {
+    "path": "VennTopology/NormalizationEuler.lean",
+    "expected_sha256": "c71a9f6805315859d43991acc5243d6cf6155c157d023273f591e017806bcda6",
+    "actual_sha256": "c71a9f6805315859d43991acc5243d6cf6155c157d023273f591e017806bcda6",
+    "match": true
+  },
+  {
+    "path": "VennTopology/OpenStarDisk.lean",
+    "expected_sha256": "ba62ce53db4cf72dc63ef0194008ab776e4a5fcb989813cda15b54bbb814b7b2",
+    "actual_sha256": "ba62ce53db4cf72dc63ef0194008ab776e4a5fcb989813cda15b54bbb814b7b2",
+    "match": true
+  },
+  {
+    "path": "VennTopology/P1Euler.lean",
+    "expected_sha256": "d75fd65b06b7d246babb22a820f4b07efec957296aeb6ce04591302ed0db5289",
+    "actual_sha256": "d75fd65b06b7d246babb22a820f4b07efec957296aeb6ce04591302ed0db5289",
+    "match": true
+  },
+  {
+    "path": "VennTopology/P2Euler.lean",
+    "expected_sha256": "4482f6ad955a809f68a94d0265a2d9d551342e76082645ce2ba55a896bcb1f14",
+    "actual_sha256": "4482f6ad955a809f68a94d0265a2d9d551342e76082645ce2ba55a896bcb1f14",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Periodic.lean",
+    "expected_sha256": "8233b546c42a5f6153a8d690d57ff22479ae1b5356961c7ba8477e9738e43054",
+    "actual_sha256": "8233b546c42a5f6153a8d690d57ff22479ae1b5356961c7ba8477e9738e43054",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Planar.lean",
+    "expected_sha256": "7a541e8232f65f465077054edc9d28c27e2504539a9a25026cb85066d19a5ca8",
+    "actual_sha256": "7a541e8232f65f465077054edc9d28c27e2504539a9a25026cb85066d19a5ca8",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PlanarSides.lean",
+    "expected_sha256": "4ddeae35415195040595136a0e8f5616b43d62b8d2864f355a694444423164c3",
+    "actual_sha256": "4ddeae35415195040595136a0e8f5616b43d62b8d2864f355a694444423164c3",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PlaneArrangement.lean",
+    "expected_sha256": "a38138d89763580e00f0034ed6f61ee243615c4aca57ea66cbe6f434a2377b7b",
+    "actual_sha256": "a38138d89763580e00f0034ed6f61ee243615c4aca57ea66cbe6f434a2377b7b",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PlaneRealization.lean",
+    "expected_sha256": "c24834a25a03b256f0768f02d0d4564d79227a6e46ffb763bc0f844566126144",
+    "actual_sha256": "c24834a25a03b256f0768f02d0d4564d79227a6e46ffb763bc0f844566126144",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PoleDiskRotation.lean",
+    "expected_sha256": "aa15367a9d77efe41b0d6266cc84afa33d37890c73a59d25d6ee6c90dba835c8",
+    "actual_sha256": "aa15367a9d77efe41b0d6266cc84afa33d37890c73a59d25d6ee6c90dba835c8",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PoleRotation.lean",
+    "expected_sha256": "ecc9f1e4ca0a4edddd0e8f07a7b0e50d8be6127c5cafafb845ebc0cd5b35233f",
+    "actual_sha256": "ecc9f1e4ca0a4edddd0e8f07a7b0e50d8be6127c5cafafb845ebc0cd5b35233f",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PoleRotationData.lean",
+    "expected_sha256": "dccb66d4412ac6d97c57563c7e819461d5fddd0d89ddbb7563479e6c5e9c14f2",
+    "actual_sha256": "dccb66d4412ac6d97c57563c7e819461d5fddd0d89ddbb7563479e6c5e9c14f2",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PolygonEulerLowerBound.lean",
+    "expected_sha256": "e0749450aecb31d8bfccfe5e6a1ee609ced08ec09e2993e6ba683aa801251f26",
+    "actual_sha256": "e0749450aecb31d8bfccfe5e6a1ee609ced08ec09e2993e6ba683aa801251f26",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PolygonRotation.lean",
+    "expected_sha256": "52d86c04752b7c3d6c983e6100cf32fd83dd2f0d925903df3686a9091b18a0b0",
+    "actual_sha256": "52d86c04752b7c3d6c983e6100cf32fd83dd2f0d925903df3686a9091b18a0b0",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PolygonVertices.lean",
+    "expected_sha256": "6771b0155e4c0e29c664545f4dbda3a2d189ad09092e279325a8d4bbb2ac7d8d",
+    "actual_sha256": "6771b0155e4c0e29c664545f4dbda3a2d189ad09092e279325a8d4bbb2ac7d8d",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PolygonWordWalk.lean",
+    "expected_sha256": "0baa2505c3d77d68a8cb939b07271459570737287e01f6c1a6207e970bf43534",
+    "actual_sha256": "0baa2505c3d77d68a8cb939b07271459570737287e01f6c1a6207e970bf43534",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PolygonalModel.lean",
+    "expected_sha256": "bf6a52d425c50f7819b0ee5b78354d86c9e4cd737a7bf77d7fc8c58fa31a9304",
+    "actual_sha256": "bf6a52d425c50f7819b0ee5b78354d86c9e4cd737a7bf77d7fc8c58fa31a9304",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PunctureConnected.lean",
+    "expected_sha256": "3045b1c0bd7c7bc0b21727a7f517876fb48bc62cb7f7ef55d076ae4c92875b82",
+    "actual_sha256": "3045b1c0bd7c7bc0b21727a7f517876fb48bc62cb7f7ef55d076ae4c92875b82",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PuncturedArrangement.lean",
+    "expected_sha256": "7e724cedc4513d3f20155ee60df77eabaeaf5b548bbb78cb21cdeb735f9b21d6",
+    "actual_sha256": "7e724cedc4513d3f20155ee60df77eabaeaf5b548bbb78cb21cdeb735f9b21d6",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PuncturedCertificate.lean",
+    "expected_sha256": "912e5846dd63e69566b215ad32e552d018ebabf6e28e148af97409a736d24a8f",
+    "actual_sha256": "912e5846dd63e69566b215ad32e552d018ebabf6e28e148af97409a736d24a8f",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PuncturedCrossings.lean",
+    "expected_sha256": "67ba0bc27074ad91216800592be9ddd373cc509598eb06abbb21dd12468872c4",
+    "actual_sha256": "67ba0bc27074ad91216800592be9ddd373cc509598eb06abbb21dd12468872c4",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PuncturedRegions.lean",
+    "expected_sha256": "85636b3221c05b1951ad95326196e51c7844282775a3c13777f0a19827f42a94",
+    "actual_sha256": "85636b3221c05b1951ad95326196e51c7844282775a3c13777f0a19827f42a94",
+    "match": true
+  },
+  {
+    "path": "VennTopology/PuncturedSides.lean",
+    "expected_sha256": "1cddfaf44a2b28b6f667a7f742a585ce5208858e65a8a86a9bd577e7d3ec175e",
+    "actual_sha256": "1cddfaf44a2b28b6f667a7f742a585ce5208858e65a8a86a9bd577e7d3ec175e",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Realization.lean",
+    "expected_sha256": "918226983062fcd2f254fc2054bc6098192d769b91972b8438b876ee56716085",
+    "actual_sha256": "918226983062fcd2f254fc2054bc6098192d769b91972b8438b876ee56716085",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RegionBits.lean",
+    "expected_sha256": "e2e861849161e2ae372663690524eb17b5c31c59846a348272a04b58fdb6c335",
+    "actual_sha256": "e2e861849161e2ae372663690524eb17b5c31c59846a348272a04b58fdb6c335",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RegionSymmetry.lean",
+    "expected_sha256": "28a4cdb9df883cc63131349cd4eb3e8a2cb05ce631d1c9b3992b416749ffb25f",
+    "actual_sha256": "28a4cdb9df883cc63131349cd4eb3e8a2cb05ce631d1c9b3992b416749ffb25f",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Regions.lean",
+    "expected_sha256": "a43c8b5ea3bd27e2dd3464f5e224c93f150edaea85ea7700da639ad1f0da2d3c",
+    "actual_sha256": "a43c8b5ea3bd27e2dd3464f5e224c93f150edaea85ea7700da639ad1f0da2d3c",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RigidPlaneConjugacy.lean",
+    "expected_sha256": "5607838f801a60dd98a295ee99316bda849e54c0d18acf0e84c74aca51e47fd1",
+    "actual_sha256": "5607838f801a60dd98a295ee99316bda849e54c0d18acf0e84c74aca51e47fd1",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RigidSectorCover.lean",
+    "expected_sha256": "ccd1bf9968e0790218b98b332b7333a196fe92a842a3ffcedd0e6f4108c3fd49",
+    "actual_sha256": "ccd1bf9968e0790218b98b332b7333a196fe92a842a3ffcedd0e6f4108c3fd49",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RigidSectorDisk.lean",
+    "expected_sha256": "fd4bcfec73bd16b5a3e7a5dd6fc2049a62c37131c59bd7b7bfff19a47e745cc2",
+    "actual_sha256": "fd4bcfec73bd16b5a3e7a5dd6fc2049a62c37131c59bd7b7bfff19a47e745cc2",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RigidSectorIntersections.lean",
+    "expected_sha256": "6be533a138621aa214bbdf38b974c647d3383ea46ff5ffbf9b9a245d6547129c",
+    "actual_sha256": "6be533a138621aa214bbdf38b974c647d3383ea46ff5ffbf9b9a245d6547129c",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RigidSphere.lean",
+    "expected_sha256": "f40c59e3d5bfdd1e5a627ff7bf549f92bbb5a202ae60b01530b71a645b305003",
+    "actual_sha256": "f40c59e3d5bfdd1e5a627ff7bf549f92bbb5a202ae60b01530b71a645b305003",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RigidSphereConjugacy.lean",
+    "expected_sha256": "3cb952ec88cfb668273dbd6917739d119d3fec4ebc20513ed7d718e39a5009ca",
+    "actual_sha256": "3cb952ec88cfb668273dbd6917739d119d3fec4ebc20513ed7d718e39a5009ca",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RotationOrbits.lean",
+    "expected_sha256": "746189f345b5d3c7b864910fad6791501b56ccaa731b50eea5227e1b9ce6e1e0",
+    "actual_sha256": "746189f345b5d3c7b864910fad6791501b56ccaa731b50eea5227e1b9ce6e1e0",
+    "match": true
+  },
+  {
+    "path": "VennTopology/RotationalVenn.lean",
+    "expected_sha256": "c6ac6e3360142e04c14b62fdb6332413a8b3ece430c98ed98721725758bb05e9",
+    "actual_sha256": "c6ac6e3360142e04c14b62fdb6332413a8b3ece430c98ed98721725758bb05e9",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorCertificate.lean",
+    "expected_sha256": "e6b1575aef7853dff12f44be6ed79450a9bba3407bcd8c8f4151bd781a1c2ad3",
+    "actual_sha256": "e6b1575aef7853dff12f44be6ed79450a9bba3407bcd8c8f4151bd781a1c2ad3",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorConjugacy.lean",
+    "expected_sha256": "0d79189e29e65d50be64da6f068ad31cac19e89d80ede7c7315fc8562d5060f4",
+    "actual_sha256": "0d79189e29e65d50be64da6f068ad31cac19e89d80ede7c7315fc8562d5060f4",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorConnected.lean",
+    "expected_sha256": "a9a86319844287afd1925d035fb5259647ce3386c6fa119f736192111ed92148",
+    "actual_sha256": "a9a86319844287afd1925d035fb5259647ce3386c6fa119f736192111ed92148",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorData.lean",
+    "expected_sha256": "cff1776a3a5f30e498c7a1b16d2d7c8cfeb29994968b241d44c30d70962485d2",
+    "actual_sha256": "cff1776a3a5f30e498c7a1b16d2d7c8cfeb29994968b241d44c30d70962485d2",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorDisk.lean",
+    "expected_sha256": "785a8e7a2ca384ebfc268495a5ab403acb1453f3515a864efa20b96bd50e6120",
+    "actual_sha256": "785a8e7a2ca384ebfc268495a5ab403acb1453f3515a864efa20b96bd50e6120",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorFrontier.lean",
+    "expected_sha256": "d1d5a2927c3633178c686311425d67134adee6095c9759ab95b881e04e0a6d73",
+    "actual_sha256": "d1d5a2927c3633178c686311425d67134adee6095c9759ab95b881e04e0a6d73",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorGeometry.lean",
+    "expected_sha256": "22cab1cacb410159c7bed90fb261935c9565cb37aaf7b523dccae91c315017f6",
+    "actual_sha256": "22cab1cacb410159c7bed90fb261935c9565cb37aaf7b523dccae91c315017f6",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorGluing.lean",
+    "expected_sha256": "a460a8849a45e2fd05a32d3cadaef84d30898aa3eb54ed6221f72088403443ed",
+    "actual_sha256": "a460a8849a45e2fd05a32d3cadaef84d30898aa3eb54ed6221f72088403443ed",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SectorIntersections.lean",
+    "expected_sha256": "91419274a0aee5dc7ec6a1b818ff0b2f574eca4514764df18ee4ffa19f146658",
+    "actual_sha256": "91419274a0aee5dc7ec6a1b818ff0b2f574eca4514764df18ee4ffa19f146658",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SideComponents.lean",
+    "expected_sha256": "9d344457337245ab5091eb45d7daa59d9f88b57eedafbaa18f66edb65e6a3097",
+    "actual_sha256": "9d344457337245ab5091eb45d7daa59d9f88b57eedafbaa18f66edb65e6a3097",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SimplexCounting.lean",
+    "expected_sha256": "91eae2a29a918c682b999d333a013dd421375149c2bcd2e8370cf5e9d321310e",
+    "actual_sha256": "91eae2a29a918c682b999d333a013dd421375149c2bcd2e8370cf5e9d321310e",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SphereLunes.lean",
+    "expected_sha256": "26707ab98a728ce39494098a1bcfa7c0e11040b9efe074414626b8b3211d2ee9",
+    "actual_sha256": "26707ab98a728ce39494098a1bcfa7c0e11040b9efe074414626b8b3211d2ee9",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SphereMeridians.lean",
+    "expected_sha256": "8836146b37152695bb5c6e5519b826ad884ba985124f38bcf2d56f6818fe7935",
+    "actual_sha256": "8836146b37152695bb5c6e5519b826ad884ba985124f38bcf2d56f6818fe7935",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SphereReduction.lean",
+    "expected_sha256": "5ad98dacf34ac3a2d5ac6ada269f08cb9acace54a1182aef4ef21ed83b48fffc",
+    "actual_sha256": "5ad98dacf34ac3a2d5ac6ada269f08cb9acace54a1182aef4ef21ed83b48fffc",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Stars.lean",
+    "expected_sha256": "8c9305114137fd5b2a98344fc75fb9f40fd1bc88d78ace4413d63a0afabf8bcc",
+    "actual_sha256": "8c9305114137fd5b2a98344fc75fb9f40fd1bc88d78ace4413d63a0afabf8bcc",
+    "match": true
+  },
+  {
+    "path": "VennTopology/Surface.lean",
+    "expected_sha256": "353cc4c33329a7a1b3da3358d25c9ad0f9e5af71708bc698ba589462acbb6d2f",
+    "actual_sha256": "353cc4c33329a7a1b3da3358d25c9ad0f9e5af71708bc698ba589462acbb6d2f",
+    "match": true
+  },
+  {
+    "path": "VennTopology/SurfaceCertificate.lean",
+    "expected_sha256": "5ad4b7c4582b65d8f5ae9bf2bb2b0254fa0b47a3c3bd388067809958922fcb61",
+    "actual_sha256": "5ad4b7c4582b65d8f5ae9bf2bb2b0254fa0b47a3c3bd388067809958922fcb61",
+    "match": true
+  },
+  {
+    "path": "VennTopology/TriangleMidline.lean",
+    "expected_sha256": "cc5768098f550e9158e844aa43851f5a5a7615bd9d11b1006b04c114b19cae01",
+    "actual_sha256": "cc5768098f550e9158e844aa43851f5a5a7615bd9d11b1006b04c114b19cae01",
+    "match": true
+  },
+  {
+    "path": "VennTopology/TriangulationCounts.lean",
+    "expected_sha256": "09c5b156c7a71c003791347dd81c3fb01331d7d724f6a9d6605aba9c9e2dd1f1",
+    "actual_sha256": "09c5b156c7a71c003791347dd81c3fb01331d7d724f6a9d6605aba9c9e2dd1f1",
+    "match": true
+  },
+  {
+    "path": "VennTopology/TriangulationIncidence.lean",
+    "expected_sha256": "0b1efb3eb75e053208f23a6fac54615e569552af3d65006900cab658230b8f34",
+    "actual_sha256": "0b1efb3eb75e053208f23a6fac54615e569552af3d65006900cab658230b8f34",
+    "match": true
+  },
+  {
+    "path": "VennTopology/UnorientedEuler.lean",
+    "expected_sha256": "4f9275d6ac5ab75cb8a28f599375567044c6c9a0e15b81837818dcbe68ab208e",
+    "actual_sha256": "4f9275d6ac5ab75cb8a28f599375567044c6c9a0e15b81837818dcbe68ab208e",
+    "match": true
+  },
+  {
+    "path": "lake-manifest.json",
+    "expected_sha256": "764496d4901574a608c77df5f6ddcc6ab544f864e5f5c0774635d0e894e6cb7f",
+    "actual_sha256": "764496d4901574a608c77df5f6ddcc6ab544f864e5f5c0774635d0e894e6cb7f",
+    "match": true
+  },
+  {
+    "path": "lakefile.lean",
+    "expected_sha256": "55749c13a06d521f4730c8b09846da11b689975a4e366953b685609bc33a1e5c",
+    "actual_sha256": "55749c13a06d521f4730c8b09846da11b689975a4e366953b685609bc33a1e5c",
+    "match": true
+  },
+  {
+    "path": "lean-toolchain",
+    "expected_sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "actual_sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "match": true
+  },
+  {
+    "path": "output/meridian-certificate.json",
+    "expected_sha256": "fe99713fbca021461e4f807019e16731b47dd8ac9203fc46ca5dd852216b9ae3",
+    "actual_sha256": "fe99713fbca021461e4f807019e16731b47dd8ac9203fc46ca5dd852216b9ae3",
+    "match": true
+  },
+  {
+    "path": "output/sector-certificate.json",
+    "expected_sha256": "ba2aeb1aa7d6c2f490cdae9f6ec52aa6cd9f4d477fd0f3a8fe43a2e4527c0520",
+    "actual_sha256": "ba2aeb1aa7d6c2f490cdae9f6ec52aa6cd9f4d477fd0f3a8fe43a2e4527c0520",
+    "match": true
+  },
+  {
+    "path": "scripts/audit_topology.lean",
+    "expected_sha256": "5c2b3e4ca260455b6db79afa09d5533483a1ae35c25a215f4eecd6ca787943fa",
+    "actual_sha256": "5c2b3e4ca260455b6db79afa09d5533483a1ae35c25a215f4eecd6ca787943fa",
+    "match": true
+  },
+  {
+    "path": "scripts/audit_vendor.py",
+    "expected_sha256": "b37d46683e2c67234212bc2c5497105360459a492cf31318b6b9589676c25df2",
+    "actual_sha256": "b37d46683e2c67234212bc2c5497105360459a492cf31318b6b9589676c25df2",
+    "match": true
+  },
+  {
+    "path": "scripts/check.py",
+    "expected_sha256": "a27c777d4673061c518b5d42d94c5f2c302381b0ee4ea9eaad2841f802ebd107",
+    "actual_sha256": "a27c777d4673061c518b5d42d94c5f2c302381b0ee4ea9eaad2841f802ebd107",
+    "match": true
+  },
+  {
+    "path": "scripts/check_pole_steps.py",
+    "expected_sha256": "c54b8d2009eb5dfcd4a6988af4d7a3060cb4d1fe07ff59f5e316ca1e1308745d",
+    "actual_sha256": "c54b8d2009eb5dfcd4a6988af4d7a3060cb4d1fe07ff59f5e316ca1e1308745d",
+    "match": true
+  },
+  {
+    "path": "scripts/find_meridians.py",
+    "expected_sha256": "83b6abe711128381e787d63075409f60c027a527f29265afda96ba04aea3ad31",
+    "actual_sha256": "83b6abe711128381e787d63075409f60c027a527f29265afda96ba04aea3ad31",
+    "match": true
+  },
+  {
+    "path": "scripts/find_sectors.py",
+    "expected_sha256": "090282244c0db3dce90d62b69f4a8b3af61626554b0fb6a32b7eabbfbf820e5d",
+    "actual_sha256": "090282244c0db3dce90d62b69f4a8b3af61626554b0fb6a32b7eabbfbf820e5d",
+    "match": true
+  },
+  {
+    "path": "scripts/test_checkers.py",
+    "expected_sha256": "0a321382ae258de95de6647119825833e2fe650b0b96f14d915ee0b5474d07b5",
+    "actual_sha256": "0a321382ae258de95de6647119825833e2fe650b0b96f14d915ee0b5474d07b5",
+    "match": true
+  },
+  {
+    "path": "venn19-closure-s196002.json",
+    "expected_sha256": "ed26b3baa6e5c02bc3a4239b1dfbf84d66f731cad2dd2805a8c1770e2c1fdb5d",
+    "actual_sha256": "ed26b3baa6e5c02bc3a4239b1dfbf84d66f731cad2dd2805a8c1770e2c1fdb5d",
+    "match": true
+  },
+  {
+    "path": "PORT-TRANSFORM.json",
+    "expected_sha256": "f699236264399f6f04d65973bc2a283c7905e648d08e21548d0a89aa0a548bba",
+    "actual_sha256": "f699236264399f6f04d65973bc2a283c7905e648d08e21548d0a89aa0a548bba",
+    "match": true
+  }
+]

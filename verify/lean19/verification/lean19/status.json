@@ -1,0 +1,31 @@
+{
+  "project": "/Users/dzoba/Developer/venn-diagram/research/lean19-port/lean19",
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "-p",
+    "-o",
+    "/Users/dzoba/Developer/venn-diagram/research/lean19-port/logs/lean19/time.txt",
+    "/Users/dzoba/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lake",
+    "--no-cache",
+    "--no-ansi",
+    "build"
+  ],
+  "pid": 82827,
+  "started_utc": "2026-09-21T03:41:47.092571+00:00",
+  "wall_limit_seconds": 39621,
+  "aggregate_rss_limit_bytes": 34359738368,
+  "owned_disk_limit_bytes": 10737418240,
+  "LEAN_NUM_THREADS": "1",
+  "peak_aggregate_rss_bytes": 4929175552,
+  "peak_processes": 4,
+  "status": "PASS",
+  "elapsed_seconds": 1208.5342169579817,
+  "current_rss_bytes": 1447837696,
+  "current_processes": 3,
+  "checked_utc": "2026-09-21T04:01:45.614123+00:00",
+  "owned_disk_bytes": 1789259776,
+  "filesystem_available_bytes": 14489473024,
+  "finished_utc": "2026-09-21T04:01:55.620452+00:00",
+  "exit_code": 0
+}
