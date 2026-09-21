@@ -2,12 +2,13 @@
 \usepackage[margin=1.1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
+\usepackage{graphicx}
 \usepackage{hyperref}
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}
 \title{Simple symmetric Venn diagrams with 17 and 19 curves}
 \author{Chris Dzoba}
-\date{September 21, 2026 (draft 3)}
+\date{September 21, 2026 (draft 4)}
 \begin{document}
 \maketitle
 
@@ -47,6 +48,16 @@ The proof is by exhibition. Four 17-curve diagrams and six 19-curve diagrams are
 of Section~\ref{sec:encoding}, each accepted by two independently written checkers, and one of each size has been
 formally verified in Lean~4 (Section~\ref{sec:lean}).
 
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/venn19-s196002.jpg}
+\caption{One of the six 19-curve diagrams (certificate \texttt{fcb7ad34}), drawn from its certificate at near-uniform
+crossing density by the plotter described in the data repository: 19 curves, $524{,}286$ crossings, every one of the
+$524{,}288$ regions present exactly once. The centre hole is the region inside all 19 curves; the outer face is the
+region outside all of them. Colours identify curves.}
+\label{fig:venn19}
+\end{figure}
 \section{Encoding and verification}\label{sec:encoding}
 Let $D$ be a simple symmetric $n$-Venn diagram, drawn on the sphere with the unbounded region as a face. Its dual
 map $M$ has one vertex per region, labelled by the region's membership pattern in $\{0,1\}^n$; one edge per arc,
@@ -166,6 +177,15 @@ last duplicated region, of degree 3, into the last missing label at Hamming dist
 single lens insertion creating both missing labels at once after they had drifted to Hamming distance 1 (one
 diagram); and a single lens removal of two adjacent duplicated regions in a state with no missing label (one diagram).
 
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/venn17-sector.jpg}
+\caption{One of the seventeen congruent sectors of the 17-curve diagram \texttt{c178d7bd}, unrolled into a strip: a
+fundamental domain of the rotation, containing $131{,}070/17 = 7{,}710$ of the crossings. The whole diagram is this
+strip repeated seventeen times around the centre.}
+\label{fig:sector}
+\end{figure}
 \section{Properties}
 All ten diagrams are non-monotone in the sense of Bultena, Gr\"unbaum and Ruskey \cite{BGR99}: in the first 19-curve certificate, $3{,}590$ of the $27{,}594$ region orbits
 ($13\%$) lack a neighbouring region of rank one lower or one higher, and the 17-curve certificates behave the same
@@ -192,9 +212,13 @@ the bigon moves, built exact local solvers used to diagnose the earlier plateau,
 resources, and is responsible for the content.
 
 \section*{Acknowledgments}
-We thank Justin Grimes for the formal verification of the 17-curve certificate in Lean, carried out independently
-and without knowledge of our construction, and on which the 19-curve verification is built; and Khalegh Mamakani for
-his encouragement and for pointing out that the earlier searches excluded non-monotone diagrams by construction.
+We thank Justin Grimes for the formal verification of the 17-curve certificate in Lean, carried out independently and
+without knowledge of our construction, on which the 19-curve verification is built. We thank Khalegh Mamakani for his
+encouragement from the first day, for pointing out that the earlier searches excluded non-monotone diagrams by
+construction, and for his advice on how this work should be presented; Stan Wagon for correcting the history given
+here, for the references, and for his and Peter Webb's repair of Henderson's proof; and Carla Savage for her kind
+reply and, with Jerrold Griggs and Charles Killian, for the construction from which every one of these searches
+begins. The survey of Ruskey and Weston was our map of the field throughout.
 
 \begin{thebibliography}{99}
 \bibitem{Hen63} D.~W. Henderson, Venn diagrams for more than four classes, \emph{Amer. Math. Monthly} 70 (1963) 424--426.
