@@ -1,6 +1,6 @@
-# Checker transcript, 19-curve certificates (2026-09-21, seventh added 2026-09-22)
+# Checker transcript, 19-curve certificates (2026-09-21, seventh to ninth added 2026-09-22)
 
-`python3 verify/verify.py certificates/<file>` on each of the seven 19-curve certificates (six from the closure runs of 20-21 September 2026, one from a fresh-start run that completed on 22 September 2026), followed by `verify/monotone_test.py`.
+`python3 verify/verify.py certificates/<file>` on each of the nine 19-curve certificates (six from the closure runs of 20-21 September 2026, three from fresh-start runs that completed on 22 September 2026), followed by `verify/monotone_test.py`.
 
 ## certificates/venn19-closure-s195001.json
 ```
@@ -238,6 +238,82 @@ monotone test:
 certificates/venn19-fresh-s192015.json: n=19 labels=524288 complete=True non_monotone_labels=71155 e.g. ['0000000000000010011', '0000000000000011101', '0000000000000011111']
 ```
 
+## certificates/venn19-fresh-s190002.json
+```
+file        certificates/venn19-fresh-s190002.json
+n           19
+faces       524286 listed, 524286 distinct
+report:
+  E                                1048572
+  F                                524286
+  V                                524288
+  all_crossings_transversal        True
+  all_labels                       True
+  bad_edges                        0
+  curves_two_sides_connected       True
+  edge_multiplicities              {2: 1048572}
+  euler                            2
+  face_sizes                       {4: 524286}
+  non_transversal_faces            0
+  repeated_vertex_faces            0
+  rotation_symmetric               True
+  venn_dual_valid                  True
+  vertices_single_rotation_cycle   True
+criteria:
+  ok  all_labels
+  ok  euler == 2
+  ok  edge multiplicities all 2
+  ok  vertices_single_rotation_cycle
+  ok  curves_two_sides_connected
+  ok  rotation_symmetric
+  ok  non_transversal_faces == 0
+  ok  repeated_vertex_faces == 0
+elapsed     38.4 s
+RESULT: PASS
+```
+monotone test:
+```
+certificates/venn19-fresh-s190002.json: n=19 labels=524288 complete=True non_monotone_labels=71497 e.g. ['0000000000000010101', '0000000000000011111', '0000000000000101001']
+```
+
+## certificates/venn19-fresh-s192007.json
+```
+file        certificates/venn19-fresh-s192007.json
+n           19
+faces       524286 listed, 524286 distinct
+report:
+  E                                1048572
+  F                                524286
+  V                                524288
+  all_crossings_transversal        True
+  all_labels                       True
+  bad_edges                        0
+  curves_two_sides_connected       True
+  edge_multiplicities              {2: 1048572}
+  euler                            2
+  face_sizes                       {4: 524286}
+  non_transversal_faces            0
+  repeated_vertex_faces            0
+  rotation_symmetric               True
+  venn_dual_valid                  True
+  vertices_single_rotation_cycle   True
+criteria:
+  ok  all_labels
+  ok  euler == 2
+  ok  edge multiplicities all 2
+  ok  vertices_single_rotation_cycle
+  ok  curves_two_sides_connected
+  ok  rotation_symmetric
+  ok  non_transversal_faces == 0
+  ok  repeated_vertex_faces == 0
+elapsed     39.1 s
+RESULT: PASS
+```
+monotone test:
+```
+certificates/venn19-fresh-s192007.json: n=19 labels=524288 complete=True non_monotone_labels=71364 e.g. ['0000000000000000111', '0000000000000001110', '0000000000000010111']
+```
+
 ## Checksums
 ```
 best11-s0.json: OK
@@ -253,4 +329,6 @@ venn19-closure-s196002.json: OK
 venn19-closure-s196004.json: OK
 venn19-closure-s196007.json: OK
 venn19-fresh-s192015.json: OK
+venn19-fresh-s190002.json: OK
+venn19-fresh-s192007.json: OK
 ```

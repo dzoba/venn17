@@ -17,7 +17,7 @@ We exhibit simple, rotationally symmetric Venn diagrams with 17 curves and with 
 to one another by rotation through $2\pi/n$, with every one of the $2^n$ regions present and connected and, since the
 diagrams are simple, every crossing on exactly two curves. Symmetric Venn diagrams exist for every prime number of
 curves (Griggs, Killian and Savage, 2004), but those diagrams have many curves through a point; simple ones were
-known only up to 13 curves (Mamakani and Ruskey, 2014). Four 17-curve and seven 19-curve diagrams were found by a Metropolis walk on
+known only up to 13 curves (Mamakani and Ruskey, 2014). Four 17-curve and nine 19-curve diagrams were found by a Metropolis walk on
 rotation-invariant quadrangulations of the sphere in which regions may temporarily be duplicated, started from the
 Griggs--Killian--Savage diagram with its multiple crossings resolved. Every diagram is given by a machine-checkable
 certificate; one certificate of each size has been verified by a formal proof in Lean~4. All of the diagrams are
@@ -27,7 +27,7 @@ found them.
 \begin{figure}[p]
 \centering
 \includegraphics[width=0.92\textwidth]{figures/venn19-s196002.jpg}
-\caption{One of the seven 19-curve diagrams (certificate \texttt{fcb7ad34}), drawn from its certificate at near-uniform
+\caption{One of the nine 19-curve diagrams (certificate \texttt{fcb7ad34}), drawn from its certificate at near-uniform
 crossing density by the plotter described in the data repository: 19 curves, $524{,}286$ crossings, every one of the
 $524{,}288$ regions present exactly once. The centre hole is the region inside all 19 curves; the outer face is the
 region outside all of them. Colours identify curves.}
@@ -53,7 +53,7 @@ diagrams as known only for $n\le 13$ \cite{BGMV26}. The survey of Ruskey and Wes
 Simple symmetric Venn diagrams with 17 curves exist, and so do simple symmetric Venn diagrams with 19 curves.
 \end{theorem}
 
-The proof is by exhibition. Four 17-curve diagrams and seven 19-curve diagrams are given as certificates in the form
+The proof is by exhibition. Four 17-curve diagrams and nine 19-curve diagrams are given as certificates in the form
 of Section~\ref{sec:encoding}, each accepted by two independently written checkers, and one of each size has been
 formally verified in Lean~4 (Section~\ref{sec:lean}).
 
@@ -83,7 +83,7 @@ A certificate is the list of the $2^n-2$ faces of $M$, each as four $n$-bit labe
 and $524{,}286$ for $n=19$. Verification recomputes, in seconds: all $2^n$ labels present exactly once, every edge in
 exactly two faces ($2^{n+1}-4$ edges), Euler characteristic 2, every face transversal, a single rotation cycle at every
 vertex, one cycle per curve with both sides connected, and invariance under label rotation. Two independently written
-checkers, a half-edge implementation in C++ and a face-set implementation in Python, accept all eleven certificates, as
+checkers, a half-edge implementation in C++ and a face-set implementation in Python, accept all thirteen certificates, as
 does a third, written later and sharing no code with either, which audits the raw search state directly.
 
 \begin{table}[h]
@@ -103,12 +103,14 @@ $n$ & certificate & SHA-256 prefix & non-isomorphic \\
 19 & \texttt{venn19-closure-s196007} & \texttt{312e8c88} & yes \\
 19 & \texttt{venn19-closure-s195002} & \texttt{726d1fb0} & yes \\
 19 & \texttt{venn19-fresh-s192015} & \texttt{45a8aee9} & yes \\
+19 & \texttt{venn19-fresh-s190002} & \texttt{b46bf5d0} & yes \\
+19 & \texttt{venn19-fresh-s192007} & \texttt{d5b20c27} & yes \\
 \bottomrule
 \end{tabular}
-\caption{The eleven certificates. Within each size the diagrams are pairwise non-isomorphic under cyclic relabelling of
+\caption{The thirteen certificates. Within each size the diagrams are pairwise non-isomorphic under cyclic relabelling of
 the curves, mirror image and exchange of the two poles (canonical forms compared over all $4n$ such maps); as face
-sets the seven 19-curve certificates differ pairwise by between $25{,}460$ and $940{,}272$ faces of $524{,}286$; the
-fresh-start certificate \texttt{45a8aee9} shares only about a tenth of its faces with any of the other six.}
+sets the nine 19-curve certificates differ pairwise by between $25{,}460$ and $947{,}188$ faces of $524{,}286$; each of
+the three fresh-start certificates shares only about a tenth of its faces with any other.}
 \end{table}
 
 \section{Formal verification}\label{sec:lean}
@@ -176,20 +178,22 @@ $\lambda$ held at 1 and with $\lambda$ ramped from $0.6$, $0.8$ or $0.9$ to 1. H
 continuations reached $E=0$, after 4 seconds, 13 seconds, 190 seconds, 4.3 hours and 6.5 hours; of the sixteen
 ramped continuations one finished, at the end of its six-hour ramp. The pre-completion states are saved exactly, by
 journal undo of the winning move inside the engine, and show three closing mechanisms: a single triangle flip of the
-last duplicated region, of degree 3, into the last missing label at Hamming distance exactly 3 (four diagrams, and the
-fresh-start diagram below); a
+last duplicated region, of degree 3, into the last missing label at Hamming distance exactly 3 (four diagrams, and one of
+the fresh-start diagrams below); a
 single lens insertion creating both missing labels at once after they had drifted to Hamming distance 1 (one
-diagram); and a single lens removal of two adjacent duplicated regions in a state with no missing label (one diagram).
+diagram, and two of the fresh-start diagrams below); and a single lens removal of two adjacent duplicated regions in a state with no missing label (one diagram).
 
-\paragraph{19 curves: fresh start.} The six diagrams above descend from one hand-off state. A seventh does not. Of
-twenty-four 36-hour runs started from the resolved scaffold on 20 September (twelve with the ordinary proposals; six
-with the degree-attacking proposal applied to three in ten of the targeted landings, at $T=0.25$; six with it applied
-always, at $T=0.28$), one of the three-in-ten runs reached $E=0$ after 32.6 hours and $1.1\times10^{10}$ proposals,
-with $\lambda$ ramped linearly from $0.3$ to $1$ over the wall time ($0.93$ at completion). Its pre-completion state
-has one missing label, of rank 8, and one duplicated label, of rank 11, with both copies of degree 3 and at Hamming
-distance 3 from the missing label; it closed by the triangle flip above. Its face set shares about a tenth of its
-faces with each of the other six. When it completed, the other five three-in-ten runs stood at best energies 38, 38,
-76, 114 and 152, the twelve ordinary runs between 38 and 228, and the six always-on runs between 114 and 342.
+\paragraph{19 curves: fresh start.} The six diagrams above descend from one hand-off state. Three more do not.
+Thirty-two 36-hour runs were started from the resolved scaffold on 20 September: twenty with the ordinary proposals
+(twelve on the fleet and eight on a laptop), six with the degree-attacking proposal applied to three in ten of the
+targeted landings at $T=0.25$, and six with it applied always at $T=0.28$, all with $\lambda$ ramped linearly from
+$0.3$ to $1$ over the wall time. Three reached $E=0$: two of the three-in-ten runs, after 32.6 and 33.3 hours, and one
+laptop run with the ordinary proposals, after 34.0 hours, at $1.1\times10^{10}$ to $2.1\times10^{10}$ proposals. The
+first closed by the triangle flip above, from a state with one missing label of rank 8 and one duplicated label of
+rank 11, both copies of degree 3, at Hamming distance 3; the other two closed by the lens insertion, from states with no
+duplicate and two missing labels at Hamming distance 1. Each of the three shares only about a tenth of its faces with
+any other diagram in the table. At the time of writing the remaining three-in-ten runs stood at best energies 38, 38,
+114 and 152, the ordinary runs between 38 and 228, and the always-on runs no lower than 114.
 
 
 \begin{figure}[p]
