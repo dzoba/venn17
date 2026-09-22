@@ -22,5 +22,4 @@ abstract: >-
   given as machine-checkable certificates, one of each size verified in Lean 4, together with a standalone checker, the search
   program that found them, a plotter and the write-up. Also includes the first
   non-monotone simple symmetric Venn diagrams with 11 and 13 curves.
-# Fill in the Zenodo DOI once the deposit is published, then uncomment:
-# doi: "10.5281/zenodo.XXXXXXXX"
+doi: "10.5281/zenodo.22885650"

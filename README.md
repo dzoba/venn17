@@ -313,12 +313,14 @@ in which regions may temporarily be duplicated, annealed in the weight of the du
 from the Griggs–Killian–Savage symmetric diagram for n = 17 or 19 with its multiple crossings resolved.
 The search was designed and carried out by two AI systems, Claude (Anthropic) and Codex (OpenAI),
 working under the direction of Chris Dzoba over five days; their roles are stated in full in the
-paper (`paper/venn17-19.pdf`, section "Contributions and use of AI systems"). The certificates stand
+paper (`paper/venn17-19.pdf`, section "Tool and computational resource disclosure"). The certificates stand
 on their own: nothing about their validity depends on how they were produced.
 
 ## Citing and licensing
 
-`CITATION.cff` has the citation metadata; add the Zenodo DOI there once the archive is published.
+`CITATION.cff` has the citation metadata. Version 1.1 of this repository (certificates, checkers, both Lean
+developments, search code, plotter, images and the paper) is archived on Zenodo:
+https://doi.org/10.5281/zenodo.22885650.
 
 The code (`verify/`, `search/`, `plotter/`) is released under the MIT License, see `LICENSE`. The
 certificates (`certificates/`), the images (`images/`) and the paper (`paper/`) are released under
