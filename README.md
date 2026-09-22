@@ -33,7 +33,8 @@ all twelve are non-monotone by the Bultena-Grunbaum-Ruskey test in `verify/monot
 ## 19 curves
 
 Three days after the 17-curve diagrams, the same search found simple symmetric Venn diagrams with 19
-curves: three on 20 September 2026 and three more overnight on 21 September. Each certificate lists
+curves: three on 20 September 2026, three more overnight on 21 September, and a seventh on 22 September
+from a run started fresh from the resolved Griggs–Killian–Savage diagram, 32.6 hours in. Each certificate lists
 the 2^19 - 2 = 524,286 crossings as quadruples of 19-bit labels (47 MB each); the checker below runs
 on them unchanged (about a minute per file).
 
@@ -45,11 +46,13 @@ on them unchanged (about a minute per file).
 | `venn19-closure-s196001.json` | `b550adb91f0898059bff18616236cce0cc7a1062f7ef7582eba1649df23b45d2` |
 | `venn19-closure-s196007.json` | `0f057a0779cdeaa26f4a8af8ac5d96e997c243197817493b9ef4244964dbe225` |
 | `venn19-closure-s195002.json` | `c801a956f9a6406f708e75c3b423b4ddd77dcb63ebca4f927f0223c25069202f` |
+| `venn19-fresh-s192015.json` | `45a8aee92516c682b337e1e21b3a1f7101a78ec342cd3c2360fae2847da3b3d2` |
 
 Check them with `cd certificates && shasum -a 256 -c SHA256SUMS`.
 
-The six face sets are pairwise distinct (the smallest symmetric difference between two of them is
-25,460 faces, the largest 827,716). All six are non-monotone. Each was verified, before being added
+The seven face sets are pairwise distinct (the smallest symmetric difference between two of them is
+25,460 faces, the largest 940,272; the fresh-start diagram shares only about a tenth of its faces with
+any of the other six). All seven are non-monotone. Each was verified, before being added
 here, by the search engine's own structural reload, by the independent checker `verify/verify.py`,
 and by a third auditor written by Codex that shares no code with either.
 
