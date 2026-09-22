@@ -90,7 +90,7 @@ does a third, written later and sharing no code with either, which audits the ra
 \centering\small
 \begin{tabular}{llll}
 \toprule
-$n$ & certificate & SHA-256 prefix & pairwise distinct \\
+$n$ & certificate & SHA-256 prefix & non-isomorphic \\
 \midrule
 17 & \texttt{venn17-local-c3-s2} & \texttt{c178d7bd} & yes \\
 17 & \texttt{venn17-gcp-s12} & \texttt{87f981b8} & yes \\
@@ -104,8 +104,9 @@ $n$ & certificate & SHA-256 prefix & pairwise distinct \\
 19 & \texttt{venn19-closure-s195002} & \texttt{726d1fb0} & yes \\
 \bottomrule
 \end{tabular}
-\caption{The ten certificates. The six 19-curve face sets are pairwise distinct: the smallest symmetric difference
-between two of them is $25{,}460$ faces (of $524{,}286$) and the largest $827{,}716$.}
+\caption{The ten certificates. Within each size the diagrams are pairwise non-isomorphic under cyclic relabelling of
+the curves, mirror image and exchange of the two poles (canonical forms compared over all $4n$ such maps); as face
+sets the six 19-curve certificates differ pairwise by between $25{,}460$ and $827{,}716$ faces of $524{,}286$.}
 \end{table}
 
 \section{Formal verification}\label{sec:lean}
