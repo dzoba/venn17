@@ -324,9 +324,10 @@ on their own: nothing about their validity depends on how they were produced.
 
 ## Citing and licensing
 
-`CITATION.cff` has the citation metadata. Version 1.1 of this repository (certificates, checkers, both Lean
-developments, search code, plotter, images and the paper) is archived on Zenodo:
-https://doi.org/10.5281/zenodo.22885650.
+`CITATION.cff` has the citation metadata. This repository (certificates, checkers, both Lean developments,
+search code, plotter, images and the paper) is archived on Zenodo: version 1.2 at
+https://doi.org/10.5281/zenodo.22896682, version 1.1 at https://doi.org/10.5281/zenodo.22885650, and all
+versions under the concept DOI https://doi.org/10.5281/zenodo.22885649.
 
 The code (`verify/`, `search/`, `plotter/`) is released under the MIT License, see `LICENSE`. The
 certificates (`certificates/`), the images (`images/`) and the paper (`paper/`) are released under

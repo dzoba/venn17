@@ -4,8 +4,8 @@ title: "Simple symmetric Venn diagrams with 17 and 19 curves"
 authors:
   - family-names: Dzoba
     given-names: Chris
-date-released: 2026-09-21
-version: "1.1"
+date-released: 2026-09-22
+version: "1.2"
 repository-code: "https://github.com/dzoba/venn17"
 url: "https://github.com/dzoba/venn17"
 license:
@@ -22,4 +22,8 @@ abstract: >-
   given as machine-checkable certificates, one of each size verified in Lean 4, together with a standalone checker, the search
   program that found them, a plotter and the write-up. Also includes the first
   non-monotone simple symmetric Venn diagrams with 11 and 13 curves.
-doi: "10.5281/zenodo.22885650"
+doi: "10.5281/zenodo.22896682"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22885649"
+    description: "Concept DOI, resolves to the latest version"
