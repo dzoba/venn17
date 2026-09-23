@@ -27,3 +27,6 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.22885649"
     description: "Concept DOI, resolves to the latest version"
+  - type: other
+    value: "arXiv:2609.26546"
+    description: "arXiv preprint (math.CO)"

@@ -329,6 +329,8 @@ search code, plotter, images and the paper) is archived on Zenodo: version 1.2 a
 https://doi.org/10.5281/zenodo.22896682, version 1.1 at https://doi.org/10.5281/zenodo.22885650, and all
 versions under the concept DOI https://doi.org/10.5281/zenodo.22885649.
 
+The paper is on arXiv as arXiv:2609.26546 (math.CO), https://arxiv.org/abs/2609.26546.
+
 The code (`verify/`, `search/`, `plotter/`) is released under the MIT License, see `LICENSE`. The
 certificates (`certificates/`), the images (`images/`) and the paper (`paper/`) are released under
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
