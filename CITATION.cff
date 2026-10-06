@@ -19,9 +19,9 @@ keywords:
 abstract: >-
   Simple, rotationally symmetric Venn diagrams with 17 curves, with 19 curves and with 23 curves, the
   smallest open cases since the 11- and 13-curve diagrams of Mamakani and Ruskey (2014),
-  given as machine-checkable certificates, one 17-curve and one 19-curve certificate verified in
-  Lean 4, together with a standalone checker, the search program that found them, a plotter and the
-  write-up. The five 23-curve certificates (889 MB each) are carried as release assets and in the
+  given as machine-checkable certificates, one certificate each of the 17-, 19- and 23-curve sizes
+  verified in Lean 4, together with a standalone checker, the search program that found them, a
+  plotter and the write-up. The six 23-curve certificates (889 MB each) are carried as release assets and in the
   Zenodo archive rather than in the git tree. Also includes the first non-monotone simple symmetric
   Venn diagrams with 11 and 13 curves.
 doi: "10.5281/zenodo.23189412"
